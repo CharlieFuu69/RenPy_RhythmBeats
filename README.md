@@ -29,3 +29,5 @@ Este proyecto no será documentado hasta que sea lo suficientemente estable para
 - [x] Adición de pantallas de inicio de pista, pista finalizada (Full Combo/Show Clear/Show Failed), y resultados finales de la partida.
 - [ ] Reorganizar metadatos de pistas musicales.
 - [ ] Modificar estructura de archivos `.beat`
+- [ ] Agregar calibrador de desfase manual.
+- [ ] Agregar control de Alpha para atenuar fondo de 2DMVs.
