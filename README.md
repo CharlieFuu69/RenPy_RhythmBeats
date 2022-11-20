@@ -83,6 +83,8 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 ---
 ### Lanzamientos:
 
+> **NOTA:** _Descomprimir el paquete `beatmaps.zip` dentro de la carpeta `Rhythm_Game-1.0-win/game`._
+
 |Versión|Detalles|URL|
 |---|---|---|
-|`v0.1.19`|Lanzamiento inicial para fines de pruebas. Puede contener errores de funcionamiento.|https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/Rhythm_Game-1.0-win.zip|
+|`v0.1.19`|Lanzamiento inicial para fines de pruebas. Puede contener errores de funcionamiento.| [Juego principal](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/Rhythm_Game-1.0-win.zip) - [Beatmaps](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/beatmaps.zip)|
