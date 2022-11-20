@@ -1,12 +1,16 @@
-# Ren'Py RhythmBeats!
-[Sin documentación]
-Sistema de acción rítimica simple para juegos Ren'Py.
+<h1 align = "center"> Ren'Py RhythmBeats! </h1>
+
+<h5 align = "center">
+    <i>[Sin documentación disponible]</i>
+    
+    Sistema de acción rítmica simple para juegos basados en el motor Ren'Py.
+</h5>
 
 ---
 
 Este proyecto no será documentado hasta que sea lo suficientemente estable para su implementación.
 
-> **ADVERTENCIA: NO USAR EN PROYECTOS EN FASE DE PRODUCCIÓN BASADOS EN REN'PY.**
+> **ADVERTENCIA: NO USAR EN PROYECTOS EN FASE DE PRODUCCIÓN.**
 
 ---
 ### Detalles importantes de desarrollo:
@@ -14,6 +18,28 @@ Este proyecto no será documentado hasta que sea lo suficientemente estable para
 * _**[COMPATIBILIDAD]:** En un futuro intento de portear para Android, este no será compatible con gestos o multitouch (múltiples dedos en el táctil), por lo tanto, no es posible colocar taps simultáneos._
 * _**[RENDIMIENTO]:** Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas (marcas de tiempo), o si se incluyen 2DMVs._
 * _**[BEATMAPS]:** Aún no hay documentación para generar los beatmaps. Los beatmaps se crean usando un DAW de producción musical, se exporta la secuencia a un archivo MIDI y se obtienen las marcas de tiempo de cada tap al procesar el archivo MIDI._
+
+---
+### Lista de pistas musicales utilizadas para testeo:
+
+Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatmap creado y 2DMV añadido.
+
+* **Project SEKAI: COLORFUL STAGE / Vocaloid:**
+
+|Pistas musicales|Artistas|BPM|Full Combo|2DMV|
+|---|---|---|---|---|
+|Highlight|Kira Ft. Hatsune Miku|130|253 notas|Si (Clip original)|
+|Gunjou Sanka (SEKAI Ver.)|Hatsune Miku, Ichika Hoshino... (4 más)|168|307 notas|Si (3DMV Project Sekai)|
+|Hand in Hand|Hatsune Miku / Kz|128|381 notas|No|
+
+
+* **Love Live!:**
+
+|Pistas musicales|Artistas/Unidad|BPM|Full Combo|2DMV|
+|---|---|---|---|---|
+|Mirai Bokura wa Shitteru yo|Aqours|181|229 notas|Si (Love Live! Sunshine!! S2 OP)|
+|MOMENT RING|μ's|196|368 notas|Si (3DMV Love Live! SIFAS)|
+|Ryouran! Victory Road|Love Live! Nijigasaki High School Idol Club|135|580 notas|Si (Fanmade: Henry L.)|
 
 ---
 ### Tasklist:
