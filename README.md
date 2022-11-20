@@ -19,6 +19,12 @@ Este proyecto no será documentado hasta que sea lo suficientemente estable para
 * _**[RENDIMIENTO]:** Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas (marcas de tiempo), o si se incluyen 2DMVs._
 * _**[BEATMAPS]:** Aún no hay documentación para generar los beatmaps. Los beatmaps se crean usando un DAW de producción musical, se exporta la secuencia a un archivo MIDI y se obtienen las marcas de tiempo de cada tap al procesar el archivo MIDI._
 
+
+---
+### Jugabilidad:
+
+Las teclas asignadas para jugar son la `C` para la cascada izquierda, y `M` para la cascada derecha.
+
 ---
 ### Lista de pistas musicales utilizadas para testeo:
 
