@@ -56,7 +56,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [ ] Reorganizar metadatos de pistas musicales.
 - [ ] Modificar estructura de archivos `.beat`
 - [x] Agregar panel de calibración manual.
-- [ ] Agregar control de Alpha para atenuar fondo de 2DMVs.
+- [x] Agregar control de Alpha para atenuar fondo de 2DMVs.
 
 ---
 ### Últimas modificaciones:
@@ -69,4 +69,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
     
 [20/Nov/2022 02:15 GMT -3]:
     Eliminación del sonido para los taps, pues su retraso resulta ser extremadamente molesto.
+    
+[20/Nov/2022 18:10 GMT -3]:
+    Adición de control de atenuación para 2DMVs.
 ```
