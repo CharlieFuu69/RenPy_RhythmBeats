@@ -1,5 +1,6 @@
 # Ren'Py RhythmBeats!
-[Sin documentación] Sistema de acción rítimica para juegos Ren'Py
+[Sin documentación]
+Sistema de acción rítimica simple para juegos Ren'Py.
 
 ---
 
