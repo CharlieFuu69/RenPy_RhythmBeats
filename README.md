@@ -49,35 +49,54 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 
 ---
 ### Tasklist:
-- [x] Lectura y procesado de archivos `.beat` (Beatmap).
-- [x] Adición de umbral de detección (Threshold) y compensación de retraso (Offset).
+* Módulo de Python `RhythmBeats.py`:
+
+- [x] Adición de umbral de detección (Threshold) y compensación de timing (Offset).
 - [x] Detector de beatmap terminado.
-- [x] Adición de capa para 2DMV (basado en video).
 - [x] Adición de conteo de Combo.
-- [x] Adición de conteo de notas perfectas y fallidas (BRUH).
+- [x] Adición de conteo de notas perfectas y fallidas (BRUH XD).
 - [x] Adición de cálculo de precisión promedio.
 - [x] Umbral de detección fijado en 100 ms (-100/+100).
+
+* Juego de demostración "Ren'Py RhythmBeats!":
+
+- [x] Lectura y procesado de archivos `.beat` (Beatmap).
+- [x] Adición de capa para 2DMV (basado en video).
 - [x] Adición de menú de selección de pistas musicales.
 - [x] Adición de pantallas de inicio de pista, pista finalizada (Full Combo/Show Clear/Show Failed), y resultados finales de la partida.
 - [ ] Reorganizar metadatos de pistas musicales.
 - [ ] Modificar estructura de archivos `.beat`
-- [x] Agregar panel de calibración manual.
-- [x] Agregar control de Alpha para atenuar fondo de 2DMVs.
+- [ ] [DEMO] Agregar sistema de descarga de pistas musicales
+- [ ] [DEMO] Agregar panel de calibración manual.
+- [x] [DEMO] Agregar control de Alpha para atenuar manualmente el fondo de 2DMVs.
 
 ---
-### Últimas modificaciones:
+### Registro de desarrollo:
 ```
 [19/Nov/2022 23:52 GMT -3]:
-    Calibración de todos los beatmaps para alinear desfase a 0ms.
+    - Calibración de todos los beatmaps para alinear desfase a 0ms.
     
 [20/Nov/2022 01:09 GMT -3]:
-    Adición de panel de calibración para ajustar la diferencia de milisegundos de retraso o adelanto.
+    - Adición de panel de calibración para ajustar la diferencia de milisegundos de retraso o adelanto.
     
 [20/Nov/2022 02:15 GMT -3]:
-    Eliminación del sonido para los taps, pues su retraso resulta ser extremadamente molesto.
+    - Eliminación del sonido para los taps, pues su retraso resulta ser extremadamente molesto.
     
 [20/Nov/2022 18:10 GMT -3]:
-    Adición de control de atenuación para 2DMVs.
+    - Adición de control de atenuación para 2DMVs.
+    
+[04/Dic/2022 20:05 GMT -3]:
+    - Fallo encontrado: El panel de calibración manual no sirve de nada.
+    
+[04/Dic/2022 20:38 GMT -3]:
+    - El sistema de calibración fue corregido y está operando correctamente.
+    
+[16/Dic/2022 14:33 GMT -3]:
+    - Agregando 2 nuevas pistas de demostración. Serán reveladas cuando se publique una nueva release del juego de demostración.
+    
+[18/Dic/2022 02:35 GMT -3]:
+    - Clasificando los archivos de cada pista musical en paquetes RPA individuales.
+    - Integrando sistema de descarga/actualización por lotes de pistas musicales jugables.
 ```
 
 ---
