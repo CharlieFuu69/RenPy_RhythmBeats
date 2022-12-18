@@ -49,7 +49,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 
 ---
 ### Tasklist:
-* Módulo de Python `RhythmBeats.py`:
+* **Módulo de Python `RhythmBeats.py`:**
 
 - [x] Adición de umbral de detección (Threshold) y compensación de timing (Offset).
 - [x] Detector de beatmap terminado.
@@ -58,7 +58,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [x] Adición de cálculo de precisión promedio.
 - [x] Umbral de detección fijado en 100 ms (-100/+100).
 
-* Juego de demostración "Ren'Py RhythmBeats!":
+* **Juego de demostración "Ren'Py RhythmBeats!":**
 
 - [x] Lectura y procesado de archivos `.beat` (Beatmap).
 - [x] Adición de capa para 2DMV (basado en video).
