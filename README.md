@@ -1,9 +1,22 @@
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[renpy]: https://renpy.org/
+
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen
+[renpy-shield]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red
+
+<p align="center">
+  <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
+</p>
+
 <h1 align = "center"> Ren'Py RhythmBeats! </h1>
 
+[![cc-by-sa-shield]][cc-by-sa] [![renpy-shield]][renpy]
+
 <h5 align = "center">
-    <i>[Sin documentación disponible]</i>
+    <i>[Sin documentación disponible - Alpha en desarrollo]</i>
     
-    Sistema de acción rítmica simple para juegos basados en el motor Ren'Py.
+    Módulo/Sistema de acción rítmica simple para juegos basados en el motor Ren'Py.
 </h5>
 
 ---
