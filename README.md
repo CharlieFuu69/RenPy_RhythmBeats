@@ -4,6 +4,7 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen
 [renpy-shield]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red
+[development_status]: https://img.shields.io/badge/Fase%20de%20desarrollo-Alpha-blue
 
 <p align="center">
   <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
@@ -11,32 +12,32 @@
 
 <h1 align = "center"> Ren'Py RhythmBeats! </h1>
 
-[![cc-by-sa-shield]][cc-by-sa] [![renpy-shield]][renpy]
+[![cc-by-sa-shield]][cc-by-sa] [![renpy-shield]][renpy] ![development_status]
 
 <h5 align = "center">
     <i>[Sin documentación disponible - Alpha en desarrollo]</i>
-    
-    Módulo/Sistema de acción rítmica simple para juegos basados en el motor Ren'Py.
 </h5>
 
----
-
-Este proyecto no será documentado hasta que sea lo suficientemente estable para su implementación.
-
-> **ADVERTENCIA: NO USAR EN PROYECTOS EN FASE DE PRODUCCIÓN.**
+<img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
+#### ¡Descargas disponibles!: Obtén la más reciente versión de demostración Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)
 
 ---
-### Detalles importantes de desarrollo:
-* _**[COMPATIBILIDAD]:** No es compatible con Android. Se utilizan teclas de un teclado de PC para las interacciones._
-* _**[COMPATIBILIDAD]:** En un futuro intento de portear para Android, este no será compatible con gestos o multitouch (múltiples dedos en el táctil), por lo tanto, no es posible colocar taps simultáneos._
-* _**[RENDIMIENTO]:** Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas (marcas de tiempo), o si se incluyen 2DMVs._
-* _**[BEATMAPS]:** Aún no hay documentación para generar los beatmaps. Los beatmaps se crean usando un DAW de producción musical, se exporta la secuencia a un archivo MIDI y se obtienen las marcas de tiempo de cada tap al procesar el archivo MIDI._
+### 1. ¿Cómo se juega la versión de demostración de Ren'Py RhythmBeats?
 
+<img align="center" src="https://user-images.githubusercontent.com/77955772/209073140-0bbd0583-4c06-47c4-a768-b42c4b7e660a.png"></img>
+<h4 align = "center"> [Interfaz de juego - 2DMV: Highlight] </h4>
 
----
-### Jugabilidad:
+Las teclas asignadas para jugar son la `C` para la pista izquierda, y `M` para la pista derecha.
 
-Las teclas asignadas para jugar son la `C` para la cascada izquierda, y `M` para la cascada derecha.
+#### INDICADOR DE HP:
+> En la esquina superior izquierda se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo.
+
+#### INDICADOR DE PRECISIÓN:
+> En la esquina superior derecha hay un indicador de precisión en tiempo real, que señala la diferencia media (en milisegundos) a la que aciertas las notas respecto del beatmap. Mientras más cerca estés de `0ms`, significará que tocas las notas con una precisión casi perfecta.
+> Una flecha **"◂"** indicará que tienes tendencia a tocar un poco antes de lo esperado, mientras que la flecha **"▸"** indicará que tienes tendencia a tocar un poco más tarde.
+
+#### CALIBRACIÓN MANUAL:
+> En caso de que tengas problemas de sincronización con la caída de las notas, puedes calibrar manualmente cualquier desfase desde el botón **"⚙"** en el menú de pistas musicales.
 
 ---
 ### Lista de pistas musicales utilizadas para testeo:
@@ -59,6 +60,15 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 |Mirai Bokura wa Shitteru yo|Aqours|181|229 notas|Si (Love Live! Sunshine!! S2 OP)|
 |MOMENT RING|μ's|196|368 notas|Si (3DMV Love Live! SIFAS)|
 |Ryouran! Victory Road|Love Live! Nijigasaki High School Idol Club|135|580 notas|Si (Fanmade: Henry L.)|
+|Snow Halation|μ's|173|305 notas|Si (3DMV Love Live! SIFAS)|
+|NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|Si (3DMV Love Live! SIFAS)|
+
+---
+### Detalles importantes de desarrollo:
+* _**[COMPATIBILIDAD]:** No es compatible con Android. Se utilizan teclas de un teclado de PC para las interacciones._
+* _**[COMPATIBILIDAD]:** En un futuro intento de portear para Android, este no será compatible con gestos o multitouch (múltiples dedos en el táctil), por lo tanto, no es posible colocar taps simultáneos._
+* _**[RENDIMIENTO]:** Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas (marcas de tiempo), o si se incluyen 2DMVs._
+* _**[REQUERIMIENTOS DE HARDWARE]:** El juego de demostración está siendo probada en una máquina con **8 GB** de RAM, procesador de **1.1 GHz** x8 núcleos y **2 GB** de VRAM._
 
 ---
 ### Tasklist:
@@ -77,11 +87,11 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [x] Adición de capa para 2DMV (basado en video).
 - [x] Adición de menú de selección de pistas musicales.
 - [x] Adición de pantallas de inicio de pista, pista finalizada (Full Combo/Show Clear/Show Failed), y resultados finales de la partida.
-- [ ] Reorganizar metadatos de pistas musicales.
-- [ ] Modificar estructura de archivos `.beat`
-- [ ] [DEMO] Agregar sistema de descarga de pistas musicales
-- [ ] [DEMO] Agregar panel de calibración manual.
-- [x] [DEMO] Agregar control de Alpha para atenuar manualmente el fondo de 2DMVs.
+- [x] Reorganizar metadatos de pistas musicales.
+- [x] Modificar estructura de archivos `.beat`
+- [x] Agregar sistema de descarga de pistas musicales
+- [x] Agregar panel de calibración manual.
+- [x] Agregar control de Alpha para atenuar manualmente el fondo de 2DMVs.
 
 ---
 ### Registro de desarrollo:
@@ -110,13 +120,18 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 [18/Dic/2022 02:35 GMT -3]:
     - Clasificando los archivos de cada pista musical en paquetes RPA individuales.
     - Integrando sistema de descarga/actualización por lotes de pistas musicales jugables.
+    
+[22/Dic/2022 04:04 GMT -3]:
+    - Se ha terminado de calibrar los mapas y las canciones.
+    - Versión v0.2.01a publicada en GitHub.
 ```
 
 ---
-### Lanzamientos:
-
-> **NOTA:** _Descomprimir el paquete `beatmaps.zip` dentro de la carpeta `Rhythm_Game-1.0-win/game`._
+### Todos los lanzamientos:
 
 |Versión|Detalles|URL|
 |---|---|---|
-|`v0.1.19`|Lanzamiento inicial para fines de pruebas. Puede contener errores de funcionamiento.| [Juego principal](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/Rhythm_Game-1.0-win.zip) - [Beatmaps](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/beatmaps.zip)|
+|`v0.2.01a`|Lanzamiento #2 de demostración (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)|
+|`v0.1.19a`|Lanzamiento inicial para fines de pruebas| [Juego principal](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/Rhythm_Game-1.0-win.zip) - [Beatmaps](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/beatmaps.zip)|
+
+
