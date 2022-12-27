@@ -64,6 +64,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 |NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|Si (3DMV Love Live! SIFAS)|
 
 * **Otras pistas:**
+
 |Pistas musicales|Artistas|BPM|Full Combo|2DMV|
 |---|---|---|---|---|
 |The Anthem (Der Alte)|Dimitri Vegas & Like Mike|140|535 notas|No|
