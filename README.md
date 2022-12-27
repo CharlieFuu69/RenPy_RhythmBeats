@@ -63,6 +63,11 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 |Snow Halation|μ's|173|305 notas|Si (3DMV Love Live! SIFAS)|
 |NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|Si (3DMV Love Live! SIFAS)|
 
+* **Otras pistas:**
+|Pistas musicales|Artistas|BPM|Full Combo|2DMV|
+|---|---|---|---|---|
+|The Anthem (Der Alte)|Dimitri Vegas & Like Mike|140|535 notas|No|
+
 ---
 ### Detalles importantes de desarrollo:
 * _**[COMPATIBILIDAD]:** No es compatible con Android. Se utilizan teclas de un teclado de PC para las interacciones._
@@ -72,7 +77,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 
 ---
 ### Tasklist:
-* **Módulo de Python `RhythmBeats.py`:**
+* **Módulo de Python `rhythmbeats.py`:**
 
 - [x] Adición de umbral de detección (Threshold) y compensación de timing (Offset).
 - [x] Detector de beatmap terminado.
@@ -80,6 +85,8 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [x] Adición de conteo de notas perfectas y fallidas (BRUH XD).
 - [x] Adición de cálculo de precisión promedio.
 - [x] Umbral de detección fijado en 100 ms (-100/+100).
+- [] Adaptar código núcleo a módulo de Python importable.
+- [] Crear documentación del módulo.
 
 * **Juego de demostración "Ren'Py RhythmBeats!":**
 
@@ -92,6 +99,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [x] Agregar sistema de descarga de pistas musicales
 - [x] Agregar panel de calibración manual.
 - [x] Agregar control de Alpha para atenuar manualmente el fondo de 2DMVs.
+- [] Publicar el código fuente y los Assets del juego DEMO.
 
 ---
 ### Registro de desarrollo:
@@ -124,6 +132,9 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 [22/Dic/2022 04:04 GMT -3]:
     - Se ha terminado de calibrar los mapas y las canciones.
     - Versión v0.2.01a publicada en GitHub.
+    
+[27/Dic/2022 19:41 GMT -3]:
+    - Actualización completa del README.md.
 ```
 
 ---
@@ -134,4 +145,12 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 |`v0.2.01a`|Lanzamiento #2 de demostración (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)|
 |`v0.1.19a`|Lanzamiento inicial para fines de pruebas| [Juego principal](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/Rhythm_Game-1.0-win.zip) - [Beatmaps](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/beatmaps.zip)|
 
+---
+### Licencias:
+## 3. Licencias:
+[![cc-by-sa-image]][cc-by-sa]
+
+Este módulo se distribuye bajo la licencia **Creative Commons CC BY-SA v4.0**.
+
+Si quieres usar o modificar este proyecto, te agradecería que me dieras crédito adjuntando la URL de este repositorio :3
 
