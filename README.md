@@ -139,7 +139,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 ```
 
 ---
-### Todos los lanzamientos:
+### Todos los lanzamientos (DEMO):
 
 |Versión|Detalles|URL|
 |---|---|---|
