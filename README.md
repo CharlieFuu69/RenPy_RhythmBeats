@@ -86,8 +86,8 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [x] Adición de conteo de notas perfectas y fallidas (BRUH XD).
 - [x] Adición de cálculo de precisión promedio.
 - [x] Umbral de detección fijado en 100 ms (-100/+100).
-- [] Adaptar código núcleo a módulo de Python importable.
-- [] Crear documentación del módulo.
+- [ ] Adaptar código núcleo a módulo de Python importable.
+- [ ] Crear documentación del módulo.
 
 * **Juego de demostración "Ren'Py RhythmBeats!":**
 
@@ -100,7 +100,7 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 - [x] Agregar sistema de descarga de pistas musicales
 - [x] Agregar panel de calibración manual.
 - [x] Agregar control de Alpha para atenuar manualmente el fondo de 2DMVs.
-- [] Publicar el código fuente y los Assets del juego DEMO.
+- [ ] Publicar el código fuente y los Assets del juego DEMO.
 
 ---
 ### Registro de desarrollo:
