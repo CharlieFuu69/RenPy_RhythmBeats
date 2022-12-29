@@ -5,7 +5,7 @@
 [renpy-badge]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red?style=for-the-badge
 [license-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [license-badge]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
-[status-badge]: https://img.shields.io/badge/Status-Alpha-blue?style=for-the-badge
+[status-badge]: https://img.shields.io/badge/Status-Alpha-ff0000?style=for-the-badge
 [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
 
 
@@ -26,7 +26,7 @@
 
 * **ÚLTIMA ACTUALIZACIÓN INTERNA: 28/12/2022**
 
-* **Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
+* **¿No sabes cómo jugarlo? Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
 
 ---
 ### Detalles importantes de desarrollo:
