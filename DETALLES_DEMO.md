@@ -1,11 +1,4 @@
-[license]: http://creativecommons.org/licenses/by-sa/4.0/
-[renpy]: https://renpy.org/
 [release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases
-
-[renpy-badge]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red?style=for-the-badge
-[license-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[license-badge]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
-[status-badge]: https://img.shields.io/badge/Status-Alpha-blue?style=for-the-badge
 [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
 
 <p align="center">
@@ -14,7 +7,7 @@
 
 <h1 align = "center"> Detalles del juego demostrativo de Ren'Py RhythmBeats! </h1>
 
-[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
+[![release-badge]][release]
 
 ---
 ### 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?
