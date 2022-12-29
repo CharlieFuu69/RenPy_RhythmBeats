@@ -1,10 +1,13 @@
-[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[license]: http://creativecommons.org/licenses/by-sa/4.0/
 [renpy]: https://renpy.org/
+[release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases
 
-[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
-[renpy-shield]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red?style=for-the-badge
-[development_status]: https://img.shields.io/badge/Fase%20de%20desarrollo-Alpha-blue?style=for-the-badge
+[renpy-badge]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red?style=for-the-badge
+[license-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[license-badge]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
+[status-badge]: https://img.shields.io/badge/Status-Alpha-blue?style=for-the-badge
+[release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
+
 
 <p align="center">
   <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
@@ -12,7 +15,7 @@
 
 <h1 align = "center"> Ren'Py RhythmBeats! </h1>
 
-[![cc-by-sa-shield]][cc-by-sa] [![renpy-shield]][renpy] ![development_status]
+[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
 
 <h5 align = "center">
     <i>[Sin documentación disponible - Alpha en desarrollo]</i>
@@ -23,10 +26,6 @@
 * **ÚLTIMA ACTUALIZACIÓN INTERNA: 28/12/2022**
 
 * **Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
-
-<!-- [release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases -->
-<!-- [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github -->
-<!-- [![release][release-badge]][release] -->
 
 ---
 ### Detalles importantes de desarrollo:
@@ -114,7 +113,7 @@
 
 ---
 ### Licencias:
-[![cc-by-sa-image]][cc-by-sa]
+[![license-image]][license]
 
 Este módulo se distribuye bajo la licencia **Creative Commons CC BY-SA v4.0**.
 
