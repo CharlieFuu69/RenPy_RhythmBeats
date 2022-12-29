@@ -20,6 +20,7 @@
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
 #### ¡Descargas disponibles!: Obtén la más reciente versión de demostración Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)
+* **ÚLTIMA ACTUALIZACIÓN INTERNA: 28/12/2022**
 
 ---
 ### 1. ¿Cómo se juega la versión de demostración de Ren'Py RhythmBeats?
@@ -46,26 +47,27 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 
 * **Project SEKAI: COLORFUL STAGE / Vocaloid:**
 
-|Pistas musicales|Artistas|BPM|Full Combo|2DMV|
+|Pistas musicales|Artistas/Unidad|BPM|Full Combo|MV|
 |---|---|---|---|---|
-|Highlight|Kira Ft. Hatsune Miku|130|253 notas|Si (Clip original)|
-|Gunjou Sanka (SEKAI Ver.)|Hatsune Miku, Ichika Hoshino... (4 más)|168|307 notas|Si (3DMV Project Sekai)|
+|Highlight|Kira Ft. Hatsune Miku|130|253 notas|MV: Ekkoberry, riguruma (MIKU EXPO 2021)|
+|Gunjou Sanka (SEKAI Ver.)|Hatsune Miku, Ichika Hoshino... (4 más)|168|307 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
 |Hand in Hand|Hatsune Miku / Kz|128|381 notas|No|
+|Angel's Clover|MORE MORE JUMP!|193|437 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
 
 
 * **Love Live!:**
 
-|Pistas musicales|Artistas/Unidad|BPM|Full Combo|2DMV|
+|Pistas musicales|Artistas/Unidad|BPM|Full Combo|MV|
 |---|---|---|---|---|
-|Mirai Bokura wa Shitteru yo|Aqours|181|229 notas|Si (Love Live! Sunshine!! S2 OP)|
-|MOMENT RING|μ's|196|368 notas|Si (3DMV Love Live! SIFAS)|
-|Ryouran! Victory Road|Love Live! Nijigasaki High School Idol Club|135|580 notas|Si (Fanmade: Henry L.)|
-|Snow Halation|μ's|173|305 notas|Si (3DMV Love Live! SIFAS)|
-|NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|Si (3DMV Love Live! SIFAS)|
+|Mirai Bokura wa Shitteru yo|Aqours|181|229 notas|MV: Love Live! Sunshine!! S2 OP|
+|MOMENT RING|μ's|196|368 notas|3DMV: "Love Live! SIF ALL STARS"|
+|Ryouran! Victory Road|Love Live! Nijigasaki High School Idol Club|135|580 notas|MV Fanmade: Henry L.|
+|Snow Halation|μ's|173|305 notas|3DMV: "Love Live! SIF ALL STARS"|
+|NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|3DMV: "Love Live! SIF ALL STARS"|
 
 * **Otras pistas:**
 
-|Pistas musicales|Artistas|BPM|Full Combo|2DMV|
+|Pistas musicales|Artistas|BPM|Full Combo|MV|
 |---|---|---|---|---|
 |The Anthem (Der Alte)|Dimitri Vegas & Like Mike|140|535 notas|No|
 
@@ -136,6 +138,9 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
     
 [27/Dic/2022 19:41 GMT -3]:
     - Actualización completa del README.md.
+    
+[28/Dic/2022 21:45 GMT -3]:
+    - Se está preparando una actualización para añadir una nueva pista jugable en la DEMO.
 ```
 
 ---
