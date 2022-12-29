@@ -22,7 +22,8 @@
 </h5>
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
-#### ¡Descarga de la DEMO!: Obtén la más reciente versión del juego demostrativo Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)
+#### ¡Descarga de la DEMO!: Obtén la más reciente versión del juego demostrativo Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)
+
 * **ÚLTIMA ACTUALIZACIÓN INTERNA: 28/12/2022**
 
 * **Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
