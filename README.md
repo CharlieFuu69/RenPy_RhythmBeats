@@ -2,9 +2,9 @@
 [renpy]: https://renpy.org/
 
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc-by-sa-shield]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen
-[renpy-shield]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red
-[development_status]: https://img.shields.io/badge/Fase%20de%20desarrollo-Alpha-blue
+[cc-by-sa-shield]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
+[renpy-shield]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red?style=for-the-badge
+[development_status]: https://img.shields.io/badge/Fase%20de%20desarrollo-Alpha-blue?style=for-the-badge
 
 <p align="center">
   <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
@@ -19,57 +19,14 @@
 </h5>
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
-#### ¡Descargas disponibles!: Obtén la más reciente versión de demostración Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)
+#### ¡Descarga de la DEMO!: Obtén la más reciente versión del juego demostrativo Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)
 * **ÚLTIMA ACTUALIZACIÓN INTERNA: 28/12/2022**
 
----
-### 1. ¿Cómo se juega la versión de demostración de Ren'Py RhythmBeats?
+* **Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
 
-<img align="center" src="https://user-images.githubusercontent.com/77955772/209073140-0bbd0583-4c06-47c4-a768-b42c4b7e660a.png"></img>
-<h4 align = "center"> [Interfaz de juego - 2DMV: Highlight] </h4>
-
-Las teclas asignadas para jugar son la `C` para la pista izquierda, y `M` para la pista derecha.
-
-#### INDICADOR DE HP:
-> En la esquina superior izquierda se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo.
-
-#### INDICADOR DE PRECISIÓN:
-> En la esquina superior derecha hay un indicador de precisión en tiempo real, que señala la diferencia media (en milisegundos) a la que aciertas las notas respecto del beatmap. Mientras más cerca estés de `0ms`, significará que tocas las notas con una precisión casi perfecta.
-> Una flecha **"◂"** indicará que tienes tendencia a tocar un poco antes de lo esperado, mientras que la flecha **"▸"** indicará que tienes tendencia a tocar un poco más tarde.
-
-#### CALIBRACIÓN MANUAL:
-> En caso de que tengas problemas de sincronización con la caída de las notas, puedes calibrar manualmente cualquier desfase desde el botón **"⚙"** en el menú de pistas musicales.
-
----
-### Lista de pistas musicales utilizadas para testeo:
-
-Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatmap creado y 2DMV añadido.
-
-* **Project SEKAI: COLORFUL STAGE / Vocaloid:**
-
-|Pistas musicales|Artistas/Unidad|BPM|Full Combo|MV|
-|---|---|---|---|---|
-|Highlight|Kira Ft. Hatsune Miku|130|253 notas|MV: Ekkoberry, riguruma (MIKU EXPO 2021)|
-|Gunjou Sanka (SEKAI Ver.)|Hatsune Miku, Ichika Hoshino... (4 más)|168|307 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
-|Hand in Hand|Hatsune Miku / Kz|128|381 notas|No|
-|Angel's Clover|MORE MORE JUMP!|193|437 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
-
-
-* **Love Live!:**
-
-|Pistas musicales|Artistas/Unidad|BPM|Full Combo|MV|
-|---|---|---|---|---|
-|Mirai Bokura wa Shitteru yo|Aqours|181|229 notas|MV: Love Live! Sunshine!! S2 OP|
-|MOMENT RING|μ's|196|368 notas|3DMV: "Love Live! SIF ALL STARS"|
-|Ryouran! Victory Road|Love Live! Nijigasaki High School Idol Club|135|580 notas|MV Fanmade: Henry L.|
-|Snow Halation|μ's|173|305 notas|3DMV: "Love Live! SIF ALL STARS"|
-|NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|3DMV: "Love Live! SIF ALL STARS"|
-
-* **Otras pistas:**
-
-|Pistas musicales|Artistas|BPM|Full Combo|MV|
-|---|---|---|---|---|
-|The Anthem (Der Alte)|Dimitri Vegas & Like Mike|140|535 notas|No|
+<!-- [release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases -->
+<!-- [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github -->
+<!-- [![release][release-badge]][release] -->
 
 ---
 ### Detalles importantes de desarrollo:
@@ -141,6 +98,10 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
     
 [28/Dic/2022 21:45 GMT -3]:
     - Se está preparando una actualización para añadir una nueva pista jugable en la DEMO.
+    
+[29/Dic/2022 02:10 GMT -3]:
+    - Actualización interna emitida. (Actualización: 67 MB | Total: 512 MB)
+    - Construcción experimental del módulo de Python en curso.
 ```
 
 ---
@@ -149,11 +110,10 @@ Aquí abajo se listarán las pistas musicales que hasta el momento tienen beatma
 |Versión|Detalles|URL|
 |---|---|---|
 |`v0.2.01a`|Lanzamiento #2 de demostración (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)|
-|`v0.1.19a`|Lanzamiento inicial para fines de pruebas| [Juego principal](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/Rhythm_Game-1.0-win.zip) - [Beatmaps](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/v0.1.19/beatmaps.zip)|
+|`v0.1.19a`|Lanzamiento inicial para fines de pruebas| Descontinuado |
 
 ---
 ### Licencias:
-## 3. Licencias:
 [![cc-by-sa-image]][cc-by-sa]
 
 Este módulo se distribuye bajo la licencia **Creative Commons CC BY-SA v4.0**.
