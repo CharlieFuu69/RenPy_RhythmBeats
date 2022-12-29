@@ -15,7 +15,7 @@
 [![cc-by-sa-shield]][cc-by-sa] [![renpy-shield]][renpy] ![development_status]
 
 ---
-### 1. ¿Cómo se juega el juego demostrativo?
+### 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?
 
 <img align="center" src="https://user-images.githubusercontent.com/77955772/209073140-0bbd0583-4c06-47c4-a768-b42c4b7e660a.png"></img>
 <h4 align = "center"> [Interfaz de juego - 2DMV: Highlight] </h4>
