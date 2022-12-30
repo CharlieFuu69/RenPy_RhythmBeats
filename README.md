@@ -22,7 +22,7 @@
 </h5>
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
-#### ¡Descarga de la DEMO!: Obtén la más reciente versión del juego demostrativo Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)
+#### ¡Descarga la DEMO!: Obtén la más reciente versión del juego demostrativo Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)
 
 * **¿No sabes cómo jugarlo? Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
 
@@ -47,7 +47,10 @@
 - [x] Adición de conteo de notas perfectas y fallidas (BRUH XD).
 - [x] Adición de cálculo de precisión promedio.
 - [x] Umbral de detección fijado en 100 ms (-100/+100).
-- [ ] Adaptar código núcleo a módulo de Python importable.
+- [x] Agregar ejecución de beatmaps en modo seguro (sin notas fallidas).
+- [x] Adaptar código núcleo a módulo de Python importable.
+- [x] Realizar pruebas del módulo de Python.
+- [ ] Agregar método para depuración de actividad.
 - [ ] Crear documentación del módulo.
 
 * **Juego de demostración "Ren'Py RhythmBeats!":**
@@ -64,29 +67,8 @@
 - [ ] Publicar el código fuente y los Assets del juego DEMO.
 
 ---
-### Registro de desarrollo:
+### Registro de actividad reciente:
 ```
-[19/Nov/2022 23:52 GMT -3]:
-    - Calibración de todos los beatmaps para alinear desfase a 0ms.
-    
-[20/Nov/2022 01:09 GMT -3]:
-    - Adición de panel de calibración para ajustar la diferencia de milisegundos de retraso o adelanto.
-    
-[20/Nov/2022 02:15 GMT -3]:
-    - Eliminación del sonido para los taps, pues su retraso resulta ser extremadamente molesto.
-    
-[20/Nov/2022 18:10 GMT -3]:
-    - Adición de control de atenuación para 2DMVs.
-    
-[04/Dic/2022 20:05 GMT -3]:
-    - Fallo encontrado: El panel de calibración manual no sirve de nada.
-    
-[04/Dic/2022 20:38 GMT -3]:
-    - El sistema de calibración fue corregido y está operando correctamente.
-    
-[16/Dic/2022 14:33 GMT -3]:
-    - Agregando 2 nuevas pistas de demostración. Serán reveladas cuando se publique una nueva release del juego de demostración.
-    
 [18/Dic/2022 02:35 GMT -3]:
     - Clasificando los archivos de cada pista musical en paquetes RPA individuales.
     - Integrando sistema de descarga/actualización por lotes de pistas musicales jugables.
@@ -104,6 +86,14 @@
 [29/Dic/2022 02:10 GMT -3]:
     - Actualización interna emitida. (Actualización: 67 MB | Total: 512 MB)
     - Construcción experimental del módulo de Python en curso.
+    
+[30/Dic/2022 03:40 GMT -3]:
+    - Se ha extrapolado el código principal del sistema rítmico a módulo de Python.
+    - Pruebas del módulo "rhythmbeats.py" exitosas.
+    - Al cargar los beatmaps, las listas con los timestamps han sido convertidas en tuplas para que pueda iterarse en un tiempo menor que el de costumbre.
+    - Se quitaron algunos atributos de la clase RhythmPlayground() porque se consideraron innecesarios.
+    - Se está agregando un método que servirá para depurar la actividad del sistema rítmico mientras se juega una pista.
+    - Se están haciendo cambios mínimos a la UI del juego demostrativo. Estos cambios se verán reflejados en la próxima actualización In-Game.
 ```
 
 ---
