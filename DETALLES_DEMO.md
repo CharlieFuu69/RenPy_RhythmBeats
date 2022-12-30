@@ -28,13 +28,7 @@ Las teclas asignadas para jugar son la `C` para la pista izquierda, y `M` para l
 > En caso de que tengas problemas de sincronización con la caída de las notas, puedes calibrar manualmente cualquier desfase desde el botón **"⚙"** en el menú de pistas musicales.
 
 ---
-### 2. ¿Estás teniendo problemas de "lag" (lentitud) en el juego?
-
-El juego puede "desgarrarse" cuando se está usando un dispositivo con **suministro energético por baterías**. Caso contrario sucede cuando se utiliza un cargador conectado a la computadora. Hace poco he descubierto que esto también se relaciona con el **renderizador/API gráfica**, donde <ins>**OpenGL2**</ins> tiene mejor performance que <ins>**ANGLE2**</ins>, incluso si el dispositivo está funcionando con baterías.
-En una futura actualización In-Game, se incluirá un control de gráficos en los ajustes del juego para que puedas seleccionar los FPS objetivo y la API gráfica que tenga mejor rendimiento en tu PC.
-
----
-### 3. Lista de pistas musicales utilizadas para testeo.
+### 2. Lista de pistas musicales utilizadas para testeo.
 
 Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores.
 
