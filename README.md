@@ -80,13 +80,19 @@
 [30/Dic/2022 03:40 GMT -3]:
     - Se ha extrapolado el código principal del sistema rítmico a módulo de Python.
     - Pruebas del módulo "rhythmbeats.py" exitosas.
-    - Al cargar los beatmaps, las listas con los timestamps han sido convertidas en tuplas para que pueda iterarse en un tiempo menor que el de costumbre.
-    - Se quitaron algunos atributos de la clase RhythmPlayground() porque se consideraron innecesarios.
-    - Se está agregando un método que servirá para depurar la actividad del sistema rítmico mientras se juega una pista.
-    - Se están haciendo cambios mínimos a la UI del juego demostrativo. Estos cambios se verán reflejados en la próxima actualización In-Game.
+    - Al cargar los beatmaps, las listas con los timestamps han sido convertidas en tuplas para
+      que pueda iterarse en un tiempo menor que el de costumbre.
+    - Se quitaron algunos atributos de la clase RhythmPlayground() porque se consideraron
+      innecesarios.
+    - Se está agregando un método que servirá para depurar la actividad del sistema rítmico
+      mientras se juega una pista.
+    - Se están haciendo cambios mínimos a la UI del juego demostrativo. Estos cambios se verán
+      reflejados en la próxima actualización In-Game.
     
 [31/Dic/2022 00:42 GMT -3]:
-    - 630 notas bastaron para hacer caer la tasa de fotogramas a 27 FPS. Muchas notas = sentencia de muerte xd.
+    - Intenté hacer el beatmap de una canción, y la verdad es que 630 notas bastaron para hacer
+      caer la tasa de fotogramas a 27 FPS.
+      Algo que aprendí de mi juego: Muchas notas = sentencia de muerte XD.
 ```
 
 ---
