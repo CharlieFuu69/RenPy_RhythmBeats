@@ -2,7 +2,7 @@
 [renpy]: https://renpy.org/
 [release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases
 
-[renpy-badge]: https://img.shields.io/badge/Motor%20Gráfico-Ren'Py-red?style=for-the-badge
+[renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
 [license-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [license-badge]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
 [status-badge]: https://img.shields.io/badge/Status-Alpha-ff0000?style=for-the-badge
@@ -34,7 +34,7 @@
 ### Detalles importantes de desarrollo:
 * _**[COMPATIBILIDAD]:** No es compatible con Android. Se utilizan teclas de un teclado de PC para las interacciones._
 * _**[COMPATIBILIDAD]:** En un futuro intento de portear para Android, este no será compatible con gestos o multitouch (múltiples dedos en el táctil), por lo tanto, no es posible colocar taps simultáneos._
-* _**[RENDIMIENTO]:** Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas (marcas de tiempo), o si se incluyen 2DMVs._
+* _**[RENDIMIENTO]:** Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas visibles en pantalla (500 a 600 Notas cae a 25-30 FPS)._
 * _**[REQUERIMIENTOS DE HARDWARE]:** El juego de demostración está siendo probada en una máquina con **8 GB** de RAM, procesador de **1.1 GHz** x8 núcleos y **2 GB** de VRAM._
 
 ---
@@ -69,22 +69,12 @@
 ---
 ### Registro de actividad reciente:
 ```
-[18/Dic/2022 02:35 GMT -3]:
-    - Clasificando los archivos de cada pista musical en paquetes RPA individuales.
-    - Integrando sistema de descarga/actualización por lotes de pistas musicales jugables.
-    
-[22/Dic/2022 04:04 GMT -3]:
-    - Se ha terminado de calibrar los mapas y las canciones.
-    - Versión v0.2.01a publicada en GitHub.
-    
-[27/Dic/2022 19:41 GMT -3]:
-    - Actualización completa del README.md.
     
 [28/Dic/2022 21:45 GMT -3]:
     - Se está preparando una actualización para añadir una nueva pista jugable en la DEMO.
     
 [29/Dic/2022 02:10 GMT -3]:
-    - Actualización interna emitida. (Actualización: 67 MB | Total: 512 MB)
+    - Actualización interna emitida (#03). (Actualización: 67 MB | Total: 512 MB)
     - Construcción experimental del módulo de Python en curso.
     
 [30/Dic/2022 03:40 GMT -3]:
@@ -94,6 +84,9 @@
     - Se quitaron algunos atributos de la clase RhythmPlayground() porque se consideraron innecesarios.
     - Se está agregando un método que servirá para depurar la actividad del sistema rítmico mientras se juega una pista.
     - Se están haciendo cambios mínimos a la UI del juego demostrativo. Estos cambios se verán reflejados en la próxima actualización In-Game.
+    
+[31/Dic/2022 00:42 GMT -3]:
+    - 630 notas bastaron para hacer caer la tasa de fotogramas a 27 FPS. Muchas notas = sentencia de muerte xd.
 ```
 
 ---
