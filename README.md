@@ -77,7 +77,7 @@
       Algo que aprendí de mi juego: Muchas notas = sentencia de muerte XD.
       
 [31/Dic/2022 22:02 GMT -3]:
-    - Actualización interna emitida (#04) (Actualización: 90 MB | Total: ).
+    - Actualización interna emitida (#04) (Actualización: 90 MB | Total: 588 MB).
       Los detalles completos de la actualización se encuentran en la etiqueta "v0.2.01a_upd04".
     - Pruebas piloto del módulo de Python en curso a partir de "v0.2.01a_upd04".
 ```
