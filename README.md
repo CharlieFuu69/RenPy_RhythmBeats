@@ -28,7 +28,7 @@
 
 ---
 
-* **ÚLTIMA ACTUALIZACIÓN DE RECURSOS: 28/12/2022**
+* **ÚLTIMA ACTUALIZACIÓN DE RECURSOS: 31/12/2022**
 
 ---
 ### Detalles importantes de desarrollo:
@@ -41,38 +41,20 @@
 ### Tasklist:
 * **Módulo de Python `rhythmbeats.py`:**
 
-- [x] Adición de umbral de detección (Threshold) y compensación de timing (Offset).
-- [x] Detector de beatmap terminado.
-- [x] Adición de conteo de Combo.
-- [x] Adición de conteo de notas perfectas y fallidas (BRUH XD).
-- [x] Adición de cálculo de precisión promedio.
-- [x] Umbral de detección fijado en 100 ms (-100/+100).
 - [x] Agregar ejecución de beatmaps en modo seguro (sin notas fallidas).
 - [x] Adaptar código núcleo a módulo de Python importable.
 - [x] Realizar pruebas del módulo de Python.
-- [ ] Agregar método para depuración de actividad.
+- [x] Agregar método para depuración de actividad.
 - [ ] Crear documentación del módulo.
 
 * **Juego de demostración "Ren'Py RhythmBeats!":**
 
-- [x] Lectura y procesado de archivos `.beat` (Beatmap).
-- [x] Adición de capa para 2DMV (basado en video).
-- [x] Adición de menú de selección de pistas musicales.
-- [x] Adición de pantallas de inicio de pista, pista finalizada (Full Combo/Show Clear/Show Failed), y resultados finales de la partida.
-- [x] Reorganizar metadatos de pistas musicales.
-- [x] Modificar estructura de archivos `.beat`
-- [x] Agregar sistema de descarga de pistas musicales
-- [x] Agregar panel de calibración manual.
-- [x] Agregar control de Alpha para atenuar manualmente el fondo de 2DMVs.
+- [x] Agregar ajustes de sistema en el panel de configuración del juego.
 - [ ] Publicar el código fuente y los Assets del juego DEMO.
 
 ---
 ### Registro de actividad reciente:
-```
-    
-[28/Dic/2022 21:45 GMT -3]:
-    - Se está preparando una actualización para añadir una nueva pista jugable en la DEMO.
-    
+``` 
 [29/Dic/2022 02:10 GMT -3]:
     - Actualización interna emitida (#03). (Actualización: 67 MB | Total: 512 MB)
     - Construcción experimental del módulo de Python en curso.
@@ -93,6 +75,11 @@
     - Intenté hacer el beatmap de una canción, y la verdad es que 630 notas bastaron para hacer
       caer la tasa de fotogramas a 27 FPS.
       Algo que aprendí de mi juego: Muchas notas = sentencia de muerte XD.
+      
+[31/Dic/2022 22:02 GMT -3]:
+    - Actualización interna emitida (#04) (Actualización: 90 MB | Total: ).
+      Los detalles completos de la actualización se encuentran en la etiqueta "v0.2.01a_upd04".
+    - Pruebas piloto del módulo de Python en curso a partir de "v0.2.01a_upd04".
 ```
 
 ---
