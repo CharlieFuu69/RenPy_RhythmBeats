@@ -51,6 +51,7 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 |Ryouran! Victory Road|Love Live! Nijigasaki High School Idol Club|135|580 notas|MV Fanmade: Henry L.|
 |Snow Halation|μ's|173|305 notas|3DMV: "Love Live! SIF ALL STARS"|
 |NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|3DMV: "Love Live! SIF ALL STARS"|
+|BANZAI! digital trippers|Aqours Ft. Hatsune Miku|180|418 notas|MV/CGI: SUNRISE, Lantis, KADOKAWA.|
 
 * **Otras pistas:**
 
