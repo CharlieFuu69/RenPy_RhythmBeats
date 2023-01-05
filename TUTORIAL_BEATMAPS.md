@@ -135,7 +135,7 @@ La herramienta ofrece un comando de trabajo que abre estos archivos en modo de s
 
 Por lo general, los errores en la herramienta son notificados de forma clara. Sin embargo, pueden haber errores emitidos por el procesamiento de archivos MIDI durante la conversión o en actividades de solo lectura.
 
-* **Error `IOError('data byte must be in range 0..127')`:
+* **Error `IOError('data byte must be in range 0..127')`:**
 
 Este error se da generalmente cuando el archivo MIDI está corrupto. Una solución posible es que vuelvas a exportar el archivo MIDI desde el programa que estás creando las secuencias.
 
