@@ -64,12 +64,16 @@ Esta herramienta es un programa CLI que se encarga de abrir los archivos MIDI y 
 **Paso 1:**
 
 > Abre tu terminal (CMD). Si no sabes donde está, escribe en la búsqueda **"CMD"** y te aparecerá de inmediato.
-> <img width="80%" height="80%" src="https://user-images.githubusercontent.com/77955772/210672247-9c714c8b-a1e0-45b0-b31b-da0addfdbf1e.png">
+> 
+> <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210672247-9c714c8b-a1e0-45b0-b31b-da0addfdbf1e.png">
 
 
 **Paso 2:**
 
 > Navega desde la línea de comandos hasta el directorio donde está ubicado el archivo `beatmap.exe`. Aquí verás que he navegado hasta una carpeta llamada `my_beatmaps`.
+> 
+> <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210673543-089cbdef-83d6-4e8c-ab81-0cc773d07779.png">
+
 
 **Paso 3:**
 
@@ -82,16 +86,21 @@ Esta herramienta es un programa CLI que se encarga de abrir los archivos MIDI y 
 **Paso 4:**
 
 > Cuando se haya ejecutado el comando anterior, la herramienta se iniciará en modo conversión. Cuando esto suceda, se abrirá una ventana del explorador solicitando el archivo `.mid` (MIDI) que quieres convertir. Clickea dos veces y se procesará el archivo MIDI.
+> 
+> <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210673798-979a659c-731b-4b6d-8db6-1c865ab8b782.png">
+
 
 **Paso 5:**
 
 > Si todo salió sin errores, verás una lectura de los pitchs detectados en ese archivo MIDI, seguido de que se abrirá una nueva ventana del explorador donde debes seleccionar el lugar en que debe guardarse el archivo convertido. Por supuesto, debes darle un nombre a ese archivo. La misma herramienta le dará la extensión `.beat` al guardar.
+> 
+> <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210677021-8323239e-2627-435f-a6b8-b99b879f6b07.png">
+> 
+> Cuando el proceso finalice, verás una lectura con las estadísticas de la secuencia que hiciste, es decir, la cantidad de notas en las pistas (L y R), y el Full Combo que corresponde a la suma de ambas cantidades. Una vez terminado el proceso, ya podrás ver el archivo `.beat` en el directorio del ejecutable.
+> 
+> <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210677693-d133b834-862b-4c98-94cd-5d721fa681e0.png">
 
-Cuando el proceso finalice, verás una lectura con las estadísticas de la secuencia que hiciste, es decir, la cantidad de notas en las pistas (L y R), y el Full Combo que corresponde a la suma de ambas cantidades.
-
-Si abres el archivo `.beat` creado, verás algo como esto:
-
-
+Este archivo es el que se usa para que el juego pueda mostrar la cascada de notas en pantalla. El contenido son solo números que representan el tiempo donde el jugador debe tocar las teclas.
 
 ---
 
@@ -110,6 +119,9 @@ La herramienta ofrece un comando de trabajo que abre estos archivos en modo de s
 **Paso 2:**
 
 > Cuando se haya ejecutado el comando anterior, la herramienta se iniciará en modo de lectura. Cuando esto suceda, se abrirá una ventana del explorador solicitando un archivo `.mid` (MIDI) o `.beat` (beatmap) . Clickea dos veces y se procesará el archivo seleccionado.
+> 
+> <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210678176-54cb27c4-a4b5-4cea-a341-b942a0afb166.png">
+
 
 **Paso 3:**
 
