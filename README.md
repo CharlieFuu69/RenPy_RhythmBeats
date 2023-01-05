@@ -21,10 +21,14 @@
     <i>[Sin documentación disponible - Alpha en desarrollo]</i>
 </h5>
 
-<img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
-#### ¡Descarga la DEMO!: Obtén la más reciente versión del juego demostrativo Alpha [Presionando Aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)
+### Descargas y más:
 
-* **¿No sabes cómo jugarlo? Mira los detalles del juego demostrativo [Presionando Aquí!](DETALLES_DEMO.md)**
+<img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
+#### ¡Descarga la DEMO!: Obtén la última versión del juego demostrativo Alpha [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)
+
+* **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando Aquí!](DETALLES_DEMO.md)**
+
+* **¿Necesitas un tutorial para crear tus propios Beatmaps en "Ren'Py RhythmBeats!"? [Entra al tutorial aquí!](TUTORIAL_BEATMAPS.md)**
 
 ---
 
@@ -45,32 +49,16 @@
 - [x] Adaptar código núcleo a módulo de Python importable.
 - [x] Realizar pruebas del módulo de Python.
 - [x] Agregar método para depuración de actividad.
-- [ ] Crear documentación del módulo.
+- [ ] Crear documentación del módulo (En proceso).
 
 * **Juego de demostración "Ren'Py RhythmBeats!":**
 
 - [x] Agregar ajustes de sistema en el panel de configuración del juego.
-- [ ] Publicar el código fuente y los Assets del juego DEMO.
+- [ ] Publicar el código fuente y los Assets del juego DEMO (En proceso).
 
 ---
 ### Registro de actividad reciente:
 ``` 
-[29/Dic/2022 02:10 GMT -3]:
-    - Actualización interna emitida (#03). (Actualización: 67 MB | Total: 512 MB)
-    - Construcción experimental del módulo de Python en curso.
-    
-[30/Dic/2022 03:40 GMT -3]:
-    - Se ha extrapolado el código principal del sistema rítmico a módulo de Python.
-    - Pruebas del módulo "rhythmbeats.py" exitosas.
-    - Al cargar los beatmaps, las listas con los timestamps han sido convertidas en tuplas para
-      que pueda iterarse en un tiempo menor que el de costumbre.
-    - Se quitaron algunos atributos de la clase RhythmPlayground() porque se consideraron
-      innecesarios.
-    - Se está agregando un método que servirá para depurar la actividad del sistema rítmico
-      mientras se juega una pista.
-    - Se están haciendo cambios mínimos a la UI del juego demostrativo. Estos cambios se verán
-      reflejados en la próxima actualización In-Game.
-    
 [31/Dic/2022 00:42 GMT -3]:
     - Intenté hacer el beatmap de una canción, y la verdad es que 630 notas bastaron para hacer
       caer la tasa de fotogramas a 27 FPS.
@@ -80,6 +68,12 @@
     - Actualización interna emitida (#04) (Actualización: 90 MB | Total: 588 MB).
       Los detalles completos de la actualización se encuentran en la etiqueta "v0.2.01a_upd04".
     - Pruebas piloto del módulo de Python en curso a partir de "v0.2.01a_upd04".
+    
+[05/01/2023 03:24 GMT -3]:
+    ¡Primera actualización de progreso de este año!
+    - El código fuente del juego demostrativo está en proceso de subirse.
+    - Dentro de poco, Ren'Py RhythmBeats pasará a la etapa de desarrollo Beta. Esto significa que la documentación está en proceso de ser escrita y el módulo podrá ser utilizado por todos.
+    - Se tiene prevista una nueva actualización In-Game, donde se agregará una nueva canción al juego (Probablemente... del Project SEKAI).
 ```
 
 ---
