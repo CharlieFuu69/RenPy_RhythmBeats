@@ -1,2 +1,0 @@
-Aquí se aloja el código fuente de la herramienta de conversión, del módulo "rhythmbeats.py" y del juego demostrativo.
-Este archivo tiene nula importancia.
