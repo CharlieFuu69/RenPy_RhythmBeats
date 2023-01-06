@@ -18,17 +18,17 @@
 [![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
 
 <h5 align = "center">
-    <i>[Sin documentación disponible - Alpha en desarrollo]</i>
+    <i>[Sin documentación disponible - ¡Fase Beta en camino!]</i>
 </h5>
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
 <h3> Descargas y más: </h3>
 
-* **¡Descarga la DEMO!: Obtén la última versión del juego demostrativo Alpha [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
+* **¡Descarga el juego DEMO!: Obtén la última Alpha [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
 
 * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando Aquí!](DETALLES_DEMO.md)**
 
-* **¿Necesitas un tutorial para crear tus propios Beatmaps en "Ren'Py RhythmBeats!"? [Entra al tutorial aquí!](TUTORIAL_BEATMAPS.md)**
+* **¿Necesitas un tutorial para crear tus propios Beatmaps en "Ren'Py RhythmBeats!"? [Entra al tutorial aquí!](TUTORIAL_BEATMAPS.md) y descarga la herramienta de conversión [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01)**
 
 ---
 
@@ -87,6 +87,10 @@
 [06/01/2023 16:58 GMT -3]:
     - Terminé mi análisis del juego demostrativo. Cuando los FPS caen, noto una subida en el porcentaje de uso de la CPU.
       ¿Cómo decremento el uso de CPU? ¿Debería intentar hacer paginación a las tuplas del beatmap?...
+      
+[06/01/2023 19:49 GMT -3]:
+    - Se liberó la herramienta de conversión de MIDI a Beatmap, y se liberó el tutorial definitivo para crear beatmaps.
+    - Se reorganizarán las documentaciones y tutoriales en carpetas separadas dentro del repositorio.
 ```
 
 ---
