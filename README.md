@@ -28,7 +28,7 @@
 
 * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando Aquí!](DETALLES_DEMO.md)**
 
-* **¿Necesitas un tutorial para crear tus propios Beatmaps en "Ren'Py RhythmBeats!"? [Entra al tutorial aquí!](TUTORIAL_BEATMAPS.md) y descarga la herramienta de conversión [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01)**
+* **¿Necesitas un tutorial para crear tus propios Beatmaps en "Ren'Py RhythmBeats!"? [Entra al tutorial aquí!](docs/beatmapping/TUTORIAL_BEATMAPS.md) y descarga la herramienta de conversión [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01)**
 
 ---
 
