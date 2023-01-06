@@ -5,14 +5,15 @@
 <h1 align = "center"> Tutorial: ¿Cómo crear beatmaps para Ren'Py RhythmBeats? </h1>
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"></img>
-#### ¡Pronto estará disponible la herramienta de conversión!
+#### ¡Descarga disponible de la herramienta `beatmap.exe`! Consulta el link de descarga [en este pre-lanzamiento](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01)
 
 En este documento podrás encontrar todo lo necesario para empezar a crear secuencias de Beatmaps y utilizarlas con **Ren'Py RhythmBeats!**.
 
 Antes de comenzar el tutorial, debes tener las siguientes consideraciones para crear tus beatmaps:
 
 * Los beatmaps <ins>**deben hacerse manualmente**</ins> (al menos por ahora). Esto quiere decir de que debes utilizar algún software musical que te permita crear secuencias con instrumentos, como **FL Studio (Mobile o Desktop), Abbleton**, etc, y crear a oído los patrones de toques.
-* Debes descargar la herramienta de conversión **`beatmap.exe`** para hacer las conversiones de beatmaps.
+
+* Debes descargar la herramienta de conversión **`beatmap.exe`** para hacer las conversiones de beatmaps. Arriba está el link de descarga.
 
 ---
 
@@ -36,7 +37,7 @@ Sintetizando el video, debes hacer lo siguiente:
 
 * Agregar un archivo de audio en otro canal para reproducirlo en paralelo y así crear tu secuencia de taps.
 
-* Estabilizar los BPM del metrónomo de la app con los BPM de la canción que quieres incluir en tu juego, así la malla de la línea de tiempo es más precisa para colocar los taps.
+* Sincronizar los BPM del metrónomo con los BPM de la canción que quieres incluir en tu juego. De esa forma la malla de la línea de tiempo queda más alineado para colocar los taps.
 
 * Apagar todos los canales, a excepción del canal de **Drums** y el canal **MASTER** (que no se puede desactivar, ya que es el control maestro del proyecto xd).
 
@@ -52,7 +53,7 @@ Sintetizando el video, debes hacer lo siguiente:
 
 ## 2. ¿Cómo usar la herramienta `beatmap.exe` para convertir archivos MIDI en Beatmaps (.beat)?
 
-`beatmap.exe` es un programa CLI (Command Line Interface) que he creado para facilitar el proceso de conversión de archivos `.mid` (MIDI) a un archivo Beatmap `beat` legible para **"Ren'Py RhythmBeats!"**.
+`beatmap.exe` es un programa CLI (Command Line Interface) que he creado para facilitar el proceso de conversión de archivos `.mid` (MIDI) hacia un archivo `.beat` (Beatmap) legible para **"Ren'Py RhythmBeats!"**.
 Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windows, pero he creado un tutorial abajo que te puede ayudar a usarlo.
 
 ---
@@ -68,7 +69,7 @@ Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windo
 
 * **Paso 2:**
 
-  Navega desde la línea de comandos hasta el directorio donde está ubicado el archivo `beatmap.exe`. Aquí verás que he navegado hasta una carpeta llamada `my_beatmaps`.
+  Navega desde la línea de comandos hasta el directorio donde está ubicado el archivo `beatmap.exe`. Aquí verás que he navegado hasta una carpeta llamada `my_beatmaps` con el comando `cd`.
 
   > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210673543-089cbdef-83d6-4e8c-ab81-0cc773d07779.png">
 
@@ -83,22 +84,22 @@ Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windo
 
 * **Paso 4:**
 
-  Cuando se haya ejecutado el comando anterior, la herramienta se iniciará en modo conversión. Cuando esto suceda, se abrirá una ventana del explorador solicitando el archivo `.mid` (MIDI) que quieres convertir. Clickea dos veces y se procesará el archivo MIDI.
+  Cuando se haya ejecutado el comando anterior, la herramienta se iniciará en modo conversión. Cuando esto suceda se abrirá una ventana del explorador solicitando el archivo `.mid` (MIDI) que quieres convertir. Clickea dos veces el archivo y se procesará el archivo MIDI.
 
   > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210673798-979a659c-731b-4b6d-8db6-1c865ab8b782.png">
 
 
 * **Paso 5:**
 
-  Si todo salió sin errores, verás una lectura de los pitchs detectados en ese archivo MIDI, seguido de que se abrirá una nueva ventana del explorador donde debes seleccionar el lugar en que debe guardarse el archivo convertido. Por supuesto, debes darle un nombre a ese archivo. La misma herramienta le dará la extensión `.beat` al guardar.
+  Si todo salió sin errores, verás una lectura de los pitchs detectados en ese archivo MIDI seguido de que se abrirá una nueva ventana del explorador, donde debes seleccionar el lugar en que debe guardarse el archivo convertido. Por supuesto, debes darle un nombre a ese archivo. La misma herramienta le dará la extensión `.beat` al guardar.
 
   > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210677021-8323239e-2627-435f-a6b8-b99b879f6b07.png">
 
-Cuando el proceso haya finalizado, verás una lectura con las estadísticas de la secuencia que hiciste, es decir, la cantidad de notas en las pistas (L y R), y el Full Combo que corresponde a la suma de ambas cantidades. Una vez terminado el proceso, ya podrás ver el archivo `.beat` en el directorio del ejecutable.
+Cuando el proceso haya finalizado verás una lectura con las estadísticas de la secuencia que hiciste, es decir, la **cantidad de notas en las pistas (L y R)**, y el **Full Combo** que corresponde a la suma de ambas cantidades. Una vez terminado el proceso, ya podrás ver el archivo `.beat` en el directorio donde lo guardaste.
 
 <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210677693-d133b834-862b-4c98-94cd-5d721fa681e0.png">
 
-Este archivo es el que se usa para que el juego pueda mostrar la cascada de notas en pantalla. El contenido son solo números que representan el tiempo donde el jugador debe tocar las teclas.
+Este archivo `.beat` es el que se usa para que el juego pueda mostrar la cascada de notas en pantalla. El contenido son solo números que representan el tiempo donde el jugador debe tocar las teclas.
 
 ---
 
@@ -122,7 +123,7 @@ La herramienta ofrece un comando de trabajo que abre estos archivos en modo de s
 * **Paso 3:**
 
   Si los archivos fueron procesados correctamente, debería visualizarse las estadísticas del Beatmap.
-  Si deseas ver la secuencia completa del beatmap en pantalla, escribe `Y` y pulsa `ENTER`.
+  Para ver una tabla con el índice y la secuencia completa del beatmap en pantalla, escribe `Y` y pulsa `ENTER`.
   
   > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210709429-98c8a065-2fb0-4e7f-9875-ae06835c2011.png">
 
@@ -132,10 +133,10 @@ La herramienta ofrece un comando de trabajo que abre estos archivos en modo de s
 
 Por lo general, los errores en la herramienta son notificados de forma clara. Sin embargo, pueden haber errores emitidos por el procesamiento de archivos MIDI durante la conversión o en actividades de solo lectura. Estos errores son los siguientes:
 
-* **Error `IOError('data byte must be in range 0..127')`:**
+* **Error "`IOError('data byte must be in range 0..127')`":**
   Este error se da generalmente cuando el archivo MIDI está corrupto o ha sido creado con errores. Una solución posible es que vuelvas a exportar el archivo MIDI desde el programa que estás creando las secuencias.
   
-* **Error `Conversión abortada. Se detectaron más de 2 pitchs en la secuencia MIDI.`:**
+* **Error "`Conversión abortada. Se detectaron más de 2 pitchs en la secuencia MIDI.`":**
   Este error ocurre cuando creas una secuencia con más de 2 instrumentos en el canal de Drums (u otro canal que estés usando). El sistema rítmico de **Ren'Py RhythmBeats** solo admite 2 pistas para la cascada de notas en pantalla, por lo que solo puedes usar 2 instrumentos dentro del canal de Drums.
 
 ---
@@ -146,10 +147,10 @@ Por lo general, los errores en la herramienta son notificados de forma clara. Si
   
   `pretty_midi` es una librería para manipulación de datos MIDI. [(Código fuente)](https://github.com/craffel/pretty-midi).
 
-* **pyinstaller:**
-  
-  `pyinstaller` es una utilidad que permite empaquetar scripts Python (y sus librerías importadas) en un ejecutable de Windows. [(Código fuente)](https://github.com/pyinstaller/pyinstaller).
-
 * **python-tabulate**
   
   `tabulate` es una librería que sirve para dar formato de tablas a datos dentro en una interfaz de línea de comandos. [(Código fuente)](https://github.com/astanin/python-tabulate).
+  
+* **pyinstaller:**
+  
+  `pyinstaller` es una utilidad que permite empaquetar scripts Python (y sus librerías importadas) en un ejecutable de Windows. [(Código fuente)](https://github.com/pyinstaller/pyinstaller).
