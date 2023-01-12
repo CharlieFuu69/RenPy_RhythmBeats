@@ -68,20 +68,11 @@
 ---
 ### Registro de actividad reciente:
 ``` 
-[31/Dic/2022 00:42 GMT -3]:
-    - Intenté hacer el beatmap de una canción, y la verdad es que 630 notas bastaron para hacer
-      caer la tasa de fotogramas a 27 FPS.
-      Algo que aprendí de mi juego: Muchas notas = sentencia de muerte XD.
-      
-[31/Dic/2022 22:02 GMT -3]:
-    - Actualización interna emitida (#04) (Actualización: 90 MB | Total: 588 MB).
-      Los detalles completos de la actualización se encuentran en la etiqueta "v0.2.01a_upd04".
-    - Pruebas piloto del módulo de Python en curso a partir de "v0.2.01a_upd04".
-    
 [05/01/2023 03:24 GMT -3]:
     ¡Primera actualización de progreso de este año!
     - El código fuente del juego demostrativo está en proceso de subirse.
-    - Dentro de poco, Ren'Py RhythmBeats pasará a la etapa de desarrollo Beta. Esto significa que la documentación está en proceso de ser escrita y el módulo podrá ser utilizado por todos.
+    - Dentro de poco, Ren'Py RhythmBeats pasará a la etapa de desarrollo Beta. Esto significa que la documentación está
+      en proceso de ser escrita y el módulo podrá ser utilizado por todos.
     - Se tiene prevista una nueva actualización In-Game, donde se agregará una nueva canción al juego (Probablemente... del Project SEKAI).
     
 [06/01/2023 16:58 GMT -3]:
@@ -91,6 +82,11 @@
 [06/01/2023 19:49 GMT -3]:
     - Se liberó la herramienta de conversión de MIDI a Beatmap, y se liberó el tutorial definitivo para crear beatmaps.
     - Se reorganizarán las documentaciones y tutoriales en carpetas separadas dentro del repositorio.
+    
+[12/01/2023 04:26 GMT -3]:
+    - OOOOH MIERDA! Logré incrementar los fotogramas desde 25 a 45 FPS gracias al SpriteManager(), pero aún hay un problema...
+      LAS NOTAS SE ME SIGUEN ALINEANDO EN LA ESQUINA SUPERIOR IZQUIERDA PUTA MADREEEEE!!!
+    
 ```
 
 ---
