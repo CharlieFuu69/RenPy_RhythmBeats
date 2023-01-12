@@ -73,7 +73,8 @@
     - El código fuente del juego demostrativo está en proceso de subirse.
     - Dentro de poco, Ren'Py RhythmBeats pasará a la etapa de desarrollo Beta. Esto significa que la documentación está
       en proceso de ser escrita y el módulo podrá ser utilizado por todos.
-    - Se tiene prevista una nueva actualización In-Game, donde se agregará una nueva canción al juego (Probablemente... del Project SEKAI).
+    - Se tiene prevista una nueva actualización In-Game, donde se agregará una nueva canción al juego
+      (Probablemente... del Project SEKAI).
     
 [06/01/2023 16:58 GMT -3]:
     - Terminé mi análisis del juego demostrativo. Cuando los FPS caen, noto una subida en el porcentaje de uso de la CPU.
@@ -84,8 +85,9 @@
     - Se reorganizarán las documentaciones y tutoriales en carpetas separadas dentro del repositorio.
     
 [12/01/2023 04:26 GMT -3]:
-    - OOOOH MIERDA! Logré incrementar los fotogramas desde 25 a 45 FPS gracias al SpriteManager(), pero aún hay un problema...
-      LAS NOTAS SE ME SIGUEN ALINEANDO EN LA ESQUINA SUPERIOR IZQUIERDA PUTA MADREEEEE!!!
+    - OOOOH MIERDA! Logré incrementar los fotogramas desde 25 a 45 FPS gracias al SpriteManager(),
+      pero aún hay un problema... LAS NOTAS SE ME SIGUEN ALINEANDO EN LA ESQUINA SUPERIOR IZQUIERDA
+      PUTA MADREEEEE!!!
     
 ```
 
