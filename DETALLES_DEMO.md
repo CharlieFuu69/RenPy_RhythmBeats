@@ -38,8 +38,10 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 |---|---|---|---|---|
 |Highlight|Kira Ft. Hatsune Miku|130|253 notas|MV: Ekkoberry, riguruma (MIKU EXPO 2021)|
 |Gunjou Sanka (SEKAI Ver.)|Hatsune Miku, Ichika Hoshino... (4 más)|168|307 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
-|Hand in Hand|Hatsune Miku / Kz|128|381 notas|No|
+|Hand in Hand|Hatsune Miku / Kz|128|381 notas|No añadido|
 |Angel's Clover|MORE MORE JUMP!|193|437 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
+|Greenlights Serenade|Hatsune Miku|200|443 notas|No añadido|
+|Happy Synthesizer (SEKAI Ver.)|MORE MORE JUMP!|127|592 notas|3DMV: "Project SEKAI: COLORFUL STAGE!"|
 
 
 * **Love Live!:**
@@ -52,9 +54,10 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 |Snow Halation|μ's|173|305 notas|3DMV: "Love Live! SIF ALL STARS"|
 |NEO SKY, NEO MAP!|Love Live! Nijigasaki High School Idol Club|142|276 notas|3DMV: "Love Live! SIF ALL STARS"|
 |BANZAI! digital trippers|Aqours Ft. Hatsune Miku|180|418 notas|MV/CGI: SUNRISE, Lantis, KADOKAWA.|
+|START!! True dreams|Liella!|178|268 notas|MV: "Love Live! Superstar!! S1 OP"|
 
 * **Otras pistas:**
 
 |Pistas musicales|Artistas|BPM|Full Combo|MV|
 |---|---|---|---|---|
-|The Anthem (Der Alte)|Dimitri Vegas & Like Mike|140|535 notas|No|
+|The Anthem (Der Alte)|Dimitri Vegas & Like Mike|140|535 notas|No añadido|
