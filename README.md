@@ -32,7 +32,7 @@
 
 ---
 
-* **ÚLTIMA ACTUALIZACIÓN DE RECURSOS: 31/12/2022**
+* **ÚLTIMA ACTUALIZACIÓN DE RECURSOS: 13/01/2023**
 
 ---
 ### Detalles importantes de desarrollo:
@@ -67,15 +67,7 @@
 
 ---
 ### Registro de actividad reciente:
-``` 
-[05/01/2023 03:24 GMT -3]:
-    ¡Primera actualización de progreso de este año!
-    - El código fuente del juego demostrativo está en proceso de subirse.
-    - Dentro de poco, Ren'Py RhythmBeats pasará a la etapa de desarrollo Beta. Esto significa que la documentación está
-      en proceso de ser escrita y el módulo podrá ser utilizado por todos.
-    - Se tiene prevista una nueva actualización In-Game, donde se agregará una nueva canción al juego
-      (Probablemente... del Project SEKAI).
-    
+```     
 [06/01/2023 16:58 GMT -3]:
     - Terminé mi análisis del juego demostrativo. Cuando los FPS caen, noto una subida en el porcentaje de uso de la CPU.
       ¿Cómo decremento el uso de CPU? ¿Debería intentar hacer paginación a las tuplas del beatmap?...
@@ -88,6 +80,11 @@
     - OOOOH MIERDA! Logré incrementar los fotogramas desde 25 a 45 FPS gracias al SpriteManager(),
       pero aún hay un problema... LAS NOTAS SE ME SIGUEN ALINEANDO EN LA ESQUINA SUPERIOR IZQUIERDA
       PUTA MADREEEEE!!!
+      
+[13/01/2023 05:44 GMT -3]:
+    - Se emitió la actualización global v0.3.01a, junto con la adición de 3 nuevas pistas musicales.
+      Tamaño de actualización de recursos: 96.75 MB.
+      Tamaño total de recursos: 671.88 MB.
     
 ```
 
@@ -96,14 +93,15 @@
 
 |Versión|Detalles|URL|
 |---|---|---|
-|`v0.2.01a`|Lanzamiento #2 de demostración (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a)|
+|`v0.3.01a`|Lanzamiento #3 de demostración (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)|
+|`v0.2.01a`|Lanzamiento #2 de demostración| Descontinuado |
 |`v0.1.19a`|Lanzamiento inicial para fines de pruebas| Descontinuado |
 
 ---
 ### Licencias:
 [![license-image]][license]
 
-Este módulo se distribuye bajo la licencia **Creative Commons CC BY-SA v4.0**.
+Este juego demostrativo/módulo, se distribuye bajo la licencia **Creative Commons CC BY-SA v4.0**.
 
 Si quieres usar o modificar este proyecto, te agradecería que me dieras crédito adjuntando la URL de este repositorio :3
 
