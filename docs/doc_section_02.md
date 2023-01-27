@@ -52,5 +52,5 @@ La cantidad mínima de FPS registrada en los testeos del [Juego demostrativo de 
 
 ---
 
-<h5 align = "center"> ¡Navega por la documentación! </h6>
-<h6 align = "center"> <a href="doc_section_01.md"> Ir a la Sección 1 </a> | <a href="doc_section_03.md"> Ir a la Sección 3</a> </h6>
+<h4 align = "center"> ¡Navega por la documentación! </h4>
+<h5 align = "center"> <a href="doc_section_01.md"> Ir a la Sección 1 </a> | <a href="doc_section_03.md"> Ir a la Sección 3</a> </h5>
