@@ -24,7 +24,7 @@
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
 <h3> Descargas y más: </h3>
 
-* **¡Descarga el juego DEMO!: Obtén la última Alpha [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
+* **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
 
 * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando Aquí!](DETALLES_DEMO.md)**
 
@@ -35,20 +35,13 @@
 * **ÚLTIMA ACTUALIZACIÓN DE RECURSOS: 13/01/2023**
 
 ---
-### Detalles importantes de desarrollo:
-* **[COMPATIBILIDAD]:**
+### ¡Bienvenido(a) al repositorio!
 
-  No es compatible con Android. Se utilizan teclas de un teclado de PC para las interacciones.
-  
-  En un futuro intento de portear para Android, este no será compatible con gestos o multitouch (múltiples dedos en el táctil), por lo tanto, no es posible colocar taps simultáneos.
-  
-* **[RENDIMIENTO]:**
+Te contaré un poco acerca de qué trata todo esto.
 
-  Los fotogramas objetivo del proyecto apuntan hacia 60 FPS, pero el juego puede caer a 40 o 30 FPS si se utilizan beatmaps con muchas notas visibles en pantalla (500 a 600 Notas cae a 25-30 FPS).
-  
-* **[REQUERIMIENTOS DE HARDWARE]:**
+**Ren'Py RhythmBeats!** es un sistema de Acción Rítmica de 2 pistas que permite integrar la mecánica básica de un juego de ritmo en una novela visual hecha en Ren'Py. Es raro ver novelas visuales con minijuegos de ritmo, pero es una idea loca que tuve a raíz de mi fanatismo por los juegos de ritmo.
 
-  El juego de demostración está siendo probada en una máquina con **8 GB** de RAM, procesador de **1.1 GHz** x8 núcleos y **2 GB** de VRAM.
+En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu juego la lógica de los juegos de ritmo, en cuanto al reconocimiento de toques de un jugador y la lectura de un mapa de notas.
 
 ---
 ### Tasklist:
@@ -68,12 +61,9 @@
 ---
 ### Registro de actividad reciente:
 ```     
-[06/01/2023 16:58 GMT -3]:
-    - Terminé mi análisis del juego demostrativo. Cuando los FPS caen, noto una subida en el porcentaje de uso de la CPU.
-      ¿Cómo decremento el uso de CPU? ¿Debería intentar hacer paginación a las tuplas del beatmap?...
-      
 [06/01/2023 19:49 GMT -3]:
-    - Se liberó la herramienta de conversión de MIDI a Beatmap, y se liberó el tutorial definitivo para crear beatmaps.
+    - Se liberó la herramienta de conversión de MIDI a Beatmap, y se liberó el tutorial definitivo
+      para crear beatmaps.
     - Se reorganizarán las documentaciones y tutoriales en carpetas separadas dentro del repositorio.
     
 [12/01/2023 04:26 GMT -3]:
@@ -85,7 +75,12 @@
     - Se emitió la actualización global v0.3.01a, junto con la adición de 3 nuevas pistas musicales.
       Tamaño de actualización de recursos: 96.75 MB.
       Tamaño total de recursos: 671.88 MB.
-    
+      
+[27/01/2023 04:48 GMT -3]:
+    - Me rindo con los SpriteManager(). Solucionó el tema de los FPS pero me causa otros problemas.
+    - He terminado de escribir la documentación!!!
+      Ahora solo me falta preparar la liberación del módulo y del código fuente del juego
+      demostrativo, que siendo sincero, lo hice en tiempo récord XD.
 ```
 
 ---
