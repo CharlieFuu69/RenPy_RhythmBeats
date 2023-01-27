@@ -27,7 +27,7 @@ Para crear minijuegos, este sistema rítmico proporciona 2 carriles o pistas de 
 
 Los conceptos presentes en este ítem son completamente inherentes al sistema rítmico de este repositorio, pero en algunos casos podría ser válido para la mayoría de juegos de ritmo existentes en la actualidad.
 
----**
+---
 
 ##### 2.1. El sistema de Beatmaps.
 
