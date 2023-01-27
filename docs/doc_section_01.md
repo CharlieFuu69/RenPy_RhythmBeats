@@ -29,7 +29,7 @@ Los conceptos presentes en este ítem son completamente inherentes al sistema r�
 
 ---
 
-##### 2.1. El sistema de Beatmaps.
+#### 2.1. El sistema de Beatmaps.
 
 El algoritmo de este módulo y el de casi todos los juegos rítmicos que existen, funcionan respecto de un **"beatmap"**. Los beatmaps (mapas de pulsos) están constituidas de muchas marcas de tiempo (o timestamps) donde cada una de estas marcas de tiempo son equivalentes a una nota que va cayendo por la pantalla.
 
@@ -44,11 +44,11 @@ Puedes generar los mapas con algún software musical en formato MIDI y luego pro
 
 > _**Nota:** Por el momento, "Ren'Py RhythmBeats!" posee su propio formato de archivo Beatmap, pero hay una pequeña posibilidad que en el futuro agregue soporte para charters como "Moonscraper Chart Editor"._
 
-En **[este link](doc_section_05.md)** encontrarás un tutorial y las descargas necesarias para crear secuencias MIDI con FL Studio Mobile, y las instrucciones para convertir el archivo MIDI en un archivo `.beat` mediante la herramienta de conversión.
+En la **[Sección 5](doc_section_05.md)** encontrarás un tutorial y las descargas necesarias para crear secuencias MIDI con FL Studio Mobile, y las instrucciones para convertir el archivo MIDI en un archivo `.beat` mediante la herramienta de conversión.
 
 ---
 
-##### 2.2. ¿Cómo se detectan los toques del jugador en Ren'Py RhythmBeats?
+#### 2.2. ¿Cómo se detectan los toques del jugador en Ren'Py RhythmBeats?
 
 En definitiva, cada timestamp de un beatmap es una nota que debe aparecer en el segundo exacto desde que una partida ha iniciado.
 
@@ -56,7 +56,7 @@ En **Ren'Py RhythmBeats!**, se hace uso de un **"Tiempo Epoch"** para detectar l
 
 ---
 
-##### 2.3. El "Umbral de Reacción". ¿Qué es esto?
+#### 2.3. El "Umbral de Reacción". ¿Qué es esto?
 
 El "umbral de reacción" es <u>el rango de tiempo que el jugador dispone para tocar una nota y acertarla</u>. Esto ayuda a determinar si el jugador acertó o falló una nota que viene cayendo por la pantalla.
 
@@ -71,7 +71,7 @@ Puedes ajustar ese umbral disminuyendo o incrementando este tiempo. Un tiempo me
 
 ---
 
-##### 2.5. ¿Qué es el "Offset" de un Beatmap?
+#### 2.4. ¿Qué es el "Offset" de un Beatmap?
 
 Los mapas de un juego de ritmo necesitan ser "calibrados" antes de que una canción pueda ser jugable, pues en muchas ocasiones a pesar de haber hecho correctamente un beatmap, al colocarlo en un juego puede tener ciertos desfases respecto de la canción. He aquí donde nace el concepto de **"Offset"**.
 
@@ -83,5 +83,5 @@ El módulo permite configurar dos tipos de Offset, pero eso será explicado en e
 
 ---
 
-<h5 align = "center"> ¡Navega por la documentación! </h6>
-<h6 align = "center"> <a href="doc_mainpage.md"> Ir al Inicio </a> | <a href="doc_section_02.md"> Ir a la Sección 2</a> </h6>
+<h4 align = "center"> ¡Navega por la documentación! </h6>
+<h5 align = "center"> <a href="doc_mainpage.md"> Ir al Inicio </a> | <a href="doc_section_02.md"> Ir a la Sección 2</a> </h6>
