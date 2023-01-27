@@ -33,5 +33,5 @@ A lo largo de la documentación se asume que posees conocimientos acerca del **<
 
 ---
 
-<h5 align = "center"> ¿Empecemos? </h5>
-<h6 align = "center"> <a href="doc_section_01.md"> Ir a la Sección 1 ></a> </h6>
+<h4 align = "center"> ¿Empecemos? </h4>
+<h5 align = "center"> <a href="doc_section_01.md"> Ir a la Sección 1 ></a> </h5>
