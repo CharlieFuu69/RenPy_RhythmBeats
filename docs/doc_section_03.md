@@ -16,7 +16,7 @@ En fin, vamos a ver las clases y métodos que posee el módulo `rhythmbeats`.
 
 ---
 
-##### 1.1. Clase `RhythmPlayground(fn, offset_map = 0.0, offset_game = 0.0, threshold = 0.1, failsafe = False)`.
+#### 1.1. Clase `RhythmPlayground(fn, offset_map = 0.0, offset_game = 0.0, threshold = 0.1, failsafe = False)`.
 
 Esta clase se encarga de gestionar la carga y procesamiento de los beatmaps, seguido de la interpretación de los toques del jugador y los cálculos de precisión al momento de tocar las notas en el juego.
 
@@ -71,7 +71,7 @@ Estos parámetros son los siguientes:
 
 Ahora, los métodos que puedes ocupar de la clase `RhythmPlayground()` son los siguientes:
 
-##### 1.2. Método `load()`.
+#### 1.2. Método `load()`.
 
 Este método carga y procesa las secuencias de un archivo beatmap de una canción en específico. El archivo `.beat` debe ser señalado en el momento en que se crea una instancia de la clase.
 
@@ -81,7 +81,7 @@ Este método debe ser llamado posterior a instanciar la clase. No recibe ningún
 
 ---
 
-##### 1.3. Método `monocycle_beatmap()`.
+#### 1.3. Método `monocycle_beatmap()`.
 
 Este método retorna un objeto iterable `itertools.zip_longest` con el beatmap para la visualización de los taps en una screen. Esto ayuda a iterar el beatmap con solo 1 bucle for en una screen =D
 
@@ -89,7 +89,7 @@ Este método debe ser llamado posterior a instanciar la clase. No recibe ningún
 
 ---
 
-##### 1.4. Método `play()`.
+#### 1.4. Método `play()`.
 
 Se encarga del gameplay principal.
 
@@ -99,7 +99,7 @@ No retorna ningún valor importante para el desarrollador o el jugador.
 
 ---
 
-##### 1.5. Método `accuracy_rate()`.
+#### 1.5. Método `accuracy_rate()`.
 
 Este método devuelve una tupla con la precisión media del jugador durante la partida, y la tendencia de reacción (en atraso o en adelanto) con flechas.
 
@@ -114,7 +114,7 @@ Puedes usar este método para obtener estadísticas durante la partida o al fina
 
 ---
 
-##### 1.6. Método `is_running()`.
+#### 1.6. Método `is_running()`.
 
 Este método retorna `True` si el mapa aún se está ejecutando. En el caso contrario, retorna `False` si se recorrieron todas las notas del Beatmap.
 
@@ -188,5 +188,5 @@ Y eso es todo lo que conforma al módulo `rhythmbeats`. Ahora solo te falta ver 
 
 ---
 
-<h5 align = "center"> ¡Navega por la documentación! </h6>
-<h6 align = "center"> <a href="doc_section_02.md"> Ir a la Sección 2 </a> | <a href="doc_section_04.md"> Ir a la Sección 4</a> </h6>
+<h4 align = "center"> ¡Navega por la documentación! </h4>
+<h5 align = "center"> <a href="doc_section_02.md"> Ir a la Sección 2 </a> | <a href="doc_section_04.md"> Ir a la Sección 4</a> </h5>
