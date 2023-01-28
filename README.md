@@ -27,7 +27,7 @@
 * **LANZAMIENTO DEL MÓDULO DE REN'PY RHYTHMBEATS (BETA):**
 
   ¿Quieres empezar a implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
-  * **Descarga la última versión de [Ren'Py RhythmBeats! v1.00.1b]().**
+  * **Descarga la última versión de [Ren'Py RhythmBeats! v1.00.1b](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module).**
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/doc_mainpage.md).**
   
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
@@ -63,11 +63,6 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
 ---
 ### Registro de actividad reciente:
 ```     
-[06/01/2023 19:49 GMT -3]:
-    - Se liberó la herramienta de conversión de MIDI a Beatmap, y se liberó el tutorial definitivo
-      para crear beatmaps.
-    - Se reorganizarán las documentaciones y tutoriales en carpetas separadas dentro del repositorio.
-    
 [12/01/2023 04:26 GMT -3]:
     - OOOOH MIERDA! Logré incrementar los fotogramas desde 25 a 45 FPS gracias al SpriteManager(),
       pero aún hay un problema... LAS NOTAS SE ME SIGUEN ALINEANDO EN LA ESQUINA SUPERIOR IZQUIERDA
@@ -83,16 +78,18 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
     - He terminado de escribir la documentación!!!
       Ahora solo me falta preparar la liberación del módulo y del código fuente del juego
       demostrativo, que siendo sincero, lo hice en tiempo récord XD.
+      
+[28/01/2022 03:48 GMT -3]:
+    - Finalmente se ha liberado la primera versión del módulo de Ren'Py RhythmBeats!
+      Este lanzamiento marca la transición de Fase Alpha a Fase Beta.
 ```
 
 ---
-### Todos los lanzamientos (DEMO):
+### Todos los lanzamientos del módulo (Beta):
 
 |Versión|Detalles|URL|
 |---|---|---|
-|`v0.3.01a`|Lanzamiento #3 de demostración (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)|
-|`v0.2.01a`|Lanzamiento #2 de demostración| Descontinuado |
-|`v0.1.19a`|Lanzamiento inicial para fines de pruebas| Descontinuado |
+|`v1.00.1b`|Módulo de Ren'Py RhythmBeats - Lanzamiento #1! (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)|
 
 ---
 ### Licencias:
