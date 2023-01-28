@@ -7,10 +7,10 @@
 ---
 
 <p align="center">
-  <img align="left" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
-  <h5>
+  <img align="left" width="30" height="30" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
+  <h4>
     ¡Descargas disponibles! Obtén la herramienta <i>"beatmap.exe"</i> desde <a href="https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01">este pre-lanzamiento</a>
-  </h5>
+  </h4>
 </p>
 
 ---
@@ -39,7 +39,7 @@ Hice un video tutorial de 3 a 4 minutos, donde te explico cómo usar Drums (tamb
 
 <p align="center">
   <a href="https://youtu.be/18qIeMV9jNM">
-    <img width="70%" height="70%" src="https://i.ytimg.com/vi/18qIeMV9jNM/maxresdefault.jpg" title="Tutorial RhythmBeats!: Crear beatmaps para tus canciones con FL Studio Mobile!"/>
+    <img width="50%" height="50%" src="https://i.ytimg.com/vi/18qIeMV9jNM/maxresdefault.jpg" title="Tutorial RhythmBeats!: Crear beatmaps para tus canciones con FL Studio Mobile!"/>
   </a>
 </p>
 <h6 align="center">
@@ -75,7 +75,7 @@ Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windo
 
 ---
 
-##### 2.1. ¿Cómo convertir un archivo MIDI a Beatmap?
+#### 2.1. ¿Cómo convertir un archivo MIDI a Beatmap?
 
 * **Paso 1:**
   
@@ -117,7 +117,7 @@ Este archivo `.beat` es el que se usa para que el juego pueda mostrar la cascada
 
 ---
 
-##### 2.2. ¿Cómo obtener las estadísticas de un archivo `.beat` o `.midi` sin convertirlo?
+#### 2.2. ¿Cómo obtener las estadísticas de un archivo `.beat` o `.midi` sin convertirlo?
 
 La herramienta ofrece un comando de trabajo que abre estos archivos en modo de solo lectura, para mostrar sus estadísticas como la cantidad de notas por pista, el Full Combo y las marcas de tiempo completas.
 
