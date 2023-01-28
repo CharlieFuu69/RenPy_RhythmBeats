@@ -33,7 +33,7 @@ En este ítem usaré de ejemplo al DAW **"FL Studio Mobile"**, disponible para A
   <img width="80%" height="80%" src="https://user-images.githubusercontent.com/77955772/210670964-080e905e-d656-4310-b8df-ca3221a061a7.png">
 </p>
 
-> _**Nota:** Si no puedes pagarlo, muchas webs lo tienen disponible de forma gratuíta, pero no voy a agregar URLs hacia esos sitios para que este repositorio no tenga problemas._
+> _**Nota:** Si no puedes pagarlo, he incluido el APK + OBB de FL Studio Mobile en el kit de creación de beatmaps. Shhhh... es un secreto XD._
 
 Hice un video tutorial de 3 a 4 minutos, donde te explico cómo usar Drums (tambores) en **FL Studio Mobile** para crear beatmaps.
 
