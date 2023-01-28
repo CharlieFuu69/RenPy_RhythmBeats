@@ -1,12 +1,19 @@
+<!-- Shields -->
+[release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases
+[release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
+
 <p align="center">
   <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
 </p>
 <h1 align = "center"> Documentación del sistema de acción rítmica de Ren'Py RhythmBeats! </h1>
 <h5 align = "center"> Página principal </h5>
 
+<!-- Versión actual -->
+[![release-badge]][release]
+
 > <p align="left">
 >    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
->    <h6>Ten en consideración:</h6>
+>    <h4>Ten en consideración:</h4>
 > </p>
 > La documentación puede estar sujeta a cambios con el paso del tiempo, a medida que se van emitiendo actualizaciones del módulo.
 > En síntesis, la documentación considera que posees la última versión emitida del módulo.
