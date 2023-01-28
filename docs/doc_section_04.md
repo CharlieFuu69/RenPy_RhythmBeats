@@ -10,7 +10,7 @@ Se garantiza que el código presente en este tutorial (y el código del módulo)
 
 > _**Nota:** Se recomienda que primero <ins>**hagas un proyecto vacío de Ren'Py antes de implementar definitivamente.**</ins>_
 
-Antes de que continúes, asegúrate de descargar el **[archivo ZIP con el módulo de Ren'Py RhythmBeats!]()** en tu PC, pues de otro modo será imposible implementar esto XD.
+Antes de que continúes, asegúrate de descargar el **[Módulo de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)** en tu PC, pues de otro modo será imposible implementar esto XD.
 
 Recuerda que los beatmaps **<u>se crean manualmente</u>**. Los tutoriales y recursos para empezar a crear beatmaps están en **[este link](doc_section_05.md)**!
 
@@ -63,7 +63,7 @@ De cualquier modo si el módulo es importado en la marcha, se lanzará una excep
 
 Ahora, viene la parte donde crearás una UI simple para jugar alguna canción.
 
-En primer lugar, debes tener una imagen para representar las notas en la pantalla, como por ejemplo, la imagen que se usa en el **[juego demostrativo de Ren'Py RhythmBeats!]()**:
+En primer lugar, debes tener una imagen para representar las notas en la pantalla, como por ejemplo, la imagen que se usa en el **[juego demostrativo de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)**:
 
 <p align="center"><img src="img/doc_image_05.png"/></p>
 <h6 align = "center"> <i>Imagen: nota musical de 128x128px utilizada en el juego demostrativo.</i> </h6>
