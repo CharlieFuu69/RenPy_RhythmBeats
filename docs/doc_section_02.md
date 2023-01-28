@@ -20,7 +20,7 @@ Por el momento, el módulo trabaja con las teclas `C` y `M` para interactuar con
 
 <h3 align="center">2. Requisitos mínimos de Ren'Py RhythmBeats.</h3>
 
-Este sistema de acción rítmica, y el **[Juego demostrativo de Ren'Py RhythmBeats]()**, han sido desarrollado en una máquina con las siguientes especificaciones técnicas:
+Este sistema de acción rítmica, y el **[Juego demostrativo de Ren'Py RhythmBeats](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)**, han sido desarrollado en una máquina con las siguientes especificaciones técnicas:
 
 |             | Detalles                                                |
 | ----------- | ------------------------------------------------------- |
@@ -48,7 +48,7 @@ Aquí abajo adjunto un gráfico de líneas que indica la curva de FPS en funció
 
 Como ya te has dado cuenta, <ins>**los FPS tienden a caer cuando se cargan beatmaps con muchas notas musicales**</ins>. Esto no es por culpa del sistema de reconocimiento de taps como tal, sino que del algoritmo utilizado para el apartado gráfico en Ren'Py.
 
-La cantidad mínima de FPS registrada en los testeos del [Juego demostrativo de Ren'Py RhythmBeats!]() ha sido de 24 FPS con canciones de 620 notas + capa de video (2DMV), registrando también un leve aumento en el uso de CPU, por lo que recomendaría no emocionarte creando beatmaps complejos =(
+La cantidad mínima de FPS registrada en los testeos del [Juego demostrativo de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a) ha sido de 24 FPS con canciones de 620 notas + capa de video (2DMV), registrando también un leve aumento en el uso de CPU, por lo que recomendaría no emocionarte creando beatmaps complejos =(
 
 ---
 
