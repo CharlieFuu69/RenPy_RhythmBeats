@@ -9,7 +9,7 @@
 <p align="center">
   <img align="left" width="30" height="30" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
   <h4>
-    ¡Descargas disponibles! Obtén la herramienta <i>"beatmap.exe"</i> desde <a href="https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01">este pre-lanzamiento</a>
+    ¡Descargas disponibles! Obtén el  <i>Kit de creación de beatmaps</i> desde <a href="https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module">este lanzamiento</a>
   </h4>
 </p>
 
@@ -70,7 +70,8 @@ Sintetizando el video, debes hacer lo siguiente:
 
 <h3 align="center">2. ¿Cómo usar la herramienta `beatmap.exe` para convertir archivos MIDI en Beatmaps (.beat)?</h3>
 
-`beatmap.exe` es un programa CLI (Command Line Interface) que he creado para facilitar el proceso de conversión de archivos `.mid` (MIDI) hacia un archivo `.beat` (Beatmap) legible para **"Ren'Py RhythmBeats!"**.
+`beatmap.exe` es un programa CLI (Command Line Interface) que he creado para facilitar el proceso de conversión de archivos `.mid` (MIDI) hacia un archivo `.beat` (Beatmap) legible para **"Ren'Py RhythmBeats!"**. Este programa está incluido en el último lanzamiento del módulo de **Ren'Py RhythmBeats!**
+
 Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windows. Justo aquí abajo he creado un tutorial que te puede ayudar a usarlo.
 
 ---
