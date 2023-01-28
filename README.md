@@ -5,7 +5,7 @@
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
 [license-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [license-badge]: https://img.shields.io/badge/Licencia-CC--BY--SA%204.0-brightgreen?style=for-the-badge
-[status-badge]: https://img.shields.io/badge/Status-Alpha-ff0000?style=for-the-badge
+[status-badge]: https://img.shields.io/badge/Status-Beta-000077?style=for-the-badge
 [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
 
 
@@ -18,21 +18,23 @@
 [![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
 
 <h5 align = "center">
-    <i>[Sin documentación disponible - ¡Fase Beta en camino!]</i>
+    <i>[El módulo ha sido liberado y documentado - ¡Fase beta iniciada!]</i>
 </h5>
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
 <h3> Descargas y más: </h3>
 
-* **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
+* **LANZAMIENTO DEL MÓDULO DE REN'PY RHYTHMBEATS (BETA):**
 
-* **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando Aquí!](DETALLES_DEMO.md)**
+  ¿Quieres empezar a implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
+  * **Descarga la última versión de [Ren'Py RhythmBeats! v1.00.1b]().**
+  * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/doc_mainpage.md).**
+  
+* **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
 
-<!-- * **¿Necesitas un tutorial para crear tus propios Beatmaps en "Ren'Py RhythmBeats!"? [Entra al tutorial aquí!](docs/beatmapping/TUTORIAL_BEATMAPS.md) y descarga la herramienta de conversión [en este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01)** -->
-
----
-
-* **ÚLTIMA ACTUALIZACIÓN DE RECURSOS: 13/01/2023**
+  ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 10 canciones con 2DMV!
+  * **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)!**
+  * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
 ### ¡Bienvenido(a) al repositorio!
@@ -51,7 +53,7 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
 - [x] Adaptar código núcleo a módulo de Python importable.
 - [x] Realizar pruebas del módulo de Python.
 - [x] Agregar método para depuración de actividad.
-- [ ] Crear documentación del módulo (En proceso).
+- [x] Crear documentación del módulo.
 
 * **Juego de demostración "Ren'Py RhythmBeats!":**
 
