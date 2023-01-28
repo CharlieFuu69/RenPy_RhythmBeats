@@ -8,7 +8,7 @@ En esta sección encontrarás todo lo necesario para comenzar a escribir código
 
 ---
 
-<h3 align="center">1. Clases y métodos del módulo `rhythmbeats`</h3>
+<h3 align="center">1. Clases y métodos del módulo <code>rhythmbeats</code></h3>
 
 Aquí está documentado el cómo está constituido **Ren'Py RhythmBeats!**. Como la lógica más "compleja" del  sistema rítmico es manejada por el módulo, no necesitas hacer demasiadas maniobras para implementarlo.
 
@@ -106,9 +106,7 @@ Este método devuelve una tupla con la precisión media del jugador durante la p
 > **Formato de retorno:**
 > `(Tiempo de reacción media, tendencia de reacción)`
 
-El tiempo de reacción media son expresados en milisegundos, mientras que las flechas de tendencia de reacción son retornadas como cadenas de texto unicode.
-
-Si no puedes mostrar estas flechas con la fuente que elegiste para tu juego, puedes leer estas flechas con la fuente `DejaVuSans.ttf` de Ren'Py.
+El tiempo de reacción media es expresado en milisegundos, mientras que las flechas de tendencia de reacción son retornadas como cadenas de texto unicode. El texto unicode de la flecha utiliza a la fuente `DejaVuSans.ttf`de Ren'Py automáticamente.
 
 Puedes usar este método para obtener estadísticas durante la partida o al finalizar =D
 
