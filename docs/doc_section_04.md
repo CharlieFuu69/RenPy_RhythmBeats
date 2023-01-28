@@ -1,8 +1,8 @@
 <p align="center">
   <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
 </p>
-<h6 align = "center"> Documentación de "Ren'Py RhythmBeats!" </h1>
-<h1 align = "center"> Sección 4: Tutorial de implementación </h5>
+<h6 align = "center"> Documentación de "Ren'Py RhythmBeats!" </h6>
+<h1 align = "center"> Sección 4: Tutorial de implementación </h1>
 
 En esta sección encontrarás toda la información que necesitas para implementar el sistema de acción rítmica en tu juego, basándonos en la información proporcionada en la **[Sección 3](doc_section_03.md)** de esta documentación.
 
@@ -26,7 +26,7 @@ A continuación se dictan los procedimientos necesarios para concretar la integr
 
 ---
 
-##### 1.1. Preparación del juego para integrar el módulo.
+#### 1.1. Preparación del juego para integrar el módulo.
 
 Ren'Py manipula los módulos de terceros de una forma bien particular. Para que tu proyecto reconozca al módulo de **Ren'Py RhythmBeats!**, debes crear una carpeta llamada `python-packages` dentro de la carpeta `/game`.
 
@@ -40,7 +40,7 @@ Finalmente, desempaqueta el archivo ZIP descargado y coloca la carpeta `rhythmbe
 
 ---
 
-##### 1.2. Importación en el juego.
+#### 1.2. Importación en el juego.
 
 El módulo puedes importarlo en cualquier script RPY de tu proyecto, siempre y cuando lo hagas en algún bloque de arranque o "inicialización".
 
@@ -79,7 +79,7 @@ init:
 
 ---
 
-##### 2.1. Crear una animación ATL para la caída de notas musicales.
+#### 2.1. Crear una animación ATL para la caída de notas musicales.
 
 Ren'Py nos ayuda a animar displayables mediante el **Lenguaje de Animación y Transformación (ATL)**. Para animar la caida de las notas, puedes crear una transformación como esta:
 
@@ -115,7 +115,7 @@ Esta transformación será llamada _n_ cantidad de veces según la cantidad de n
 
 ---
 
-##### 2.2. Crear la Screen que muestra la cascada de notas.
+#### 2.2. Crear la Screen que muestra la cascada de notas.
 
 ¿Recuerdas la transformación ATL que hicimos en el bloque anterior? Este será el lugar donde la usaremos.
 
@@ -149,7 +149,7 @@ Este método es en esencia el mismo que utiliza el juego demostrativo de **Ren'P
 
 ---
 
-##### 2.3. Crear la Screen para mostrar el Combo y otros datos.
+#### 2.3. Crear la Screen para mostrar el Combo y otros datos.
 
 Esta screen funciona de una manera distinta a la screen del sub-ítem 2.2, ya que esta debe mostrar las estadísticas de juego y debe actualizarse de forma independiente para estar atento al comportamiento de la partida.
 
@@ -208,7 +208,7 @@ Aquí es donde vamos a crear el flujo del código para jugar una canción. Bási
 
 ---
 
-##### 3.1. Instanciando la clase `RhythmPlayground()`.
+#### 3.1. Instanciando la clase `RhythmPlayground()`.
 
 Parecía que ya nos estábamos olvidando que `RhythmPlayground()` era básicamente el corazón del sistema de acción rítmica, pero no. Aquí es donde la usaremos porque su uso es clave para poder utilizar todo lo que hicimos en el ítem 2.
 
@@ -247,7 +247,7 @@ Mantuvimos el `threshold` en su valor por defecto (100 milisegundos) y el juego 
 
 ---
 
-##### 3.2. Reproduciendo la música para jugar.
+#### 3.2. Reproduciendo la música para jugar.
 
 Ahora es el turno de la música y de las screens que hicimos.
 
@@ -454,5 +454,5 @@ label stage_failed:
 
 ---
 
-<h5 align = "center"> ¡Navega por la documentación! </h6>
-<h6 align = "center"> <a href="doc_section_03.md"> Ir a la Sección 3 </a> | <a href="doc_section_05.md"> Ir a la Sección 5</a> </h6>
+<h4 align = "center"> ¡Navega por la documentación! </h4>
+<h5 align = "center"> <a href="doc_section_03.md"> Ir a la Sección 3 </a> | <a href="doc_section_05.md"> Ir a la Sección 5</a> </h5>
