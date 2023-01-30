@@ -21,6 +21,24 @@
     <i>[El módulo ha sido liberado y documentado - ¡Fase beta iniciada!]</i>
 </h5>
 
+### ¡Bienvenido(a) al repositorio!
+
+Te contaré un poco acerca de qué trata todo esto.
+
+**Ren'Py RhythmBeats!** es un sistema de Acción Rítmica de 2 pistas que permite integrar la mecánica básica de un juego de ritmo en una novela visual hecha en Ren'Py. Es raro ver novelas visuales con minijuegos de ritmo, pero es una idea loca que tuve a raíz de mi fanatismo por los juegos de ritmo.
+
+En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu juego la lógica de los juegos de ritmo, en cuanto al reconocimiento de toques de un jugador y la lectura de un mapa de notas.
+
+> <p align="left">
+>    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
+>    <h4>Advertencia para nuevos jugadores de la DEMO:</h4>
+> </p>
+> 
+> Las descargas de recursos presentarán eventuales fallas ya que se están haciendo cambios radicales en cuanto a los paquetes de recursos del juego.
+> Se recomienda esperar hasta la salida de la versión `v1.00.1b` del juego (próximamente).
+
+---
+
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
 <h3> Descargas y más: </h3>
 
@@ -35,15 +53,6 @@
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 10 canciones con 2DMV!
   * **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
-
----
-### ¡Bienvenido(a) al repositorio!
-
-Te contaré un poco acerca de qué trata todo esto.
-
-**Ren'Py RhythmBeats!** es un sistema de Acción Rítmica de 2 pistas que permite integrar la mecánica básica de un juego de ritmo en una novela visual hecha en Ren'Py. Es raro ver novelas visuales con minijuegos de ritmo, pero es una idea loca que tuve a raíz de mi fanatismo por los juegos de ritmo.
-
-En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu juego la lógica de los juegos de ritmo, en cuanto al reconocimiento de toques de un jugador y la lectura de un mapa de notas.
 
 ---
 ### Tasklist:
