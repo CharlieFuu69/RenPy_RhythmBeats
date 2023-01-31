@@ -183,7 +183,6 @@ Si tienes dudas acerca de cómo utilizar el módulo, o encontraste un error fata
 
 * **Ir al [Inicio del repositorio.](https://github.com/CharlieFuu69/RenPy_RhythmBeats)**
 * **Descargar el [Juego demostrativo de Ren'Py RhythmBeats! (Alpha).](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
-* **Descargar el [Módulo de Acción Rítmica de Ren'Py RhythmBeats.]()**
-* **Descargar la [Herramienta de conversión "beatmap.exe"](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.2.01a_tool01)**
+* **Descargar el [Kit de Creación de beatmaps para Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)**
 
 
