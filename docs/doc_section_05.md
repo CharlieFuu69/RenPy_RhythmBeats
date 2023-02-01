@@ -182,7 +182,7 @@ Si tienes dudas acerca de cómo utilizar el módulo, o encontraste un error fata
 <h5 align = "center"> ¡Ya has recorrido toda la documentación! ¿Qué quieres hacer ahora? </h5>
 
 * **Ir al [Inicio del repositorio.](https://github.com/CharlieFuu69/RenPy_RhythmBeats)**
-* **Descargar el [Juego demostrativo de Ren'Py RhythmBeats! (Alpha).](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases)**
+* **Descargar el [Juego demostrativo de Ren'Py RhythmBeats! (Beta).](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)**
 * **Descargar el [Kit de Creación de beatmaps para Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)**
 
 
