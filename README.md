@@ -41,17 +41,8 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/doc_mainpage.md).**
   
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
-
-  > <p align="left">
-  >    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
-  >    <h4>Advertencia para nuevos jugadores de la DEMO:</h4>
-  > </p>
-  > 
-  > Las descargas de recursos presentarán eventuales fallas ya que se están haciendo cambios radicales en cuanto a los paquetes de recursos del juego.
-  > Se recomienda esperar hasta la salida de la versión `v1.00.1b` del juego (próximamente).
-
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 10 canciones con 2DMV!
-  * **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)!**
+  * **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
@@ -105,7 +96,7 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
 
 |Versión|Detalles|URL de descarga|
 |---|---|---|
-|`v1.00.1b`|Ren'Py RhythmBeats! Game - Beta #1|[Próximamente...]|
+|`v1.00.1b`|Ren'Py RhythmBeats! Game - Beta #1|[Descargar aquí](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)|
 |`v0.3.01a`|Ren'Py RhythmBeats! Game - Lanzamiento Alpha|[Descontinuado]|
 
 ---
