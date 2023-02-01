@@ -101,6 +101,14 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
 |`v1.00.1b`|Módulo de Ren'Py RhythmBeats - Lanzamiento #1! (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)|
 
 ---
+### Todos los lanzamientos del juego demostrativo (Beta):
+
+|Versión|Detalles|URL de descarga|
+|---|---|---|
+|`v1.00.1b`|Ren'Py RhythmBeats! Game - Beta #1|[Próximamente...]|
+|`v0.3.01a`|Ren'Py RhythmBeats! Game - Lanzamiento Alpha|[Descontinuado]|
+
+---
 ### Licencias:
 [![license-image]][license]
 
