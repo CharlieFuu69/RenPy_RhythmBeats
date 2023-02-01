@@ -43,7 +43,7 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
 
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 10 canciones con 2DMV!
-  * **¡Descarga el juego DEMO de Ren'Py RhythmBeats [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)!**
+  * **¡Descarga la última versión del juego [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
