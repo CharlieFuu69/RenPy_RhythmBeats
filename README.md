@@ -47,28 +47,8 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
-### Tasklist:
-* **Módulo de Python `rhythmbeats.py`:**
-
-- [x] Agregar ejecución de beatmaps en modo seguro (sin notas fallidas).
-- [x] Adaptar código núcleo a módulo de Python importable.
-- [x] Realizar pruebas del módulo de Python.
-- [x] Agregar método para depuración de actividad.
-- [x] Crear documentación del módulo.
-
-* **Juego de demostración "Ren'Py RhythmBeats!":**
-
-- [x] Agregar ajustes de sistema en el panel de configuración del juego.
-- [ ] Publicar el código fuente y los Assets del juego DEMO (En proceso).
-
----
 ### Registro de actividad reciente:
 ```     
-[12/01/2023 04:26 GMT -3]:
-    - OOOOH MIERDA! Logré incrementar los fotogramas desde 25 a 45 FPS gracias al SpriteManager(),
-      pero aún hay un problema... LAS NOTAS SE ME SIGUEN ALINEANDO EN LA ESQUINA SUPERIOR IZQUIERDA
-      PUTA MADREEEEE!!!
-      
 [13/01/2023 05:44 GMT -3]:
     - Se emitió la actualización global v0.3.01a, junto con la adición de 3 nuevas pistas musicales.
       Tamaño de actualización de recursos: 96.75 MB.
@@ -80,9 +60,15 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
       Ahora solo me falta preparar la liberación del módulo y del código fuente del juego
       demostrativo, que siendo sincero, lo hice en tiempo récord XD.
       
-[28/01/2022 03:48 GMT -3]:
+[28/01/2023 03:48 GMT -3]:
     - Finalmente se ha liberado la primera versión del módulo de Ren'Py RhythmBeats!
       Este lanzamiento marca la transición de Fase Alpha a Fase Beta.
+      
+[04/02/2023 01:20 GMT -3]:
+    - LO LOGRÉ MALDITA SEA!!! Sabía que los SpriteManager() eran el secreto para mejorar el
+      rendimiento del juego.
+      Eso si, necesitaré tiempo para modificar el módulo para que tenga los cambios alocados que hice
+      para lograr incrementar el rendimiento de FPS del juego.
 ```
 
 ---
