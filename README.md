@@ -49,11 +49,6 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
 ---
 ### Registro de actividad reciente:
 ```     
-[13/01/2023 05:44 GMT -3]:
-    - Se emitió la actualización global v0.3.01a, junto con la adición de 3 nuevas pistas musicales.
-      Tamaño de actualización de recursos: 96.75 MB.
-      Tamaño total de recursos: 671.88 MB.
-      
 [27/01/2023 04:48 GMT -3]:
     - Me rindo con los SpriteManager(). Solucionó el tema de los FPS pero me causa otros problemas.
     - He terminado de escribir la documentación!!!
@@ -69,6 +64,13 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
       rendimiento del juego.
       Eso si, necesitaré tiempo para modificar el módulo para que tenga los cambios alocados que hice
       para lograr incrementar el rendimiento de FPS del juego.
+      
+[07/02/2023 00:35 GMT -3]:
+    - En la próxima actualización, "Ren'Py RhythmBeats! Game" (el juego demostrativo) podrá mostrar
+      presencia en Discord mediante la adición de Discord RPC.
+    - Estoy empleando más maniobras para optimizar el rendimiento del juego. Si la próxima actualización
+      se ve con lag en tu PC, entonces definitivamente tienes una tostadora.
+    - Posiblemente voy a añadir 2 canciones más en la siguiente actualización.
 ```
 
 ---
