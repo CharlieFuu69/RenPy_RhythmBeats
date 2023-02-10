@@ -56,19 +56,19 @@ El link del último lanzamiento está más abajo =3
 Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. Aquí te dejo unos Screenshots de muestra :3
 
 <p align="center">
-  <img width="30%" height="30%" src="src/screenshots/screenshot0003.png"/>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0004.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0003.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0004.png"/>
   <br>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0002.png"/>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0006.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0002.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0006.png"/>
   <br>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0007.png"/>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0009.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0007.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0009.png"/>
   <br>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0011.png"/>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0012.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0011.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0012.png"/>
   <br>
-  <img width="30%" height="30%" src="src/screenshots/screenshot0013.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0013.png"/>
   
 </p>
 
@@ -76,12 +76,6 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 
 ### Registro de actividad reciente:
 ```     
-[27/01/2023 04:48 GMT -3]:
-    - Me rindo con los SpriteManager(). Solucionó el tema de los FPS pero me causa otros problemas.
-    - He terminado de escribir la documentación!!!
-      Ahora solo me falta preparar la liberación del módulo y del código fuente del juego
-      demostrativo, que siendo sincero, lo hice en tiempo récord XD.
-      
 [28/01/2023 03:48 GMT -3]:
     - Finalmente se ha liberado la primera versión del módulo de Ren'Py RhythmBeats!
       Este lanzamiento marca la transición de Fase Alpha a Fase Beta.
@@ -98,6 +92,15 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
     - Estoy empleando más maniobras para optimizar el rendimiento del juego. Si la próxima actualización
       se ve con lag en tu PC, entonces definitivamente tienes una tostadora.
     - Posiblemente voy a añadir 2 canciones más en la siguiente actualización.
+    
+[10/02/2023 03:47 GMT -3]:
+    - He colocado una galería de imágenes de "Ren'Py RhythmBeats! Game", el juego demostrativo de este
+      repositorio.
+    - Confirmo que la próxima actualización del juego incluirá 2 nuevas canciones para jugar.
+    - Hay una pequeña posibilidad de que modifique el sistema de descarga interno para elegir entre
+      una "Descarga Light" (solo las canciones), o una "Descarga Full" (canciones + 2DMV).
+      Esto se me vino a la cabeza porque el juego ya va rumbo a los 800 MB, y eso es debido a las capas
+      de video (2DMV).
 ```
 
 ---
