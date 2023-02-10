@@ -34,7 +34,7 @@ Las teclas asignadas para jugar son la `C` para la pista izquierda, y `M` para l
 
 ### 2. Niveles de dificultad de las canciones.
 
-En la versión `v1.00.1b` del juego demostrativo se clasificaron las pistas musicales en "niveles" de dificultad, valor que se puede visualizar al presionar el botón **"Ver Info"** de la canción.
+En la versión `v1.00.1b` del juego demostrativo se clasificaron las pistas musicales en "niveles" de dificultad. Esto es visible desde el apartado **"Ver Info"**, y a partir de la **[Actualización In-Game #05](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_upd05)**, también es visible desde la lista de canciones.
 
 La escala de dificultad se determina en función de la cantidad de notas necesarias para obtener un Full Combo en el juego, es decir, mientras más notas tenga la canción, el nivel de dificultad será mayor. La siguiente tabla representa los niveles de las canciones:
 
@@ -48,7 +48,7 @@ La escala de dificultad se determina en función de la cantidad de notas necesar
 | L6                  | Púrpura  | 551-600 notas     |
 
 ---
-### 3. Lista de pistas musicales utilizadas para testeo.
+### 3. Lista de pistas musicales disponibles en el juego.
 
 Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores.
 
@@ -82,5 +82,5 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 * **Otras pistas:**
 
 | Pistas musicales      | Artistas                  | BPM | Dificultad | Full Combo | MV         |
-|---|---|---|---|---|---1
+|---|---|---|---|---|---|
 | The Anthem (Der Alte) | Dimitri Vegas & Like Mike | 140 | L5         | 535 notas  | No añadido |
