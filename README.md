@@ -29,6 +29,10 @@ Te contaré un poco acerca de qué trata todo esto.
 
 En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu juego la lógica de los juegos de ritmo, en cuanto al reconocimiento de toques de un jugador y la lectura de un mapa de notas.
 
+También hay disponible un juego demostrativo de Ren'Py RhythmBeats. Hasta este momento tiene <ins>**17 canciones**</ins> que puedes jugar, ¡y la mayoría tiene 2DMV incluido!
+
+El link del último lanzamiento está más abajo =3
+
 ---
 
 <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
@@ -47,6 +51,29 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
+### Galería de imágenes de "Ren'Py RhythmBeats! Game":
+
+Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. Aquí te dejo unos Screenshots de muestra :3
+
+<p align="center">
+  <img width="30%" height="30%" src="src/screenshots/screenshot0003.png"/>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0004.png"/>
+  <br>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0002.png"/>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0006.png"/>
+  <br>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0007.png"/>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0009.png"/>
+  <br>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0011.png"/>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0012.png"/>
+  <br>
+  <img width="30%" height="30%" src="src/screenshots/screenshot0013.png"/>
+  
+</p>
+
+---
+
 ### Registro de actividad reciente:
 ```     
 [27/01/2023 04:48 GMT -3]:
@@ -72,21 +99,6 @@ En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu
       se ve con lag en tu PC, entonces definitivamente tienes una tostadora.
     - Posiblemente voy a añadir 2 canciones más en la siguiente actualización.
 ```
-
----
-### Todos los lanzamientos del módulo (Beta):
-
-|Versión|Detalles|URL|
-|---|---|---|
-|`v1.00.1b`|Módulo de Ren'Py RhythmBeats - Lanzamiento #1! (Recomendado)|[Descarga completa](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)|
-
----
-### Todos los lanzamientos del juego demostrativo (Beta):
-
-|Versión|Detalles|URL de descarga|
-|---|---|---|
-|`v1.00.1b`|Ren'Py RhythmBeats! Game - Beta #1|[Descargar aquí](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)|
-|`v0.3.01a`|Ren'Py RhythmBeats! Game - Lanzamiento Alpha|[Descontinuado]|
 
 ---
 ### Licencias:
