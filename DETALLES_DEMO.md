@@ -71,7 +71,7 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | Greenlights Serenade           | Hatsune Miku                           | 200 | L4         | 443 notas  | No añadido                               |
 | Happy Synthesizer (SEKAI Ver.) | MORE MORE JUMP!                        | 127 | L6         | 592 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 | Sweet Magic                    | Wonderlands × Showtime                 | 123 | L5         | 542 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Brand New Day                  | irucaice Ft. Hatsune Miku              | 185 | L5         | 608 notas  | No añadido                               |
+| Brand New Day                  | irucaice Ft. Hatsune Miku              | 185 | L6         | 608 notas  | No añadido                               |
 
 
 * **Love Live!:**
