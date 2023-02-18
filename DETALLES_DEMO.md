@@ -32,7 +32,7 @@
 
 ### 2. [¡Nuevo!] Disponibilidad para dispositivos Android.
 
-El juego demostrativo posee una versión de Android para poder jugar desde móviles. Lamentablemente Ren'Py no es un motor que se lleve muy bien con el entorno de móviles, por lo que el lag será muy intenso en canciones con muchas notas, a pesar de todos mis esfuerzos por optimizar al extremo el rendimiento del sistema gráfico de RhythmBeats, así que solo es una versión experimental alternativa a la versión de Windows.
+El juego demostrativo posee una versión de Android para poder jugar desde móviles. Lamentablemente Ren'Py no es un motor que se lleve muy bien con el entorno de móviles, por lo que el lag será muy intenso en canciones con muchas notas a pesar de todos mis esfuerzos por optimizar al extremo el rendimiento del sistema gráfico de RhythmBeats, así que solo es una versión experimental alternativa a la versión de Windows.
 
 Espero que sean comprensivos con este humilde servidor :(
 
@@ -64,7 +64,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > * **Espacio disponible en el disco:** 1.1 GB o más.
 > * **Procesador:** Gama Media (Snapdragon 640 o posterior).
 > * **RAM:** 800 MB o más.
-> * **OpenGL ES:** v3.0 o posterior.
+> * **OpenGL ES:** v2.0 o posterior.
 
 ---
 
