@@ -12,27 +12,35 @@
 ---
 ### 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?
 
-<img align="center" src="https://user-images.githubusercontent.com/77955772/209073140-0bbd0583-4c06-47c4-a768-b42c4b7e660a.png"></img>
-<h4 align = "center"> [Interfaz de juego - 2DMV: Highlight] </h4>
+<img align="center" src="https://user-images.githubusercontent.com/77955772/219847352-37ddb316-78e9-4bb9-af5f-229467725931.png"></img>
+<h4 align = "center"> <i>[Interfaz de juego - 2DMV: Highlight]</i> </h4>
 
-Las teclas asignadas para jugar son la `C` para la pista izquierda, y `M` para la pista derecha.
+#### INTERACCIÓN CON EL JUEGO:
+> Para jugar, debes tocar las teclas `C` (Izquierda) y `M` (Derecha) para acertar las notas en PC, o bien, puedes tocar la mitad izquierda o la mitad derecha de la pantalla para acertar las notas en un dispositivo Android _(Funcionalidad experimental)_.
 
-#### INDICADOR DE HP:
-> En la esquina superior izquierda se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo.
+#### BARRA DE HP:
+> En la esquina superior izquierda se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo, y cuantas te quedan disponibles por fallar XD.
 
-#### INDICADOR DE PRECISIÓN:
-> En la esquina superior derecha hay un indicador de precisión en tiempo real, que señala la diferencia media (en milisegundos) a la que aciertas las notas respecto del beatmap. Mientras más cerca estés de `0ms`, significará que tocas las notas con una precisión casi perfecta.
+#### BARRA DE PROGRESO DE LA PISTA:
+> En el centro del área superior se ubica una barra de progreso celeste, que indica el progreso de reproducción de la pista, y con ello, indica cuánto has jugado en esa canción.
+
+#### BARRA DE PRECISIÓN MEDIA:
+> En la esquina superior derecha hay una barra que indica tu precisión media en la partida expresado como porcentaje, en el que mientras más cerca estés del 100%, más preciso estás tocando las notas.
 > Una flecha **"◂"** indicará que tienes tendencia a tocar un poco antes de lo esperado, mientras que la flecha **"▸"** indicará que tienes tendencia a tocar un poco más tarde.
-
-#### CALIBRACIÓN MANUAL:
-> En caso de que tengas problemas de sincronización con la caída de las notas, puedes calibrar manualmente cualquier desfase desde el botón **"⚙"** en el menú de pistas musicales.
-
-#### ATENUACIÓN DE 2DMVs:
-> Si te molesta el brillo normal del 2DMV de fondo mientras juegas, también puedes atenuar el brillo de los 2DMVs desde los ajustes.
 
 ---
 
-### 2. Niveles de dificultad de las canciones.
+### 2. [¡Nuevo!] Disponibilidad para dispositivos Android.
+
+El juego demostrativo posee una versión de Android para poder jugar desde móviles. Lamentablemente Ren'Py no es un motor que se lleve muy bien con el entorno de móviles, por lo que el lag será muy intenso en canciones con muchas notas, a pesar de todos mis esfuerzos por optimizar al extremo el rendimiento del sistema gráfico de RhythmBeats, así que solo es una versión experimental alternativa a la versión de Windows.
+
+Espero que sean comprensivos con este humilde servidor :(
+
+Mucho no puedo hacer en ese aspecto. En su lugar, recomiendo jugar en Windows para disfrutar de mejor forma el juego demostrativo :3
+
+---
+
+### 3. Niveles de dificultad de las canciones.
 
 En la versión `v1.00.1b` del juego demostrativo se clasificaron las pistas musicales en "niveles" de dificultad. Esto es visible desde el apartado **"Ver Info"**, y a partir de la **[Actualización In-Game #05](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_upd05)**, también es visible desde la lista de canciones.
 
@@ -48,7 +56,7 @@ La escala de dificultad se determina en función de la cantidad de notas necesar
 | L6                  | Púrpura  | 551-600 notas     |
 
 ---
-### 3. Lista de pistas musicales disponibles en el juego.
+### 4. Lista de pistas musicales disponibles en el juego.
 
 Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores.
 
@@ -63,6 +71,7 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | Greenlights Serenade           | Hatsune Miku                           | 200 | L4         | 443 notas  | No añadido                               |
 | Happy Synthesizer (SEKAI Ver.) | MORE MORE JUMP!                        | 127 | L6         | 592 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 | Sweet Magic                    | Wonderlands × Showtime                 | 123 | L5         | 542 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Brand New Day                  | irucaice Ft. Hatsune Miku              | 185 | L5         | 608 notas  | No añadido                               |
 
 
 * **Love Live!:**
@@ -78,6 +87,7 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | START!! True dreams            | Liella!                                     | 178 | L3         | 268 notas  | MV: "Love Live! Superstar!! S1 OP" |
 | No brand girls                 | μ's                                         | 196 | L4         | 391 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
 | DREAMY COLOR                   | Aqours                                      | 190 | L5         | 521 notas  | No añadido                         |
+| Genki Zenkai DAY! DAY! DAY!    | CYaRon!                                     | 190 | L5         | 454 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
 
 * **Otras pistas:**
 
