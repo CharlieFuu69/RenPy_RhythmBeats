@@ -40,6 +40,34 @@ Mucho no puedo hacer en ese aspecto. En su lugar, recomiendo jugar en Windows pa
 
 ---
 
+### 3. Requerimientos mínimos.
+
+A continuación se indican los requisitos mínimos para ejecutar el juego demostrativo. Por supuesto, estos requisitos están sujetos a cambios con el paso del tiempo.
+
+><p align="left">
+>    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849900-522f35c1-ff4e-4a91-b865-6bf8ca0ed1ea.png"/>
+>    <h4>Requisitos mínimos para Windows:</h4>
+> </p>
+> 
+> * **Sistema operativo:** Windows 7 o posterior.
+> * **Espacio disponible en el disco:** 1.1 GB o más.
+> * **Procesador:** 1.1 GHz de 4 núcleos o más.
+> * **RAM:** 800 MB o más.
+> * **DirectX:** v9.0c o posterior.
+
+><p align="left">
+>    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849896-840fd10f-1b21-40ec-a416-2e20a1378233.png"/>
+>    <h4>Requisitos mínimos para Android:</h4>
+> </p>
+> 
+> * **Sistema operativo:** Android v5.x o posterior.
+> * **Espacio disponible en el disco:** 1.1 GB o más.
+> * **Procesador:** Gama Media (Snapdragon 640 o posterior).
+> * **RAM:** 800 MB o más.
+> * **OpenGL ES:** v3.0 o posterior.
+
+---
+
 ### 3. Niveles de dificultad de las canciones.
 
 En la versión `v1.00.1b` del juego demostrativo se clasificaron las pistas musicales en "niveles" de dificultad. Esto es visible desde el apartado **"Ver Info"**, y a partir de la **[Actualización In-Game #05](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_upd05)**, también es visible desde la lista de canciones.
