@@ -16,7 +16,7 @@
 <h4 align = "center"> <i>[Interfaz de juego - 2DMV: Highlight]</i> </h4>
 
 #### INTERACCIÓN CON EL JUEGO:
-> Para jugar, debes tocar las teclas `C` (Izquierda) y `M` (Derecha) para acertar las notas en PC, o bien, puedes tocar la mitad izquierda o la mitad derecha de la pantalla para acertar las notas en un dispositivo Android _(Funcionalidad experimental)_.
+> Para jugar, debes tocar las teclas `C` (Izquierda) y `M` (Derecha) para acertar las notas en PC, o bien, puedes tocar la **mitad izquierda** o la **mitad derecha** de la pantalla para acertar las notas en un dispositivo Android _(Funcionalidad experimental)_.
 
 #### BARRA DE HP:
 > En la esquina superior izquierda se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo, y cuantas te quedan disponibles por fallar XD.
@@ -32,11 +32,13 @@
 
 ### 2. [¡Nuevo!] Disponibilidad para dispositivos Android.
 
-El juego demostrativo posee una versión de Android para poder jugar desde móviles. Lamentablemente Ren'Py no es un motor que se lleve muy bien con el entorno de móviles, por lo que el lag será muy intenso en canciones con muchas notas a pesar de todos mis esfuerzos por optimizar al extremo el rendimiento del sistema gráfico de RhythmBeats, así que solo es una versión experimental alternativa a la versión de Windows.
+El juego demostrativo posee una versión de Android para poder jugar desde móviles. Ren'Py no admite totalmente gestos múltiples en pantallas táctiles, asi que es posible que sea levemente incómodo tocar en una pantalla jsjjs.
+
+Por otra parte, ahora viene lo feo del port de Android. Ren'Py es un motor que <ins>no se lleva muy bien con el entorno de móviles</ins> por lo que el lag a veces es intenso en canciones con muchas notas. A pesar de todos mis esfuerzos por optimizar al extremo el rendimiento del sistema gráfico, Android no me ha perdonado.
 
 Espero que sean comprensivos con este humilde servidor :(
 
-Mucho no puedo hacer en ese aspecto. En su lugar, recomiendo jugar en Windows para disfrutar de mejor forma el juego demostrativo :3
+Mucho no puedo hacer en ese aspecto. En su lugar, recomiendo jugar en Windows para disfrutar de mejor forma el juego demostrativo :"3
 
 ---
 
