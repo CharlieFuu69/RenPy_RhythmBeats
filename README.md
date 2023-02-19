@@ -75,17 +75,7 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 ---
 
 ### Registro de actividad reciente:
-```     
-[28/01/2023 03:48 GMT -3]:
-    - Finalmente se ha liberado la primera versión del módulo de Ren'Py RhythmBeats!
-      Este lanzamiento marca la transición de Fase Alpha a Fase Beta.
-      
-[04/02/2023 01:20 GMT -3]:
-    - LO LOGRÉ MALDITA SEA!!! Sabía que los SpriteManager() eran el secreto para mejorar el
-      rendimiento del juego.
-      Eso si, necesitaré tiempo para modificar el módulo para que tenga los cambios alocados que hice
-      para lograr incrementar el rendimiento de FPS del juego.
-      
+```   
 [07/02/2023 00:35 GMT -3]:
     - En la próxima actualización, "Ren'Py RhythmBeats! Game" (el juego demostrativo) podrá mostrar
       presencia en Discord mediante la adición de Discord RPC.
@@ -97,10 +87,10 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
     - He colocado una galería de imágenes de "Ren'Py RhythmBeats! Game", el juego demostrativo de este
       repositorio.
     - Confirmo que la próxima actualización del juego incluirá 2 nuevas canciones para jugar.
-    - Hay una pequeña posibilidad de que modifique el sistema de descarga interno para elegir entre
-      una "Descarga Light" (solo las canciones), o una "Descarga Full" (canciones + 2DMV).
-      Esto se me vino a la cabeza porque el juego ya va rumbo a los 800 MB, y eso es debido a las capas
-      de video (2DMV).
+    
+[19/02/2023 04:05 GMT -3]:
+    - Ya he culminado mis labores de despliegue para la nueva actualización global v1.01.0b.
+    - "Ren'Py RhythmBeats! Game" ahora posee un port de Android en fase experimental.
 ```
 
 ---
