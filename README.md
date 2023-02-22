@@ -21,22 +21,33 @@
     <i>[El módulo ha sido liberado y documentado - ¡Fase beta iniciada!]</i>
 </h5>
 
-### ¡Bienvenido(a) al repositorio!
+<p>
+  <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
+  <h3> ¡Bienvenido al repositorio! </h3>
+</p>
 
 Te contaré un poco acerca de qué trata todo esto.
 
 **Ren'Py RhythmBeats!** es un sistema de Acción Rítmica de 2 pistas que permite integrar la mecánica básica de un juego de ritmo en una novela visual hecha en Ren'Py. Es raro ver novelas visuales con minijuegos de ritmo, pero es una idea loca que tuve a raíz de mi fanatismo por los juegos de ritmo.
 
-En fin, este sistema de Acción Rítmica es un módulo de Python que provee a tu juego la lógica de los juegos de ritmo, en cuanto al reconocimiento de toques de un jugador y la lectura de un mapa de notas.
+#### VENTAJAS DE REN'PY RHYTHMBEATS!:
 
-También hay disponible un juego demostrativo de Ren'Py RhythmBeats. Hasta este momento tiene <ins>**17 canciones**</ins> que puedes jugar, ¡y la mayoría tiene 2DMV incluido!
+* **Es simple:** El sistema rítmico que propone **Ren'Py RhythmBeats!** es minimalista, y puede ser fácil de jugar por casi cualquiera.
+* **Es poco usual:** En una novela visual, casi nunca se ven minijuegos de este tipo. Añadir este sistema rítmico en una novela visual podría ser innovador :3
+* **¡Puedes probarlo!:** He creado un juego demostrativo llamado **"Ren'Py RhythmBeats! Game"** que puedes jugar desde Windows y Android. Hay un total de 19 canciones jugables, de Project SEKAI y Love Live!
 
-El link del último lanzamiento está más abajo =3
+#### DESVENTAJAS DE REN'PY RHYTHMBEATS!:
+
+* **Puede ser lento:** Lamentablemente Ren'Py no es un motor que tenga un buen rendimiento, principalmente porque Python no es un lenguaje rápido. A nivel de cómputo, **Ren'Py RhythmBeats!** no tiene problemas, pero a nivel gráfico, puede tener caídas de FPS.
+* **El Multitouch:** Estoy intentando expandir la compatibilidad con pantallas táctiles y Android, pero ya que Ren'Py no posee una compatibilidad estable con Multitouch, puede ser más cómodo jugar con un teclado que con pantallas táctiles.
 
 ---
 
-<img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
-<h3> Descargas y más: </h3>
+<p align="left">
+  <img align="left" width="32" height="32" src="https://user-images.githubusercontent.com/77955772/219849900-522f35c1-ff4e-4a91-b865-6bf8ca0ed1ea.png"/>
+  <img align="left" width="32" height="32" src="https://user-images.githubusercontent.com/77955772/219849896-840fd10f-1b21-40ec-a416-2e20a1378233.png"/>
+  <h3> Descargas y más: </h3>
+</p>
 
 * **LANZAMIENTO DEL MÓDULO DE REN'PY RHYTHMBEATS (BETA):**
 
@@ -76,13 +87,6 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 
 ### Registro de actividad reciente:
 ```   
-[07/02/2023 00:35 GMT -3]:
-    - En la próxima actualización, "Ren'Py RhythmBeats! Game" (el juego demostrativo) podrá mostrar
-      presencia en Discord mediante la adición de Discord RPC.
-    - Estoy empleando más maniobras para optimizar el rendimiento del juego. Si la próxima actualización
-      se ve con lag en tu PC, entonces definitivamente tienes una tostadora.
-    - Posiblemente voy a añadir 2 canciones más en la siguiente actualización.
-    
 [10/02/2023 03:47 GMT -3]:
     - He colocado una galería de imágenes de "Ren'Py RhythmBeats! Game", el juego demostrativo de este
       repositorio.
@@ -91,6 +95,10 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 [19/02/2023 04:05 GMT -3]:
     - Ya he culminado mis labores de despliegue para la nueva actualización global v1.01.0b.
     - "Ren'Py RhythmBeats! Game" ahora posee un port de Android en fase experimental.
+    
+[22/02/2023 20:17 GMT -3]:
+    - Intentaré recalibrar las canciones ya que estoy notando algunos desfases en los beatmaps.
+      Esta recalibración se verá reflejada en una próxima Actualización In-Game.
 ```
 
 ---
