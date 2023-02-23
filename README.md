@@ -3,7 +3,7 @@
 [release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases
 
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
-[license-badge]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
+[license-badge]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&logo=creativecommons
 [license-image]: https://www.gnu.org/graphics/gplv3-with-text-136x68.png
 [status-badge]: https://img.shields.io/badge/Status-Beta-000077?style=for-the-badge
 [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
