@@ -99,6 +99,9 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 [22/02/2023 20:17 GMT -3]:
     - Intentaré recalibrar las canciones ya que estoy notando algunos desfases en los beatmaps.
       Esta recalibración se verá reflejada en una próxima Actualización In-Game.
+    - Me han enviado una solicitud para traducir el contenido de Ren'Py RhythmBeats hacia otros
+      idiomas :3
+      Necesitaré actualizar la documentación porque el módulo ha recibido severos cambios.
 ```
 
 ---
