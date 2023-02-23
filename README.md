@@ -4,6 +4,7 @@
 
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
 [license-badge]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge
+[license-image]: https://www.gnu.org/graphics/gplv3-with-text-136x68.png
 [status-badge]: https://img.shields.io/badge/Status-Beta-000077?style=for-the-badge
 [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
 
@@ -105,9 +106,9 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 
 ---
 ### Licencias:
-[![license-badge]][license]
+[![license-image]][license]
 
-Este juego demostrativo/módulo, se distribuye bajo la licencia **[GPL v3.0](license)**.
+Este juego demostrativo/módulo, se distribuye bajo la licencia **[GPL v3.0](https://www.gnu.org/licenses/gpl-3.0)**.
 
 Si quieres usar o modificar este proyecto, te agradecería que me dieras crédito adjuntando la URL de este repositorio :3
 
