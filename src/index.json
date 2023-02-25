@@ -1,25 +1,105 @@
 {
-  "version" : "v1.02.1b",
-  "packages" : {
-    "Coregame" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Coregame.bruh",
-    "Song_0001" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0001.bruh",
-    "Song_0002" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0002.bruh",
-    "Song_0003" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0003.bruh",
-    "Song_0004" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0004.bruh",
-    "Song_0005" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0005.bruh",
-    "Song_0006" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0006.bruh",
-    "Song_0007" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0007.bruh",
-    "Song_0008" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0008.bruh",
-    "Song_0009" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0009.bruh",
-    "Song_0010" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0010.bruh",
-    "Song_0011" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0011.bruh",
-    "Song_0012" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0012.bruh",
-    "Song_0013" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0013.bruh",
-    "Song_0014" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0014.bruh",
-    "Song_0015" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0015.bruh",
-    "Song_0016" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0016.bruh",
-    "Song_0017" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0017.bruh",
-    "Song_0018" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0018.bruh",
-    "Song_0019" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0019.bruh"
-  }
+    "version" : "v1.02.1b",
+    "packages" : [
+        {
+            "name" : "Coregame",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Coregame.bruh",
+            "md5" : "bd648bd9f869c730b5fb7d63e1138fad"
+        },
+        {
+            "name" : "Song_0001",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0001.bruh",
+            "md5" : "f4ac4064a5297e00dbe5c87a249ce59b"
+        },
+        {
+            "name" : "Song_0002",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0002.bruh",
+            "md5" : "5ba04f7dd730d6c6c31acb5834066916"
+        },
+        {
+            "name" : "Song_0003",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0003.bruh",
+            "md5" : "dcce87c13e482469dd980d7a1d328e90"
+        },
+        {
+            "name" : "Song_0004"
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0004.bruh",
+            "md5" : "9c3de0b4ad4fbb9eafe00f5820ffe9e2"
+        },
+        {
+            "name" : "Song_0005",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0005.bruh",
+            "md5" : "a9e87796c786e166788ff3668d41a478"
+        },
+        {
+            "name" : "Song_0006",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0006.bruh",
+            "md5" : "941ba6907e76c3211fb64bae2f09bfe3"
+        },
+        {
+            "name" : "Song_0007",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0007.bruh",
+            "md5" : "499bdf115b7f2ea323bc45073dac9912"
+        },
+        {
+            "name" : "Song_0008",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0008.bruh",
+            "md5" : "31738f2935bda8a908c97471529e46ca"
+        },
+        {
+            "name" : "Song_0009",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0009.bruh",
+            "md5" : "ad69e162c18b5d7e57e2b0b14b396320"
+        },
+        {
+            "name" : "Song_0010",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0010.bruh",
+            "md5" : "244adadd3158694b53d174d12c96bd17"
+        },
+        {
+            "name" : "Song_0011",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0011.bruh",
+            "md5" : "fcc227b7fe1fc11c598d37353392cb52"
+        },
+        {
+            "name" : "Song_0012",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0012.bruh",
+            "md5" : "ec9e1f890cd2d1a00610fc1aa4bd8577"
+        },
+        {
+            "name" : "Song_0013",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0013.bruh",
+            "md5" : "7a7f06fdb82b308cb28364d1dfae6767"
+        },
+        {
+            "name" : "Song_0014",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0014.bruh",
+            "md5" : "2817afba2b8baaac6b13d7b39ceb4a87"
+        },
+        {
+            "name" : "Song_0015",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0015.bruh",
+            "md5" : "4ee0a6d77ef9590663873058ea79b6a8"
+        },
+        {
+            "name" : "Song_0016",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0016.bruh",
+            "md5" : "8b6640b3ad410175b6c77bc231ed97ba"
+        },
+        {
+            "name" : "Song_0017",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0017.bruh",
+            "md5" : "432f24b8b8fcb024a6d1437c32f5ea5b"
+        },
+        {
+            "name" : "Song_0018",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0018.bruh",
+            "md5" : "223557a020dd8bcd0fc6a1b9d08326c6"
+        },
+        {
+            "name" : "Song_0019",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0019.bruh",
+            "md5" : "02cf37db2732c6e0b83512e884e60733"
+        }
+    ]
 }
