@@ -84,27 +84,6 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 </p>
 
 ---
-
-### Registro de actividad reciente:
-```   
-[10/02/2023 03:47 GMT -3]:
-    - He colocado una galería de imágenes de "Ren'Py RhythmBeats! Game", el juego demostrativo de este
-      repositorio.
-    - Confirmo que la próxima actualización del juego incluirá 2 nuevas canciones para jugar.
-    
-[19/02/2023 04:05 GMT -3]:
-    - Ya he culminado mis labores de despliegue para la nueva actualización global v1.01.0b.
-    - "Ren'Py RhythmBeats! Game" ahora posee un port de Android en fase experimental.
-    
-[22/02/2023 20:17 GMT -3]:
-    - Intentaré recalibrar las canciones ya que estoy notando algunos desfases en los beatmaps.
-      Esta recalibración se verá reflejada en una próxima Actualización In-Game.
-    - Me han enviado una solicitud para traducir el contenido de Ren'Py RhythmBeats hacia otros
-      idiomas :3
-      Necesitaré actualizar la documentación porque el módulo ha recibido severos cambios.
-```
-
----
 ### Licencias:
 [![license-image]][license]
 
