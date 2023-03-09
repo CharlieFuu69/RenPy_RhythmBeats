@@ -1,13 +1,23 @@
+## CharlieFuu69
+## Ren'Py RhythmBeats! Game
+
+## Script: Definiciones principales del juego.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
+
+################################################################################
+
 init python:
     import logging
     import os
 
-    logpath = config.basedir + "/rhythmbeats.log"
+    logpath = os.path.join(config.basedir, "rhythmbeats.log")
 
     logging.basicConfig(
                 filename=logpath,
                 format="[%(asctime)s] %(levelname)s: %(message)s",
-                level=logging.DEBUG)
+                level=logging.DEBUG,
+                filemode = "w")
 
     logging.info("-----------<[Sesión de juego iniciada]>-----------")
 
@@ -33,6 +43,9 @@ init:
     image ui_icon_logo = "gui/window_icon.png"
     image ui_icon_headphones = Transform("gui/ui_icon_headphones.png", zoom = 0.15)
 
+    image tex_black = Transform(Solid("#000"), alpha = 0.6)
+    image tex_black_solid = Solid("#000")
+
 
 ## -------------------------------------------------------------------------- ##
 ## ATL
@@ -45,3 +58,16 @@ transform headphone_blink:
         ease 0.5 alpha 1.0
         ease 0.5 alpha 0.0
         repeat
+
+
+transform msgwindow_anim:
+    subpixel True
+    anchor(0.5, 0.5)
+
+    on show, start:
+        zoom 0.0
+        ease 0.12 zoom 1.0
+
+    on hide:
+        zoom 1.0
+        ease 0.12 zoom 0.0
