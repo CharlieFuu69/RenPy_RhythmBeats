@@ -15,7 +15,7 @@ En esta sección verás una introducción acerca del módulo e información de c
 
 **Ren'Py RhythmBeats!** es un módulo que te proporciona las funcionalidades básicas para que puedas implementar un minijuego de ritmo en un proyecto de Ren'Py.
 
-Actualmente este sistema de acción rítmica sirve para juegos destinados a <ins>**plataformas de PC**</ins>. Puedes obtener más información acerca de la compatibilidad en la **[Sección 2](doc_section_02.md)** de esta documentación.
+Actualmente este sistema de acción rítmica sirve para juegos destinados a <ins>**plataformas de PC**</ins>, pero se está trabajando en la compatibilidad con dispositivos móviles (pantallas táctiles). Puedes obtener más información acerca de la compatibilidad en la **[Sección 2](doc_section_02.md)** de esta documentación.
 
 Para crear minijuegos, este sistema rítmico proporciona 2 carriles o pistas de notas para la cascada visual en el juego, lo que ayuda a que los jugadores puedan completar las canciones sin muchas complicaciones. No es un sistema rítmico complejo, pero pienso que es suficiente como para una novela visual.
 
