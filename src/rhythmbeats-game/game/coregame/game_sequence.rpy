@@ -1,24 +1,44 @@
 ## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## Ren'Py RhythmBeats! Game
 
 ## Script: (Coregame) Secuencia de juego.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 ################################################################################
 
 ## -------------------------------------------------------------------------- ##
 ## Secuencia del menú de pistas musicales.
 
+label quit:
+    if rpc:
+        $ rpc.stop()
+
+    return
+
 label song_selection_menu:
+    $ p = persistent ## Reduce el espacio horizontal usado por variables "persistent"
     $ music_inst = MusicData(fn = "coregame/music_data.json")
     $ music_inst.load()
+    $ record_scores(init_mode = music_inst.get_song_count())
     $ stage_aborted = False
     $ data = None
-    $ p = persistent ## Reduce el espacio horizontal usado por variables "persistent"
 
     if not p.song_selected:
         $ p.song_selected = music_inst.sort(p.category)[0]
 
-    $ renpy.notify("Las canciones que muestren la insignia {image=ui_performance_alert} podrían tener problemas de rendimiento.")
+    $ fix_previews(music_inst.sort("all"))
+
+    if p.discord_rpc:
+        if not rpc:
+            $ rpc = DiscordRichPresence()
+            $ rpc.set_status(state = "En \"Menú de Pistas\".",
+                            details = "Seleccionando pista musical...")
+            $ rpc.rpc_start()
+
+        else:
+            $ rpc.set_status(state = "En \"Menú de Pistas\".",
+                            details = "Seleccionando pista musical...")
 
     call screen song_select(music_inst) with dissolve
 
@@ -30,19 +50,28 @@ label song_selection_menu:
 
     label game_playstage:
 
+        scene tex_black_solid
+
+        if rpc:
+            $ rpc.set_status(state = "Artistas: %s" % data["song_artists"],
+                            details = "Jugando: \"%s\"" % data["song_title"],
+                            image_text = "Partida en curso...")
+
         ## Esto libera un poco de memoria antes de ejecutar una canción
         $ renpy.free_memory()
 
         ## Instancia de la clase RhythmPlayground para ejecutar una partida.
         python:
-            rhythm = rbs.RhythmPlayground(
+            rhythm = RhythmPlayground(
                         fn = data["beatmap"],
+                        displayable = Transform("ui_coregame_note_tap", zoom = 0.55),
+                        song_file = data["audio"],
                         offset_map = data["map_offset"],
                         offset_game = p.custom_offset,
+                        max_score = 12000,
                         failsafe = p.failsafe)
 
             rhythm.load()
-
             rhythm.miss_sound = audio.sfx_note_miss
 
         stop music fadeout 1.0
@@ -50,8 +79,7 @@ label song_selection_menu:
         hide bg_main
         $ renpy.pause(0.5, hard = True)
 
-        play music data["audio"] noloop
-        show screen playground_hud(data["length"])
+        show screen playground_hud(data["length"], data["score_goal"])
         show screen playground(mv_data = data["mv"]) with dissolve
 
         $ renpy.pause(hard = True)
@@ -90,15 +118,24 @@ label song_selection_menu:
 
     ## Secuencia de resultados de la partida
     label show_results_sequence:
+        $ get_record_flag = record_scores(id = data["id"], score = rhythm.stage_score)
         $ finish_playstage(["playground", "playground_hud"], dissolving = True)
         hide screen playground_finish with dissolve
 
         $ renpy.pause(1.0, hard = True)
 
+        $ bgcover_image = Fixed(Transform(im.Blur(data["cover"], 2.0), zoom = 2.5), Transform(Solid("#000"), alpha = 0.5))
+
+        show expression bgcover_image at alpha_com(1.0, 2.0) as coverimage
+
         play music bgm_0047
+        call screen results_start
+        call screen score_frame
         call screen show_results(data, rhythm)
+        hide coverimage with dissolve
 
         $ del rhythm
+        $ del get_record_flag
         $ renpy.free_memory()
 
         jump song_selection_menu
