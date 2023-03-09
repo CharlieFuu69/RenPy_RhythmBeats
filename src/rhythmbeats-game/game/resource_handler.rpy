@@ -1,16 +1,18 @@
 ## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## Ren'Py RhythmBeats! Game
 
 ## Script: Manipulador de recursos y descarga de paquetes.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 ################################################################################
 
 init python:
-    import time, json, requests, threading, ssl, re
+    import time, json, requests, threading, ssl
 
     class UpdateManager(threading.Thread):
 
-        def __init__(self):
+        def __init__(self, ext = "", skip = True):
             """Constructor de la clase UpdateManager().
             Esta clase se encarga de realizar los procedimientos de recuperación de datos del
             host (ver atributo self.index_url), comprobar si existen actualizaciones y gestionar la
@@ -20,18 +22,21 @@ init python:
 
             self.daemon = True
 
-            self.index_url = "https://raw.githubusercontent.com/CharlieFuu69/RenPy_RhythmBeats/main/src/pkg_index.json"
+            self.index_url = None
             self.headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
-                            "Cache-Control": "no-cache",
-                            "Pragma": "no-cache"}
+                            "Accept-Encoding" : "identity"}
+
+            self.dl_path = config.gamedir if any((renpy.windows, renpy.linux)) else os.path.join(os.environ["ANDROID_PUBLIC"], "game")
+            self.ext = ext
+            self.skip = skip
 
             self.local_index = persistent.local_index
-            self.remote_index = {}
+            self.remote_index = dict()
 
             self.request_end = False
             self.exception_content = None
 
-            self.update_queue = {}
+            self.update_queue = list()
             self.update_size = 0
             self.progress = [0, 0]
 
@@ -43,10 +48,13 @@ init python:
             if not persistent.local_index:
                 self.local_index = persistent.local_index = {}
 
+            if not os.path.exists(self.dl_path):
+                os.mkdir(self.dl_path)
+
             logging.info("Eliminando archivos residuales...")
-            for file in os.listdir(config.gamedir):
-                if file.endswith(("tmp", ").bruh")):
-                    os.remove(os.path.join(config.gamedir, file))
+            for file in os.listdir(self.dl_path):
+                if file.endswith(("tmp", ")%s" % self.ext)):
+                    os.remove(os.path.join(self.dl_path, file))
 
             logging.info("Archivos residuales eliminados.")
 
@@ -68,19 +76,19 @@ init python:
 
             ssl._create_default_https_context = ssl._create_unverified_context
 
-            current_queue = {}
-            current_url = ""
+            current_queue = list()
 
             logging.info("Comparando índice local con el índice remoto")
-            if not config.developer:
-                for k in self.remote_index:
-                    if k in self.local_index:
-                        if self.local_index[k] != self.remote_index[k] or not renpy.exists(k + ".bruh"):
-                            if renpy.exists(k + ".bruh"):
-                                os.remove(os.path.join(config.gamedir, k + ".bruh"))
-                            current_queue.update({k : self.remote_index[k]})
+            if not self.skip:
+                print("--------------- COMPARE ---------------")
+                for pkg in self.remote_index:
+                    if pkg["name"] in self.local_index:
+                        if pkg["md5"] != self.local_index[pkg["name"]] or not renpy.exists(pkg["name"] + self.ext):
+                            if renpy.exists(pkg["name"] + self.ext):
+                                os.remove(os.path.join(self.dl_path, pkg["name"] + self.ext))
+                            current_queue.append(pkg)
                     else:
-                        current_queue.update({k : self.remote_index[k]})
+                        current_queue.append(pkg)
             else:
                 logging.info("Comparación omitida. Modo desarrollador activo.")
 
@@ -90,20 +98,13 @@ init python:
             if len(current_queue) > 0:
                 logging.info("Obteniendo endpoints de descarga...")
 
-            for k in current_queue:
-                self.progress[0] += 1
-                r = requests.get(current_queue[k], headers = self.headers, timeout = 5)
-                url = re.findall('"((http|ftp)s?://.*?)"', r.text)
+                for pkg in current_queue:
+                    self.progress[0] += 1
 
-                for i in url:
-                    if i[0].startswith("https://download"):
-                        current_url = i[0]
-                        break
-
-                r = requests.head(current_url, headers = self.headers, timeout = 5)
-                self.update_size += round(float(r.headers["Content-Length"]) / 1048576.0, 2)
-                self.update_queue.update({k : current_url})
-                renpy.restart_interaction()
+                    r = requests.head(pkg["url"], headers = self.headers, timeout = 5, allow_redirects = True)
+                    self.update_size += round(float(r.headers["Content-Length"]) / 1048576.0, 2)
+                    self.update_queue.append(pkg)
+                    renpy.restart_interaction()
 
 
         def start_batch_download(self):
@@ -117,21 +118,23 @@ init python:
             logging.info("Cola de descarga esperada: %s" % batch_length)
 
             for pkg in sorted(self.update_queue):
-                logging.info("Descargando \"%s\"..." % pkg)
+                logging.info("Descargando \"%s\"..." % pkg["name"])
                 batch_count += 1
 
                 renpy.call_screen("download",
-                            url = self.update_queue[pkg],
+                            url = pkg["url"],
                             progress = (batch_count, batch_length),
-                            path = os.path.join(config.gamedir, "%s.bruh" % pkg))
+                            path = os.path.join(self.dl_path, pkg["name"] + self.ext))
 
-                self.update_queue.pop(pkg)
-                persistent.local_index.update({pkg : self.remote_index[pkg]})
+                self.update_queue.remove(pkg)
+                persistent.local_index.update({pkg["name"] : pkg["md5"]})
 
 
         def run(self):
             """Este método ejecuta la búsqueda de actualizaciones en un hilo paralelo al del juego
             mediante threading.Thread."""
+
+            remote_ver = None
 
             self.setup()
 
@@ -140,14 +143,15 @@ init python:
                 r = requests.get(self.index_url, timeout = 5)
 
                 if r.status_code == 200:
-                    self.remote_index = json.loads(r.text)
+                    index_digest = json.loads(r.text)
 
-                    if "version" in self.remote_index:
-                        logging.info("Comprobando versión global...")
-                        if self.remote_index["version"] != config.version:
-                            renpy.show_screen("need_main_update", now_version = self.remote_index["version"])
+                    self.remote_index = index_digest["packages"]
+                    remote_ver = index_digest["version"]
 
-                        self.remote_index.pop("version")
+                    logging.info("Comprobando versión global...")
+                    if remote_ver != config.version:
+                        renpy.call_screen("need_main_update", now_version = remote_ver)
+
                     self.get_update()
                 else:
                     raise Exception("Error de adquisición de datos: %s" % r)
