@@ -1,13 +1,16 @@
-﻿## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## CharlieFuu69
+## Ren'Py RhythmBeats! Game
 
 ## Script: (Ren'Py) configuración del proyecto y definiciones.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 #############################################################
 
 ## Metadatos y Compilación
 define config.name = "Ren'Py RhythmBeats! Game"
-define config.version = "v1.00.1b"
+define config.version = "v1.02.1b"
+define game_license = "© 2023 CharlieFuu69 - GNU GPL v3.0"
 define gui.show_name = False
 
 define build.name = "RhythmBeats"
@@ -23,12 +26,13 @@ define config.window_icon = "gui/window_icon.png"
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
-define config.default_music_volume = 0.3
-define config.default_sfx_volume = 0.4
-define config.default_voice_volume = 0.3
+define config.default_music_volume = 0.65 if renpy.android else 0.3
+define config.default_sfx_volume = 0.9 if renpy.android else 0.4
+define config.default_voice_volume = 0.65 if renpy.android else 0.3
 define config.play_channel = "ui_01"
 define config.emphasize_audio_channels = []
 define config.main_menu_music = "audio/main/bgm_0001.ogg"
+define config.sound_sample_rate = 41000
 
 ## Comportamiento de UI
 define config.enter_transition = dissolve
@@ -55,7 +59,7 @@ default persistent.custom_alpha = 0.0
 ## Comportamiento del juego
 define config.autosave_on_quit = False
 define config.autosave_frequency = None
-define config.autoreload = False
+define config.autoreload = True
 define config.has_autosave = False
 define config.auto_load = None
 define config.save_on_mobile_background = False
@@ -72,6 +76,8 @@ define config.allow_skipping = False
 ## Ajustes de compilación
 
 init python:
+    CURRENT_SONG_COUNT = 22
+
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
@@ -79,6 +85,7 @@ init python:
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
     build.classify("game/**.rpy", None)
+    build.classify("game/**.rpym", None)
     build.classify("other/**.**", None)
 
 
@@ -92,16 +99,17 @@ init python:
     build.classify("game/*.rpyc", "Main")
 
     ## Coregame
-    build.archive("Coregame", "all")
+    build.archive("Coregame", "windows")
+    build.classify("game/python-packages/discord_rpc/**.**", "Coregame")
     build.classify("game/coregame/**.ogg", "Coregame")
     build.classify("game/coregame/**.rpyc", "Coregame")
+    build.classify("game/coregame/**.rpymc", "Coregame")
     build.classify("game/coregame/**.json", "Coregame")
     build.classify("game/coregame/**.png", "Coregame")
-    build.classify("game/python-packages/rhythmbeats/**.py", "Coregame")
 
     ## Song packages
-    for song_id in range(1, 17+1):
-        build.archive("Song_%04d" % song_id, "all")
+    for song_id in range(1, CURRENT_SONG_COUNT+1):
+        build.archive("Song_%04d" % song_id, "windows")
         build.classify("game/MV/2dmv_%04d.webm" % song_id, "Song_%04d" % song_id)
         build.classify("game/audio/bgm_%04d.ogg" % song_id, "Song_%04d" % song_id)
         build.classify("game/beatmaps/bmp_%04d.beat" % song_id, "Song_%04d" % song_id)
