@@ -1,16 +1,61 @@
 ## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## Ren'Py RhythmBeats! Game
 
 ## Script: (Coregame) Bloques de código Python para ejecución del juego.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 ################################################################################
 
 init python:
-    import rhythmbeats as rbs
-
     """NOTAS:
     El contenido de este script no forma parte del módulo de RhythmBeats.
-    Es código para ejecución correcta de la implementación de este juego."""
+    Es código para ejecución correcta de la implementación de este juego.
+    """
+
+    import discord_rpc, time
+
+    ## Importación del módulo de "Ren'Py RhythmBeats!"
+    renpy.load_module("coregame/rhythmbeats")
+
+    ## Mover a "definitions.rpy" en la próxima actualización global
+    renpy.music.register_channel("ui_02", mixer = "sfx", loop = False)
+    renpy.music.register_channel("ui_03", mixer = "sfx", loop = False)
+
+
+    def record_scores(init_mode = False, id = None, score = None):
+        """Esta función actualiza claves del diccionario que contiene los récords
+        del jugador, o bien, actualiza el récord en caso de que el jugador haya
+        superado su propia marca."""
+
+        if init_mode:
+            for id in range(1, init_mode+1):
+                _id = "Song_%04d" %(id)
+                if _id in p.highscores:
+                    continue
+                else:
+                    logging.info("Record ID nuevo: %s" % _id)
+                    p.highscores.update({_id : 0})
+
+        else:
+            if score > p.highscores[id]:
+                logging.info("Record registrado para %s: %s" % (id, dotfmt(score)))
+                p.highscores.update({id : score})
+                return True
+            else:
+                return False
+
+
+    def fix_previews(all_metadata):
+        """Esta función corrige cualquier diferencia de datos entre la canción
+        seleccionada y el archivo de metadatos de música."""
+
+        for song in all_metadata:
+            print("SELECT * :", p.song_selected)
+            print("REPEATED:", song)
+            if p.song_selected["audio_preview"] == song["audio_preview"]:
+                p.song_selected = song
+                return None
 
 
     def finish_playstage(screen_queue = [], dissolving = False):
@@ -24,25 +69,27 @@ init python:
                 renpy.with_statement(dissolve)
 
 
-    def accuracy_color(avg = 0.0, disp = "bar"):
-        """Esta función se utiliza para colorizar la barra y el texto que señala la precisión
-        media del jugador."""
+    def dotfmt(value):
+        return format(value, ",d").replace(",", ".")
 
-        avg = abs(avg)
 
-        colors = {
-                "bar" : {"perfect" : "#9F9", "great" : "#FF9", "bad" : "#F44"},
-                "text" : {"perfect" : "#090", "great" : "#990", "bad" : "#900"}
-        }
+    def score_color(score, goal):
+        """Esta función se encarga de entregar a la UI de la partida, el color
+        del Rank alcanzado actualmente, el Rank actual, el puntaje formateado
+        con puntos y la medalla correspondiente al Rank actual."""
 
-        if avg < 10.0:
-            return colors[disp]["perfect"]
-        elif avg >= 10.0 and avg < 20.0:
-            return colors[disp]["great"]
-        elif avg >= 20.0:
-            return colors[disp]["bad"]
-        else:
-            return "#000"
+        b = goal * 0.3
+        a = goal * 0.5
+        s = goal * 1.0
+
+        colors = {"#CCCCCC" : {"rank" : "C", "icon" : "ui_icon_rank_c", "range" : all((score >= 0, score < b))},
+                "#00CCFF" : {"rank" : "B", "icon" : "ui_icon_rank_b", "range" : all((score >= b, score < a))},
+                "#EEEE37" : {"rank" : "A", "icon" : "ui_icon_rank_a", "range" : all((score >= a, score < s))},
+                "#FF32CD" : {"rank" : "S", "icon" : "ui_icon_rank_s", "range" : score >= s}}
+
+        for k in colors:
+            if colors[k]["range"]:
+                return (k, colors[k]["rank"], dotfmt(score), colors[k]["icon"])
 
 
     def hp_color(hp = 0, disp = "bar"):
@@ -60,7 +107,7 @@ init python:
             return colors[disp]["normal"]
 
 
-    def difficult(level):
+    def level_color(level, mode = "color"):
         colors = {
                 2 : "0AA",
                 3 : "0A0",
@@ -69,7 +116,32 @@ init python:
                 6 : "F0F"
         }
 
-        return u"{outlinecolor=%s}L%s{/outlinecolor}" % (colors[level], level)
+        if mode == "color":
+            return colors[level]
+        elif mode == "text":
+            return u"{outlinecolor=%s}L%s{/outlinecolor}" % (colors[level], level)
+
+
+    def trim_text(_text, limit):
+        """Esto recorta un texto si alzanca un límite determinado de caracteres
+        de longitud, agregando puntos suspensivos al final del recorte."""
+
+        if len(_text) > limit:
+            return _text[:limit] + "..."
+        return _text
+
+
+    def play_preview(now):
+        """Esto reproduce un fragmento de la canción completa al seleccionarla
+        desde el menú de pistas."""
+
+        if not renpy.music.get_playing(channel = "music") == now["audio_preview"]:
+            renpy.music.stop(channel="music", fadeout = 0.15)
+            renpy.music.play(
+                        now["audio_preview"],
+                        loop = True,
+                        fadeout = 0.15,
+                        if_changed = True)
 
 
     class AlphaControl2DMV(BarValue):
@@ -132,46 +204,97 @@ init python:
 
             return music_metadata[id]
 
+        def get_song_count(self):
+            sort_all_songs = list()
 
-    def play_preview(now):
-        """Esto reproduce un fragmento de la canción completa al seleccionarla
-        desde el menú de pistas."""
+            for section in sorted(self.entire_data):
+                sort_all_songs.extend(self.entire_data[section])
 
-        renpy.music.stop(channel="music", fadeout = 0.15)
-        renpy.music.play(
-                    now["audio_preview"],
-                    loop = True,
-                    fadeout = 0.15,
-                    if_changed = True)
+            return len(sort_all_songs)
 
 
-    ## NO IMPLEMENTADO NI TESTEADO
-    """
-    class WaterfallDisplay(object):
+    class DiscordRichPresence:
+        """Esta clase permite hacer visible al juego en Discord mediante
+        Discord Rich Presence (RPC).
+        Esto solo funciona en PC, y para que la actividad sea visible, el jugador
+        debe tener instalado el cliente de Discord en su PC.
+        No se asegura que el juego sea visible si se usa Discord desde un navegador."""
 
-        def __init__(self, beatmap_object):
+        def __init__(self):
+            self.client = "1072433463833133116"
+            self.is_running = True
+            self.runtime_epoch = time.time()
 
-            self.sm = SpriteManager(update=self.update)
-            self.note_image = "coregame/ui/ui_coregame_note_tap.png"
+            self.cb_methods = {
+                            "ready" : self.rpc_ready,
+                            "disconnected" : self.rpc_disconnect,
+                            "error" : self.rpc_error}
 
-            ## Lista de sprites (las notas)
-            self.note_taps = []
+            discord_rpc.initialize(self.client, callbacks=self.cb_methods, log=False)
 
-            ## Iteración del Beatmap
-            for left, right in beatmap_object():
-                if isinstance(left, float):
-                    self.add(self.note_image, left, "LEFT")
-                if isinstance(right, float):
-                    self.add(self.note_image, right, "RIGHT")
+        ## ---------------------------------------------------------------------- ##
+        ## Métodos callback para reportar actividad de Discord RPC
 
-        def add(self, disp, timestamp, lane):
-            if lane == "LEFT":
-                sprite = self.sm.create(At(disp, note_fall_opt(x=[0.45, 0.37], timing = timestamp)))
-            elif lane == "RIGHT":
-                sprite = self.sm.create(At(disp, note_fall_opt(x=[0.55, 0.63], timing = timestamp)))
+        def rpc_ready(self, userdict):
+            logging.info("Discord RPC está activo...")
+            logging.info("Usuario detectado: %s" % userdict["username"])
+            logging.info("ID de usuario: #%s" % userdict["id"])
 
-            self.note_taps.append((sprite, timestamp))
+            renpy.notify("{image=ui_icon_discord}  ¡Ren'Py RhythmBeats ya es visible en Discord!")
 
-        def update(self, st):
-            return 0.1666
-    """
+
+        def rpc_disconnect(self, code, msg):
+            logging.warning("Discord RPC está desconectado.")
+            logging.warning("Código de error: %s" % code)
+            logging.warning("Detalles: %s" % msg)
+
+
+        def rpc_error(self, code, msg):
+            logging.error("Error durante la ejecución de Discord RPC.")
+            logging.error("Código de error: %s" % code)
+            logging.error("Detalles: %s" % msg)
+
+        ## ---------------------------------------------------------------------- ##
+        ## Métodos de ejecución y de actividad de Discord RPC
+
+        def set_status(self, state = "", details = "", image_text = "Jugando a Ren'Py RhythmBeats!"):
+
+            discord_rpc.update_presence(
+                **{
+                    "state" : state,
+                    "details" : details,
+                    "start_timestamp": self.runtime_epoch,
+                    "large_image_key": "largeimage",
+                    "large_image_text" : image_text
+                }
+            )
+
+            renpy.restart_interaction()
+
+
+        def stop(self):
+            self.is_running = False
+            discord_rpc.shutdown()
+
+
+        def rpc_updater(self):
+            while True:
+                try:
+                    discord_rpc.update_connection()
+                    discord_rpc.run_callbacks()
+
+                except Exception as rpc_upd_error:
+                    print("Error: %s" % rpc_upd_error)
+                finally:
+                    if self.is_running:
+                        time.sleep(3)
+                    else:
+                        break
+
+
+        def rpc_start(self):
+            renpy.notify("{image=ui_icon_discord}  Ren'Py RhythmBeats se está conectando con Discord...")
+
+            t1 = threading.Thread(target = self.rpc_updater)
+            t1.setDaemon(True)
+            t1.start()
