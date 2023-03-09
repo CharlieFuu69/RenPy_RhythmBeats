@@ -1,7 +1,9 @@
-﻿## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## CharlieFuu69
+## Ren'Py RhythmBeats! Game
 
 ## Script: (Ren'Py) Screens principales.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 #############################################################
 
@@ -549,34 +551,7 @@ style return_button:
 ## de cómo hacer una pantalla personalizada.
 
 screen about():
-
-    tag menu
-
-    ## Esta sentencia 'use' incluye la pantalla 'game_menu' dentro de esta. El
-    ## elemento 'vbox' se incluye entonces dentro del 'viewport' al interno de
-    ## la pantalla 'game_menu'.
-    use game_menu(_("Acerca de"), scroll="viewport"):
-
-        style_prefix "about"
-
-        vbox:
-
-            label "[config.name!t]"
-            text _("Versión [config.version!t]\n")
-
-            ## 'gui.about' se ajusta habitualmente en 'options.rpy'.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
-
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
-
-style about_label_text:
-    size gui.label_text_size
+    add Solid("#000")
 
 
 ## Pantallas de carga y grabación ##############################################
@@ -1147,22 +1122,11 @@ style help_label_text:
 ## https://www.renpy.org/doc/html/screen_special.html#confirm
 
 screen confirm(message, yes_action, no_action):
-
-    ## Asegura que otras pantallas no reciban entrada mientras se muestra esta
-    ## pantalla.
     modal True
     zorder 200
     style_prefix "confirm"
 
-    on "show" action Play("notify_01", audio.ui_sound_notify)
-
-    add "gui/overlay/confirm.png"
-
-    frame:
-        frame:
-            style "msg_success"
-            label "PANTALLA DE CONFIRMACIÓN"
-
+    use notify_window("VENTANA DE CONFIRMACIÓN", notify_sound=audio.ui_sound_notify):
         vbox:
             spacing 30
             text _(message)
@@ -1411,12 +1375,12 @@ style nvl_button_text:
 
 screen main_advice():
     style_prefix "startscreen"
-    timer 4.0 action [Hide("main_advice", transition = dissolve), Return()]
+    timer 3.0 action [Hide("main_advice", transition = dissolve), Return()]
 
     vbox:
         xsize 900
         add "ui_icon_headphones" at headphone_blink
-        text "Se recomienda el uso de auriculares (cascos recomendados)."
+        text "Usa auriculares para una mejor experiencia (cascos recomendados)."
 
 
 screen startscreen():
@@ -1429,7 +1393,7 @@ screen startscreen():
         label config.name
         text config.version
 
-    text "© CharlieFuu69 - Creative Commons CC-BY-SA v4.0" ypos 0.9
+    text "[game_license]" ypos 0.9
 
 style startscreen_vbox:
     align(0.5, 0.5)
@@ -1451,6 +1415,27 @@ style startscreen_text:
 
 
 ## -------------------------------------------------------------------------- ##
+## Ventana de notificaciones prefeterminada
+
+screen notify_window(title = "", level = 0, notify_sound = None, shadow=True):
+    modal True
+    zorder 110
+    style_prefix "confirm"
+
+    timer 0.01 action Play("notify_01", notify_sound)
+
+    if shadow:
+        add "tex_black"
+
+    frame at msgwindow_anim:
+        frame:
+            style_prefix ("msg_success" if level == 0 else "msg_failed")
+            label title
+
+        transclude
+
+
+## -------------------------------------------------------------------------- ##
 ## Screen de actualización global necesaria
 
 screen need_main_update(now_version = ""):
@@ -1458,15 +1443,7 @@ screen need_main_update(now_version = ""):
     zorder 200
     style_prefix "confirm"
 
-    on "show" action Play("notify_01", audio.ui_sound_notify)
-
-    add "gui/overlay/confirm.png"
-
-    frame:
-        frame:
-            style "msg_success"
-            label "ACTUALIZACIÓN GLOBAL NECESARIA"
-
+    use notify_window("ACTUALIZACIÓN GLOBAL NECESARIA", notify_sound = audio.ui_sound_notify):
         vbox:
             spacing 30
             text "La versión que tienes ({color=cf0}[config.version]{/color}) está descontinuada. Debes actualizar a la versión {color=cf0}[now_version]{/color} para continuar jugando."
@@ -1480,6 +1457,31 @@ screen need_main_update(now_version = ""):
             textbutton "Ir a GitHub" action OpenURL("https://github.com/CharlieFuu69/RenPy_RhythmBeats")
             textbutton "Cerrar el juego" action Quit(confirm = False)
 
+
+screen download_complete():
+    modal True
+    zorder 200
+    style_prefix "confirm"
+
+    use notify_window("DESCARGA FINALIZADA", notify_sound = audio.ui_sound_notify, shadow=False):
+        vbox:
+            text "Los recursos de {color=cf0}Ren'Py RhythmBeats{/color} han sido descargados completamente."
+
+            if renpy.android:
+                text "El juego debe cerrarse y volver a iniciar para aplicar los cambios. Presiona {color=cf0}\"Cerrar Juego\"{/color} para continuar."
+            else:
+                text "Presiona \"Reiniciar el juego\" para aplicar los cambios de los archivos descargados."
+
+        hbox:
+            style_prefix "main_ui"
+            xalign 0.5 ypos 0.8 spacing 20
+
+            textbutton "%s" % ("Cerrar el juego" if renpy.android else "Reiniciar el juego"):
+                action [Hide("download_complete"),
+                Return()]
+                activate_sound audio.ui_sound_btn03
+
+
 ## -------------------------------------------------------------------------- ##
 ## Pantalla/UI de búsqueda de actualizaciones.
 
@@ -1489,31 +1491,22 @@ screen update(inst):
 
     if inst.request_end:
         if inst.get_exception():
-            timer 0.01 action Play("notify_01", audio.ui_sound_error)
-            frame:
-                frame:
-                    style "msg_failed"
-                    label "ERROR DE CONEXIÓN"
-
+            use notify_window(title = "ERROR DE CONEXIÓN", level=1, notify_sound=audio.ui_sound_error, shadow=False):
                 vbox:
                     text str(inst.exception_content).replace("[", "[[")
 
                 hbox:
-                    xalign 0.5 ypos 0.78
+                    xalign 0.5 ypos 0.78 spacing 20
                     textbutton "Reintentar" action [Hide("update"), Return(), Jump("check_updates")]
+                    textbutton "Cerrar Juego" action [Hide("update"), Quit(confirm=False)]
 
         else:
             if len(update.update_queue) != 0:
-                timer 0.01 action Play("notify_01", audio.ui_sound_notify)
-                frame:
-                    frame:
-                        style "msg_success"
-                        label "DESCARGA DE RECURSOS"
-
+                use notify_window(title = "DESCARGA DE RECURSOS", notify_sound=audio.ui_sound_notify, shadow=False):
                     vbox:
                         text "Tamaño de la descarga: %.02f MB" % inst.update_size underline True
                         text "Esta descarga contiene las pistas musicales y 2DMVs incluidos en la demostración de {color=CF0}Ren'Py RhythmBeats!{/color}."
-                        text "La velocidad de descarga puede variar en función del tráfico del servidor, o de la estabilidad de tu conexión."
+                        text "La velocidad de descarga puede variar en función del tráfico en GitHub, o de la estabilidad de tu conexión."
 
                     hbox:
                         xalign 0.5 ypos 0.8
@@ -1525,7 +1518,7 @@ screen update(inst):
     else:
         vbox:
             ypos 0.9
-            text "Buscando actualizaciones..."
+            text "Buscando actualizaciones (GitHub)..."
             bar:
                 value StaticValue(inst.progress[0], inst.progress[1])
 
@@ -1542,29 +1535,32 @@ screen download(url, progress, path):
 
     if dl.status():
         if dl.runtime_exception():
-            timer 0.01 action Play("notify_01", audio.ui_sound_error)
-            frame:
-                frame:
-                    style "msg_failed"
-                    label "ERROR DE DESCARGA"
-
+            use notify_window(title = "ERROR DURANTE LA DESCARGA", level=1, notify_sound=audio.ui_sound_error, shadow=False):
                 vbox:
                     text str(dl.exception_output).replace("[", "[[")
 
                 hbox:
-                    xalign 0.5 ypos 0.78
+                    xalign 0.5 ypos 0.78 spacing 20
                     textbutton "Reintentar" action [Hide("download"), Return(), Jump("download_sequence")]
+                    textbutton "Cerrar Juego" action [Hide("download"), Quit(confirm=False)]
 
         else:
             timer 0.01 action [Hide("download"), Return()]
 
     else:
         vbox:
-            ypos 0.86 spacing 5
+            ypos 0.85 spacing 5
             text "Descargando recursos..."
             text "%.02f MB / %.02f MB  %.02f%%  (%s/%s)" % (dl.dl_current, dl.dl_total, dl.gauge * 100.0, progress[0], progress[1])
             bar:
                 value StaticValue(dl.gauge, 1.0)
+            null height 7
+            bar:
+                value StaticValue(progress[0], progress[1])
+
+
+init python:
+    config.per_frame_screens.append("download")
 
 
 ## -------------------------------------------------------------------------- ##
@@ -1623,6 +1619,28 @@ style update_button is main_ui_button:
 style update_button_text is main_ui_button_text
 
 ## -------------------------------------------------------------------------- ##
+
+style msg_success_frame:
+    background Frame(Solid("#CF0"), 5, 5, 5, 5)
+    padding(10, 5, 10, 5)
+    xalign 0.5 ypos 0.1
+    minimum(500, 20)
+
+style msg_success_label is update_label
+style msg_success_label_text is update_label_text
+
+style msg_failed_frame:
+    background Frame(Solid("#FF233B"), 5, 5, 5, 5)
+    xalign 0.5 ypos 0.1
+    padding(10, 5, 10, 5)
+    minimum(500, 20)
+
+style msg_failed_label is update_label
+style msg_failed_label_text is update_label_text
+
+
+## -------------------------------------------------------------------------- ##
+## Estilos descontinuados
 
 style msg_success:
     background Frame(Solid("#CF0"), 5, 5, 5, 5)
