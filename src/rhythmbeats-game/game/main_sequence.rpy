@@ -1,7 +1,9 @@
 ## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## Ren'Py RhythmBeats! Game
 
 ## Script: Flujo principal.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 ################################################################################
 
@@ -9,31 +11,36 @@
 ## Secuencia de vefiricación de recursos y actualizaciones
 
 label splashscreen:
+
+    play music audio.bgm_0001 fadeout 1.0 fadein 1.0
     call screen main_advice with dissolve
     show bg_main
-    play music audio.bgm_0001 fadeout 1.0 fadein 1.0
     call screen startscreen with dissolve
 
     jump check_updates
 
     label check_updates:
-        if not config.developer:
-            $ update = UpdateManager()
-            call screen update(inst = update)
+        $ update = UpdateManager(ext = ".bruh", skip = config.developer)
+        $ update.index_url = "https://raw.githubusercontent.com/CharlieFuu69/RenPy_RhythmBeats/main/src/index.json"
+
+        show tex_black with dissolve
+        call screen update(inst = update)
 
         return
 
 label download_sequence:
     $ update.start_batch_download()
-    $ renpy.pause(2.0, hard = True)
-    $ renpy.utter_restart()
+
+    call screen download_complete
+
+    $ renpy.quit(save=False, relaunch=renpy.windows or renpy.linux)
+
 
 ## -------------------------------------------------------------------------- ##
 ## Evasión del Menú Principal
 
 label main_menu:
-    if not config.developer:
-        $ del update
+    $ del update
     return
 
 
@@ -42,7 +49,8 @@ label main_menu:
 
 label start:
     $ quick_menu = False
-    show bg_main
+    scene bg_main
+    show tex_black
 
     if renpy.has_label("song_selection_menu"):
         stop music fadeout 1.0
