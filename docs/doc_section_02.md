@@ -20,7 +20,7 @@ Las interacciones (por defecto) del sistema rítmico se ejecutan con las teclas 
 
 <h3 align="center">2. Requisitos mínimos de Ren'Py RhythmBeats.</h3>
 
-Este sistema de acción rítmica, y el **[Juego demostrativo de Ren'Py RhythmBeats](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a)**, han sido desarrollado en una máquina con las siguientes especificaciones técnicas:
+Este sistema de acción rítmica, y el **[Juego demostrativo de Ren'Py RhythmBeats](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**, han sido desarrollado en una máquina con las siguientes especificaciones técnicas:
 
 |             | Detalles                                                |
 | ----------- | ------------------------------------------------------- |
