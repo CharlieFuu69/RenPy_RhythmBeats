@@ -12,9 +12,9 @@ Esta sección te entregará detalles estimados de lo que tu juego podría requer
 
 <h3 align="center">1. Compatibilidad de Ren'Py RhythmBeats.</h4>
 
-Por el momento, las capacidades de este sistema de acción rítmica se reducen a **<u>juegos hecho solo para PC</u>**, ya que el medio para interactuar con las canciones es un teclado físico. La compatibilidad con pantallas táctiles (móvil) puede ser un poco engorroso de implementar, pero hay una pequeña posibilidad de hacer esto realidad en el futuro.
+Actualmente el sistema rítmico de **Ren'Py RhythmBeats!** posee compatibilidad para teclados de PC y pantallas táctiles de dispositivos Android. Por el momento, el sistema posee una mejor capacidad de reacción en un teclado físico, ya que aún está en fase de desarrollo la habilidad de detección en pantallas táctiles.
 
-Por el momento, el módulo trabaja con las teclas `C` y `M` para interactuar con las notas que caen por la pantalla. La disposición de las teclas es equivalente a la posición de los carriles de notas: la `C` es para acertar notas del carril izquierdo, mientras que la `M` es para acertar las notas del carril derecho.
+Las interacciones (por defecto) del sistema rítmico se ejecutan con las teclas `C` (pista izquierda) y `M` (pista derecha) en teclados físicos, mientras que para pantallas táctiles, el área izquierda y derecha acierta las notas de cada pista respectivamente.
 
 ---
 
@@ -35,7 +35,7 @@ Estas especificaciones vendrían siendo el equivalente de los requisitos mínimo
 
 ---
 
-<h3 align="center">3. Notas de rendimiento de Ren'Py RhythmBeats.</h3>
+<h3 align="center">3. Consideraciones de rendimiento de Ren'Py RhythmBeats.</h3>
 
 El apartado que computa las interacciones del jugador funciona de forma fluida, pero la implementación gráfica experimenta caídas de FPS cuando una pista posee demasiadas notas musicales.
 
@@ -48,7 +48,7 @@ Aquí abajo adjunto un gráfico de líneas que indica la curva de FPS en funció
 
 Como ya te has dado cuenta, <ins>**los FPS tienden a caer cuando se cargan beatmaps con muchas notas musicales**</ins>. Esto no es por culpa del sistema de reconocimiento de taps como tal, sino que del algoritmo utilizado para el apartado gráfico en Ren'Py.
 
-La cantidad mínima de FPS registrada en los testeos del [Juego demostrativo de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v0.3.01a) ha sido de 24 FPS con canciones de 620 notas + capa de video (2DMV), registrando también un leve aumento en el uso de CPU, por lo que recomendaría no emocionarte creando beatmaps complejos =(
+En dispositivos Android, el lag puede ser un poco mayor con beatmaps que tienen una alta densidad de notas, pero eso ya se escapa de mis manos. Lamentablemente Ren'Py (el motor) no es tan eficiente si hablamos de rendimiento. Python no es un lenguaje rápido, asi que de todos modos no me sorprende demasiado.
 
 ---
 
