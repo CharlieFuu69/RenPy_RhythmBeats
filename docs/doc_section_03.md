@@ -45,7 +45,7 @@ Estos parámetros son los siguientes:
   
 * **displayable `(str o displayable)`:**
   
-  Este parámetro es obligatorio, y recibe como argumento un elemento displayable que será utilizado para mostrar cada nota en la pantalla. Puedes pasar como argumento una ruta de una imagen, o algún displayable de Ren'Py como Image() o Transform().
+  Este parámetro es obligatorio, y recibe como argumento un elemento displayable que será utilizado para mostrar cada nota en la pantalla. Puedes pasar como argumento una ruta de una imagen, o algún displayable de Ren'Py como `Image()` o `Transform()`.
   
 * **song_file** `(str o list)`:**
 
