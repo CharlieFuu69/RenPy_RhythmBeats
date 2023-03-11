@@ -84,4 +84,4 @@ El módulo permite configurar dos tipos de Offset, pero eso será explicado en e
 ---
 
 <h4 align = "center"> ¡Navega por la documentación! </h6>
-<h5 align = "center"> <a href="doc_mainpage.md"> Ir al Inicio </a> | <a href="doc_section_02.md"> Ir a la Sección 2</a> </h6>
+<h5 align = "center"> <a href="README.md"> Ir al Inicio </a> | <a href="doc_section_02.md"> Ir a la Sección 2</a> </h6>
