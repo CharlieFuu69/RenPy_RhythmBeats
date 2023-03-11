@@ -72,7 +72,7 @@ Sintetizando el video, debes hacer lo siguiente:
 
 `beatmap.exe` es un programa CLI (Command Line Interface) que he creado para facilitar el proceso de conversión de archivos `.mid` (MIDI) hacia un archivo `.beat` (Beatmap) legible para **"Ren'Py RhythmBeats!"**. Este programa está incluido en el último lanzamiento del módulo de **Ren'Py RhythmBeats!**
 
-Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windows. Justo aquí abajo he creado un tutorial que te puede ayudar a usarlo.
+Aquí abajo he creado un tutorial que te puede ayudar a usarlo.
 
 ---
 
@@ -80,39 +80,38 @@ Por el momento este programa debe ser ejecutado desde el terminal o CMD de Windo
 
 * **Paso 1:**
   
-  Abre tu terminal (CMD). Si no sabes donde está, escribe en la búsqueda **"CMD"** y te aparecerá de inmediato.
-  
-  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210672247-9c714c8b-a1e0-45b0-b31b-da0addfdbf1e.png">
+  Descarga el Kit de desarrollo de Ren'Py RhythmBeats! desde el **[Pre-Lanzamiento v1.02.1b]()**.
 
 * **Paso 2:**
   
-  Navega desde la línea de comandos hasta el directorio donde está ubicado el archivo `beatmap.exe`. Aquí verás que he navegado hasta una carpeta llamada `my_beatmaps` con el comando `cd`.
+  Después de descargar el archivo `RhythmBeats_Kit_v1.02.1b.zip`, extrae su contenido en una carpeta que te sea accesible.
   
-  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210673543-089cbdef-83d6-4e8c-ab81-0cc773d07779.png">
+  Dentro de la carpeta `RhythmBeats Kit v1.02.1b` encontrarás las herramientas para crear beatmaps, y el módulo de acción rítmica:
+
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224456505-510c52ea-183d-4f0d-9965-8afe7d4dc1d8.png">
+  >
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224456535-8fcf5c30-9c71-4af5-be68-0d6d6428c209.png">
 
 * **Paso 3:**
   
-  Para realizar la conversión de un archivo MIDI a beatmap, debes ejecutar este comando:
-  
-  > ```powershell
-  > beatmap.exe /convert
-  > ```
+  Busca el ejecutable `beatmap.exe` dentro de la carpeta `Beatmapping Tools` y haz doble click sobre el. Debería aparecerte una ventana de terminal similar a esta:
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224456707-82ab2c4e-9f5f-4260-ace7-f31a3426c772.png">
 
 * **Paso 4:**
+
+  Para convertir una secuencia MIDI a BEATMAP, escribe el comando `convert`. Se desplegará una ventana del explorador para cargar el archivo MIDI en el programa. Selecciona el archivo haciendo doble click sobre el:
   
-  Cuando se haya ejecutado el comando anterior, la herramienta se iniciará en modo conversión. Cuando esto suceda se abrirá una ventana del explorador solicitando el archivo `.mid` (MIDI) que quieres convertir. Clickea dos veces el archivo y se procesará el archivo MIDI.
-  
-  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210673798-979a659c-731b-4b6d-8db6-1c865ab8b782.png">
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224457017-24446196-ccae-4cdf-8218-d2ed3ce2b1de.png">
 
 * **Paso 5:**
   
   Si todo salió sin errores, verás una lectura de los pitchs detectados en ese archivo MIDI seguido de que se abrirá una nueva ventana del explorador, donde debes seleccionar el lugar en que debe guardarse el archivo convertido. Por supuesto, debes darle un nombre a ese archivo. La misma herramienta le dará la extensión `.beat` al guardar.
   
-  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210677021-8323239e-2627-435f-a6b8-b99b879f6b07.png">
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224457110-84f9f5b6-9288-44f8-9bc1-31ee7cac3af7.png">
 
 Cuando el proceso haya finalizado verás una lectura con las estadísticas de la secuencia que hiciste, es decir, la **cantidad de notas en las pistas (L y R)**, y el **Full Combo** que corresponde a la suma de ambas cantidades. Una vez terminado el proceso, ya podrás ver el archivo `.beat` en el directorio donde lo guardaste.
 
-<img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210677693-d133b834-862b-4c98-94cd-5d721fa681e0.png">
+<img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224457212-66f5f2cd-5698-47f2-be60-f2451bf0417c.png">
 
 Este archivo `.beat` es el que se usa para que el juego pueda mostrar la cascada de notas en pantalla. El contenido son solo números que representan el tiempo donde el jugador debe tocar las teclas.
 
@@ -124,24 +123,16 @@ La herramienta ofrece un comando de trabajo que abre estos archivos en modo de s
 
 * **Paso 1:**
   
-  En tu terminal, ejecuta el siguiente comando:
+  Ejecuta el programa `beatmap.exe` y escribe el comando `read`. Se abrirá una ventana del explorador solicitando un archivo `.beat` o `.midi`. Cuando se abra esta ventana, selecciona el archivo que debe cargarse al programa:
   
-  > ```powershell
-  > beatmap.exe /read
-  > ```
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224457563-2007bd09-74f6-405d-a50d-062520ebfde0.png">
 
 * **Paso 2:**
-  
-  Cuando se haya ejecutado el comando anterior, la herramienta se iniciará en modo de lectura. Cuando esto suceda, se abrirá una ventana del explorador solicitando un archivo `.mid` (MIDI) o `.beat` (beatmap) . Clickea dos veces y se procesará el archivo seleccionado. 
-  
-  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210678176-54cb27c4-a4b5-4cea-a341-b942a0afb166.png">
-
-* **Paso 3:**
   
   Si los archivos fueron procesados correctamente, debería visualizarse las estadísticas del Beatmap.
   Para ver una tabla con el índice y la secuencia completa del beatmap en pantalla, escribe `Y` y pulsa `ENTER`.
   
-  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/210709429-98c8a065-2fb0-4e7f-9875-ae06835c2011.png">
+  > <img width="70%" height="70%" src="https://user-images.githubusercontent.com/77955772/224457663-1d531612-eac6-4bc5-93a9-a170e4bc1105.png">
 
 ---
 
