@@ -8,6 +8,21 @@
 ################################################################################
 
 init python:
+    """
+    ----------------------------------------------------------------------------
+                        <- /!\ INFORMACIÓN ÚTIL /!\ ->
+    Todos los elementos documentados que empiecen con (NO DOCUMENTADO), son
+    elementos que RhythmBeats utiliza de forma interna, y que no tienen tanta
+    relevancia para el usuario final, a excepción de querer revisar el código
+    fuente del módulo.
+
+    Para incrementar el rendimiento en Windows, puedes desbloquear el plan de
+    energía de Alto Rendimiento ejecutando el siguiente comando en Powershell:
+
+    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+    ----------------------------------------------------------------------------
+    """
+
     import json
     import os
     import pygame
@@ -18,43 +33,8 @@ init python:
         pygame.FINGERUP
     ])
 
-    """
-    ----------------------------------------------------------------------------
-                        <- /!\ NO HACER CASO A ESTO /!\ ->
-    Estos son mis apuntes para mejoras futuras. Nada de lo que esté aquí
-    afectará al funcionamiento actual de RhythmBeats.
-    ----------------------------------------------------------------------------
-
-    Incremento de rendimiento en Windows:
-        powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
-
-    (SISTEMA ANTIGUO)
-    if all((x in xrange(0, 400), y in xrange(0, 720))):
-        self.left = False
-    if all((x in xrange(880, 1280), y in xrange(0, 720))):
-        self.right = False
-
-
-    (SISTEMA EN IMPLEMENTACIÓN PARCIAL)
-    if ev.type == pygame.FINGERDOWN:
-        if self.area_left.collidepoint(x, y):
-            self.left = True
-        if self.area_right.collidepoint(x, y):
-            self.right = True
-
-    if ev.type == pygame.FINGERUP:
-        if self.area_left.collidepoint(ev.pos):
-            self.left = False
-        if self.area_right.collidepoint(ev.pos):
-            self.right = False
-    """
-
-    ## -------------------------------------------------------------------------- ##
-    ## Exposición de funciones de Ren'Py
-
     def logger(level, content):
         print("[%s] %s" % (level, content))
-
 
     ## -------------------------------------------------------------------------- ##
     ## Clases
@@ -80,8 +60,8 @@ init python:
             displayable (str o displayable):
                 Este parámetro es obligatorio, y recibe como argumento un elemento
                 displayable que será utilizado para mostrar cada nota en la pantalla.
-                Puedes pasar como argumento una ruta de una imagen, o una imagen
-                modificada con Transform(), por ejemplo.
+                Puedes pasar como argumento una ruta de una imagen, o algún displayable
+                de Ren'Py como Image() o Transform().
 
             song_file (str o list):
                 Este parámetro es obligatorio, y recibe como argumento una cadena
@@ -213,54 +193,8 @@ init python:
             self.finger_log = dict()
 
 
-        def load(self):
-            """Este método carga y procesa las secuencias de un archivo beatmap de
-            una canción en específico. El archivo `.beat` debe ser señalado en el
-            momento en que se crea una instancia de la clase.
-
-            Esto debe ser llamado posterior a instanciar la clase. No recibe ningún
-            argumento ni tampoco retorna datos."""
-
-            logger("Process", "Cargando beatmap...")
-
-            try:
-                with renpy.file(self.fn) as beatmap:
-                    logger("Stats", "Ruta relativa: %s." % self.fn)
-
-                    bmpdata = beatmap.readlines()
-
-                    for keypad in bmpdata[1:]:
-                        keypad = keypad.replace("\n", "").replace("\r", "").split("|")
-
-                        left = keypad[0]
-                        right = keypad[1]
-
-                        if left != "" or right != "":
-                            if not "End" in left:
-                                self.lane_L.append(eval(left) + self.offset)
-
-                            if not "End" in right:
-                                self.lane_R.append(eval(right) + self.offset)
-
-                    ## Casting de listas a tuplas
-                    self.lane_L = tuple(self.lane_L)
-                    self.lane_R = tuple(self.lane_R)
-
-                    logger("Stats", "Offset final: %sms." % self.offset)
-                    logger("Stats", "Full Combo: %s notas." % (len(self.lane_L) + len(self.lane_R)))
-
-                    beatmap.close()
-
-                    logger("Process", "Preparando waterfall (SpriteManager)...")
-                    self.sprite_creator()
-                    logger("OK", "Beatmap listo para ejecutar.\n")
-
-            except Exception as open_error:
-                raise RhythmBeatsException("(%s) %s" % (type(open_error), str(open_error)))
-
-
         ## ------------------------------------------------------------------ ##
-        ## Detección de toques del jugador
+        ## Métodos para uso interno de RhythmBeats
 
         def tap_events(self, ev, x, y, st):
             """
@@ -293,7 +227,9 @@ init python:
 
 
         def get_note_score(self, diff):
-            """Este método calcula un puntaje para cada nota musical, en función
+            """
+            (NO DOCUMENTADO)
+            Este método calcula un puntaje para cada nota musical, en función
             de los milisegundos de desfase obtenidos al tocar una nota.
             El puntaje obtenido por nota es inversamente proporcional al tiempo
             de desfase al tocar una nota, por lo que una menor precisión otorgará
@@ -406,9 +342,6 @@ init python:
             return 0.016 ## ~60 Hz
 
 
-        ## ------------------------------------------------------------------ ##
-        ## Generación de gráficos (Waterfall)
-
         def sprite_creator(self):
             """
             (NO DOCUMENTADO)
@@ -489,7 +422,53 @@ init python:
 
 
         ## ------------------------------------------------------------------ ##
-        ## Métodos de utilidad externa
+        ## Métodos para uso externo (Usuario final)
+
+        def load(self):
+            """Este método carga y procesa las secuencias de un archivo beatmap de
+            una canción en específico. El archivo `.beat` debe ser señalado en el
+            momento en que se crea una instancia de la clase.
+
+            Esto debe ser llamado posterior a instanciar la clase. No recibe ningún
+            argumento ni tampoco retorna datos."""
+
+            logger("Process", "Cargando beatmap...")
+
+            try:
+                with renpy.file(self.fn) as beatmap:
+                    logger("Stats", "Ruta relativa: %s." % self.fn)
+
+                    bmpdata = beatmap.readlines()
+
+                    for keypad in bmpdata[1:]:
+                        keypad = keypad.replace("\n", "").replace("\r", "").split("|")
+
+                        left = keypad[0]
+                        right = keypad[1]
+
+                        if left != "" or right != "":
+                            if not "End" in left:
+                                self.lane_L.append(eval(left) + self.offset)
+
+                            if not "End" in right:
+                                self.lane_R.append(eval(right) + self.offset)
+
+                    ## Casting de listas a tuplas
+                    self.lane_L = tuple(self.lane_L)
+                    self.lane_R = tuple(self.lane_R)
+
+                    logger("Stats", "Offset final: %ss." % self.offset)
+                    logger("Stats", "Full Combo: %s notas." % (len(self.lane_L) + len(self.lane_R)))
+
+                    beatmap.close()
+
+                    logger("Process", "Preparando waterfall (SpriteManager)...")
+                    self.sprite_creator()
+                    logger("OK", "Beatmap listo para ejecutar.\n")
+
+            except Exception as open_error:
+                raise RhythmBeatsException("(%s) %s" % (type(open_error), str(open_error)))
+
 
         def beatmap_object(self):
             """Este método retorna un objeto iterable `itertools.zip_longest` con el
@@ -509,7 +488,7 @@ init python:
             con flechas.
 
             **Formato de retorno:**
-            (Tiempo de reacción media, porcentaje de reacción media, tendencia de reacción)
+            (Tiempo de reacción media, tendencia de reacción)
 
             Los valores de precisión media son retornados en milisegundos, mientras
             que las flechas de tendencia de reacción son retornadas como cadenas unicode.
