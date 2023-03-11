@@ -18,7 +18,7 @@
 [![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
 
 <h5 align = "center">
-    <i>[El módulo ha sido liberado y documentado - ¡Fase beta iniciada!]</i>
+    <i>[Última actualización de la documentación: 11/03/2023 02:00 GMT -3]</i>
 </h5>
 
 <p>
@@ -38,7 +38,7 @@ Te contaré un poco acerca de qué trata todo esto.
 
 #### DESVENTAJAS DE REN'PY RHYTHMBEATS!:
 
-* **Puede ser lento:** Lamentablemente Ren'Py no es un motor que tenga un buen rendimiento, principalmente porque Python no es un lenguaje rápido. A nivel de cómputo, **Ren'Py RhythmBeats!** no tiene problemas, pero a nivel gráfico, puede tener caídas de FPS.
+* **Puede ser lento:** Lamentablemente Ren'Py no es un motor que tenga un buen rendimiento, principalmente porque Python no es un lenguaje rápido. A nivel de cómputo, **Ren'Py RhythmBeats!** no tiene problemas, pero a nivel gráfico puede tener problemas si los beatmaps poseen muchas notas.
 * **El Multitouch:** Estoy intentando expandir la compatibilidad con pantallas táctiles y Android, pero ya que Ren'Py no posee una compatibilidad estable con Multitouch, puede ser más cómodo jugar con un teclado que con pantallas táctiles.
 
 ---
