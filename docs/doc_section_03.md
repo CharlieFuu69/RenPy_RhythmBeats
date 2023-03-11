@@ -69,6 +69,7 @@ Estos parámetros son los siguientes:
   
 * **max_score `(int)`:**
 
+  El sistema rítmico de **Ren'Py RhythmBeats!** ahora posee una funcionalidad básica para computar puntajes durante la partida, según la precisión con la que se toquen las notas de una canción.
   Este parámetro recibe como argumento un número entero que representa un máximo 'hipotético' de puntos que se podría recibir por nota. Por defecto, el máximo hipotético está fijado en 1000 puntos.
 
 * **failsafe `(bool)`:**
@@ -93,7 +94,7 @@ Este método debe ser llamado posterior a instanciar la clase. No recibe ningún
 
 #### 1.3. Método `beatmap_object()`.
 
-Este método retorna un objeto iterable `itertools.zip_longest` con el beatmap para la visualización de los taps en una screen. Esto ayuda a iterar el beatmap con solo 1 bucle for en donde quieras hacerlo.
+Este método retorna un objeto iterable `itertools.zip_longest` con el beatmap para la visualización de los taps en una screen. Esto ayuda a iterar el beatmap con solo 1 bucle for en donde quieras hacerlo. Es muy útil si no quieres usar el renderizador que posee por defecto  posees los conocimientos suficientes para crear tu propio renderizador de notas musicales con `SpriteManager()` u otros displayables `Sprite` de Ren'Py.
 
 Este método debe ser llamado posterior a instanciar la clase. No recibe ningún argumento en particular.
 
@@ -140,15 +141,15 @@ Al igual que con el archivo de Beatmap, se puede acceder a este archivo de audio
 
 * **Atributo `left_key` / `right_key` (pygame):**
 
-Estos dos atributos reciben una constante de Pygame que señala la tecla física del teclado para tocar las notas de la pista izquierda derecha.
-Por defecto al utilizar las teclas `C` y `M`, el valor de estos atributos es `pygame.K_c` y `pygame.K_m`. Si deseas asignar otras teclas al sistema rítmico, mira el siguiente ejemplo:
+  Estos dos atributos reciben una constante de Pygame que señala la tecla física del teclado para tocar las notas de la pista izquierda derecha.
+  Por defecto al utilizar las teclas `C` y `M`, el valor de estos atributos es `pygame.K_c` y `pygame.K_m`. Si deseas asignar otras teclas al sistema rítmico, mira el siguiente ejemplo:
 
-```renpy
-my_instance.left_key = pygame.K_f
-my_instance.right_key = pygame.K_l
-```
-Puedes asignar cualquier tecla, siempre y cuando no entren en conflicto con el keymap por defecto de Ren'Py.
-Si quieres ver todas las constantes de teclas soportadas por Pygame, visita este link: [https://www.pygame.org/docs/ref/key.html](https://www.pygame.org/docs/ref/key.html)
+  ```renpy
+  my_instance.left_key = pygame.K_f
+  my_instance.right_key = pygame.K_l
+  ```
+  Puedes asignar cualquier tecla, siempre y cuando no entren en conflicto con el keymap por defecto de Ren'Py.
+  Si quieres ver todas las constantes de teclas soportadas por Pygame, visita este link: [https://www.pygame.org/docs/ref/key.html](https://www.pygame.org/docs/ref/key.html)
 
 
 ---
@@ -169,11 +170,11 @@ Estos atributos son los siguientes:
   
   A diferencia de `perfect`, este atributo entrega el conteo actual de notas fallidas del jugador.
   
-* **Atributo `stage_score` (int):**
+* **[¡Nuevo!] Atributo `stage_score` (int):**
 
-  El sistema rítmico ahora puede computar puntajes durante la partida. Este atributo entrega constantemente el puntaje acumulado en la partida.
+  Durante la partida el jugador irá acumulando puntaje según su precisión. Este atributo entrega la cantidad total de puntos generado en la partida.
   
-* **Atributo `note_score` (int):**
+* **[¡Nuevo!] Atributo `note_score` (int):**
 
   Este atributo entrega la cantidad de puntos obtenida en la última nota tocada. Esto se calcula en función de la precisión del jugador por cada nota.
 
@@ -199,13 +200,13 @@ Estos atributos son los siguientes:
   
   Este atributo entrega el tiempo ajustado para el umbral de reacción del jugador.
   
-* **Atributo `map_mgr` (SpriteManager):**
+* **[¡Nuevo!] Atributo `map_mgr` (SpriteManager):**
   
-  Este atributo entrega un objeto `SpriteManager()` que debe ser llamado obligatoriamente en una screen con `add`, ya que se encarga de ejecutar el sistema encargado de computar las interacciones del jugador.
+  Este atributo entrega un objeto `SpriteManager()` que se encarga de ejecutar el sistema de cómputo de interacciones del jugador. Debe ser llamado en una screen con `add`.
   
-* **Atributo `waterfall_mgr` (SpriteManager):**
+* **[¡Nuevo!] Atributo `waterfall_mgr` (SpriteManager):**
 
-  Este atributo entrega un objeto `SpriteManager()` que debe ser llamado obligatoriamente en una screen con `add`, ya que se encarga de renderizar la cascada de notas en la pantalla.
+  Este atributo entrega un objeto `SpriteManager()` que se encarga de renderizar la cascada de notas en la pantalla. Si has decidido crear tu propio renderizador gráfico de notas musicales, puedes omitir el uso de este atributo. Al utilizar el renderizador por defecto de RhythmBeats, debes llamar a este atributo desde una screen con `add`.
 
 ---
 
