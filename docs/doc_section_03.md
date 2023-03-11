@@ -50,6 +50,9 @@ Estos parámetros son los siguientes:
 * **song_file** `(str o list)`:**
 
   Este parámetro es obligatorio, y recibe como argumento una cadena de texto con la ruta del archivo de audio que contiene la canción a reproducir durante la partida. También puedes pasar una lista para crear una cola de reproducción, por ejemplo, en el caso de que quieras agregar un breve silencio antes de que inicie la canción real de la partida.
+  
+  Todas las rutas de archivos de audio deben ser relativas a la carpeta `/game`, y estos archivos pueden ser leídos incluso dentro de un paquete RPA.
+  
   Más detalles en la Documentación de Ren'Py: [https://www.renpy.org/doc/html/audio.html#renpy.music.play](https://www.renpy.org/doc/html/audio.html#renpy.music.play)
 
 * **offset_map `(int o float)`:**
