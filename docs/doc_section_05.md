@@ -9,7 +9,7 @@
 <p align="center">
   <img align="left" width="30" height="30" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
   <h4>
-    ¡Descargas disponibles! Obtén el  <i>Kit de creación de beatmaps</i> desde <a href="https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module">este lanzamiento</a>
+    ¡Descargas disponibles! Obtén el  <i>Kit de desarrollo de Ren'Py RhythmBeats!</i> desde <a href="https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module">este lanzamiento</a>
   </h4>
 </p>
 
@@ -80,7 +80,7 @@ Aquí abajo he creado un tutorial que te puede ayudar a usarlo.
 
 * **Paso 1:**
   
-  Descarga el Kit de desarrollo de Ren'Py RhythmBeats! desde el **[Pre-Lanzamiento v1.02.1b]()**.
+  Descarga el Kit de desarrollo de Ren'Py RhythmBeats! desde el **[Pre-Lanzamiento v1.02.1b](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module)**.
 
 * **Paso 2:**
   
@@ -173,7 +173,7 @@ Si tienes dudas acerca de cómo utilizar el módulo, o encontraste un error fata
 <h5 align = "center"> ¡Ya has recorrido toda la documentación! ¿Qué quieres hacer ahora? </h5>
 
 * **Ir al [Inicio del repositorio.](https://github.com/CharlieFuu69/RenPy_RhythmBeats)**
-* **Descargar el [Juego demostrativo de Ren'Py RhythmBeats! (Beta).](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_global01)**
-* **Descargar el [Kit de Creación de beatmaps para Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_module)**
+* **Descargar el [Juego demostrativo de Ren'Py RhythmBeats! (Beta).](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**
+* **Descargar el [Kit de desarrollo de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module)**
 
 
