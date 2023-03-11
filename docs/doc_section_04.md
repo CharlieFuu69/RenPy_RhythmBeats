@@ -42,30 +42,32 @@ Ahora, viene la parte donde crearás una UI simple para jugar alguna canción.
 En primer lugar, debes tener una imagen para representar las notas en la pantalla, como por ejemplo, la imagen que se usa en el **[juego demostrativo de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**:
 
 <p align="center"><img src="img/doc_image_05.png"/></p>
-<h6 align = "center"> <i>Imagen: nota musical de 128x128px utilizada en el juego demostrativo.</i> </h6>
+<h6 align = "center"> <i>Imagen: Nota musical utilizada en el juego demostrativo (128x128).</i> </h6>
 
-Para hacer las cosas más fáciles, puedes definir tu imagen en Ren'Py de esta forma:
+Por otro lado, el renderizador de notas musicales que posee el sistema de acción rítmica, utiliza el mismo modelo mostrado en el juego demostrativo **"Ren'Py RhythmBeats! Game"**, por lo que la siguiente imagen puedes usarla como base para guiar la caída de las notas:
+
+<p align="center"><img width="70%" height="70%" src="https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/src/rhythmbeats-game/game/coregame/ui/ui_coregame_note_lane.png"/></p>
+<h6 align = "center"> <i>Imagen: Guía de cascada utilizada en el juego demostrativo de Ren'Py RhythmBeats (1280x720).".</i> </h6>
+
+Para hacer las cosas más fáciles, puedes definir estas dos imágenes en Ren'Py de esta forma:
 
 ```renpy
 init:
     image note_tap = "gui/note_tap.png"
+    image my_note_lane = "gui/my_note_lane"
 ```
 
-¡Ahora puedes utilizar tu imagen con el nombre `note_tap`!
+¡Ahora puedes utilizar tu imagen de nota musical con el nombre `note_tap`, y tu guía de notas con el nombre `my_note_lane`!
 
 ---
 
 #### 2.1. Crear la Screen que muestra la cascada de notas.
 
 El sistema rítmico tiene la capacidad de renderizar (por defecto) la cascada de notas al estilo de **[Ren'Py RhythmBeats! Game](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**.
-La siguiente imagen se utiliza en el juego demostrativo para guiar las notas en la pantalla:
-
-<p align="center"><img width="70%" height="70%" src="https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/src/rhythmbeats-game/game/coregame/ui/ui_coregame_note_lane.png"/></p>
-<h6 align = "center"> <i>Capa de imagen: Guía de cascada utilizada en el juego demostrativo (1280x720).".</i> </h6>
 
 Para mostrar la cascada de notas necesitamos de una screen especialmente para esta actividad, ya que así se perturbará en menor medida el rendimiento visual.
 
-Suponiendo que tenemos instanciada la clase `RhythmPlayground()` en una variable llamada `my_instance`, y que tenemos definida la imagen mostrada anteriormente como `my_note_lane`, pues corresponde el siguiente ejemplo:
+Suponiendo que tenemos instanciada la clase `RhythmPlayground()` en una variable llamada `my_instance`, y que tenemos definida una imagen de guía de notas como `my_note_lane`, pues corresponde el siguiente ejemplo:
 
 ```renpy
 screen note_waterfall():
@@ -153,7 +155,7 @@ Aquí es donde vamos a crear el flujo del código para jugar una canción. Bási
 
 Parecía que ya nos estábamos olvidando que `RhythmPlayground()` era básicamente el corazón del sistema de acción rítmica, pero no. Aquí es donde la usaremos porque su uso es clave para poder utilizar todo lo que hicimos en el ítem 2.
 
-Teniendo en cuenta que estábamos usando una variable llamada `my_instance` para instanciar la clase y que tenemos declarada la imagen de las notas musicales como `note_tap`, el código debería ser de esta forma:
+Teniendo en cuenta que estábamos usando una variable llamada `my_instance` para instanciar la clase, el código debería ser de esta forma:
 
 ```renpy
 ## Aquí comienza el juego
