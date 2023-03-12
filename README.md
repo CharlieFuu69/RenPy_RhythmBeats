@@ -53,7 +53,7 @@ Te contaré un poco acerca de qué trata todo esto.
 
   ¿Quieres empezar a implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
   * **Descarga la última versión de [Ren'Py RhythmBeats! v1.02.1b](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module).**
-  * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/doc_mainpage.md).**
+  * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](docs/README.md).**
   
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
 
