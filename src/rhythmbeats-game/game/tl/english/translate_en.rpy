@@ -2,7 +2,7 @@
 ## Ren'Py RhythmBeats! Game
 
 ## Script: (Main) Archivo de traducción al inglés.
-## Traductor responsable:
+## Traductor:
 
 ## © 2023 CharlieFuu69 - GNU GPL v3.0
 
