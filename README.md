@@ -1,7 +1,7 @@
 [license]: https://www.gnu.org/licenses/gpl-3.0
 [renpy]: https://renpy.org/
 [release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
-[downloads-badge]: https://img.shields.io/github/downloads/CharlieFuu69/RenPy_RhythmBeats/total.svg?style=for-the-badge
+<!-- [downloads-badge]: https://img.shields.io/github/downloads/CharlieFuu69/RenPy_RhythmBeats/total.svg?style=for-the-badge -->
 
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
 [license-badge]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&logo=creativecommons
@@ -15,7 +15,7 @@
 
 <h1 align = "center"> Ren'Py RhythmBeats! </h1>
 
-[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] [![downloads-badge]][release] ![status-badge]
+[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
 
 <h5 align = "center">
     <i>[Última actualización de la documentación: 11/03/2023 02:00 GMT -3]</i>
