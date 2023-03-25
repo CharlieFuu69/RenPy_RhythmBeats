@@ -1,10 +1,16 @@
 {
-    "version" : "v1.02.1b",
+    "version" : "v1.03.0b",
     "packages" : [
+        {
+            "name" : "Multilanguage",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Multilanguage.bruh",
+            "md5" : "ba6d3bc7dc86ba1ec7014e7f5cd47b67"
+        },
+        
         {
             "name" : "Coregame",
             "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Coregame.bruh",
-            "md5" : "3dc2a8bf54457faeb15abcb5a9c820c8"
+            "md5" : "4a5d5fe3de44a088657d950f88e73917"
         },
         {
             "name" : "Song_0001",
