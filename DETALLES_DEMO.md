@@ -19,7 +19,7 @@
 > Para jugar, debes tocar las teclas `C` (Izquierda) y `M` (Derecha) para acertar las notas en PC, o bien, puedes tocar la **mitad izquierda** o la **mitad derecha** de la pantalla para acertar las notas en un dispositivo Android _(Funcionalidad experimental)_.
 
 #### BARRA DE XP OBTENIDA:
-> Al jugar, irás obteniendo puntos en un rango de 0 a 12000 XP por canción. A mayor precisión, más XP se obtendrá al tocar una nota.
+> Al jugar, irás obteniendo puntos en un rango de 0 a 12000 XP por cada nota acertada. A mayor precisión, más XP se obtendrá al tocar una nota.
 
 #### BARRA DE HP:
 > En la esquina superior derecha se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo, y cuantas te quedan disponibles por fallar XD.
