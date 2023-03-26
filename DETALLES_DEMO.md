@@ -40,7 +40,7 @@ Para ampliar el acceso de **"Ren'Py RhythmBeats! Game"** a más usuarios, ahora 
 A continuación se indican los requisitos mínimos para ejecutar el juego demostrativo. Por supuesto, estos requisitos están sujetos a cambios con el paso del tiempo.
 
 ><p align="left">
->    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849900-522f35c1-ff4e-4a91-b865-6bf8ca0ed1ea.png"/>
+>    <img align="left" width="24" height="24" src="icons/windows.png"/>
 >    <h4>Requisitos mínimos para Windows:</h4>
 > </p>
 > 
@@ -51,7 +51,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > * **DirectX:** v9.0c o posterior.
 
 ><p align="left">
->    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849900-522f35c1-ff4e-4a91-b865-6bf8ca0ed1ea.png"/>
+>    <img align="left" width="24" height="24" src="icons/linux.png"/>
 >    <h4>[¡Nuevo!] Requisitos mínimos para Linux:</h4>
 > </p>
 > 
@@ -62,7 +62,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > * **OpenGL:** v2.0 o posterior.
 
 ><p align="left">
->    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849896-840fd10f-1b21-40ec-a416-2e20a1378233.png"/>
+>    <img align="left" width="24" height="24" src="icons/android.png"/>
 >    <h4>Requisitos mínimos para Android:</h4>
 > </p>
 > 
