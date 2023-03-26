@@ -12,14 +12,17 @@
 ---
 ### 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?
 
-<img align="center" src="https://user-images.githubusercontent.com/77955772/219847352-37ddb316-78e9-4bb9-af5f-229467725931.png"></img>
+<img align="center" src="https://user-images.githubusercontent.com/77955772/227761433-b2e86077-3b0d-4d23-b30e-1886c580fcc5.png"></img>
 <h4 align = "center"> <i>[Interfaz de juego - 2DMV: Highlight]</i> </h4>
 
 #### INTERACCIÓN CON EL JUEGO:
 > Para jugar, debes tocar las teclas `C` (Izquierda) y `M` (Derecha) para acertar las notas en PC, o bien, puedes tocar la **mitad izquierda** o la **mitad derecha** de la pantalla para acertar las notas en un dispositivo Android _(Funcionalidad experimental)_.
 
+#### BARRA DE XP OBTENIDA:
+> Al jugar, irás obteniendo puntos en un rango de 0 a 12000 XP por canción. A mayor precisión, más XP se obtendrá al tocar una nota.
+
 #### BARRA DE HP:
-> En la esquina superior izquierda se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo, y cuantas te quedan disponibles por fallar XD.
+> En la esquina superior derecha se indica tu <ins>**"HP"**</ins> durante la partida, que básicamente señala cuántas notas puedes fallar como máximo, y cuantas te quedan disponibles por fallar XD.
 
 #### BARRA DE PROGRESO DE LA PISTA:
 > En el centro del área superior se ubica una barra de progreso celeste, que indica el progreso de reproducción de la pista, y con ello, indica cuánto has jugado en esa canción.
