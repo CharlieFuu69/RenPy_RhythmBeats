@@ -24,21 +24,11 @@
 #### BARRA DE PROGRESO DE LA PISTA:
 > En el centro del área superior se ubica una barra de progreso celeste, que indica el progreso de reproducción de la pista, y con ello, indica cuánto has jugado en esa canción.
 
-#### BARRA DE PRECISIÓN MEDIA:
-> En la esquina superior derecha hay una barra que indica tu precisión media en la partida expresado como porcentaje, en el que mientras más cerca estés del 100%, más preciso estás tocando las notas.
-> Una flecha **"◂"** indicará que tienes tendencia a tocar un poco antes de lo esperado, mientras que la flecha **"▸"** indicará que tienes tendencia a tocar un poco más tarde.
-
 ---
 
-### 2. [¡Nuevo!] Disponibilidad para dispositivos Android.
+### 2. [¡Nuevo!] Disponibilidad para usuarios de Linux.
 
-El juego demostrativo posee una versión de Android para poder jugar desde móviles. Ren'Py no admite totalmente gestos múltiples en pantallas táctiles, asi que es posible que sea levemente incómodo tocar en una pantalla jsjjs.
-
-Por otra parte, ahora viene lo feo del port de Android. Ren'Py es un motor que <ins>no se lleva muy bien con el entorno de móviles</ins> por lo que el lag a veces es intenso en canciones con muchas notas. A pesar de todos mis esfuerzos por optimizar al extremo el rendimiento del sistema gráfico, Android no me ha perdonado.
-
-Espero que sean comprensivos con este humilde servidor :(
-
-Mucho no puedo hacer en ese aspecto. En su lugar, recomiendo jugar en Windows para disfrutar de mejor forma el juego demostrativo :"3
+Para ampliar el acceso de **"Ren'Py RhythmBeats! Game"** a más usuarios, ahora el juego demostrativo está disponible para Linux. El juego ha sido satisfactoriamente pre-testeado en PuppyLinux, Ubuntu y Kali Linux. Vé a la última actualización publicada **[Presionando aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**.
 
 ---
 
@@ -52,10 +42,21 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > </p>
 > 
 > * **Sistema operativo:** Windows 7 o posterior.
+> * **Espacio disponible en el disco:** 2 GB o más.
+> * **Procesador:** 1.1 GHz de 4 núcleos o más.
+> * **RAM:** 2 GB o más.
+> * **DirectX:** v9.0c o posterior.
+
+><p align="left">
+>    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849900-522f35c1-ff4e-4a91-b865-6bf8ca0ed1ea.png"/>
+>    <h4>[¡Nuevo!] Requisitos mínimos para Linux:</h4>
+> </p>
+> 
+> * **Sistema operativo:** Varía según la distribución de Linux.
 > * **Espacio disponible en el disco:** 1.1 GB o más.
 > * **Procesador:** 1.1 GHz de 4 núcleos o más.
-> * **RAM:** 800 MB o más.
-> * **DirectX:** v9.0c o posterior.
+> * **RAM:** 2 GB o más.
+> * **OpenGL:** v2.0 o posterior.
 
 ><p align="left">
 >    <img align="left" width="24" height="24" src="https://user-images.githubusercontent.com/77955772/219849896-840fd10f-1b21-40ec-a416-2e20a1378233.png"/>
@@ -63,9 +64,9 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > </p>
 > 
 > * **Sistema operativo:** Android v5.x o posterior.
-> * **Espacio disponible en el disco:** 1.1 GB o más.
+> * **Espacio disponible en el disco:** 2 GB o más.
 > * **Procesador:** Gama Media (Snapdragon 640 o posterior).
-> * **RAM:** 800 MB o más.
+> * **RAM:** 2 GB o más.
 > * **OpenGL ES:** v2.0 o posterior.
 
 ---
@@ -99,9 +100,12 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | Hand in Hand                   | Hatsune Miku / Kz                      | 128 | L4         | 381 notas  | No añadido                               |
 | Angel's Clover                 | MORE MORE JUMP!                        | 193 | L4         | 437 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 | Greenlights Serenade           | Hatsune Miku                           | 200 | L4         | 443 notas  | No añadido                               |
-| Happy Synthesizer (SEKAI Ver.) | MORE MORE JUMP!                        | 127 | L6         | 592 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Sweet Magic                    | Wonderlands × Showtime                 | 123 | L5         | 542 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Happy Synthesizer (SEKAI Ver.) | MORE MORE JUMP!                        | 127 | L6         | 578 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Sweet Magic                    | Wonderlands × Showtime                 | 123 | L5         | 540 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 | Brand New Day                  | irucaice Ft. Hatsune Miku              | 185 | L6         | 608 notas  | No añadido                               |
+| STAGE OF SEKAI                 | Leo/need × Kagamine Len                | 190 | L5         | 473 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Stella                         | Leo/need                               | 197 | L5         | 509 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Teo                            | Leo/need                               | 185 | L5         | 507 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 
 
 * **Love Live!:**
