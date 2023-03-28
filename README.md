@@ -44,8 +44,9 @@ Te contaré un poco acerca de qué trata todo esto.
 ---
 
 <p align="left">
-  <img align="left" width="32" height="32" src="https://user-images.githubusercontent.com/77955772/219849900-522f35c1-ff4e-4a91-b865-6bf8ca0ed1ea.png"/>
-  <img align="left" width="32" height="32" src="https://user-images.githubusercontent.com/77955772/219849896-840fd10f-1b21-40ec-a416-2e20a1378233.png"/>
+  <img align="left" width="32" height="32" src="icons/windows.png"/>
+  <img align="left" width="32" height="32" src="icons/android.png"/>
+  <img align="left" width="32" height="32" src="icons/linux.png"/>
   <h3> Descargas y más: </h3>
 </p>
 
