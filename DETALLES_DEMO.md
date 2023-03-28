@@ -56,7 +56,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > </p>
 > 
 > * **Sistema operativo:** Varía según la distribución de Linux.
-> * **Espacio disponible en el disco:** 1.1 GB o más.
+> * **Espacio disponible en el disco:** 2 GB o más.
 > * **Procesador:** 1.1 GHz de 4 núcleos o más.
 > * **RAM:** 2 GB o más.
 > * **OpenGL:** v2.0 o posterior.
