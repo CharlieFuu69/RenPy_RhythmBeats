@@ -11,6 +11,13 @@
 
 ---
 
+> <p align="left">
+>    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
+>    <h4>Aviso previo:</h4>
+> </p>
+>
+> Los scripts de traducción se actualizan a medida que el juego recibe nuevas características con cadenas de texto.
+
 **Ren'Py RhythmBeats!** utiliza el esquema de traducciones de Ren'Py para traducir cada una de las cadenas de texto que se observan en la interfaz del juego.
 
 <p align="center">
