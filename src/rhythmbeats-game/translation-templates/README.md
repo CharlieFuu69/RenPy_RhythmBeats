@@ -75,12 +75,9 @@ Lo único que necesitas hacer, es llenar la declaración `new` con tu traducció
 
 <h3 align = "center"> 3. ¿Cómo subir tus traducciones y contribuir al juego? </h3>
 
-<p align="center">
-  <img width="80%" height="80%" src="https://user-images.githubusercontent.com/77955772/229029048-6cf267a0-f9b0-416f-be6e-175253b11472.png">
-</p>
-<h5 align = "center"> <i>[Sección de discusiones del repositorio]</i> </h5>
+En este directorio he creado carpetas de los posibles idiomas a los que se podrían traducir. Puedes editar los archivos directamente en el repositorio, y por último, puedes hacer una Pull Request donde revisaré si el archivo cumple con lo necesario para ser agregado al juego.
 
-Si ya tienes lista una traducción y quieres que se agreguen al juego demostrativo, debes ir a la sección **[Discussions > Contributions](https://github.com/CharlieFuu69/RenPy_RhythmBeats/discussions/categories/contributions)** y crear un nuevo post público. Asegúrate de escribir un título corto y conciso para la traducción y luego adjunta los scripts que has traducido. Primero revisaré si tus scripts cumplen con el formato señalado en los ítems 1 y 2 de este README y luego procederé a implementarlo en una actualización.
+> _**NOTA:** Si no ves un directorio con el idioma que quieres traducir, por favor, ve a la sección **[Discussions > General](https://github.com/CharlieFuu69/RenPy_RhythmBeats/discussions/categories/general)** y solicita la adición del idioma que deseas traducir. Se te notificará en tu post la disponibilidad del directorio de idioma solicitado._
 
 Es posible que el script `tl_interface_base.rpy` tarde más en ser implementado que los otros scripts, puesto que no se distribuyen de la misma forma. Mira la siguiente tabla:
 
