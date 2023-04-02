@@ -21,8 +21,9 @@
 **Ren'Py RhythmBeats!** utiliza el esquema de traducciones de Ren'Py para traducir cada una de las cadenas de texto que se observan en la interfaz del juego.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/77955772/229024485-a6f61538-53bb-4854-8ed0-b8e7ab76126b.png">
+  <img src="https://user-images.githubusercontent.com/77955772/229332767-9c9345d9-746d-401d-b71e-72b481c3c913.png">
 </p>
+
 <h5 align = "center"> <i>[Screenshot: Plantilla de scripts para traducciones del juego]</i> </h5>
 
 Los archivos de traducción los puedes encontrar en este directorio (`contributions/game-translations`), y se actualizan a medida que se agregan nuevas cadenas de texto en el juego.
