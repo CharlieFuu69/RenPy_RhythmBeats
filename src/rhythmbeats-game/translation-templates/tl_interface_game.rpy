@@ -12,6 +12,9 @@ translate english strings:
     
     ## ---------------------------------------------------------------------- ##
     ## Strings post descarga de recursos (Coregame.bruh)
+    
+    old "¿Seguro que quieres cerrar {color=cf0}Ren'Py RhythmBeats{/color}?"
+    new ""
 
     old "Selecciona el idioma que debe mostrar la interfaz. Es posible que los detalles de las canciones no cambien de idioma de inmediato."
     new ""
