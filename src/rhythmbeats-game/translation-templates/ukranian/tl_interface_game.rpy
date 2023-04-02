@@ -1,7 +1,7 @@
 ## CharlieFuu69
 ## Ren'Py RhythmBeats! Game
 
-## Script multilenguaje: <language target>
+## Script multilenguaje: Ukranian (ukranian)
 ## Traductor responsable: <contributor>
 
 ## © 2023 CharlieFuu69 - GNU GPL v3.0
