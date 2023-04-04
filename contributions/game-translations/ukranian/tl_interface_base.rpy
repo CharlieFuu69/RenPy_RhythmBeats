@@ -20,6 +20,9 @@ translate ukranian strings:
 
     old "IDIOMA DE LA INTERFAZ"
     new "МОВА ІНТЕРФЕЙСУ"
+    
+    old "Idioma configurado correctamente."
+    new "Правильно встановлено мову."
 
     old "Aceptar y continuar"
     new "Прийняти та продовжити"
@@ -95,3 +98,6 @@ translate ukranian strings:
 
     old "Descargando recursos..."
     new "Завантаження ресурсів..."
+    
+    old "Adquiriendo URL..."
+    new "Отримання URL-адреси..."
