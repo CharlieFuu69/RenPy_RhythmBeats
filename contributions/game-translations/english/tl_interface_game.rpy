@@ -25,14 +25,11 @@ translate english strings:
     old "Otras pistas"
     new "Other songs"
 
-    old "{image=ui_icon_discord}  ¡Ren'Py RhythmBeats ya es visible en Discord!"
-    new "{image=ui_icon_discord}  ¡Ren'Py RhythmBeats is now visible on Discord!"
+    old "¡Ren'Py RhythmBeats ya es visible en Discord!"
+    new "¡Ren'Py RhythmBeats is now visible on Discord!"
 
-    old "{image=ui_icon_discord}  Ren'Py RhythmBeats se está conectando con Discord..."
-    new "{image=ui_icon_discord}  Connecting Ren'Py RhythmBeats with Discord RPC..."
-
-    old "En \"Menú de Pistas\"."
-    new "In \"Song Menu\""
+    old "Ren'Py RhythmBeats se está conectando con Discord..."
+    new "Connecting Ren'Py RhythmBeats with Discord RPC..."
 
     old "Seleccionando pista musical..."
     new "Selecting song..."
