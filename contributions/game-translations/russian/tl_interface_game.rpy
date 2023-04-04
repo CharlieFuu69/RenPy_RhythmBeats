@@ -25,10 +25,10 @@ translate russian strings:
     old "Otras pistas"
     new ""
 
-    old "{image=ui_icon_discord}  ¡Ren'Py RhythmBeats ya es visible en Discord!"
+    old "¡Ren'Py RhythmBeats ya es visible en Discord!"
     new ""
 
-    old "{image=ui_icon_discord}  Ren'Py RhythmBeats se está conectando con Discord..."
+    old "Ren'Py RhythmBeats se está conectando con Discord..."
     new ""
 
     old "En \"Menú de Pistas\"."
