@@ -15,6 +15,9 @@ translate english strings:
 
     old "IDIOMA DE LA INTERFAZ"
     new "INTERFACE LANGUAGE"
+    
+    old "Idioma configurado correctamente."
+    new "Language set correctly."
 
     old "Aceptar y continuar"
     new "Accept and continue"
@@ -90,3 +93,6 @@ translate english strings:
 
     old "Descargando recursos..."
     new "Downloading assets..."
+    
+    old "Adquiriendo URL..."
+    new "Acquiring URL..."
