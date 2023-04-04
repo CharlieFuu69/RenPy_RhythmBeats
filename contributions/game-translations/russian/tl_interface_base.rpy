@@ -15,6 +15,9 @@ translate russian strings:
 
     old "IDIOMA DE LA INTERFAZ"
     new ""
+    
+    old "Idioma configurado correctamente."
+    new ""
 
     old "Aceptar y continuar"
     new ""
@@ -89,4 +92,7 @@ translate russian strings:
     new ""
 
     old "Descargando recursos..."
+    new ""
+    
+    old "Adquiriendo URL..."
     new ""
