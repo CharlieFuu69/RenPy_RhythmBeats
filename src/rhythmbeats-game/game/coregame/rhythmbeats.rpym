@@ -34,28 +34,6 @@ init python:
         pygame.FINGERUP
     ])
 
-    """
-    (SISTEMA ANTIGUO)
-    if all((x in xrange(0, 400), y in xrange(0, 720))):
-        self.left = False
-    if all((x in xrange(880, 1280), y in xrange(0, 720))):
-        self.right = False
-
-
-    (SISTEMA EN IMPLEMENTACIÓN PARCIAL)
-    if ev.type == pygame.FINGERDOWN:
-        if self.area_left.collidepoint(x, y):
-            self.left = True
-        if self.area_right.collidepoint(x, y):
-            self.right = True
-
-    if ev.type == pygame.FINGERUP:
-        if self.area_left.collidepoint(ev.pos):
-            self.left = False
-        if self.area_right.collidepoint(ev.pos):
-            self.right = False
-    """
-
     ## -------------------------------------------------------------------------- ##
     ## Clases
 
