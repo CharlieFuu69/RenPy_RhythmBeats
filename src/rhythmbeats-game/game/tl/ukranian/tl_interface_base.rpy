@@ -9,9 +9,9 @@
 ################################################################################
 
 translate ukranian python:
-    gui.interface_text_font = "ingame-translate/DIN_Next_CYR_Medium.ttf"
-    gui.text_font = "ingame-translate/DIN_Next_CYR_Medium.ttf"
-    gui.name_text_font = "ingame-translate/DIN_Next_CYR_Medium.ttf"
+    gui.interface_text_font = "gui/font/DIN_Next_CYR_Medium.ttf"
+    gui.text_font = "gui/font/DIN_Next_CYR_Medium.ttf"
+    gui.name_text_font = "gui/font/DIN_Next_CYR_Medium.ttf"
 
 translate ukranian strings:
 
