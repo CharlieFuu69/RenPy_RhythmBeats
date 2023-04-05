@@ -7,29 +7,44 @@
 
 ################################################################################
 
+init python:
+    renpy.load_module("radc-alpha2/radc_module")
+
+
 ## -------------------------------------------------------------------------- ##
 ## Secuencia de vefiricación de recursos y actualizaciones
 
 label splashscreen:
+    hide bg_main
+    stop music
 
-    play music audio.bgm_0001 fadeout 1.0 fadein 1.0
+    if not persistent.language_choice:
+        call screen lang_first_run
+        $ rbs_alert(__("Idioma configurado correctamente."), icon="ui_icon_success")
+
+    play music startscreen_queue fadeout 1.0 fadein 1.0 loop
+
     call screen main_advice with dissolve
     show bg_main
     call screen startscreen with dissolve
 
     jump check_updates
 
+
     label check_updates:
-        $ update = UpdateManager(ext = ".bruh", skip = config.developer)
-        $ update.index_url = "https://raw.githubusercontent.com/CharlieFuu69/RenPy_RhythmBeats/main/src/index.json"
+        $ update = UpdateManager(index_url="https://raw.githubusercontent.com/CharlieFuu69/RenPy_RhythmBeats/main/src/index.json",
+                                package_ext=".bruh",
+                                #skip_process=False)
+                                skip_process=config.developer)
 
         show tex_black with dissolve
-        call screen update(inst = update)
+        call screen update(inst=update)
 
         return
 
+
 label download_sequence:
-    $ update.start_batch_download()
+    $ update.start_batch_download("download")
 
     call screen download_complete
 
@@ -40,7 +55,6 @@ label download_sequence:
 ## Evasión del Menú Principal
 
 label main_menu:
-    $ del update
     return
 
 
@@ -57,5 +71,5 @@ label start:
         $ renpy.pause(1.0, hard = True)
         jump song_selection_menu
     else:
-        $ logging.critical("Error de flujo (song_selection_menu): Label inexistente. Cerrando el juego.")
+        $ logging.critical("Missing label: song_selection_menu. Closing the game")
         $ renpy.quit(relaunch = False, save = False)
