@@ -18,7 +18,7 @@ label quit:
 
 label song_selection_menu:
     $ p = persistent ## Reduce el espacio horizontal usado por variables "persistent"
-    $ music_inst = MusicData(fn = "coregame/music_data.json")
+    $ music_inst = MusicData(_dir = "coregame/metadata/music_metadata.json")
     $ music_inst.load()
     $ record_scores(init_mode = music_inst.get_song_count())
     $ stage_aborted = False
@@ -32,13 +32,11 @@ label song_selection_menu:
     if p.discord_rpc:
         if not rpc:
             $ rpc = DiscordRichPresence()
-            $ rpc.set_status(state = "En \"Menú de Pistas\".",
-                            details = "Seleccionando pista musical...")
+            $ rpc.set_status(details = __("Seleccionando pista musical..."))
             $ rpc.rpc_start()
 
         else:
-            $ rpc.set_status(state = "En \"Menú de Pistas\".",
-                            details = "Seleccionando pista musical...")
+            $ rpc.set_status(details = __("Seleccionando pista musical..."))
 
     call screen song_select(music_inst) with dissolve
 
@@ -53,9 +51,9 @@ label song_selection_menu:
         scene tex_black_solid
 
         if rpc:
-            $ rpc.set_status(state = "Artistas: %s" % data["song_artists"],
-                            details = "Jugando: \"%s\"" % data["song_title"],
-                            image_text = "Partida en curso...")
+            $ rpc.set_status(state = __("Artistas: %s") % data["song_artists"],
+                            details = __("Jugando: \"%s\"") % data["song_title"],
+                            image_text = __("Partida en curso..."))
 
         ## Esto libera un poco de memoria antes de ejecutar una canción
         $ renpy.free_memory()
@@ -68,10 +66,9 @@ label song_selection_menu:
                         song_file = data["audio"],
                         offset_map = data["map_offset"],
                         offset_game = p.custom_offset,
-                        max_score = 12000,
+                        max_score = 25000,
                         failsafe = p.failsafe)
 
-            rhythm.load()
             rhythm.miss_sound = audio.sfx_note_miss
 
         stop music fadeout 1.0

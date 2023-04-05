@@ -329,6 +329,7 @@ style stats_bar:
     xysize(300, 7)
 
 style stats_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#090"
     outlines [(2, "#FFF", 0, 0)]
     size 22
@@ -358,11 +359,13 @@ style song_combo_label:
     xalign 0.5
 
 style song_combo_label_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#FFF"
     outlines [(2, "#000", 0, 0)]
     size 22
 
 style song_combo_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#FFF"
     outlines [(3, "#000", 0, 0)]
     size 70
@@ -399,20 +402,21 @@ style score_style_hbox:
     spacing 10
     pos(0.035, 0.045)
 
-style score_style_fixed:
-    xysize(103, 79)
+style score_style_frame is score_results_frame:
     yalign 0.8
 
 style score_style_label_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#242424"
     outlines [(2, "#FFF", 0, 0)]
     size 22
 
 style score_style_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#FFF"
     size 28
     anchor(0.5, 0.5)
-    pos(0.5, 0.5)
+    pos(0.5, 0.49)
 
 
 ## -------------------------------------------------------------------------- ##
@@ -423,13 +427,15 @@ style scorebar_bar:
     right_bar Solid("#777")
     xysize(500, 10)
 
-style scorebar_fixed:
-    xysize(215, 160)
+style scorebar_frame:
+    xysize(215, 165)
 
 style scorebar_label:
-    align(0.5, 0.5)
+    anchor(0.5, 0.5)
+    pos(0.5, 0.49)
 
 style scorebar_label_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#FFF"
     size 46
 
@@ -452,7 +458,7 @@ style scorebar_vbox:
 style show_results_frame:
     background Frame(Solid("#242424"), 24, 24, 24, 24)
     padding(30, 30, 30, 30)
-    xminimum 600
+    xmaximum 600
 
 style show_results_hbox:
     spacing 40
@@ -467,6 +473,7 @@ style show_results_text is song_btn_text:
 
 ## Prefijo "combo_results"
 style combo_results_label_text:
+    font "gui/font/DIN-Medium.ttf"
     color "#FFF"
     outlines [(3, "#000", 0, 0)]
     size 85
@@ -490,13 +497,15 @@ style score_results_hbox is scorebar_hbox:
 style score_results_vbox is scorebar_vbox
 style score_results_bar is scorebar_bar:
     xysize(400, 7)
-style score_results_label is scorebar_label
+style score_results_label is scorebar_label:
+    pos(0.5, 0.5)
+
 style score_results_label_text is scorebar_label_text:
     size 26
 style score_results_text is scorebar_text:
     size 20
 
-style score_results_fixed:
+style score_results_frame:
     xysize(103, 79)
 
 
@@ -505,8 +514,18 @@ style new_record_frame:
     background Frame("coregame/ui/ui_overlay_newrecord.png", 22, 0, 22, 0)
     padding(22, 5, 22, 5)
     minimum(96, 48)
+    xalign 0.5
 
 style new_record_text:
     yalign 0.5
     color "#000"
     size 16
+
+
+## -------------------------------------------------------------------------- ##
+## Screen "playground_finish"
+
+## Prefijo "finish_style"
+style finish_style_text:
+    outlines [(2, "#000", 0, 0)]
+    size 70

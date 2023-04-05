@@ -32,6 +32,7 @@ init:
     define audio.sfx_results_scoreframe = "coregame/sound/sfx_results_scoreframe.ogg"
 
     define audio.ui_sound_radiobutton = "coregame/sound/ui_sound_radiobutton.ogg"
+    define audio.ui_sound_notify_small = "coregame/sound/ui_sound_notify_small.ogg"
 
     define audio.bgm_0047 = "coregame/sound/bgm_0047.ogg"
 
@@ -68,13 +69,16 @@ init:
     image ui_tex_white = Solid("#FFF")
     image ui_black_solid = Solid("#000")
 
+    image ui_notify_success = Frame("coregame/ui/ui_notify_success.png", 14, 14, 14, 14)
+    image ui_notify_error = Frame("coregame/ui/ui_notify_error.png", 14, 14, 14, 14)
+
     image ui_coregame_note_lane = "coregame/ui/ui_coregame_note_lane.png"
     image ui_coregame_note_tap = Transform("coregame/ui/ui_coregame_note_tap.png", zoom = 1.3)
     image ui_coregame_bg_failed = "coregame/ui/ui_coregame_bg_failed.png"
 
     image ui_performance_alert = Transform("coregame/ui/ui_icon_performance_alert.png", zoom = 0.5)
     image ui_icon_github = Transform("coregame/ui/ui_icon_github.png", zoom = 0.1)
-    image ui_icon_discord = Transform("coregame/ui/icon/ui_icon_discord.png", zoom = 0.15)
+    image ui_icon_discord = "coregame/ui/icon/ui_icon_discord.png" #Transform("coregame/ui/icon/ui_icon_discord.png", zoom = 0.15)
 
     image ui_icon_rank_s = "coregame/ui/icon/ui_icon_rank_s.png"
     image ui_icon_rank_a = "coregame/ui/icon/ui_icon_rank_a.png"
@@ -101,136 +105,43 @@ init:
     image ui_overlay_results = Frame("coregame/ui/ui_overlay_results.png", 200, 0, 300, 0)
 
     ## ---------------------------------------------------------------------- ##
-    ## Texturas VFX
+    ## Texturas y efectos
 
-    image fx_endshow_orange_fps:
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (0, 0, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (32, 0, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (0, 32, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (32, 32, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (32, 32, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (0, 32, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (32, 0, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_orange.png", (0, 0, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        repeat
+    image ui_tex_flashlight = "coregame/textures/ui_tex_flashlight.png"
 
+    image tex_show_end_blue = anim.Filmstrip("coregame/textures/ui_tex_show_end_blue.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.04)
+    image tex_show_end_green = anim.Filmstrip("coregame/textures/ui_tex_show_end_green.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.05)
+    image tex_show_end_orange = anim.Filmstrip("coregame/textures/ui_tex_show_end_orange.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.03)
+    image tex_show_end_red = anim.Filmstrip("coregame/textures/ui_tex_show_end_red.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.03)
+    image tex_show_end_violet = anim.Filmstrip("coregame/textures/ui_tex_show_end_violet.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.05)
+    image tex_show_end_yellow = anim.Filmstrip("coregame/textures/ui_tex_show_end_yellow.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.06)
 
-    image fx_endshow_green_fps:
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (0, 0, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (32, 0, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (0, 32, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (32, 32, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (32, 32, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (0, 32, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (32, 0, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_green.png", (0, 0, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        repeat
-
-
-    image fx_endshow_yellow_fps:
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (0, 0, 32, 32)), xzoom = 1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (32, 0, 32, 32)), xzoom = 1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (0, 32, 32, 32)), xzoom = 1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (32, 32, 32, 32)), xzoom = 1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (32, 32, 32, 32)), xzoom = -1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (0, 32, 32, 32)), xzoom = -1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (32, 0, 32, 32)), xzoom = -1.0)
-        pause 0.06
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_yellow.png", (0, 0, 32, 32)), xzoom = -1.0)
-        pause 0.06
-        repeat
-
-
-    image fx_endshow_blue_fps:
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (0, 0, 32, 32)), xzoom = 1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (32, 0, 32, 32)), xzoom = 1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (0, 32, 32, 32)), xzoom = 1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (32, 32, 32, 32)), xzoom = 1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (32, 32, 32, 32)), xzoom = -1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (0, 32, 32, 32)), xzoom = -1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (32, 0, 32, 32)), xzoom = -1.0)
-        pause 0.04
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_blue.png", (0, 0, 32, 32)), xzoom = -1.0)
-        pause 0.04
-        repeat
-
-
-    image fx_endshow_red_fps:
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (0, 0, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (32, 0, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (0, 32, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (32, 32, 32, 32)), xzoom = 1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (32, 32, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (0, 32, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (32, 0, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_red.png", (0, 0, 32, 32)), xzoom = -1.0)
-        pause 0.03
-        repeat
-
-
-    image fx_endshow_violet_fps:
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (0, 0, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (32, 0, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (0, 32, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (32, 32, 32, 32)), xzoom = 1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (32, 32, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (0, 32, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (32, 0, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        Transform(im.Crop("coregame/textures/ui_tex_confetti_violet.png", (0, 0, 32, 32)), xzoom = -1.0)
-        pause 0.05
-        repeat
-
-
-    image fx_tex_confetti:
+    image tex_show_cleared:
         Fixed(
-        SnowBlossom("fx_endshow_orange_fps", border = 50, yspeed = 150, start = 6.0, count = 7),
-        SnowBlossom("fx_endshow_green_fps", border = 50, yspeed = 150, start = 4.0, count = 7),
-        SnowBlossom("fx_endshow_yellow_fps", border = 50, yspeed = 150, start = 6.0, count = 7),
-        SnowBlossom("fx_endshow_blue_fps", border = 50, yspeed = 150, start = 4.0, count = 7),
-        SnowBlossom("fx_endshow_red_fps", border = 50, yspeed = 150, start = 6.0, count = 7),
-        SnowBlossom("fx_endshow_violet_fps", border = 50, yspeed = 150, start = 6.0, count = 7))
+        SnowBlossom("tex_show_end_blue", border = 50, yspeed = 150, start = 4.0, count = 7),
+        SnowBlossom("tex_show_end_green", border = 50, yspeed = 150, start = 4.0, count = 7),
+        SnowBlossom("tex_show_end_orange", border = 50, yspeed = 150, start = 4.0, count = 7),
+        SnowBlossom("tex_show_end_red", border = 50, yspeed = 150, start = 4.0, count = 7),
+        SnowBlossom("tex_show_end_violet", border = 50, yspeed = 150, start = 4.0, count = 7),
+        SnowBlossom("tex_show_end_yellow", border = 50, yspeed = 150, start = 4.0, count = 7))
         alpha 0.0
         pause 2.0
         ease 0.8 alpha 1.0

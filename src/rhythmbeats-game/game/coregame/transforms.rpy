@@ -64,7 +64,7 @@ transform place_atl(xybef = (0.0, 0.0), xyaft = (0.0, 0.0), ref = (0.0, 0.0), de
     subpixel True
     anchor(ref[0], ref[1])
 
-    on start:
+    on show, start:
         pos(xybef[0], xybef[1])
         pause delta + 0.001
         easein_quint 0.3 pos(xyaft[0], xyaft[1])
@@ -149,9 +149,6 @@ transform results_score_anim(delta = 0.0):
 
 
 transform new_record_signal(delta = 0.0):
-    subpixel True
-    pos(0.54, 0.5)
-
     alpha 0.0
     pause 0.001 + delta
 
@@ -162,3 +159,20 @@ transform new_record_signal(delta = 0.0):
         pause 0.15
         repeat 3
     alpha 1.0
+
+
+transform full_combo_light_effect(delta=0.0):
+    subpixel True
+    anchor(0.5, 0.5)
+    pos(0.5, 0.51)
+
+    parallel:
+        alpha 0.0
+        pause 0.001 + delta
+        ease 0.15 alpha 1.0
+        ease 2.5 alpha 0.0
+
+    parallel:
+        xzoom 0.0 yzoom 0.0
+        pause 0.001 + delta
+        ease 0.25 xzoom 6.0 yzoom 3.0

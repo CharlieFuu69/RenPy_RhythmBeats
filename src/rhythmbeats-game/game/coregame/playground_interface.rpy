@@ -60,7 +60,6 @@ screen playground_hud(song_length, score_goal):
 
     timer song_length + 1.0 action Jump("show_cleared")
 
-
     python:
         hp = 15 - rhythm.miss
         average_ms, reaction = rhythm.accuracy_rate()
@@ -75,8 +74,8 @@ screen playground_hud(song_length, score_goal):
             style_prefix "score_style"
 
             ## Barra de XP de la partida
-            fixed:
-                add sc_icon xysize(103, 79)
+            frame:
+                background Transform(sc_icon, xsize=103, ysize=79)
                 text sc_rank
 
             vbox:
@@ -127,22 +126,21 @@ screen playground_hud(song_length, score_goal):
             ypos 0.3
 
             has vbox
-            label "Métricas de operación."
+            label _("Métricas de operación.")
             text "- Beatmap: %s" % rhythm.fn
             text "- Offset: %s s" % rhythm.offset
-            text "- Epoch: %.01f s" % rhythm.epoch
-            text "- Último tap: %.01f ms" % rhythm.last_tap
-            text "- Progreso del mapa: %s/%s" % rhythm.map_progress
-            text "- Acertados: %s" % rhythm.perfect
-            text "- Fallidos: %s" % rhythm.miss
-
+            text "- Epoch: %.01f s" % round(rhythm.epoch, 2)
+            text __("- Último tap: %.01f ms" % rhythm.last_tap)
+            text __("- Progreso del mapa: %s/%s" % rhythm.map_progress)
+            text __("- Acertados: %s" % rhythm.perfect)
+            text __("- Fallidos: %s" % rhythm.miss)
 
     ## Muestra el botón para abortar el Show mientras aún quedan notas para tocar.
     if rhythm.is_running():
         hbox:
             xalign 0.5 ypos 0.85
             style_prefix "sort_music"
-            textbutton "Abortar Show" action [
+            textbutton _("Abortar Show") action [
             SetVariable("stage_aborted", True),
             Jump("show_failed")]
 
@@ -166,13 +164,15 @@ screen playground_2dmv(source):
 screen playground_finish(miss_notes, max_allowed):
     zorder 104
     modal True
+    style_prefix "finish_style"
 
     if miss_notes == 0:
         timer 1.8 action Play("sfx_01", audio.sfx_stage_full_combo)
         add "ui_tex_black"
-        add "fx_tex_confetti"
+        add "tex_show_cleared"
 
-        text "Full Combo!" at show_clear_text(2.3) size 70
+        add "ui_tex_flashlight" at full_combo_light_effect(2.5)
+        text "Full Combo!" at show_clear_text(2.3)
 
         add "ui_tex_white" at full_combo_line_effect(xymap = [(-0.3, 1.3), 0.42], delta = 2.0)
         add "ui_tex_white" at full_combo_line_effect(xymap = [(-0.3, 1.3), 0.58], delta = 2.15)
@@ -180,12 +180,12 @@ screen playground_finish(miss_notes, max_allowed):
     elif miss_notes < max_allowed:
         timer 1.0 action Play("sfx_01", audio.sfx_stage_cleared)
         add "ui_tex_black"
-        text "Show Clear!" at show_clear_text(1.0) size 70
+        text "Show Clear!" at show_clear_text(1.0)
 
     else:
         timer 0.001 action Play("sfx_01", audio.sfx_stage_failed)
         add "ui_coregame_bg_failed"
-        text "Show Failed!" at show_clear_text(0.0) size 70
+        text "Show Failed!" at show_clear_text(0.0)
 
 
 ## -------------------------------------------------------------------------- ##
@@ -196,8 +196,8 @@ screen results_start():
     on "show" action Play("sfx_01", audio.sfx_results_intro)
     timer 1.6 action [Hide("results_start"), Return()]
 
-    text "RESULTADOS"  size 60 at crossline_text(xran = (-0.3, 1.3), y = 0.45, offset = 0.2, delta = 0.6)
-    text "FINALES" size 60 at crossline_text(xran = (1.3, -0.3), y = 0.55, offset = 0.2, delta = 0.6)
+    text _("RESULTADOS FINALES") at crossline_text(xran = (-0.3, 1.3), y = 0.5, offset = 0.2, delta = 0.6):
+        size 60
 
 
 screen score_frame():
@@ -212,12 +212,12 @@ screen score_frame():
     hbox at results_score_anim(0.8):
         style_prefix "scorebar"
 
-        fixed:
-            add score_fmt[3] zoom 0.5
+        frame:
+            background Transform(score_fmt[3], xsize=215, ysize=165)
             label score_fmt[1]
 
         vbox:
-            text "PUNTUACIÓN OBTENIDA" size 40
+            text _("PUNTUACIÓN OBTENIDA") size 40
             null height 30
             text "%s XP / %s XP" % (score_fmt[2], dotfmt(score_target))
             bar:
@@ -230,7 +230,7 @@ screen score_frame():
 
     hbox at place_atl((0.5, 1.1), (0.5, 0.85), (0.5, 0.0), delta = 2.5):
         style_prefix "sort_music"
-        textbutton "Siguiente" action [Hide("score_frame"), Return()]
+        textbutton _("Siguiente") action [Hide("score_frame"), Return()]
 
 
 screen show_results(song_selected, party):
@@ -252,35 +252,42 @@ screen show_results(song_selected, party):
     add song_selected["cover"] at place_atl((-0.3, 0.3), (0.07, 0.3), delta = 1.1) zoom 0.65
 
     ## Cuadro de resultados de la partida
-    frame at place_atl((1.1, 0.2), (0.4, 0.2), delta = 1.4):
-        has vbox spacing 20 xsize 550
+    frame at place_atl((1.1, 0.5), (0.43, 0.5), (0.0, 0.5), delta = 1.4):
+        has vbox xsize 550 first_spacing 10
 
         frame:
             style_prefix "msg_success"
-            text "RESULTADOS DE LA PARTIDA" style "update_label_text" xalign 0.5
+            text _("RESULTADOS DE LA PARTIDA") style "update_label_text" xalign 0.5
 
         hbox:
             style_prefix "combo_results"
             vbox:
                 xsize 250
-                text "COMBO FINAL" xalign 0.5
+                text _("COMBO FINAL") xalign 0.5
                 label str(party.combo) xalign 0.5
 
             vbox:
-                text u"\u2022 Perfecto       : [party.perfect]" italic True
-                text u"\u2022 BRUH            : [party.miss]" italic True ## XD
+                text _(u"\u2022 Perfecto : [party.perfect]") italic True
+                text _(u"\u2022 BRUH : [party.miss]") italic True ## XD
 
-        add Solid("#FFF") xysize(550, 3)
+        fixed:
+            maximum(550, 48)
+            add Solid("#FFF") ysize 3 yalign 0.5
+
+            frame at new_record_signal(1.6):
+                style_prefix "new_record"
+                text _("¡NUEVO RECORD ALCANZADO!")
+
 
         hbox:
             style_prefix "score_results"
 
-            fixed:
-                add score_fmt[3] xysize(103, 79)
+            frame:
+                background Transform(score_fmt[3], xsize=103, ysize=79)
                 label score_fmt[1]
 
             vbox:
-                text "PUNTUACIÓN OBTENIDA" color "#CF0"
+                text _("PUNTUACIÓN OBTENIDA") color "#CF0"
                 text "%s XP / %s XP" % (score_fmt[2], dotfmt(score_target))
                 bar:
                     value AnimatedValue(old_value = 0.0,
@@ -289,16 +296,13 @@ screen show_results(song_selected, party):
                                         delay = 2.8)
                     left_bar Solid(score_fmt[0])
 
-        vbox:
-            text u"\u2022 {color=CF0}Tiempo de reacción promedio:{/color} %s ms." % (accuracy[0]) size 19
-            text u"\u2022 {color=CF0}Tendencia de reacción:{/color} %s" % (accuracy[1]) size 19
+        null height 15
 
-    if get_record_flag:
-        frame at new_record_signal(1.6):
-            style_prefix "new_record"
-            text "¡NUEVO RECORD ALCANZADO!"
+        vbox:
+            text __(u"\u2022 {color=CF0}Tiempo de reacción promedio:{/color} %s ms.") % (accuracy[0]) size 19
+            text __(u"\u2022 {color=CF0}Tendencia de reacción:{/color} %s") % (accuracy[1]) size 19
 
 
     hbox at place_atl((0.5, 1.1), (0.5, 0.85), (0.5, 0.0), delta = 1.6):
         style_prefix "sort_music"
-        textbutton "Regresar a la lista" action Jump("song_selection_menu")
+        textbutton _("Regresar a la lista") action Jump("song_selection_menu")

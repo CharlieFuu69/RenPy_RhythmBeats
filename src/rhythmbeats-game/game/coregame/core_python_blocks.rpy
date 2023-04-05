@@ -18,10 +18,6 @@ init python:
     ## Importación del módulo de "Ren'Py RhythmBeats!"
     renpy.load_module("coregame/rhythmbeats")
 
-    ## Mover a "definitions.rpy" en la próxima actualización global
-    renpy.music.register_channel("ui_02", mixer = "sfx", loop = False)
-    renpy.music.register_channel("ui_03", mixer = "sfx", loop = False)
-
 
     def record_scores(init_mode = False, id = None, score = None):
         """Esta función actualiza claves del diccionario que contiene los récords
@@ -34,12 +30,10 @@ init python:
                 if _id in p.highscores:
                     continue
                 else:
-                    logging.info("Record ID nuevo: %s" % _id)
                     p.highscores.update({_id : 0})
 
         else:
             if score > p.highscores[id]:
-                logging.info("Record registrado para %s: %s" % (id, dotfmt(score)))
                 p.highscores.update({id : score})
                 return True
             else:
@@ -51,15 +45,14 @@ init python:
         seleccionada y el archivo de metadatos de música."""
 
         for song in all_metadata:
-            print("SELECT * :", p.song_selected)
-            print("REPEATED:", song)
             if p.song_selected["audio_preview"] == song["audio_preview"]:
                 p.song_selected = song
                 return None
 
 
     def finish_playstage(screen_queue = [], dissolving = False):
-        """Esta función cierra las screens escritas en 'screen_queue' cuando la partida finaliza"""
+        """Esta función cierra las screens escritas en 'screen_queue' cuando la
+        partida finaliza"""
 
         renpy.hide_screen("playground_2dmv")
         if screen_queue:
@@ -170,18 +163,18 @@ init python:
 
     class MusicData:
 
-        def __init__(self, fn):
-            self.fn = fn
+        def __init__(self, _dir):
+            self.dir = _dir
             self.entire_data = dict()
 
         def load(self):
             try:
-                logging.info("Cargando metadatos JSON de canciones...")
-                content = renpy.file(self.fn)
+                logger(logging.info, "Loading music metadata from JSON...")
+                content = renpy.file(self.dir)
                 self.entire_data = json.loads(content.read().decode("utf-8"))
 
             except Exception as load_error:
-                logging.error("Error al cargar metadatos JSON: %s" % str(load_error))
+                logger(logging.error, "JSON loading failed: %s" % str(load_error))
 
         def sort(self, now = "all"):
             sort_results = []
@@ -236,28 +229,30 @@ init python:
         ## Métodos callback para reportar actividad de Discord RPC
 
         def rpc_ready(self, userdict):
-            logging.info("Discord RPC está activo...")
-            logging.info("Usuario detectado: %s" % userdict["username"])
-            logging.info("ID de usuario: #%s" % userdict["id"])
+            logger(logging.info, "Discord RPC running on user \"%(username)s\"..." % userdict)
 
-            renpy.notify("{image=ui_icon_discord}  ¡Ren'Py RhythmBeats ya es visible en Discord!")
+            rbs_alert(__("¡Ren'Py RhythmBeats ya es visible en Discord!"), 0, "ui_icon_discord")
 
 
         def rpc_disconnect(self, code, msg):
-            logging.warning("Discord RPC está desconectado.")
-            logging.warning("Código de error: %s" % code)
-            logging.warning("Detalles: %s" % msg)
+            logger(logging.warning, "Discord RPC disconnected.")
+            logger(logging.warning, "Error code: %s" % code)
+            logger(logging.warning, "Details: %s" % msg)
+
+            rbs_alert(content="(%s) %s" %(code, msg), status=1, icon="ui_icon_warning")
 
 
         def rpc_error(self, code, msg):
-            logging.error("Error durante la ejecución de Discord RPC.")
-            logging.error("Código de error: %s" % code)
-            logging.error("Detalles: %s" % msg)
+            logger(logging.error, "Error in Discord RPC runtime.")
+            logger(logging.warning, "Error code: %s" % code)
+            logger(logging.warning, "Details: %s" % msg)
+
+            rbs_alert("(%s) %s" %(code, msg), status=1, icon="ui_icon_warning")
 
         ## ---------------------------------------------------------------------- ##
         ## Métodos de ejecución y de actividad de Discord RPC
 
-        def set_status(self, state = "", details = "", image_text = "Jugando a Ren'Py RhythmBeats!"):
+        def set_status(self, state = None, details = "", image_text = "Jugando a Ren'Py RhythmBeats!"):
 
             discord_rpc.update_presence(
                 **{
@@ -273,6 +268,7 @@ init python:
 
 
         def stop(self):
+            logger(logging.info, "Discord RPC service stopped.")
             self.is_running = False
             discord_rpc.shutdown()
 
@@ -284,7 +280,7 @@ init python:
                     discord_rpc.run_callbacks()
 
                 except Exception as rpc_upd_error:
-                    print("Error: %s" % rpc_upd_error)
+                    logger(logging.info, "Discord RPC Error: %s" % repr(rpc_upd_error))
                 finally:
                     if self.is_running:
                         time.sleep(3)
@@ -293,8 +289,6 @@ init python:
 
 
         def rpc_start(self):
-            renpy.notify("{image=ui_icon_discord}  Ren'Py RhythmBeats se está conectando con Discord...")
-
-            t1 = threading.Thread(target = self.rpc_updater)
-            t1.setDaemon(True)
-            t1.start()
+            logger(logging.info, "Starting Discord RPC service...")
+            rbs_alert(__("Ren'Py RhythmBeats se está conectando con Discord..."), icon="ui_icon_discord")
+            renpy.invoke_in_thread(fn=self.rpc_updater)
