@@ -2,7 +2,7 @@
 ## Ren'Py RhythmBeats! Game
 
 ## Script multilenguaje: Ukranian (ukranian)
-## Traductor responsable: <contributor>
+## Traductor responsable: @lllPapilll
 
 ## © 2023 CharlieFuu69 - GNU GPL v3.0
 
@@ -152,7 +152,7 @@ translate ukranian strings:
     new "РУЧНЕ КАЛІБРУВАННЯ"
 
     old "Por defecto, la compensación de tiempo es de 0 milisegundos.\nEn valores negativos, las notas llegarán {color=cf0}antes de lo esperado{/color}, mientras que con valores positivos se {color=cf0}retrasará la llegada{/color} de las notas."
-    new "За замовчуванням зміщення часу становить 0 мілісекунд.\nУ від’ємних значеннях нотатки надходитимуть {color=cf0}раніше очікуваного{/color}, тоді як у додатних значеннях надходження буде {color=cf0}затриманим{/ колір} нотаток."
+    new "За замовчуванням зміщення часу становить 0 мілісекунд.\nУ від’ємних значеннях нотатки надходитимуть {color=cf0}раніше очікуваного{/color}, тоді як у додатних значеннях надходження буде {color=cf0}затриманим{/color} нотаток."
 
     old "ATENUACIÓN DE 2DMVs"
     new "Згасання 2DMV"
