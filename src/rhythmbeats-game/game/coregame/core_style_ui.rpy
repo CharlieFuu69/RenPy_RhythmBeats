@@ -511,7 +511,7 @@ style score_results_frame:
 
 ## Prefijo "new_record"
 style new_record_frame:
-    background Frame("coregame/ui/ui_overlay_newrecord.png", 22, 0, 22, 0)
+    background Frame("coregame/ui/overlay/ui_overlay_newrecord.png", 22, 0, 22, 0)
     padding(22, 5, 22, 5)
     minimum(96, 48)
     xalign 0.5

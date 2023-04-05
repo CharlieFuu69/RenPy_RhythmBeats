@@ -69,16 +69,16 @@ init:
     image ui_tex_white = Solid("#FFF")
     image ui_black_solid = Solid("#000")
 
-    image ui_notify_success = Frame("coregame/ui/ui_notify_success.png", 14, 14, 14, 14)
-    image ui_notify_error = Frame("coregame/ui/ui_notify_error.png", 14, 14, 14, 14)
+    image ui_notify_success = Frame("coregame/ui/overlay/ui_notify_success.png", 14, 14, 14, 14)
+    image ui_notify_error = Frame("coregame/ui/overlay/ui_notify_error.png", 14, 14, 14, 14)
 
-    image ui_coregame_note_lane = "coregame/ui/ui_coregame_note_lane.png"
+    image ui_coregame_note_lane = "coregame/ui/overlay/ui_overlay_note_lane.png"
     image ui_coregame_note_tap = Transform("coregame/ui/ui_coregame_note_tap.png", zoom = 1.3)
     image ui_coregame_bg_failed = "coregame/ui/ui_coregame_bg_failed.png"
 
-    image ui_performance_alert = Transform("coregame/ui/ui_icon_performance_alert.png", zoom = 0.5)
-    image ui_icon_github = Transform("coregame/ui/ui_icon_github.png", zoom = 0.1)
-    image ui_icon_discord = "coregame/ui/icon/ui_icon_discord.png" #Transform("coregame/ui/icon/ui_icon_discord.png", zoom = 0.15)
+    image ui_performance_alert = Transform("coregame/ui/icon/ui_icon_performance_alert.png", zoom = 0.5)
+    image ui_icon_github = Transform("coregame/ui/icon/ui_icon_github.png", zoom = 0.1)
+    image ui_icon_discord = "coregame/ui/icon/ui_icon_discord.png"
 
     image ui_icon_rank_s = "coregame/ui/icon/ui_icon_rank_s.png"
     image ui_icon_rank_a = "coregame/ui/icon/ui_icon_rank_a.png"
@@ -102,7 +102,7 @@ init:
         pause 0.2
         repeat
 
-    image ui_overlay_results = Frame("coregame/ui/ui_overlay_results.png", 200, 0, 300, 0)
+    image ui_overlay_results = Frame("coregame/ui/overlay/ui_overlay_results.png", 200, 0, 300, 0)
 
     ## ---------------------------------------------------------------------- ##
     ## Texturas y efectos
