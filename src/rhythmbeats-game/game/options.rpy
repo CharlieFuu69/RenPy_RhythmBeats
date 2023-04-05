@@ -9,7 +9,7 @@
 
 ## Metadatos y Compilación
 define config.name = "Ren'Py RhythmBeats! Game"
-define config.version = "v1.02.1b"
+define config.version = "v1.03.1b"
 define game_license = "© 2023 CharlieFuu69 - GNU GPL v3.0"
 define gui.show_name = False
 
@@ -78,6 +78,7 @@ define config.allow_skipping = False
 init python:
     CURRENT_SONG_COUNT = 22
 
+    ## Archivos o rutas excluidas de la compilación.
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
@@ -95,17 +96,21 @@ init python:
     build.classify("game/gui/**.jpg", "Main")
     build.classify("game/gui/**.ttf", "Main")
     build.classify("game/audio/main/**.ogg", "Main")
-    build.classify("game/python-packages/wget.py", "Main")
+    build.classify("game/radc-alpha2/*.rpymc", "Main")
     build.classify("game/*.rpyc", "Main")
+    build.classify("game/tl/**.rpymc", "Main")
+    build.classify("game/tl/**.rpyc", "Main")
 
     ## Coregame
     build.archive("Coregame", "windows")
     build.classify("game/python-packages/discord_rpc/**.**", "Coregame")
     build.classify("game/coregame/**.ogg", "Coregame")
-    build.classify("game/coregame/**.rpyc", "Coregame")
-    build.classify("game/coregame/**.rpymc", "Coregame")
+    build.classify("game/coregame/*.rpyc", "Coregame")
+    build.classify("game/coregame/*.rpymc", "Coregame")
     build.classify("game/coregame/**.json", "Coregame")
     build.classify("game/coregame/**.png", "Coregame")
+    build.classify("game/coregame/**.ttf", "Coregame")
+    build.classify("game/ingame-translate/**.rpyc", "Coregame")
 
     ## Song packages
     for song_id in range(1, CURRENT_SONG_COUNT+1):
