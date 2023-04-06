@@ -1,10 +1,10 @@
 {
-    "version" : "v1.03.1b",
+    "version" : "v1.04.0b",
     "packages" : [
         {
             "name" : "Coregame",
             "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Coregame.bruh",
-            "md5" : "1606e7c18d295ab6ecbd2b3b5c9056eb"
+            "md5" : "60c53e87f612a4bd31af26eaae292c38"
         },
         {
             "name" : "Song_0001",
