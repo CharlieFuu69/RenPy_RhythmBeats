@@ -2,7 +2,7 @@
 ## Ren'Py RhythmBeats! Game
 
 ## Script multilenguaje: Ukranian (ukranian).
-## Traductor responsable: <contributor>
+## Traductor responsable: @lllPapilll
 
 ## © 2023 CharlieFuu69 - GNU GPL v3.0
 
@@ -15,11 +15,11 @@ translate ukranian strings:
 
     ## ID: Song_0022
     old "Esta pista es un cover protagonizado por la unidad \"Leo/need\" de Project SEKAI. La composición y arreglos fueron hechas por Omoi, y su vocalista original es la Vocaloid \"Hatsune Miku\"."
-    new "Цей трек є кавером у головній ролі гурту \"Leo/need\" з проекту SEKAI. Композицію та аранжування зробив Omoi, а оригінальним вокалістом є Vocaloid \"Hatsune Miku\"."
+    new "Цей трек є кавером у головній ролі гурту \"Leo/need\" з Project SEKAI. Композицію та аранжування зробив Omoi, а оригінальним вокалістом є Vocaloid \"Hatsune Miku\"."
 
     ## ID: Song_0021
     old "Esta pista fue comisionada por JIN para el evento \"Stella After The Rain\" de Project SEKAI. La vocalista original de esta canción es la Vocaloid \"Hatsune Miku\"."
-    new "Цей трек було замовлено JIN для події \"Stella After The Rain\" проекту SEKAI. Оригінальним вокалістом цієї пісні є Vocaloid \"Hatsune Miku\"."
+    new "Цей трек було замовлено JIN для події \"Stella After The Rain\" Project SEKAI. Оригінальним вокалістом цієї пісні є Vocaloid \"Hatsune Miku\"."
 
     ## ID: Song_0020
     old "Esta pista fue comisionada por HarryP para el evento \"Putting Feelings Into Words\" de Project SEKAI. La vocalista original de esta canción es la Vocaloid \"Hatsune Miku\"."
@@ -39,7 +39,7 @@ translate ukranian strings:
 
     ## ID: Song_0003
     old "Esta pista protagonizó el despliegue del Aniversario #1 de Project SEKAI, siendo una versión alternativa a la canción original cantada por todas las unidades de dicho juego."
-    new "Ця доріжка представлена ​​на ювілейному дисплеї №1 Project SEKAI, будучи альтернативною версією оригінальної пісні, яку співають усі підрозділи цієї гри."
+    new "Ця доріжка представлена на ювілейному дисплеї #1 Project SEKAI, будучи альтернативною версією оригінальної пісні, яку співають усі підрозділи цієї гри."
 
     ## ID: Song_0002
     old "Esta pista es el tema principal de la \"Miku EXPO 2021\", cuya lírica ha sido escrita completamente en inglés."
