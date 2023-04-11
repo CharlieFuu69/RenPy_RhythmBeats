@@ -63,7 +63,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 
 ><p align="left">
 >    <img align="left" width="24" height="24" src="icons/android.png"/>
->    <h4>Requisitos mínimos para Android:</h4>
+>    <h4>Requisitos mínimos para Android (Experimental):</h4>
 > </p>
 > 
 > * **Sistema operativo:** Android v5.x o posterior.
