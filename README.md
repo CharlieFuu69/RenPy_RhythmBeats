@@ -39,7 +39,7 @@ Te contaré un poco acerca de qué trata todo esto.
 #### DESVENTAJAS DE REN'PY RHYTHMBEATS!:
 
 * **Puede ser lento:** Lamentablemente Ren'Py no es un motor que tenga un buen rendimiento, principalmente porque Python no es un lenguaje rápido. A nivel de cómputo, **Ren'Py RhythmBeats!** no tiene problemas, pero a nivel gráfico puede tener problemas si los beatmaps poseen muchas notas.
-* **El Multitouch:** Estoy intentando expandir la compatibilidad con pantallas táctiles y Android, pero ya que Ren'Py no posee una compatibilidad estable con Multitouch, puede ser más cómodo jugar con un teclado que con pantallas táctiles.
+* **El Multitouch:** Estoy intentando expandir la compatibilidad con pantallas táctiles y Android, pero ya que Ren'Py no posee una compatibilidad estable con Multitouch, puede ser más cómodo jugar en PC.
 
 ---
 
@@ -58,7 +58,7 @@ Te contaré un poco acerca de qué trata todo esto.
   
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
 
-  ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 10 canciones con 2DMV!
+  ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
   * **¡Descarga la última versión del juego (Windows o Android) [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
