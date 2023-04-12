@@ -92,9 +92,11 @@ La escala de dificultad se determina en función de la cantidad de notas necesar
 ---
 ### 4. Lista de pistas musicales disponibles en el juego.
 
-Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores.
+Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores. Haz click sobre una sección para desplegar la tabla de canciones.
 
-* **Project SEKAI: COLORFUL STAGE / Vocaloid:**
+<details>
+  <summary><h5>Project SEKAI: COLORFUL STAGE / Vocaloid:</h5></summary>
+<br>
 
 | Pistas musicales               | Artistas/Unidad                        | BPM | Dificultad | Full Combo | MV                                       |
 |---|---|---|---|---|---|
@@ -109,9 +111,12 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | STAGE OF SEKAI                 | Leo/need × Kagamine Len                | 190 | L5         | 473 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 | Stella                         | Leo/need                               | 197 | L5         | 509 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
 | Teo                            | Leo/need                               | 185 | L5         | 507 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+</details>
 
 
-* **Love Live!:**
+<details>
+  <summary><h5>Love Live!:</h5></summary>
+<br>
 
 | Pistas musicales               | Artistas/Unidad                             | BPM | Dificultad | Full Combo | MV                                 |
 |---|---|---|---|---|---|
@@ -127,9 +132,14 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | Genki Zenkai DAY! DAY! DAY!    | CYaRon!                                     | 190 | L5         | 454 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
 | Sore wa Bokutachi no Kiseki    | μ's                                         | 180 | L3         | 304 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
 | DIVE!                          | Setsuna Yuki (CV: Kusunoki Tomori)          | 180 | L4         | 411 notas  | No añadido                         |
+</details>
 
-* **Otras pistas:**
 
+<details>
+  <summary><h5>Otras pistas:</h5></summary>
+<br>
+  
 | Pistas musicales      | Artistas                  | BPM | Dificultad | Full Combo | MV         |
 |---|---|---|---|---|---|
 | The Anthem (Der Alte) | Dimitri Vegas & Like Mike | 140 | L5         | 535 notas  | No añadido |
+</details>
