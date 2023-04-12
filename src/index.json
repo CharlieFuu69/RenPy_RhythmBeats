@@ -4,7 +4,7 @@
         {
             "name" : "Coregame",
             "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Coregame.bruh",
-            "md5" : "d986a82c07640783ee41ce813c1ee5b0"
+            "md5" : "07cec21358b89f1ee71272ef002efba7"
         },
         {
             "name" : "Song_0001",
@@ -115,6 +115,16 @@
             "name" : "Song_0022",
             "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0022.bruh",
             "md5" : "3328fe61674d4a6ff0a9fd156d02c7fe"
+        },
+        {
+            "name" : "Song_0023",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0023.bruh",
+            "md5" : "0c0dd242fe46a3cfed5893f5143487d6"
+        },
+        {
+            "name" : "Song_0024",
+            "url" : "https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/download/asset_release_only_05/Song_0024.bruh",
+            "md5" : "c22586433183b1d17b1ffbbda3d2015c"
         }
     ]
 }
