@@ -125,6 +125,8 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 | No brand girls                 | μ's                                         | 196 | L4         | 391 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
 | DREAMY COLOR                   | Aqours                                      | 190 | L5         | 521 notas  | No añadido                         |
 | Genki Zenkai DAY! DAY! DAY!    | CYaRon!                                     | 190 | L5         | 454 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| Sore wa Bokutachi no Kiseki    | μ's                                         | 180 | L3         | 304 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| DIVE!                          | Setsuna Yuki (CV: Kusunoki Tomori)          | 180 | L4         | 411 notas  | No añadido                         |
 
 * **Otras pistas:**
 
