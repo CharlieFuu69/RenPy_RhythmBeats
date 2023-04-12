@@ -68,19 +68,19 @@ Te contaré un poco acerca de qué trata todo esto.
 Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. Aquí te dejo unos Screenshots de muestra :3
 
 <p align="center">
+  <img width="40%" height="40%" src="src/screenshots/screenshot0001.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0002.png"/>
+  <br>
   <img width="40%" height="40%" src="src/screenshots/screenshot0003.png"/>
   <img width="40%" height="40%" src="src/screenshots/screenshot0004.png"/>
   <br>
-  <img width="40%" height="40%" src="src/screenshots/screenshot0002.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0005.png"/>
   <img width="40%" height="40%" src="src/screenshots/screenshot0006.png"/>
   <br>
   <img width="40%" height="40%" src="src/screenshots/screenshot0007.png"/>
+  <img width="40%" height="40%" src="src/screenshots/screenshot0008.png"/>
+  <br>
   <img width="40%" height="40%" src="src/screenshots/screenshot0009.png"/>
-  <br>
-  <img width="40%" height="40%" src="src/screenshots/screenshot0011.png"/>
-  <img width="40%" height="40%" src="src/screenshots/screenshot0012.png"/>
-  <br>
-  <img width="40%" height="40%" src="src/screenshots/screenshot0013.png"/>
   
 </p>
 
