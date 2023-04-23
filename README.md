@@ -59,7 +59,7 @@ Te contaré un poco acerca de qué trata todo esto.
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
 
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
-  * **¡Descarga la última versión del juego (Windows o Android) [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)!**
+  * **¡Descarga la última versión del juego (Windows/Linux/Android) [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
