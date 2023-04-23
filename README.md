@@ -85,6 +85,13 @@ Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. A
 </p>
 
 ---
+### Descargo de responsabilidad (Juego demostrativo):
+
+El contenido del juego demostrativo y el proyecto en general se ofrece sin fines de lucro, ya que se incluye música y MVs que no son de mi autoría.
+
+El juego y el módulo de acción rítmica son de código abierto y se actualiza periodicamente.
+
+---
 ### Licencias:
 [![license-image]][license]
 
