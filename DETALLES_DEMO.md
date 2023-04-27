@@ -29,9 +29,11 @@
 
 ---
 
-<h3 id="rbs-in-linux"> 2. [¡Nuevo!] Disponibilidad para usuarios de Linux. </h3>
+<h3 id="rbs-in-linux"> 2. Aviso de terminación de soporte para Android. </h3>
 
-Para ampliar el acceso de **"Ren'Py RhythmBeats! Game"** a más usuarios, ahora el juego demostrativo está disponible para Linux. El juego ha sido satisfactoriamente pre-testeado en PuppyLinux, Ubuntu y Kali Linux. Vé a la última actualización publicada **[Presionando aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**.
+A partir de la próxima actualización global, se eliminará en su totalidad el soporte para dispositivos Android ya que resulta inviable mantener nuevas versiones.
+
+Hasta ese entonces, la versión actual `v1.05.0b_global` podrá seguir recibiendo actualizaciones In-Game hasta su descontinuación.
 
 ---
 
@@ -63,7 +65,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 
 ><p align="left">
 >    <img align="left" width="24" height="24" src="icons/android.png"/>
->    <h4>Requisitos mínimos para Android (Experimental - No recomendado):</h4>
+>    <h4>Requisitos mínimos para Android (Alerta de fin de soporte):</h4>
 > </p>
 > 
 > * **Sistema operativo:** Android v5.x o posterior.
