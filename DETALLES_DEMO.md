@@ -10,7 +10,7 @@
 [![release-badge]][release]
 
 ---
-### [1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?][#how-to-play]
+<h3 id="how-to-play"> 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats? </h3>
 
 <img align="center" src="https://user-images.githubusercontent.com/77955772/227761433-b2e86077-3b0d-4d23-b30e-1886c580fcc5.png"></img>
 <h4 align = "center"> <i>[Interfaz de juego - 2DMV: Highlight]</i> </h4>
@@ -29,7 +29,7 @@
 
 ---
 
-### 2. [¡Nuevo!] Disponibilidad para usuarios de Linux.
+<h3 id="rbs-in-linux"> 2. [¡Nuevo!] Disponibilidad para usuarios de Linux. </h3>
 
 Para ampliar el acceso de **"Ren'Py RhythmBeats! Game"** a más usuarios, ahora el juego demostrativo está disponible para Linux. El juego ha sido satisfactoriamente pre-testeado en PuppyLinux, Ubuntu y Kali Linux. Vé a la última actualización publicada **[Presionando aquí!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)**.
 
