@@ -34,6 +34,22 @@ init python:
         pygame.FINGERUP
     ])
 
+
+    judgement_level = {
+                    "perfect" : {"text" : "Perfect!",
+                                "color" : "#E30052",
+                                "outlines" : [(3, "#FFF", 0, 0)]},
+
+                    "great" : {"text" : "Great!",
+                                "color" : "#090",
+                                "outlines" : [(3, "#FFF", 0, 0)]},
+
+                    "miss" : {"text" : "BRUH",
+                                "color" : "#656565",
+                                "outlines" : [(3, "#FFF", 0, 0)]}
+                    }
+
+
     ## -------------------------------------------------------------------------- ##
     ## Clases
 
@@ -44,7 +60,7 @@ init python:
 
     class RhythmPlayground:
 
-        def __init__(self, fn, displayable, song_file, offset_map = 0.0, offset_game = 0, threshold = 100, max_score = 1000, failsafe = False):
+        def __init__(self, fn, displayable, song_file, offset_map=0.0, offset_game=0, threshold=100, perfect_threshold=60, max_score=1000, failsafe=False):
             """Constructor de la clase RhythmPlayground().
             Recibe 8 parámetros (3 obligatorios) en el momento que se crea la
             instancia de la clase.
@@ -128,6 +144,7 @@ init python:
             ## Calibración del juego y márgen de puntuación por nota.
             self.offset = offset_map + (offset_game / 1000.0)
             self.threshold = (threshold / 1000.0)
+            self.perfect_threshold = (perfect_threshold  / 1000.0)
             self.max_score = max_score
 
             ## Ejecución en modo seguro
@@ -160,6 +177,7 @@ init python:
             self.index = {"left" : 0, "right" : 0}
             self.note_pass = {"left" : 0, "right" : 0}
             self.key_tap = {"left" : 0.0, "right" : 0.0}
+            self.key_lock = [False, False]
             self.timestamp_log = list()
             self.map_progress = (0, 0)
             self.last_tap = 0.0
@@ -167,9 +185,13 @@ init python:
             ## Cómputo de juego
             self.combo = 0
             self.perfect = 0
+            self.great = 0
             self.miss = 0
             self.stage_score = 0
             self.note_score = 0
+
+            ## Juicio actual
+            self.judgement = (0.0, "IDLE", {})
 
             ## Status de reproducción de la pista musical
             self.playback_active = False
@@ -189,8 +211,9 @@ init python:
             self.area_left = pygame.Rect(0, 0, 640, 720)
             self.area_right = pygame.Rect(640, 0, 640, 720)
 
-            ## Registro de dedos en pantallas táctiles
-            self.finger_log = dict()
+            ## Notas actualmente visibles en pantalla
+            ## Esto incrementa el rendimiento del juego (más FPS)
+            self.display_notes = dict()
 
             ## --------------------------- INICIO --------------------------- ##
             self.load()
@@ -207,6 +230,7 @@ init python:
             Esto debe ser llamado posterior a instanciar la clase. No recibe ningún
             argumento ni tampoco retorna datos."""
 
+            logger(logging.info, "Using RBS System v1.")
             logger(logging.info, "Loading beatmap...")
 
             try:
@@ -242,14 +266,15 @@ init python:
                     logger(logging.info, "Beatmap ready.\n")
 
             except Exception as open_error:
-                raise RhythmBeatsException("(%s) %s" % (type(open_error), str(open_error)))
+                raise RhythmBeatsException(repr(open_error))
 
 
         def tap_events(self, ev, x, y, st):
             """
             (NO DOCUMENTADO)
-            Este método recoge los eventos de Pygame para reconocer los toques
-            del jugador en el juego, ya sea con un teclado o con pantalla táctil.
+            Este método recoge los eventos de Pygame proporcionados por Ren'python:
+            para reconocer los toques del jugador en el juego, ya sea con un teclado
+            o con pantalla táctil.
 
             NOTA: No puedo realizar lecturas de múltiples dedos en una pantalla
             táctil, ya que Ren'Py parece limitarme los eventos de Pygame, por lo
@@ -262,6 +287,13 @@ init python:
                 self.left = keys[self.left_key]
                 self.right = keys[self.right_key]
 
+                ## Esto desbloquea las teclas al soltarlas
+                if keys[self.left_key] == 0:
+                    self.key_lock[0] = False
+                if keys[self.right_key] == 0:
+                    self.key_lock[1] = False
+
+
             ## ¿Está jugando en Android? Leamos las coordenadas de los dedos.
             elif renpy.android:
                 if ev.type == pygame.FINGERDOWN:
@@ -273,6 +305,8 @@ init python:
                 if ev.type == pygame.FINGERUP:
                     self.left = False
                     self.right = False
+                    self.key_lock[0] = False
+                    self.key_lock[1] = False
 
 
         def get_note_score(self, diff):
@@ -289,7 +323,8 @@ init python:
 
             rv = int(self.max_score - (self.max_score * (diff / max_time)))
 
-            return rv
+            self.stage_score += rv
+            self.note_score = rv
 
 
         def get_audio_epoch(self):
@@ -300,12 +335,43 @@ init python:
             audio.
             """
 
-            if self.is_running() and renpy.music.get_duration(channel="music") >= 10.0:
+            if renpy.music.get_duration(channel="music") >= 10.0:
                 if self.epoch_start == 0.0:
                     self.epoch_start = time.time()
                 _clock = self.epoch = time.time() - self.epoch_start
                 return _clock
             return 0.0
+
+
+        def set_judgement(self, judge, stamp, side):
+            """
+            (NO DOCUMENTADO)
+            Este método asigna el nivel de juicio en el momento de tocar una nota.
+            """
+            self.judgement = (stamp, side, judgement_level[judge])
+
+
+        def judgement_display(self, st, at):
+            """
+            Este método es utilizado mediante un DynamicDisplayable() para mostrar
+            el nivel de juicio que se obtuvo al tocar una nota.
+            Los niveles de juicio son los siguientes:
+
+            - Perfect!: 0-60 ms de retraso.
+            - Great!: 60-100 ms de retraso.
+            - BRUH: >100 ms de retraso.
+            """
+
+            if self.epoch >= 1.0 and self.epoch-self.judgement[0] < 0.3:
+                l_arrow = "{font=DejaVuSans.ttf}{size=28}%s{/size}{/font}" % ("◂" if self.judgement[1] == "L" else "◃")
+                r_arrow = "{font=DejaVuSans.ttf}{size=28}%s{/size}{/font}" % ("▸" if self.judgement[1] == "R" else "▹")
+
+                return Text("%s  %s  %s" % (l_arrow, self.judgement[2]["text"], r_arrow),
+                            color=self.judgement[2]["color"],
+                            size=28,
+                            outlines=self.judgement[2]["outlines"]), 0.05
+            else:
+                return Text(""), 0.05
 
 
         def map_callback(self, st):
@@ -328,9 +394,9 @@ init python:
 
             st = self.get_audio_epoch()
 
-            if self.left:
+            if self.left and not self.key_lock[0]:
                 self.key_tap["left"] = st
-            if self.right:
+            if self.right and not self.key_lock[1]:
                 self.key_tap["right"] = st
 
             ## ------------------------------------------------------------------ ##
@@ -362,43 +428,62 @@ init python:
             ## Keypad L
             if HIT_L and self.running["left"]:
                 self.index["left"] += 1 if self.index["left"] < len(self.lane_L) -1 else 0
-                self.timestamp_log.append(DIFF_L)
                 self.note_pass["left"] += 1
-                self.combo += 1
-                self.perfect += 1
-                self.stage_score += self.get_note_score(DIFF_L)
-                self.note_score = self.get_note_score(DIFF_L)
-
+                self.key_tap["left"] = 0.0
+                self.key_lock[0] = True
                 self.last_tap = DIFF_L * 1000.0
+                self.timestamp_log.append(DIFF_L)
+                self.get_note_score(DIFF_L)
+
+                if abs(DIFF_L) < self.perfect_threshold:
+                    self.perfect += 1
+                    self.set_judgement("perfect", st, "L")
+                else:
+                    self.great += 1
+                    self.set_judgement("great", st, "L")
+
+                self.combo += 1
+
 
             elif BAD_L and self.running["left"]:
                 if not self.failsafe:
                     renpy.play(self.miss_sound, channel = "audio")
                     self.combo = 0
                     self.miss += 1
+                    self.set_judgement("miss", st, "L")
 
                 self.index["left"] += 1 if self.index["left"] < len(self.lane_L) -1 else 0
                 self.note_pass["left"] += 1
                 self.note_score = 0
+                self.key_tap["left"] = 0.0
 
 
             ## Keypad R
             if HIT_R and self.running["right"]:
                 self.index["right"] += 1 if self.index["right"] < len(self.lane_R) -1 else 0
-                self.timestamp_log.append(DIFF_R)
                 self.note_pass["right"] += 1
-                self.combo += 1
-                self.perfect += 1
-                self.stage_score += self.get_note_score(DIFF_R)
-                self.note_score = self.get_note_score(DIFF_R)
-
+                self.key_tap["right"] = 0.0
+                self.key_lock[1] = True
                 self.last_tap = DIFF_R * 1000.0
+                self.timestamp_log.append(DIFF_R)
+                self.get_note_score(DIFF_R)
+
+                if abs(DIFF_R) < self.perfect_threshold:
+                    self.perfect += 1
+                    self.set_judgement("perfect", st, "R")
+                else:
+                    self.great += 1
+                    self.set_judgement("great", st, "R")
+
+                self.combo += 1
+
 
             elif BAD_R and self.running["right"]:
                 if not self.failsafe:
                     renpy.play(self.miss_sound, channel = "audio")
                     self.combo = 0
                     self.miss += 1
+                    self.set_judgement("miss", st, "R")
 
                 self.index["right"] += 1 if self.index["right"] < len(self.lane_R) -1 else 0
                 self.note_pass["right"] += 1
@@ -477,6 +562,7 @@ init python:
             st = self.get_audio_epoch()
 
             for sp, stamp, lane in self.spritegroup:
+
                 if lane=="LEFT" and st > stamp - self.map_delta:
                     sp.x = self.notetrace((550, 430), "XL", stamp, st)
                     sp.y = self.notetrace((-120, 530), "Y", stamp, st)
@@ -528,11 +614,28 @@ init python:
             if average_ms == 0.0:
                 reaction = u"{font=DejaVuSans.ttf}⇋{/font}"
             elif average_ms < 0.0:
-                reaction = u"{font=DejaVuSans.ttf}◂{/font}"
+                reaction = "Rápido"
             elif average_ms > 0.0:
-                reaction = u"{font=DejaVuSans.ttf}▸{/font}"
+                reaction = "Lento"
 
             return abs(average_ms), reaction
+
+
+        def is_full_combo(self):
+            """Este método retorna `AP` (All Perfect) si la partida ha finalizado
+            con todas las notas en juicio 'Perfect'; retorna `FC` (Full Combo)
+            si la suma de notas 'Great' y 'Perfect' es igual a la cantidad total
+            de notas del beatmap.
+            En caso de fallar notas, este método retornará `SC`."""
+
+            entire_beatmap = len(self.lane_L + self.lane_R)
+
+            if self.perfect == entire_beatmap:
+                return "AP"
+            elif (self.perfect + self.great) == entire_beatmap:
+                return "FC"
+            else:
+                return "SC"
 
 
         def is_running(self):
