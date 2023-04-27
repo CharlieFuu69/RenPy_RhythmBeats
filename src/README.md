@@ -10,4 +10,4 @@
 |---|---|---|---|
 | `src/beatmap_converter_tool` | Herramienta de conversión MIDI/beatmap | 11/03/2023 02:00 GMT -3 | `v1.02.1b` |
 | `src/module` | Módulo de Ren'Py RhythmBeats! | 11/03/2023 02:00 GMT -3 | `v1.02.1b` |
-| `src/rhythmbeats-game` | Juego demostrativo "Ren'Py RhythmBeats! Game" | 11/03/2023 02:00 GMT -3 | `v1.02.1b` |
+| `src/rhythmbeats-game` | Juego demostrativo "Ren'Py RhythmBeats! Game" | 27/04/2023 02:21 GMT -4 | `v1.05.0b` |
