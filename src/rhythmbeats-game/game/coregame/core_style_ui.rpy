@@ -64,7 +64,7 @@ style now_showing_button:
     idle_background Frame(Solid("#A00"), 5, 5, 5, 5)
     hover_background Frame(Solid("#F88"), 5, 5, 5, 5)
     activate_sound audio.ui_sound_btn01
-    padding(10, 5, 10, 5)
+    padding(15, 2, 15, 2)
     xalign 1.0
 
 style now_showing_button_text:
@@ -106,7 +106,6 @@ style sort_music_button is main_ui_button:
 style sort_music_button_text is main_ui_button_text
 
 style sort_music_hbox:
-    xalign 0.5 ypos 0.07
     spacing 15
 
 
@@ -207,7 +206,7 @@ style offset_setup_label_text:
 style switcher_frame is frame_skin:
     modal True
     ypadding 15
-    pos(0.185, 0.15)
+    pos(0.165, 0.15)
 
 style switcher_vbox:
     spacing 10
@@ -527,5 +526,31 @@ style new_record_text:
 
 ## Prefijo "finish_style"
 style finish_style_text:
-    outlines [(2, "#000", 0, 0)]
     size 70
+
+
+## -------------------------------------------------------------------------- ##
+## Screen "gamemode_selector"
+
+style gamemode_vbox:
+    spacing 30
+
+style gamemode_hbox:
+    spacing 40
+
+style gamemode_label:
+    xalign 0.5
+
+style gamemode_label_text:
+    color "#FFF"
+    outlines [(2, "#000", 1, 1)]
+
+style gamemode_text:
+    align(0.5, 0.8)
+
+    idle_color "#FFF"
+    hover_color "#CF0"
+
+style gamemode_button is button_skin:
+    xysize(250, 240)
+    activate_sound audio.ui_sound_btn01
