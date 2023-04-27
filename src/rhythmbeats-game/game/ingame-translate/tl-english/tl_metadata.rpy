@@ -39,7 +39,7 @@ translate english strings:
 
     ## ID: Song_0003
     old "Esta pista protagonizó el despliegue del Aniversario #1 de Project SEKAI, siendo una versión alternativa a la canción original cantada por todas las unidades de dicho juego."
-    new "This track featured in the Project SEKAI's #1st Anniversary deployment, being an alternate version of the original song sung by all the units in this game."
+    new "This track is featured in the Project SEKAI's #1st Anniversary deployment, being an alternate version of the original song sung by all the units in this game."
 
     ## ID: Song_0002
     old "Esta pista es el tema principal de la \"Miku EXPO 2021\", cuya lírica ha sido escrita completamente en inglés."
@@ -47,6 +47,22 @@ translate english strings:
 
     ## ---------------------------------------------------------------------- ##
     ## Love Live!
+
+    ## ID: Song_0027
+    old "Este es el segundo sencillo perteneciente a la sub-unidad de Aqours llamada \"AZALEA\", cuyo centro de la canción pertenece a Dia Kurosawa."
+    new "This is the second single belonging to the Aqours sub-unit called \"AZALEA\", whose song center belongs to Dia Kurosawa."
+
+    ## ID: Song_0026
+    old "Esta pista apareció en el Capítulo 3 de la primera temporada de \"Love Live! School Idol Project\" (2013), siendo una de las primeras Insert Songs del anime, y una de las canciones más populares de la franquicia."
+    new "This track appeared in Chapter 3 of the first season of \"Love Live! School Idol Project\" (2013), being one of the first Insert Songs of the anime, and one of the most popular songs of the franchise."
+
+    ## ID: Song_0024
+    old "Esta pista aparece como Insert Song en el Capítulo 3 de la primera temporada de \"Love Live! Nijigasaki High School Idol Club!\"."
+    new "This track appears as the Insert Song in Chapter 3 of the first season of \"Love Live! Nijigasaki High School Idol Club!\"."
+
+    ## ID: Song_0023
+    old "Esta pista aparece en el Opening de la segunda temporada de \"Love Live! School Idol Project\" (2014)."
+    new "This track appears in the Opening of the second season of \"Love Live! School Idol Project\" (2014)."
 
     ## ID: Song_0018
     old "Esta pista es el primer sencillo (2016) hecho por \"CYaRon!\", una de las sub-unidades de Aqours."

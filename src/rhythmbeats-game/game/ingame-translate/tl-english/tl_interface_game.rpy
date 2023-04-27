@@ -11,7 +11,7 @@
 translate english strings:
 
     ## ---------------------------------------------------------------------- ##
-    ## Strings post descarga de recursos (Coregame.bruh)
+    ## Strings de Interfaz (Coregame.bruh)
 
     old "¿Seguro que quieres cerrar {color=cf0}Ren'Py RhythmBeats{/color}?"
     new "Are you sure you want to close {color=cf0}Ren'Py RhythmBeats!{color=cf0}?"
@@ -42,6 +42,9 @@ translate english strings:
 
     old "Partida en curso..."
     new "Game in progress"
+
+    old "En pantalla de resultados..."
+    new "In results screen..."
 
     old "ADVERTENCIA DE RENDIMIENTO"
     new "PERFORMANCE WARNING"
@@ -94,8 +97,8 @@ translate english strings:
     old "Pantalla Completa"
     new "Full Screen"
 
-    old "Métricas de operación:"
-    new "Operating Metrics:"
+    old "Panel de Depuración:"
+    new "Debug Dashboard:"
 
     old "Oculto"
     new "Hidden"
@@ -168,9 +171,6 @@ translate english strings:
 
     old "Sobre RhythmBeats"
     new "About RhythmBeats"
-
-    old "Ver Info"
-    new "Info"
 
     old "MV NO DISPONIBLE."
     new "MV NOT AVAILABLE"
@@ -259,20 +259,8 @@ translate english strings:
     old "Abrir carpeta en el Explorador"
     new "Open directory in file explorer"
 
-    old "Métricas de operación."
-    new "Operating Metrics."
-
-    old "- Último tap: %.01f ms"
-    new "- Last tap: %.01f ms"
-
-    old "- Progreso del mapa: %s/%s"
-    new "- Map progress: %s/%s"
-
-    old "- Acertados: %s"
-    new "- Hits: %s"
-
-    old "- Fallidos: %s"
-    new "- Misses: &s"
+    old "Panel de Depuración."
+    new "Debug Dashboard."
 
     old "Abortar Show"
     new "Abort Show"
@@ -291,12 +279,6 @@ translate english strings:
 
     old "COMBO FINAL"
     new "FINAL COMBO"
-
-    old "• Perfecto : [party.perfect]"
-    new "• Perfect : [party.perfect]"
-
-    old "• BRUH : [party.miss]"
-    new "• BRUH : [party.miss]"
 
     old "• {color=CF0}Tiempo de reacción promedio:{/color} %s ms."
     new "• {color=CF0}Average reaction time:{/color} %s ms."
@@ -321,3 +303,18 @@ translate english strings:
 
     old "Activar Discord RPC"
     new "Activate Discord RPC"
+
+    old "En menú principal."
+    new "In main menu."
+
+    old "Este modo de juego aún no está disponible."
+    new "This game mode is not available yet."
+
+    old "Selecciona un modo de juego para continuar..."
+    new "Select a game mode to continue..."
+
+    old "Un solo jugador"
+    new "Single player"
+
+    old "Esperando PvP (Ghost Battle!)..."
+    new "Waiting for PvP (Ghost Battle!)..."
