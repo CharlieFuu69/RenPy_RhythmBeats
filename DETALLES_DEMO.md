@@ -35,7 +35,7 @@ Para ampliar el acceso de **"Ren'Py RhythmBeats! Game"** a más usuarios, ahora 
 
 ---
 
-### 3. Requerimientos mínimos.
+<h3 id="requirements"> 3. Requerimientos mínimos </h3>
 
 A continuación se indican los requisitos mínimos para ejecutar el juego demostrativo. Por supuesto, estos requisitos están sujetos a cambios con el paso del tiempo.
 
@@ -63,7 +63,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 
 ><p align="left">
 >    <img align="left" width="24" height="24" src="icons/android.png"/>
->    <h4>Requisitos mínimos para Android (Experimental):</h4>
+>    <h4>Requisitos mínimos para Android (Experimental - No recomendado):</h4>
 > </p>
 > 
 > * **Sistema operativo:** Android v5.x o posterior.
@@ -74,7 +74,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 
 ---
 
-### 3. Niveles de dificultad de las canciones.
+<h3 id="song-difficult-list"> 4. Niveles de dificultad de las canciones. </h3>
 
 En la versión `v1.00.1b` del juego demostrativo se clasificaron las pistas musicales en "niveles" de dificultad. Esto es visible desde el apartado **"Ver Info"**, y a partir de la **[Actualización In-Game #05](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.00.1b_upd05)**, también es visible desde la lista de canciones.
 
@@ -87,10 +87,11 @@ La escala de dificultad se determina en función de la cantidad de notas necesar
 | L3                  | Verde    | 251-350 notas     |
 | L4                  | Amarillo | 351-450 notas     |
 | L5                  | Rojo     | 451-550 notas     |
-| L6                  | Púrpura  | 551-600 notas     |
+| L6                  | Púrpura  | 551-600+ notas     |
 
 ---
-### 4. Lista de pistas musicales disponibles en el juego.
+
+<h3 id="song-list"> 5. Lista de pistas musicales disponibles en el juego. </h3>
 
 Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores. Haz click sobre una sección para desplegar la tabla de canciones.
 
