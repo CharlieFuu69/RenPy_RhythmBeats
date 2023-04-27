@@ -43,6 +43,9 @@ translate ukranian strings:
     old "Partida en curso..."
     new "Гра триває..."
 
+    old "En pantalla de resultados..."
+    new "На екрані результатів...."
+
     old "ADVERTENCIA DE RENDIMIENTO"
     new "ПОПЕРЕДЖЕННЯ ПРО ПРОДУКТИВНІСТЬ"
 
@@ -169,9 +172,6 @@ translate ukranian strings:
     old "Sobre RhythmBeats"
     new "Про RhythmBeats"
 
-    old "Ver Info"
-    new "Переглянути інформацію"
-
     old "MV NO DISPONIBLE."
     new "MV НЕДОСТУПНИЙ."
 
@@ -259,20 +259,8 @@ translate ukranian strings:
     old "Abrir carpeta en el Explorador"
     new "Відкрийте папку в Провіднику"
 
-    old "Métricas de operación."
+    old "Panel de Depuración."
     new "Метрики роботи."
-
-    old "- Último tap: %.01f ms"
-    new "- Останнє натискання: %.01f мс"
-
-    old "- Progreso del mapa: %s/%s"
-    new "- Прогрес на карті: %s/%s"
-
-    old "- Acertados: %s"
-    new "- Успіх: %s"
-
-    old "- Fallidos: %s"
-    new "- Помилка: %s"
 
     old "Abortar Show"
     new "перервати Гру"
@@ -291,12 +279,6 @@ translate ukranian strings:
 
     old "COMBO FINAL"
     new "КІНЕЦЬ КОМБО"
-
-    old "• Perfecto : [party.perfect]"
-    new "• Ідеальний : [party.perfect]"
-
-    old "• BRUH : [party.miss]"
-    new "• BRUH: [party.miss]"
 
     old "• {color=CF0}Tiempo de reacción promedio:{/color} %s ms."
     new "• {color=CF0}Середній час реакції:{/color} %s мс."
@@ -321,3 +303,15 @@ translate ukranian strings:
 
     old "Activar Discord RPC"
     new "Активуйте Discord RPC"
+
+    old "En menú principal."
+    new "У головному меню."
+
+    old "Este modo de juego aún no está disponible."
+    new "Цей ігровий режим ще не доступний."
+
+    old "Selecciona un modo de juego para continuar..."
+    new "Щоб продовжити, виберіть режим гри..."
+
+    old "Un solo jugador"
+    new "один гравець"
