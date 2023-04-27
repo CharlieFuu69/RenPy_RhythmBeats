@@ -52,7 +52,7 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 
 ><p align="left">
 >    <img align="left" width="24" height="24" src="icons/linux.png"/>
->    <h4>[¡Nuevo!] Requisitos mínimos para Linux:</h4>
+>    <h4>Requisitos mínimos para Linux:</h4>
 > </p>
 > 
 > * **Sistema operativo:** Varía según la distribución de Linux.
@@ -93,7 +93,11 @@ La escala de dificultad se determina en función de la cantidad de notas necesar
 
 <h3 id="song-list"> 5. Lista de pistas musicales disponibles en el juego. </h3>
 
-Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores. Haz click sobre una sección para desplegar la tabla de canciones.
+Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap creado. La mayoría de las pistas poseen una capa de video de 2DMVs/3DMVs oficiales de sus franquicias o creadores.
+
+> **NOTA:** Las pistas están ordenadas desde la adición más reciente a la más antigua.
+
+Haz click sobre una sección para desplegar su respectiva tabla de canciones.
 
 <details>
   <summary><h5>Project SEKAI: COLORFUL STAGE / Vocaloid:</h5></summary>
@@ -101,17 +105,18 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 
 | Pistas musicales               | Artistas/Unidad                        | BPM | Dificultad | Full Combo | MV                                       |
 |---|---|---|---|---|---|
-| Highlight                      | Kira Ft. Hatsune Miku                  | 130 | L3         | 253 notas  | MV: Ekkoberry, riguruma (MIKU EXPO 2021) |
-| Gunjou Sanka (SEKAI Ver.)      | Hatsune Miku, Ichika Hoshino... (4 más)| 168 | L3         | 307 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Hand in Hand                   | Hatsune Miku / Kz                      | 128 | L4         | 381 notas  | No añadido                               |
-| Angel's Clover                 | MORE MORE JUMP!                        | 193 | L4         | 437 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Greenlights Serenade           | Hatsune Miku                           | 200 | L4         | 443 notas  | No añadido                               |
-| Happy Synthesizer (SEKAI Ver.) | MORE MORE JUMP!                        | 127 | L6         | 578 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Sweet Magic                    | Wonderlands × Showtime                 | 123 | L5         | 540 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Brand New Day                  | irucaice Ft. Hatsune Miku              | 185 | L6         | 608 notas  | No añadido                               |
-| STAGE OF SEKAI                 | Leo/need × Kagamine Len                | 190 | L5         | 473 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
-| Stella                         | Leo/need                               | 197 | L5         | 509 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Last Score                     | Hatsune Miku                           | 134 | L6         | 658 notas  | No añadido                               |
 | Teo                            | Leo/need                               | 185 | L5         | 507 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Stella                         | Leo/need                               | 197 | L5         | 509 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| STAGE OF SEKAI                 | Leo/need × Kagamine Len                | 190 | L5         | 473 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Brand New Day                  | irucaice Ft. Hatsune Miku              | 185 | L6         | 608 notas  | No añadido                               |
+| Sweet Magic                    | Wonderlands × Showtime                 | 123 | L5         | 540 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Happy Synthesizer (SEKAI Ver.) | MORE MORE JUMP!                        | 127 | L6         | 578 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Greenlights Serenade           | Hatsune Miku                           | 200 | L4         | 443 notas  | No añadido                               |
+| Angel's Clover                 | MORE MORE JUMP!                        | 193 | L4         | 437 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Hand in Hand                   | Hatsune Miku / Kz                      | 128 | L4         | 381 notas  | No añadido                               |
+| Gunjou Sanka (SEKAI Ver.)      | Hatsune Miku, Ichika Hoshino... (4 más)| 168 | L3         | 307 notas  | 3DMV: "Project SEKAI: COLORFUL STAGE!"   |
+| Highlight                      | Kira Ft. Hatsune Miku                  | 130 | L3         | 253 notas  | MV: Ekkoberry, riguruma (MIKU EXPO 2021) |
 </details>
 
 
@@ -121,18 +126,20 @@ Aquí abajo se listan las pistas musicales que hasta el momento tienen beatmap c
 
 | Pistas musicales               | Artistas/Unidad                             | BPM | Dificultad | Full Combo | MV                                 |
 |---|---|---|---|---|---|
-| Mirai no Bokura wa Shitteru yo | Aqours                                      | 181 | L2         | 229 notas  | MV: Love Live! Sunshine!! S2 OP    |
-| MOMENT RING                    | μ's                                         | 196 | L4         | 368 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
-| Ryouran! Victory Road          | Love Live! Nijigasaki High School Idol Club | 135 | L6         | 580 notas  | MV Fanmade: Henry L.               |
-| Snow Halation                  | μ's                                         | 173 | L3         | 305 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
-| NEO SKY, NEO MAP!              | Love Live! Nijigasaki High School Idol Club | 142 | L3         | 276 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
-| BANZAI! digital trippers       | Aqours Ft. Hatsune Miku                     | 180 | L4         | 418 notas  | MV/CGI: SUNRISE, Lantis, KADOKAWA. |
-| START!! True dreams            | Liella!                                     | 178 | L3         | 268 notas  | MV: "Love Live! Superstar!! S1 OP" |
-| No brand girls                 | μ's                                         | 196 | L4         | 391 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
-| DREAMY COLOR                   | Aqours                                      | 190 | L5         | 521 notas  | No añadido                         |
-| Genki Zenkai DAY! DAY! DAY!    | CYaRon!                                     | 190 | L5         | 454 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
-| Sore wa Bokutachi no Kiseki    | μ's                                         | 180 | L3         | 304 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| GALAXY HidE and SeeK           | AZALEA                                      | 141 | L3         | 320 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| START:DASH!!                   | μ's                                         | 150 | L4         | 393 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
 | DIVE!                          | Setsuna Yuki (CV: Kusunoki Tomori)          | 180 | L4         | 411 notas  | No añadido                         |
+| Sore wa Bokutachi no Kiseki    | μ's                                         | 180 | L3         | 304 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| Genki Zenkai DAY! DAY! DAY!    | CYaRon!                                     | 190 | L5         | 454 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| DREAMY COLOR                   | Aqours                                      | 190 | L5         | 521 notas  | No añadido                         |
+| No brand girls                 | μ's                                         | 196 | L4         | 391 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| START!! True dreams            | Liella!                                     | 178 | L3         | 268 notas  | MV: "Love Live! Superstar!! S1 OP" |
+| BANZAI! digital trippers       | Aqours Ft. Hatsune Miku                     | 180 | L4         | 418 notas  | MV/CGI: SUNRISE, Lantis, KADOKAWA. |
+| NEO SKY, NEO MAP!              | Love Live! Nijigasaki High School Idol Club | 142 | L3         | 276 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| Snow Halation                  | μ's                                         | 173 | L3         | 305 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| Ryouran! Victory Road          | Love Live! Nijigasaki High School Idol Club | 135 | L6         | 580 notas  | MV Fanmade: Henry L.               |
+| MOMENT RING                    | μ's                                         | 196 | L4         | 368 notas  | 3DMV: "Love Live! SIF ALL STARS"   |
+| Mirai no Bokura wa Shitteru yo | Aqours                                      | 181 | L2         | 229 notas  | MV: Love Live! Sunshine!! S2 OP    |
 </details>
 
 
