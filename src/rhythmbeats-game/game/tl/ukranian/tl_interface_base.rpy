@@ -13,6 +13,7 @@ translate ukranian python:
     gui.text_font = "gui/font/DIN_Next_CYR_Medium.ttf"
     gui.name_text_font = "gui/font/DIN_Next_CYR_Medium.ttf"
 
+
 translate ukranian strings:
 
     ## ---------------------------------------------------------------------- ##
@@ -79,7 +80,7 @@ translate ukranian strings:
     new "ПІДТВЕРДЖЕННЯ ЗАВАНТАЖЕННЯ"
 
     old "Tamaño de la descarga: %.02f MB"
-    new "Розмір завантаження: %,02f МБ"
+    new "Розмір завантаження: %.02f МB"
 
     old "Esta descarga contiene las pistas musicales y 2DMVs incluidos en la demostración de {color=CF0}Ren'Py RhythmBeats!{/color}."
     new "Це завантаження містить музичні композиції та 2DMV, включені в демо-версію {color=CF0}Ren'Py RhythmBeats!{/color}."
