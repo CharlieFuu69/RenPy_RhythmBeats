@@ -5,12 +5,12 @@
   <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
 </p>
 
-<h1 align = "center"> Detalles del juego demostrativo de Ren'Py RhythmBeats! </h1>
+<h1 align="center"> Detalles del juego demostrativo de Ren'Py RhythmBeats! </h1>
 
 [![release-badge]][release]
 
 ---
-### 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?
+<h3 id="how-to-play"> 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats? </h3>
 
 <img align="center" src="https://user-images.githubusercontent.com/77955772/227761433-b2e86077-3b0d-4d23-b30e-1886c580fcc5.png"></img>
 <h4 align = "center"> <i>[Interfaz de juego - 2DMV: Highlight]</i> </h4>
