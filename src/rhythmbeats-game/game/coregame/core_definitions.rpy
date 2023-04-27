@@ -24,17 +24,17 @@ init:
     ## ---------------------------------------------------------------------- ##
     ## Definiciones de audio
 
-    define audio.sfx_stage_failed = "coregame/sound/sfx_coregame_failed.ogg"
-    define audio.sfx_stage_cleared = "coregame/sound/sfx_coregame_cleared.ogg"
-    define audio.sfx_stage_full_combo = "coregame/sound/sfx_coregame_full_combo.ogg"
-    define audio.sfx_note_miss = "coregame/sound/ui_coregame_note_miss.ogg"
-    define audio.sfx_results_intro = "coregame/sound/sfx_results_intro.ogg"
-    define audio.sfx_results_scoreframe = "coregame/sound/sfx_results_scoreframe.ogg"
+    define audio.sfx_stage_failed = "audio/coregame/sfx_coregame_failed.ogg"
+    define audio.sfx_stage_cleared = "audio/coregame/sfx_coregame_cleared.ogg"
+    define audio.sfx_stage_full_combo = "audio/coregame/sfx_coregame_full_combo.ogg"
+    define audio.sfx_stage_all_perfect = "audio/coregame/sfx_coregame_all_perfect.ogg"
+    define audio.sfx_note_miss = "audio/coregame/ui_coregame_note_miss.ogg"
+    define audio.sfx_results_intro = "audio/coregame/sfx_results_intro.ogg"
+    define audio.sfx_results_scoreframe = "audio/coregame/sfx_results_scoreframe.ogg"
 
-    define audio.ui_sound_radiobutton = "coregame/sound/ui_sound_radiobutton.ogg"
-    define audio.ui_sound_notify_small = "coregame/sound/ui_sound_notify_small.ogg"
+    define audio.ui_sound_radiobutton = "audio/coregame/ui_sound_radiobutton.ogg"
 
-    define audio.bgm_0047 = "coregame/sound/bgm_0047.ogg"
+    define audio.bgm_0047 = "audio/coregame/bgm_0047.ogg"
 
 
     ## ---------------------------------------------------------------------- ##
@@ -57,10 +57,14 @@ init:
     image 2dmv_0020 = Movie(play="<from 6.0>MV/2dmv_0020.webm", loop = False)
     image 2dmv_0021 = Movie(play="<from 6.19>MV/2dmv_0021.webm", loop = False)
     image 2dmv_0022 = Movie(play="MV/2dmv_0022.webm", loop = False)
+    image 2dmv_0023 = Movie(play="MV/2dmv_0023.webm", loop = False)
+    image 2dmv_0026 = Movie(play="MV/2dmv_0026.webm", loop = False)
+    image 2dmv_0027 = Movie(play="MV/2dmv_0027.webm", loop = False)
 
     ## ---------------------------------------------------------------------- ##
     ## Imágenes de UI
 
+    ## Displayables de color sólido
     image ui_tex_black:
         Solid("#000")
         alpha 0.0
@@ -69,9 +73,7 @@ init:
     image ui_tex_white = Solid("#FFF")
     image ui_black_solid = Solid("#000")
 
-    image ui_notify_success = Frame("coregame/ui/overlay/ui_notify_success.png", 14, 14, 14, 14)
-    image ui_notify_error = Frame("coregame/ui/overlay/ui_notify_error.png", 14, 14, 14, 14)
-
+    ## Interfaz de partidas
     image ui_coregame_note_lane = "coregame/ui/overlay/ui_overlay_note_lane.png"
     image ui_coregame_note_tap = Transform("coregame/ui/ui_coregame_note_tap.png", zoom = 1.3)
     image ui_coregame_bg_failed = "coregame/ui/ui_coregame_bg_failed.png"
@@ -79,28 +81,23 @@ init:
     image ui_performance_alert = Transform("coregame/ui/icon/ui_icon_performance_alert.png", zoom = 0.5)
     image ui_icon_github = Transform("coregame/ui/icon/ui_icon_github.png", zoom = 0.1)
     image ui_icon_discord = "coregame/ui/icon/ui_icon_discord.png"
+    image ui_icon_exit = "coregame/ui/icon/ui_icon_exit.png"
+
+    image ui_icon_singleplayer = Transform("coregame/ui/icon/ui_icon_singleplayer.png", zoom=0.6)
+    image ui_icon_server_party = Transform("coregame/ui/icon/ui_icon_server_party.png", zoom=0.6)
 
     image ui_icon_rank_s = "coregame/ui/icon/ui_icon_rank_s.png"
     image ui_icon_rank_a = "coregame/ui/icon/ui_icon_rank_a.png"
     image ui_icon_rank_b = "coregame/ui/icon/ui_icon_rank_b.png"
     image ui_icon_rank_c = "coregame/ui/icon/ui_icon_rank_c.png"
 
-    image ui_icon_playing:
-        zoom 0.05
-        "coregame/ui/icon/ui_playing_F01.png"
-        pause 0.2
-        ease 0.1 alpha 1.0
-        "coregame/ui/icon/ui_playing_F02.png"
-        pause 0.2
-        ease 0.1 alpha 1.0
-        "coregame/ui/icon/ui_playing_F03.png"
-        pause 0.2
-        ease 0.1 alpha 1.0
-        "coregame/ui/icon/ui_playing_F04.png"
-        pause 0.2
-        ease 0.1 alpha 0.0
-        pause 0.2
-        repeat
+    image ui_icon_song_info = Transform("coregame/ui/icon/ui_icon_song_info.png", zoom=0.6)
+
+
+    image ui_iconfps_now_playing = anim.Filmstrip("coregame/ui/icon/ui_iconfps_now_playing.png",
+                                        (32, 32),
+                                        (8, 1),
+                                        0.1)
 
     image ui_overlay_results = Frame("coregame/ui/overlay/ui_overlay_results.png", 200, 0, 300, 0)
 
