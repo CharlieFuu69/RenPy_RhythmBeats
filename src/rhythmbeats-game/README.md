@@ -21,10 +21,10 @@ Las rutas omitidas en la subida son las siguientes:
 |   |   /main
 |   |   |   /**.ogg
 |   |   
-|   |   /**.ogg
-|
-|   /coregame
-|   |   /sound
+|   |   /coregame
+|   |   |   /bgm_preview
+|   |   |   |   /**.ogg
+|   |   |   
 |   |   |   /**.ogg
 |
 |   /MV
