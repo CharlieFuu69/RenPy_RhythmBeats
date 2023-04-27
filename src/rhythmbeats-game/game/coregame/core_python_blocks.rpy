@@ -17,6 +17,17 @@ init python:
 
     ## Importación del módulo de "Ren'Py RhythmBeats!"
     renpy.load_module("coregame/rhythmbeats")
+    
+
+    def setup_screenshot_dir():
+        image_dir = os.path.join(config.basedir, "Screenshots")
+
+        if not os.path.exists(image_dir):
+            os.mkdir(image_dir)
+
+        return os.path.join(image_dir, "Screenshot_%04d.png")
+
+    config.screenshot_pattern = setup_screenshot_dir()
 
 
     def record_scores(init_mode = False, id = None, score = None):
@@ -40,14 +51,19 @@ init python:
                 return False
 
 
-    def fix_previews(all_metadata):
+    def fix_metadata_diffs(all_metadata):
         """Esta función corrige cualquier diferencia de datos entre la canción
         seleccionada y el archivo de metadatos de música."""
 
+        logger(logging.info, "Checking song metadata diffs...")
+
         for song in all_metadata:
-            if p.song_selected["audio_preview"] == song["audio_preview"]:
+            if p.song_selected["id"] == song["id"] and p.song_selected != song:
+                logger(logging.info, "Diff found in %(id)s. Fixing..." %(song))
                 p.song_selected = song
-                return None
+                break
+
+        logger(logging.info, "Local metadata UP-TO-DATE.")
 
 
     def finish_playstage(screen_queue = [], dissolving = False):
@@ -63,6 +79,9 @@ init python:
 
 
     def dotfmt(value):
+        """Esta función reformatea los números separándolos en cifras de 3,
+        dígitos, usualmente para representar puntajes o números grandes."""
+
         return format(value, ",d").replace(",", ".")
 
 
@@ -86,8 +105,8 @@ init python:
 
 
     def hp_color(hp = 0, disp = "bar"):
-        """Esta función se utiliza para colorizar la barra y el texto que señala la precisión
-        media del jugador."""
+        """Esta función entrega los colores de estado para el indicador de HP,
+        tanto para la barra como para el texto."""
 
         colors = {
                 "bar" : {"normal" : "#9F9", "critical" : "#F44"},
@@ -163,11 +182,10 @@ init python:
 
     class MusicData:
 
-        def __init__(self, _dir):
-            self.dir = _dir
+        def __init__(self, relative_path):
+            self.dir = relative_path
             self.entire_data = dict()
 
-        def load(self):
             try:
                 logger(logging.info, "Loading music metadata from JSON...")
                 content = renpy.file(self.dir)
@@ -175,6 +193,7 @@ init python:
 
             except Exception as load_error:
                 logger(logging.error, "JSON loading failed: %s" % str(load_error))
+
 
         def sort(self, now = "all"):
             sort_results = []
@@ -187,6 +206,7 @@ init python:
 
             return sort_results
 
+
         def get_category(self, id):
             music_metadata = {
                         "all" : "Todos",
@@ -196,6 +216,7 @@ init python:
             }
 
             return music_metadata[id]
+
 
         def get_song_count(self):
             sort_all_songs = list()
@@ -222,8 +243,6 @@ init python:
                             "ready" : self.rpc_ready,
                             "disconnected" : self.rpc_disconnect,
                             "error" : self.rpc_error}
-
-            discord_rpc.initialize(self.client, callbacks=self.cb_methods, log=False)
 
         ## ---------------------------------------------------------------------- ##
         ## Métodos callback para reportar actividad de Discord RPC
@@ -254,37 +273,42 @@ init python:
 
         def set_status(self, state = None, details = "", image_text = "Jugando a Ren'Py RhythmBeats!"):
 
-            discord_rpc.update_presence(
-                **{
-                    "state" : state,
-                    "details" : details,
-                    "start_timestamp": self.runtime_epoch,
-                    "large_image_key": "largeimage",
-                    "large_image_text" : image_text
-                }
-            )
+            if self.is_running:
+                discord_rpc.update_presence(
+                    **{
+                        "state" : state,
+                        "details" : details,
+                        "start_timestamp": self.runtime_epoch,
+                        "large_image_key": "largeimage",
+                        "large_image_text" : image_text
+                    }
+                )
 
-            renpy.restart_interaction()
+                renpy.restart_interaction()
 
 
         def stop(self):
-            logger(logging.info, "Discord RPC service stopped.")
-            self.is_running = False
-            discord_rpc.shutdown()
+            if self.is_running:
+                logger(logging.info, "Discord RPC service stopped.")
+                rbs_alert(__("Discord RPC deshabilitado."), icon="ui_icon_discord")
+                self.is_running = False
 
 
         def rpc_updater(self):
+            discord_rpc.initialize(self.client, callbacks=self.cb_methods, log=False)
+
             while True:
                 try:
                     discord_rpc.update_connection()
                     discord_rpc.run_callbacks()
 
                 except Exception as rpc_upd_error:
-                    logger(logging.info, "Discord RPC Error: %s" % repr(rpc_upd_error))
+                    logger(logging.info, "Discord thread error: %s" % repr(rpc_upd_error))
                 finally:
                     if self.is_running:
                         time.sleep(3)
                     else:
+                        discord_rpc.shutdown()
                         break
 
 
