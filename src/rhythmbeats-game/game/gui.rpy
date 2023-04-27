@@ -1,7 +1,9 @@
 ﻿## CharlieFuu69
-## Ren'Py RhythmBeats! Demo
+## Ren'Py RhythmBeats! Game
 
 ## Script: (Ren'Py) configuración de UI por defecto.
+
+## © 2023 CharlieFuu69 - GNU GPL v3.0
 
 #############################################################
 
@@ -54,15 +56,9 @@ define gui.interface_text_color = u'#ffffff'
 
 ## Tipos y tamaños de letra ####################################################
 
-define combo_font = "gui/font/Gilroy-Heavy.ttf"
-
 ## El tipo de letra del texto del juego
 define gui.text_font = "gui/font/DIN-Medium.ttf"
-
-## El tipo de letra de los nombres de personajes
 define gui.name_text_font = "gui/font/DIN-Medium.ttf"
-
-## El tipo de letra del texto externo al juego.
 define gui.interface_text_font = "gui/font/DIN-Medium.ttf"
 
 ## El tamaño normal del texto del diálogo.

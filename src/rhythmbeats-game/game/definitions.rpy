@@ -47,10 +47,10 @@ init -5 python:
         def __call__(self):
             renpy.hide_screen("custom_notify")
             renpy.show_screen("custom_notify",
-                            content=content,
-                            status=status,
-                            icon=icon)
-            return None
+                            content=self.content,
+                            status=self.status,
+                            icon=self.icon)
+            renpy.restart_interaction()
 
 
     def rbs_alert(content, status=0, icon=None):
@@ -60,7 +60,6 @@ init -5 python:
                         status=status,
                         icon=icon)
         renpy.restart_interaction()
-        return None
 
 
     logger(logging.info, "-----------<[Game session started. Don't close the terminal.]>-----------")
@@ -81,8 +80,7 @@ init:
     define audio.ui_sound_btn03 = "audio/main/ui_sound_button_03.ogg"
     define audio.ui_sound_notify = "audio/main/ui_sound_notify.ogg"
     define audio.ui_sound_error = "audio/main/ui_sound_error.ogg"
-
-    define audio.bgm_0001 = "audio/main/bgm_0001.ogg"
+    define audio.ui_sound_notify_small = "audio/main/ui_sound_notify_small.ogg"
 
     define audio.startscreen_queue = ("audio/main/bgm_0001.ogg",
                                     "audio/main/bgm_0002.ogg",
@@ -96,6 +94,9 @@ init:
     image ui_icon_warning = "gui/ui_icon_warning.png"
     image ui_icon_waiting = "gui/ui_icon_waiting.png"
     image ui_icon_success = "gui/ui_icon_success.png"
+
+    image ui_notify_success = Frame("gui/overlay/ui_notify_success.png", 14, 14, 14, 14)
+    image ui_notify_error = Frame("gui/overlay/ui_notify_error.png", 14, 14, 14, 14)
 
     image tex_black = Transform(Solid("#000"), alpha = 0.6)
     image tex_black_solid = Solid("#000")

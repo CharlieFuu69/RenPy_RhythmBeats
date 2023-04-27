@@ -15,6 +15,7 @@ init python:
 ## Secuencia de vefiricación de recursos y actualizaciones
 
 label splashscreen:
+
     hide bg_main
     stop music
 
@@ -34,8 +35,8 @@ label splashscreen:
     label check_updates:
         $ update = UpdateManager(index_url="https://raw.githubusercontent.com/CharlieFuu69/RenPy_RhythmBeats/main/src/index.json",
                                 package_ext=".bruh",
-                                #skip_process=False)
                                 skip_process=config.developer)
+                                #skip_process=False)
 
         show tex_black with dissolve
         call screen update(inst=update)
@@ -44,7 +45,9 @@ label splashscreen:
 
 
 label download_sequence:
-    $ update.start_batch_download("download")
+    #$ update.start_batch_download("download")
+
+    call screen download
 
     call screen download_complete
 
@@ -63,13 +66,13 @@ label main_menu:
 
 label start:
     $ quick_menu = False
+
     scene bg_main
-    show tex_black
+    show tex_black with dissolve
 
     if renpy.has_label("song_selection_menu"):
-        stop music fadeout 1.0
-        $ renpy.pause(1.0, hard = True)
-        jump song_selection_menu
+        jump game_post_loading
+
     else:
-        $ logging.critical("Missing label: song_selection_menu. Closing the game")
+        $ logging.critical("Missing label: game_post_loading. Closing the game")
         $ renpy.quit(relaunch = False, save = False)

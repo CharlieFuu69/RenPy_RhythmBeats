@@ -1,4 +1,4 @@
-## CharlieFuu69
+﻿## CharlieFuu69
 ## Ren'Py RhythmBeats! Game
 
 ## Script: (Ren'Py) configuración del proyecto y definiciones.
@@ -9,7 +9,7 @@
 
 ## Metadatos y Compilación
 define config.name = "Ren'Py RhythmBeats! Game"
-define config.version = "v1.03.1b"
+define config.version = "v1.05.0b"
 define game_license = "© 2023 CharlieFuu69 - GNU GPL v3.0"
 define gui.show_name = False
 
@@ -59,7 +59,7 @@ default persistent.custom_alpha = 0.0
 ## Comportamiento del juego
 define config.autosave_on_quit = False
 define config.autosave_frequency = None
-define config.autoreload = True
+define config.autoreload = False
 define config.has_autosave = False
 define config.auto_load = None
 define config.save_on_mobile_background = False
@@ -76,7 +76,7 @@ define config.allow_skipping = False
 ## Ajustes de compilación
 
 init python:
-    CURRENT_SONG_COUNT = 22
+    CURRENT_SONG_COUNT = 27
 
     ## Archivos o rutas excluidas de la compilación.
     build.classify('**~', None)
@@ -88,6 +88,9 @@ init python:
     build.classify("game/**.rpy", None)
     build.classify("game/**.rpym", None)
     build.classify("other/**.**", None)
+    build.classify("exe_compile/**.**", None)
+    build.classify("Scripts php/**.**", None)
+    build.classify("Screenshots/**.**", None)
 
 
     ## Main
@@ -104,7 +107,7 @@ init python:
     ## Coregame
     build.archive("Coregame", "windows")
     build.classify("game/python-packages/discord_rpc/**.**", "Coregame")
-    build.classify("game/coregame/**.ogg", "Coregame")
+    build.classify("game/audio/coregame/**.ogg", "Coregame")
     build.classify("game/coregame/*.rpyc", "Coregame")
     build.classify("game/coregame/*.rpymc", "Coregame")
     build.classify("game/coregame/**.json", "Coregame")

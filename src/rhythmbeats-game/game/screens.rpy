@@ -1,4 +1,4 @@
-## CharlieFuu69
+﻿## CharlieFuu69
 ## Ren'Py RhythmBeats! Game
 
 ## Script: (Ren'Py) Screens principales.
@@ -342,7 +342,7 @@ screen custom_notify(status=0, icon=None, content):
 
     default _suffix = "success" if status == 0 else "error"
 
-    on "show" action Play("ui_01", audio.ui_sound_notify_small)
+    on "show" action Play("ui_02", audio.ui_sound_notify_small)
 
     frame at notify_small_bg:
         background "ui_notify_%s" %(_suffix)
@@ -576,23 +576,21 @@ screen update(inst):
             ypos 0.9
             text _("Buscando actualizaciones (GitHub)...")
             bar:
-                value StaticValue(inst.progress[0], inst.progress[1])
+                value StaticValue(inst.progress[0], inst.progress[1] or 0.1)
 
 
 ## ------------------------------------------------------------------------------------------------------------- ##
 ## Pantalla/UI de descarga de recursos.
 
-screen download(package, file_ext, savepath, progress):
+screen download():
     style_prefix "update"
     modal True
 
-    default dl = DownloadHandler(package=package,
-                                file_ext=file_ext,
-                                savepath = savepath)
+    default dl = update
 
-    on "show" action Function(dl.start)
+    on "show" action Function(renpy.invoke_in_thread, fn=dl.start_download)
 
-    if dl.download_end:
+    if dl.request_end:
         if dl.exception_break:
             use notify_window(title = _("ERROR DURANTE LA DESCARGA"), level=1, notify_sound=audio.ui_sound_error, shadow=False):
                 vbox:
@@ -610,12 +608,12 @@ screen download(package, file_ext, savepath, progress):
         vbox:
             ypos 0.85 spacing 5
             text _("Descargando recursos...")
-            text "%s (%s/%s)" % (dl.download_fmt(), progress[0], progress[1])
+            text "%s (%s/%s)" % (dl.download_fmt(), dl.batch_progress[0], dl.batch_progress[1])
             bar:
-                value StaticValue(dl.current_size, dl.total_size)
+                value StaticValue(dl.current_size, dl.file_size or 0.1)
             null height 7
             bar:
-                value StaticValue(progress[0], progress[1])
+                value StaticValue(dl.mb_received, dl.update_size or 0.1)
 
 
 init python:
@@ -713,19 +711,3 @@ style custom_notify_hbox:
 
 style custom_notify_text:
     yalign 0.5
-
-
-## -------------------------------------------------------------------------- ##
-## Estilos descontinuados
-
-style msg_success:
-    background Frame(Solid("#CF0"), 5, 5, 5, 5)
-    padding(10, 5, 10, 5)
-    xalign 0.5 ypos 0.1
-    minimum(500, 20)
-
-style msg_failed:
-    background Frame(Solid("#FF233B"), 5, 5, 5, 5)
-    xalign 0.5 ypos 0.1
-    padding(10, 5, 10, 5)
-    minimum(500, 20)
