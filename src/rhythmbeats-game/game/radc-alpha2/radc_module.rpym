@@ -44,16 +44,22 @@ init python:
 
             self.progress = [0, 0]
 
-            ## ---------------------- CÓMPUTO Y STATUS ---------------------- ##
+            ## --------------------------- STATUS --------------------------- ##
 
             ## Flags durante las peticiones
             self.update_mode = False
             self.request_end = False
             self.exception_break = False
-            self.exception_body = None
+            self.exception_content = None
 
-            ## Descarga total
+            ## -------------------- PROGRESO DE DESCARGA -------------------- ##
+            self.batch_progress = [0, len(self.update_queue)]
+            self.mb_received = 0.0
             self.update_size = 0.0
+
+            self.current_size = 0.0
+            self.file_size = 0.0
+
 
 
         def setup(self):
@@ -132,12 +138,24 @@ init python:
                     renpy.restart_interaction()
 
 
-        def start_batch_download(self, screen_name):
-            """Este método realiza la descarga por lotes mediante la cola de
-            archivos obtenida durante la verificación de actualizaciones."""
+        def download_fmt(self):
+            now_percent = 0.0
 
-            batch_progress = [0, len(self.update_queue)]
+            if self.update_size > 0.0:
+                now_percent = float(100.0 * (self.mb_received / self.update_size))
 
+            return "%.02f MB / %.02f MB  %.02f%%" % (self.mb_received, self.update_size, now_percent)
+
+
+        def start_download(self):
+            """Nuevo método de descarga.
+            Al ejecutar este método, se inicia una descarga por lotes de la cola
+            de archivos almacenada en 'self.update_queue'. Debe ejecutarse en
+            un hilo para no bloquear el proceso principal."""
+
+            self.request_end = False
+            self.exception_break = False
+            self.batch_progress[1] = len(self.update_queue)
             static_queue = None
 
             if not static_queue:
@@ -147,25 +165,49 @@ init python:
             logger(logging.info, "Download size: %.02f MB." % self.update_size)
             logger(logging.info, "File queue: %s" % len(self.update_queue))
 
-            for pkg in static_queue:
-                batch_progress[0] += 1
-                logger(logging.info, "Downloading: %s (%s) (%s/%s)" % (pkg["name"],
-                                                                        pkg["md5"],
-                                                                        batch_progress[0],
-                                                                        batch_progress[1]))
-                renpy.call_screen(screen_name,
-                                package = pkg,
-                                file_ext = self.ext,
-                                savepath = self.gamedir,
-                                progress = batch_progress)
-                self.update_queue.remove(pkg)
-                persistent.local_index.update({pkg["name"] : pkg["md5"]})
+            try:
+                for pkg in static_queue:
+                    self.batch_progress[0] += 1
+                    self.current_size = 0.0
 
-            logger(logging.info, "%s of %s files downloaded." % (batch_progress[0],
-                                                                batch_progress[1]))
+                    tempfile = os.path.join(self.gamedir, pkg["name"] + ".tmp")
+                    savefile = os.path.join(self.gamedir, pkg["name"] + self.ext)
 
-            persistent.radc_init = True
-            renpy.restart_interaction()
+                    r = requests.get(pkg["url"], allow_redirects=True, stream=True, timeout=5)
+
+                    self.file_size = float(r.headers["Content-Length"]) / 1048576.0
+
+                    with open(tempfile, "wb") as f:
+                        for chunk in r.iter_content(chunk_size=1024):
+                            self.current_size += float(len(chunk) / 1048576.0)
+                            self.mb_received += float(len(chunk) / 1048576.0)
+
+                            if chunk:
+                                f.write(chunk)
+
+                        f.close()
+
+                    r.close()
+                    del r
+
+                    if os.path.exists(savefile):
+                        os.remove(savefile)
+
+                    os.rename(tempfile, savefile)
+                    self.update_queue.remove(pkg)
+                    persistent.local_index.update({pkg["name"] : pkg["md5"]})
+
+
+            except Exception as download_error:
+                logger(logging.error, repr(download_error))
+                self.exception_break = True
+                self.exception_content = str(download_error).replace("[", "[[")
+
+            finally:
+                self.request_end = True
+                persistent.radc_init = True
+                logger(logging.info, "%s of %s files downloaded." % self.batch_progress)
+                renpy.restart_interaction()
 
 
         def run(self):
@@ -204,75 +246,6 @@ init python:
                 self.request_end = True
                 renpy.restart_interaction()
                 return
-
-
-    class DownloadHandler(threading.Thread):
-
-        def __init__(self, package, file_ext, savepath):
-            super(DownloadHandler, self).__init__()
-
-            self.headers = {"User-Agent" : "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
-                            "Accept-Encoding" : "identity"}
-
-            ## Detalles del paquete
-            self.package = package
-            self.ext = file_ext
-
-            ## Detalles de descarga
-            self.current_size = 0.0
-            self.total_size = 0.0
-            self.savepath = savepath
-
-            ## Status de descarga
-            self.download_end = False
-            self.exception_break = False
-            self.exception_content = None
-
-
-        def download_fmt(self):
-            now_percent = 0.0
-
-            if self.total_size > 0.0:
-                now_percent = float(100.0 * (self.current_size / self.total_size))
-
-            return "%.02f MB / %.02f MB  %.02f%%" % (self.current_size, self.total_size, now_percent)
-
-
-        def run(self):
-
-            try:
-                tempfile = os.path.join(self.savepath, self.package["name"] + ".tmp")
-                savefile = os.path.join(self.savepath, self.package["name"] + self.ext)
-
-                r = requests.get(self.package["url"], allow_redirects=True, stream=True, timeout=5)
-
-                self.total_size = float(r.headers["Content-Length"]) / 1048576.0
-
-                with open(tempfile, "wb") as f:
-                    for chunk in r.iter_content(chunk_size=1024):
-                        self.current_size += float(len(chunk) / 1048576.0)
-
-                        if chunk:
-                            f.write(chunk)
-
-                    f.close()
-
-                r.close()
-                del r
-
-                if os.path.exists(savefile):
-                    os.remove(savefile)
-
-                os.rename(tempfile, savefile)
-
-            except Exception as download_error:
-                logger(logging.error, repr(download_error))
-                self.exception_break = True
-                self.exception_content = str(download_error).replace("[", "[[")
-
-            finally:
-                self.download_end = True
-                renpy.restart_interaction()
 
 
 ## -------------------------------------------------------------------------- ##
