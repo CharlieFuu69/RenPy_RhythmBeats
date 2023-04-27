@@ -111,6 +111,9 @@ screen playground_hud(song_length, score_goal):
             style "song_progress"
             value AudioPositionValue(channel="music" , update_interval=0.1)
 
+        add DynamicDisplayable(rhythm.judgement_display) align(0.5, 0.76)
+
+
     else:
         ## Esto transferirá el control al label "show_failed" en caso de tener
         ## 15 notas fallidas.
@@ -124,16 +127,17 @@ screen playground_hud(song_length, score_goal):
         frame:
             style_prefix "debugger"
             ypos 0.3
-
             has vbox
-            label _("Métricas de operación.")
-            text "- Beatmap: %s" % rhythm.fn
-            text "- Offset: %s s" % rhythm.offset
-            text "- Epoch: %.01f s" % round(rhythm.epoch, 2)
-            text __("- Último tap: %.01f ms" % rhythm.last_tap)
-            text __("- Progreso del mapa: %s/%s" % rhythm.map_progress)
-            text __("- Acertados: %s" % rhythm.perfect)
-            text __("- Fallidos: %s" % rhythm.miss)
+
+            label _("Panel de Depuración.")
+            text "- {color=CF0}Beatmap:{/color} %s" % rhythm.fn
+            text "- {color=CF0}Offset:{/color} %s s" % rhythm.offset
+            text "- {color=CF0}Epoch:{/color} %.01f s" % (round(rhythm.epoch, 2) if rhythm.is_running() else "End")
+            text "- {color=CF0}Tap delay:{/color} %.01f ms" % rhythm.last_tap
+            text "- {color=CF0}Note index:{/color} %s/%s" % rhythm.map_progress
+            null height 15
+            text "- {color=0F0}Perfect:{/color} %s" % rhythm.perfect
+            text "- {color=F00}Miss:{/color} %s" % rhythm.miss
 
     ## Muestra el botón para abortar el Show mientras aún quedan notas para tocar.
     if rhythm.is_running():
@@ -149,6 +153,7 @@ screen playground_hud(song_length, score_goal):
 init python:
     config.per_frame_screens.append("playground_hud")
 
+
 ## -------------------------------------------------------------------------- ##
 ## Screen de reproducción 2DMV (o de la carátula si la canción no posee video)
 
@@ -161,23 +166,33 @@ screen playground_2dmv(source):
 ## -------------------------------------------------------------------------- ##
 ## Transición de partida finalizada
 
-screen playground_finish(miss_notes, max_allowed):
+screen playground_finish(status):
     zorder 104
     modal True
     style_prefix "finish_style"
 
-    if miss_notes == 0:
-        timer 1.8 action Play("sfx_01", audio.sfx_stage_full_combo)
+    if status == "AP":
+        timer 1.8 action Play("sfx_01", audio.sfx_stage_all_perfect)
         add "ui_tex_black"
         add "tex_show_cleared"
 
         add "ui_tex_flashlight" at full_combo_light_effect(2.5)
+        text "All Perfect!" at show_clear_text(2.3)
+
+        add "ui_tex_white" at full_combo_line_effect(xymap = [(-0.3, 1.3), 0.42], delta = 2.0)
+        add "ui_tex_white" at full_combo_line_effect(xymap = [(-0.3, 1.3), 0.58], delta = 2.15)
+
+    elif status == "FC":
+        timer 1.8 action Play("sfx_01", audio.sfx_stage_full_combo)
+        add "ui_tex_black"
+        add "tex_show_cleared"
+
         text "Full Combo!" at show_clear_text(2.3)
 
         add "ui_tex_white" at full_combo_line_effect(xymap = [(-0.3, 1.3), 0.42], delta = 2.0)
         add "ui_tex_white" at full_combo_line_effect(xymap = [(-0.3, 1.3), 0.58], delta = 2.15)
 
-    elif miss_notes < max_allowed:
+    elif status == "SC":
         timer 1.0 action Play("sfx_01", audio.sfx_stage_cleared)
         add "ui_tex_black"
         text "Show Clear!" at show_clear_text(1.0)
@@ -223,8 +238,8 @@ screen score_frame():
             bar:
                 value AnimatedValue(old_value = 0.0,
                                     value = score_int,
-                                    range = score_target,
-                                    delay = 3.1)
+                                    range = (score_int if score_int > score_target else score_target),
+                                    delay = 2.9)
                 left_bar Solid(score_fmt[0])
 
 
@@ -241,6 +256,7 @@ screen show_results(song_selected, party):
     default score_int = rhythm.stage_score
     default score_fmt = score_color(score_int, score_target)
     default accuracy = rhythm.accuracy_rate()
+    default result = rhythm.is_full_combo()
 
     ## Metadata de pista musical
     vbox at place_atl((1.1, 0.07), (0.07, 0.07), delta = 0.8):
@@ -267,16 +283,23 @@ screen show_results(song_selected, party):
                 label str(party.combo) xalign 0.5
 
             vbox:
-                text _(u"\u2022 Perfecto : [party.perfect]") italic True
-                text _(u"\u2022 BRUH : [party.miss]") italic True ## XD
+                if result == "AP":
+                    text "All Perfect!" size 24 outlines [(3, "#E30052", 0, 0)] italic False
+                elif result == "FC":
+                    text "Full Combo!" size 24 outlines [(3, "#090", 0, 0)] italic False
+                text u"\u2022 Perfect : [party.perfect]" italic True
+                text u"\u2022 Great : [party.great]" italic True
+                text u"\u2022 BRUH : [party.miss]" italic True ## XD
+
 
         fixed:
             maximum(550, 48)
             add Solid("#FFF") ysize 3 yalign 0.5
 
-            frame at new_record_signal(1.6):
-                style_prefix "new_record"
-                text _("¡NUEVO RECORD ALCANZADO!")
+            if get_record_flag:
+                frame at new_record_signal(1.6):
+                    style_prefix "new_record"
+                    text _("¡NUEVO RECORD ALCANZADO!")
 
 
         hbox:

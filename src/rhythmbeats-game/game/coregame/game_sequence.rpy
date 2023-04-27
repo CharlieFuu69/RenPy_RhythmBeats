@@ -11,34 +11,49 @@
 ## Secuencia del menú de pistas musicales.
 
 label quit:
-    if rpc:
-        $ rpc.stop()
+    if "rpc" in globals():
+        if rpc:
+            $ rpc.stop()
 
     return
 
-label song_selection_menu:
+label game_post_loading:
     $ p = persistent ## Reduce el espacio horizontal usado por variables "persistent"
-    $ music_inst = MusicData(_dir = "coregame/metadata/music_metadata.json")
-    $ music_inst.load()
-    $ record_scores(init_mode = music_inst.get_song_count())
+
+    ## Discord RPC
+    $ rpc = DiscordRichPresence()
+
+    if p.discord_rpc:
+        $ rpc.set_status(details = __("En menú principal."))
+        $ rpc.rpc_start()
+
+    jump main_panel
+
+
+label main_panel:
+    show bg_main
+    show tex_black
+
+    if not renpy.music.get_playing(channel="music") in audio.startscreen_queue:
+        play music startscreen_queue fadeout 0.8 fadein 0.8
+
+    call screen gamemode_selector
+
+
+label song_selection_menu:
+    $ mdata = MusicData(relative_path = "coregame/metadata/music_metadata.json")
+    $ record_scores(init_mode = mdata.get_song_count())
     $ stage_aborted = False
     $ data = None
 
     if not p.song_selected:
-        $ p.song_selected = music_inst.sort(p.category)[0]
+        $ p.song_selected = mdata.sort(p.category)[0]
 
-    $ fix_previews(music_inst.sort("all"))
+    $ fix_metadata_diffs(mdata.sort("all"))
 
-    if p.discord_rpc:
-        if not rpc:
-            $ rpc = DiscordRichPresence()
-            $ rpc.set_status(details = __("Seleccionando pista musical..."))
-            $ rpc.rpc_start()
+    $ rpc.set_status(details = __("Seleccionando pista musical..."))
 
-        else:
-            $ rpc.set_status(details = __("Seleccionando pista musical..."))
-
-    call screen song_select(music_inst) with dissolve
+    call screen song_select with dissolve
 
     $ renpy.pause(hard = True)
 
@@ -50,10 +65,9 @@ label song_selection_menu:
 
         scene tex_black_solid
 
-        if rpc:
-            $ rpc.set_status(state = __("Artistas: %s") % data["song_artists"],
-                            details = __("Jugando: \"%s\"") % data["song_title"],
-                            image_text = __("Partida en curso..."))
+        $ rpc.set_status(state = __("Artistas: %s") % data["song_artists"],
+                        details = __("Jugando: \"%s\"") % data["song_title"],
+                        image_text = __("Partida en curso..."))
 
         ## Esto libera un poco de memoria antes de ejecutar una canción
         $ renpy.free_memory()
@@ -66,6 +80,7 @@ label song_selection_menu:
                         song_file = data["audio"],
                         offset_map = data["map_offset"],
                         offset_game = p.custom_offset,
+                        perfect_threshold = 70,
                         max_score = 25000,
                         failsafe = p.failsafe)
 
@@ -87,7 +102,7 @@ label song_selection_menu:
 
     ## Show completado
     label show_cleared:
-        show screen playground_finish(miss_notes = rhythm.miss, max_allowed = 15)
+        show screen playground_finish(status=rhythm.is_full_combo())
         $ renpy.pause(6.0 if rhythm.miss == 0 else 4.0, hard = True)
         stop music fadeout 1.0
         jump show_results_sequence
@@ -97,7 +112,7 @@ label song_selection_menu:
     label show_failed:
         stop music
         $ finish_playstage(["playground_hud", "playground"])
-        show screen playground_finish(miss_notes = 15, max_allowed = 15)
+        show screen playground_finish(status="FAILED")
         $ renpy.pause(3.0, hard = True)
 
         ## Si no fue una partida abortada, muestra los resultados de la partida
@@ -117,7 +132,12 @@ label song_selection_menu:
     label show_results_sequence:
         $ get_record_flag = record_scores(id = data["id"], score = rhythm.stage_score)
         $ finish_playstage(["playground", "playground_hud"], dissolving = True)
+        hide screen playground_hud
         hide screen playground_finish with dissolve
+
+        $ rpc.set_status(state = __("Artistas: %s") % data["song_artists"],
+                        details = __("Jugando: \"%s\"") % data["song_title"],
+                        image_text = __("En pantalla de resultados..."))
 
         $ renpy.pause(1.0, hard = True)
 

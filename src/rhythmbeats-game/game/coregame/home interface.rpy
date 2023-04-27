@@ -59,9 +59,81 @@ screen discord_change_state():
                 action [Hide("discord_change_state"),
                 Hide("config_panel"),
                 Hide("song_select"),
-                Jump("splashscreen")]
+                Jump("game_post_loading")]
                 activate_sound audio.ui_sound_btn03
 
+
+## -------------------------------------------------------------------------- ##
+## Menú inicial de modo de juego
+
+screen menu_hud(exit_action, exit_icon="{image=ui_icon_exit}", music_filter=False):
+    zorder 140
+
+    ## Botones del área superior.
+    hbox at place_atl((0.07, -0.3), (0.07, 0.07), delta=0.7, speed=0.2):
+        style_prefix "sort_music"
+
+        textbutton "{font=DejavuSans.ttf}{size=25}⚙{/size}{/font}":
+            style_prefix "offset_setup"
+            activate_sound audio.ui_sound_btn01
+            action Show("config_panel")
+
+        if music_filter:
+            textbutton __("Filtro: %s") % __(mdata.get_category(p.category)):
+                action ToggleScreen("category_switcher")
+
+
+    hbox at place_atl((0.93, -0.3), (0.93, 0.07), ref=(1.0, 0.0), delta=0.7, speed=0.2):
+        style_prefix "sort_music"
+
+        fixed:
+            fit_first True
+            textbutton _("Sobre RhythmBeats"):
+                style_prefix "game_credits"
+                action Show("credits_window")
+            add "ui_icon_logo" zoom 0.1 xpos 0.05 yalign 0.5
+
+        fixed:
+            fit_first True
+            textbutton "Discord":
+                style_prefix "game_credits"
+                action OpenURL("https://discord.gg/qk3WggMMRM")
+            add "ui_icon_discord" xpos 0.1 yalign 0.5
+
+        fixed:
+            fit_first True
+            textbutton "GitHub":
+                style_prefix "game_credits"
+                action OpenURL("https://github.com/CharlieFuu69/RenPy_RhythmBeats")
+            add "ui_icon_github" xpos 0.1 yalign 0.5
+
+        textbutton exit_icon:
+            style_prefix "offset_setup"
+            action exit_action
+
+
+screen gamemode_selector():
+    style_prefix "gamemode"
+
+    use menu_hud(Show("confirm",
+                      message=_("¿Seguro que quieres cerrar {color=cf0}Ren'Py RhythmBeats{/color}?"),
+                      yes_action=Quit(confirm=False),
+                      no_action=Hide("confirm")),
+                exit_icon="{image=ui_icon_warning}")
+
+    vbox at place_atl((0.5, 1.1), (0.5, 0.3), ref=(0.5, 0.0), delta=0.9, speed=0.2):
+        label _("Selecciona un modo de juego para continuar...")
+
+        hbox:
+            button:
+                add "ui_icon_singleplayer" xalign 0.5
+                text _("Un solo jugador")
+                action Hide("gamemode_selector"), Jump("song_selection_menu")
+
+            button:
+                add "ui_icon_server_party" xalign 0.5
+                text "Ghost Party!"
+                action Alert(__("Este modo de juego aún no está disponible."), status=1, icon="ui_icon_warning")
 
 ## -------------------------------------------------------------------------- ##
 ## Menú inicial de configuración.
@@ -134,7 +206,7 @@ screen system_menu():
                             textbutton _("Pantalla Completa") action Preference("display", "fullscreen")
 
                 vbox:
-                    text _("Métricas de operación:")
+                    text _("Panel de Depuración:")
                     hbox:
                         spacing 15
                         textbutton _("Oculto") action SetVariable("persistent.operating_stats", False)
@@ -145,17 +217,17 @@ screen system_menu():
                         text _("Presencia en Discord (Discord RPC):")
                         hbox:
                             spacing 15
-                            textbutton _("Inactivo") action SetVariable("persistent.discord_rpc", False)
+                            textbutton _("Inactivo") action [SetVariable("persistent.discord_rpc", False),
+                            If(rpc.is_running, Function(rpc.stop), None)]
                             textbutton _("Activo") action [SetVariable("persistent.discord_rpc", True),
                             If(not persistent.discord_rpc, Show("discord_change_state"), None)]
 
-                vbox:
-                    text _("Ejecución de pistas musicales:")
-                    hbox:
-                        spacing 15
-                        textbutton _("Modo Juego") action SetVariable("persistent.failsafe", False)
-
-                        if config.developer:
+                if config.developer:
+                    vbox:
+                        text _("Ejecución de pistas musicales:")
+                        hbox:
+                            spacing 15
+                            textbutton _("Modo Juego") action SetVariable("persistent.failsafe", False)
                             textbutton _("Modo Seguro") action SetVariable("persistent.failsafe", True)
 
                 vbox:
@@ -323,7 +395,7 @@ screen category_switcher():
             textbutton _("Otras Pistas") action SetVariable("p.category", "other")
 
 
-screen song_select(data):
+screen song_select():
     style_prefix "songlist"
     on "show" action Function(play_preview, now = p.song_selected)
 
@@ -331,39 +403,8 @@ screen song_select(data):
     add "tex_black"
 
     ## Botones del área superior.
-    hbox:
-        style_prefix "sort_music"
-
-        textbutton "{font=DejavuSans.ttf}{size=25}⚙{/size}{/font}":
-            style_prefix "offset_setup"
-            activate_sound audio.ui_sound_btn01
-            action Show("config_panel")
-
-        textbutton __("Filtro: %s") % __(data.get_category(p.category)):
-            action Show("category_switcher")
-
-        null width 160
-
-        fixed:
-            fit_first True
-            textbutton _("Sobre RhythmBeats"):
-                style_prefix "game_credits"
-                action Show("credits_window")
-            add "ui_icon_logo" zoom 0.1 xpos 0.05 yalign 0.5
-
-        fixed:
-            fit_first True
-            textbutton "GitHub":
-                style_prefix "game_credits"
-                action OpenURL("https://github.com/CharlieFuu69/RenPy_RhythmBeats")
-            add "ui_icon_github" xpos 0.1 yalign 0.5
-
-        textbutton "{font=DejavuSans.ttf}{size=25}✖{/size}{/font}":
-            style_prefix "offset_setup"
-            action Show("confirm",
-                        message=_("¿Seguro que quieres cerrar {color=cf0}Ren'Py RhythmBeats{/color}?"),
-                        yes_action=Quit(confirm=False),
-                        no_action=Hide("confirm"))
+    use menu_hud(exit_action=[Play("ui_01", audio.ui_sound_btn02), Jump("main_panel")],
+                music_filter=True)
 
 
     ## Lista de canciones
@@ -381,7 +422,7 @@ screen song_select(data):
         ## Esto genera una lista de botones para seleccionar la pista musical a jugar.
         ## (Que pelotudo soy. Recién me doy cuenta que no he utilizado el "song_id".
         ## Tal vez debería cambiar esto xd)
-        for song_id, song in enumerate(data.sort(p.category), start = 1):
+        for song_id, song in enumerate(mdata.sort(p.category), start = 1):
             button:
                 hbox:
                     style_prefix "song_level"
@@ -409,12 +450,17 @@ screen song_select(data):
                 action [SetVariable("p.song_selected", song),
                 Function(play_preview, now=song)]
 
+                if p.song_selected == song:
+                    add "ui_iconfps_now_playing" pos(0.94, 0.37)
+
 
     ## Esto muestra la carátula de la pista musical seleccionada.
     frame at place_atl((1.1, 0.2), (0.55, 0.2), delta = 1.0):
         style_prefix "now_showing"
 
-        textbutton _("Ver Info") action Show("song_details", metadata = p.song_selected)
+        button:
+            action Show("song_details", metadata = p.song_selected)
+            add "ui_icon_song_info"
 
         vbox:
             label p.song_selected["song_title"] ## Título de la pista
