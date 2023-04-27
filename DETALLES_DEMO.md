@@ -10,7 +10,7 @@
 [![release-badge]][release]
 
 ---
-<h3 id="how-to-play"> 1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats? </h3>
+### [1. ¿Cómo se juega el juego demostrativo de Ren'Py RhythmBeats?][#how-to-play]
 
 <img align="center" src="https://user-images.githubusercontent.com/77955772/227761433-b2e86077-3b0d-4d23-b30e-1886c580fcc5.png"></img>
 <h4 align = "center"> <i>[Interfaz de juego - 2DMV: Highlight]</i> </h4>
