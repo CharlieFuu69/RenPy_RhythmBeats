@@ -1,8 +1,10 @@
+<!-- Links de utilidad pública --->
 [license]: https://www.gnu.org/licenses/gpl-3.0
 [renpy]: https://renpy.org/
-[release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
-<!-- [downloads-badge]: https://img.shields.io/github/downloads/CharlieFuu69/RenPy_RhythmBeats/total.svg?style=for-the-badge -->
+[game-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
+[module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module
 
+<!-- Badges del README --->
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
 [license-badge]: https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&logo=creativecommons
 [license-image]: https://www.gnu.org/graphics/gplv3-with-text-136x68.png
@@ -15,7 +17,7 @@
 
 <h1 align = "center"> Ren'Py RhythmBeats! </h1>
 
-[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][release] ![status-badge]
+[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][game-release] ![status-badge]
 
 <h5 align = "center">
     <i>[Última actualización de la documentación: 11/03/2023 02:00 GMT -3]</i>
@@ -53,13 +55,13 @@ Te contaré un poco acerca de qué trata todo esto.
 * **LANZAMIENTO DEL MÓDULO DE REN'PY RHYTHMBEATS (BETA):**
 
   ¿Quieres empezar a implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
-  * **Descarga la última versión de [Ren'Py RhythmBeats! v1.02.1b](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module).**
+  * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.02.1b)][release].**
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](docs/README.md).**
   
 * **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
 
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
-  * **¡Descarga la última versión del juego (Windows/Linux/Android) [en este link](https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest)!**
+  * **¡Descarga la última versión del juego (Windows/Linux/Android) [en este link][game-release]!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
 ---
