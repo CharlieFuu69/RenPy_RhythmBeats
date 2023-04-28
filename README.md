@@ -20,7 +20,7 @@
 [![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][game-release] ![status-badge]
 
 <h5 align = "center">
-    <i>[Última actualización de la documentación: 11/03/2023 02:00 GMT -3]</i>
+    <i>[Última actualización del código fuente: 27/04/2023 02:21 GMT -4]</i>
 </h5>
 
 <p>
