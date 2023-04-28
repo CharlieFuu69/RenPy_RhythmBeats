@@ -40,27 +40,28 @@ Te contaré un poco acerca de qué trata todo esto.
 
 #### DESVENTAJAS DE REN'PY RHYTHMBEATS!:
 
-* **Puede ser lento:** Lamentablemente Ren'Py no es un motor que tenga un buen rendimiento, principalmente porque Python no es un lenguaje rápido. A nivel de cómputo, **Ren'Py RhythmBeats!** no tiene problemas, pero a nivel gráfico puede tener problemas si los beatmaps poseen muchas notas.
-* **El Multitouch:** Estoy intentando expandir la compatibilidad con pantallas táctiles y Android, pero ya que Ren'Py no posee una compatibilidad estable con Multitouch, puede ser más cómodo jugar en PC.
+* **Puede ser lento con demasiadas notas:**
+  Lamentablemente Ren'Py no es un motor que tenga un buen rendimiento, principalmente porque Python no es un lenguaje rápido. A nivel de cómputo, **Ren'Py RhythmBeats!** no tiene problemas, pero a nivel gráfico puede tener problemas si los beatmaps poseen muchas notas.
 
 ---
 
 <p align="left">
   <img align="left" width="32" height="32" src="icons/windows.png"/>
-  <img align="left" width="32" height="32" src="icons/android.png"/>
   <img align="left" width="32" height="32" src="icons/linux.png"/>
   <h3> Descargas y más: </h3>
 </p>
 
-* **LANZAMIENTO DEL MÓDULO DE REN'PY RHYTHMBEATS (BETA):**
+* **MÓDULO DE ACCIÓN RÍTMICA DE REN'PY RHYTHMBEATS! (BETA):**
 
-  ¿Quieres empezar a implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
-  * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.02.1b)][release].**
+  ¿Quieres implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
+  
+  * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.02.1b)][module-release].**
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](docs/README.md).**
   
-* **JUEGO DEMOSTRATIVO DE REN'PY RHYTHMBEATS!:**
+* **JUEGO DEMOSTRATIVO "REN'PY RHYTHMBEATS! GAME":**
 
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
+  
   * **¡Descarga la última versión del juego (Windows/Linux) [en este link][game-release]!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
 
