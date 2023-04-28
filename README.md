@@ -34,9 +34,9 @@ Te contaré un poco acerca de qué trata todo esto.
 
 #### VENTAJAS DE REN'PY RHYTHMBEATS!:
 
-* **Es simple:** El sistema rítmico que propone **Ren'Py RhythmBeats!** es minimalista, y puede ser fácil de jugar por casi cualquiera.
+* **Es simple:** El sistema rítmico que propone **Ren'Py RhythmBeats!** es minimalista, y puede ser fácil de jugar.
 * **Es poco usual:** En una novela visual, casi nunca se ven minijuegos de este tipo. Añadir este sistema rítmico en una novela visual podría ser innovador :3
-* **¡Puedes probarlo!:** He creado un juego demostrativo llamado **"Ren'Py RhythmBeats! Game"** que puedes jugar desde Windows y Android. Hay un total de 19 canciones jugables, de Project SEKAI y Love Live!
+* **¡Puedes probarlo!:** He creado un juego demostrativo llamado **"Ren'Py RhythmBeats! Game"** que puedes jugar desde Windows y Linux. Hay más de 20 canciones jugables, de Project SEKAI y Love Live!
 
 #### DESVENTAJAS DE REN'PY RHYTHMBEATS!:
 
