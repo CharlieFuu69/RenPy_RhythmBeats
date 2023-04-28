@@ -3,8 +3,9 @@
 [release-badge]: https://img.shields.io/github/v/release/CharlieFuu69/RenPy_RhythmBeats?style=for-the-badge&logo=github
 
 <p align="center">
-  <img width="200" height="200" src="https://user-images.githubusercontent.com/77955772/208582867-fe267999-3f6c-448f-ae78-26b14ced10ac.png">
+  <img width="180" height="180" src="https://user-images.githubusercontent.com/77955772/235035814-790e9d30-7aa3-41f5-b5ad-4b112cf89716.png">
 </p>
+
 <h1 align = "center"> Documentación del sistema de acción rítmica de Ren'Py RhythmBeats! </h1>
 <h5 align = "center"> Página principal </h5>
 
