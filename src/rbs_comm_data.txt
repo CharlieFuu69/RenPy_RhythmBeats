@@ -8,8 +8,8 @@ COMM file format v0.01.16a
 [JSON]
 {
     "title" : "Actualización In-Game #10 - ¿Qué hay de nuevo?",
-    "post_date" : "29/Abr/2023",
-    "post_time" : "00:40 (GMT -4)"
+    "post_date" : "06/May/2023",
+    "post_time" : "03:33 (GMT -4)"
 }
 [/JSON]
 
@@ -21,6 +21,16 @@ En esta actualización In-Game se hicieron algunos cambios en el proyecto en gen
 Estos cambios son los siguientes:
 
 • {color=F99}[Android]:{/color} Ren'Py RhythmBeats está en proceso de eliminar el soporte para dispositivos móviles (Android) debido a problemas de rendimiento de Ren'Py (el motor).
+
+• {color=CF0}[Win/LX/Android]:{/color} Se corrigieron errores de combos interrumpidos en 4 pistas del juego:
+
+        » {color=00ACFF}Project SEKAI:{/color}
+                • Wonderlands × Showtime - "Sweet Magic"
+                • Hatsune Miku (Kz/Livetune) - "Hand in Hand"
+                
+        » {color=F9F}Love Live!:{/color}
+                • μ's - "MOMENT RING"
+                • Aqours - "DREAMY COLOR"
 
 • {color=CF0}[Win/LX/Android]:{/color} Se agregó el {u}"COMM"{/u}, un sistema de noticias In-Game para informar detalles de actualizaciones o errores que hayan sido reportados y/o detectados. La información publicada en el COMM estará disponible solo en el idioma nativo del juego (Español).
 
