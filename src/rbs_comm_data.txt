@@ -1,0 +1,38 @@
+Ren'Py Remote COMM System (RRCS)
+COMM file format v0.01.16a
+
+>-----------------------> COMM Stream Begin <------------------------<
+
+[COMM-NOTIFICATION]
+
+[JSON]
+{
+    "title" : "Actualización In-Game #10 - ¿Qué hay de nuevo?",
+    "post_date" : "29/Abr/2023",
+    "post_time" : "00:40 (GMT -4)"
+}
+[/JSON]
+
+[Body]
+¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
+
+
+En esta actualización In-Game se hicieron algunos cambios en el proyecto en general, y se añadieron algunas características.
+Estos cambios son los siguientes:
+
+• {color=F99}[Android]:{/color} Ren'Py RhythmBeats está en proceso de eliminar el soporte para dispositivos móviles (Android) debido a problemas de rendimiento de Ren'Py (el motor).
+
+• {color=CF0}[Win/LX/Android]:{/color} Se agregó el {u}"COMM"{/u}, un sistema de noticias In-Game para informar detalles de actualizaciones o errores que hayan sido reportados y/o detectados. La información publicada en el COMM estará disponible solo en el idioma nativo del juego (Español).
+
+• {color=CF0}[Pronto...]:{/color} El modo de juego {u}"Ghost Battle"{/u} está en proceso de desarrollo. Su uso requerirá de una conexión estable a internet ya que será un modo de juego que requiere tránsito de datos con un Host (no es un Multijugador en tiempo real). Más información detallada se estará emitiendo gradualmente en las redes sociales de Ren'Py RhythmBeats!
+
+
+Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_rhythmbeats}Canal de Telegram{/a}, y también puedes unirte al {a=https://discord.gg/qk3WggMMRM}Servidor de Ren'Py RhythmBeats! en Discord{/a}!
+
+[/Body]
+[/COMM-NOTIFICATION]
+
+
+[COMM-ERROR-REPORTS]
+[NO-DATA]
+[/COMM-ERROR-REPORTS]
