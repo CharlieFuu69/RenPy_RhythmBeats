@@ -7,38 +7,25 @@ COMM file format v0.01.16a
 
 [JSON]
 {
-    "title" : "Actualización In-Game #10 - ¿Qué hay de nuevo?",
-    "post_date" : "06/May/2023",
-    "post_time" : "03:33 (GMT -4)"
+    "title" : "Actividad de desarrollo reciente en Ren'Py RhythmBeats!",
+    "post_date" : "07/May/2023",
+    "post_time" : "00:41 (GMT -4)"
 }
 [/JSON]
 
 [Body]
-{color=8C8C8C}• {i}Tamaño de esta actualización: 155.68 MB.{/i}{/color}
-
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-En esta actualización In-Game se hicieron algunos cambios en el proyecto en general, y se añadieron algunas características.
-Estos cambios son los siguientes:
+Como es usual, he estado realizando correcciones de errores en las últimas actualizaciones del juego, y esto involucra de lleno a la experiencia de juego.
 
-• {color=F99}[Android]:{/color} Ren'Py RhythmBeats está en proceso de eliminar el soporte para dispositivos móviles (Android) debido a problemas de rendimiento de Ren'Py (el motor).
+Uno de mis planes es remodelar el sistema de descargas del juego, con el objetivo de reducir el tiempo utilizado para buscar actualizaciones. En estos momentos la búsqueda de actualizaciones se basa en solicitar los "Headers" de cada paquete existente en el juego.
+En su lugar planeo utilizar directamente la API de GitHub para obtener los datos de cada paquete, lo que reduciría significativamente el tiempo utilizado para obtener actualizaciones, pasando de 30-50 segundos de espera a tan solo 4-10 segundos dependiendo de la conexión a internet.
 
-• {color=CF0}[Win/LX/Android]:{/color} Se corrigieron errores de combos interrumpidos en 4 pistas del juego:
+Por otro lado, estoy volviendo a depositar mis esfuerzos en optimizar el rendimiento del juego para dispositivos de Gama media, pues un juego de ritmo no debería exigir tantos recursos (creo que casi la mayoría está de acuerdo con eso).
 
-        » {color=00ACFF}Project SEKAI:{/color}
-                • Wonderlands × Showtime - "Sweet Magic"
-                • Hatsune Miku (Kz/Livetune) - "Hand in Hand"
-                
-        » {color=F99}Love Live!:{/color}
-                • μ's - "MOMENT RING"
-                • Aqours - "DREAMY COLOR"
+Por último, hoy mismo comenzaré a avanzar el desarrollo del modo de juego {color=CF0}"Ghost Battle!"{/color}, donde se podrá competir contra otros jugadores de forma asíncrona (no en tiempo real). Miraré algún hosting web gratuito que me permita realizar algo bueno para esto =D
 
-• {color=CF0}[Win/LX/Android]:{/color} Se agregó el {u}"COMM"{/u}, un sistema de noticias In-Game para informar detalles de actualizaciones o errores que hayan sido reportados y/o detectados. La información publicada en el COMM estará disponible solo en el idioma nativo del juego (Español).
-
-• {color=CF0}[Pronto...]:{/color} El modo de juego {u}"Ghost Battle"{/u} está en proceso de desarrollo. Su uso requerirá de una conexión estable a internet ya que será un modo de juego que requiere tránsito de datos con un Host (no es un Multijugador en tiempo real). Más información detallada se estará emitiendo gradualmente en las redes sociales de Ren'Py RhythmBeats!
-
-Puedes encontrar información más detallada en las {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.05.0b_upd10}Notas de Actualización In-Game #10{/a} en la sección "Releases" del repositorio.
-
+-----------------------------------------------------------------------------------------
 
 Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_rhythmbeats}Canal de Telegram{/a}, y también puedes unirte al {a=https://discord.gg/qk3WggMMRM}Servidor de Ren'Py RhythmBeats! en Discord{/a}!
 
