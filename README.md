@@ -64,6 +64,19 @@ Te contaré un poco acerca de qué trata todo esto.
   
   * **¡Descarga la última versión del juego (Windows/Linux) [en este link][game-release]!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
+  
+---
+
+<p align="left">
+  <img align="left" width="32" height="32" src="icons/telegram.png"/>
+  <img align="left" width="32" height="32" src="icons/discord.png"/>
+  <h3> ¡Sigue el proyecto en redes sociales!: </h3>
+</p>
+
+También hay otros medios donde puedes reportar errores y enterarte de las últimas actualizaciones del juego:
+
+* **¡Suscríbete gratis al [Canal de difusión de Telegram](https://t.me/renpy_rhythmbeats)!**
+* **¡Únete al [Servidor de Ren'Py RhythmBeats en Discord](https://discord.gg/qk3WggMMRM)!**
 
 ---
 ### Galería de imágenes de "Ren'Py RhythmBeats! Game":
