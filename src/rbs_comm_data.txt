@@ -48,7 +48,7 @@ La última actualización In-Game posee un bug en la interfaz al finalizar una p
 
 • {color=CF0}Status del incidente:{/color} Bajo investigación.
 
-El seguimiento detallado de este error, se encuentra en el [Issue #24](https://github.com/CharlieFuu69/RenPy_RhythmBeats/issues/24) del repositorio en GitHub.
+El seguimiento detallado de este error, se encuentra en el {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/issues/24}Issue #24{/a} del repositorio en GitHub.
 
 --------------------------------------------------------------------------------------------------------------
 
