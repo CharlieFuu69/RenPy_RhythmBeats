@@ -35,7 +35,7 @@ Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_
 [COMM-ERROR-REPORTS]
 [JSON]
 {
-    "title" : "Errores detectados posterior a la Actualización In-Game #10",
+    "title" : "Errores detectados posterior a la Actualización In-Game #11",
     "post_date" : "07/May/2023",
     "post_time" : "22:12 (GMT -4)"
 }
@@ -46,7 +46,9 @@ Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_
 
 La última actualización In-Game posee un bug en la interfaz al finalizar una partida, oscureciendo parcialmente a la pantalla en el acto. Este error afecta a todas las distribuciones de Ren'Py RhythmBeats (Windows/Linux/Android).
 
-• {color=CF0}Status de seguimiento:{/color} Bajo investigación.
+• {color=CF0}Status del incidente:{/color} Bajo investigación.
+
+El seguimiento detallado de este error, se encuentra en el [Issue #24](https://github.com/CharlieFuu69/RenPy_RhythmBeats/issues/24) del repositorio en GitHub.
 
 --------------------------------------------------------------------------------------------------------------
 
