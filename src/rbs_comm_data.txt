@@ -14,15 +14,17 @@ COMM file format v0.01.16a
 [/JSON]
 
 [Body]
+{color=8C8C8C}{i}• Tamaño de esta actualización: 25.31 MB{/i}{/color}
+
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
 He emitido una nueva Actualización In-Game, en el que he introducido los siguientes cambios:
 
-- {color=CF0}[Win/LX/Android]:{/color} Se realizaron correcciones menores en los metadatos de canciones del juego.
+• {color=CF0}[Win/LX/Android]:{/color} Se realizaron correcciones menores en los metadatos de canciones del juego.
 
-- {color=CF0}[Win/LX/Android]:{/color} ¡Incremento de rendimiento! En esta actualización debutará un sistema de paginación para renderizar las notas en la pantalla, lo que permite {u}incrementar la tasa de FPS de los gráficos{/u}. Por supuesto, este sistema se está implementando de forma gradual y puede contener errores, así que se agradece cualquier reporte de errores.
+• {color=CF0}[Win/LX/Android]:{/color} ¡Incremento de rendimiento! En esta actualización debutará un sistema de paginación para renderizar las notas en la pantalla, lo que permite {u}incrementar la tasa de FPS de los gráficos{/u}. Por supuesto, este sistema se está implementando de forma gradual y puede contener errores, así que se agradece cualquier reporte de errores.
 
------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
 
 Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_rhythmbeats}Canal de Telegram{/a}, y también puedes unirte al {a=https://discord.gg/qk3WggMMRM}Servidor de Ren'Py RhythmBeats! en Discord{/a}!
 
@@ -31,5 +33,24 @@ Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_
 
 
 [COMM-ERROR-REPORTS]
-[NO-DATA]
+[JSON]
+{
+    "title" : "Errores detectados posterior a la Actualización In-Game #10",
+    "post_date" : "07/May/2023",
+    "post_time" : "22:12 (GMT -4)"
+}
+[/JSON]
+
+[Body]
+¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
+
+La última actualización In-Game posee un bug en la interfaz al finalizar una partida, oscureciendo parcialmente a la pantalla en el acto. Este error afecta a todas las distribuciones de Ren'Py RhythmBeats (Windows/Linux/Android).
+
+• {color=CF0}Status de seguimiento:{/color} Bajo investigación.
+
+--------------------------------------------------------------------------------------------------------------
+
+Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_rhythmbeats}Canal de Telegram{/a}, y también puedes unirte al {a=https://discord.gg/qk3WggMMRM}Servidor de Ren'Py RhythmBeats! en Discord{/a}!
+
+[/Body]
 [/COMM-ERROR-REPORTS]
