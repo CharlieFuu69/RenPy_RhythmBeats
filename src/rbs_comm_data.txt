@@ -9,7 +9,7 @@ COMM file format v0.01.16a
 {
     "title" : "Actualización In-Game #11 - ¿Qué hay de nuevo?",
     "post_date" : "08/May/2023",
-    "post_time" : "03:06 (GMT -4)"
+    "post_time" : "07:06 (UTC)"
 }
 [/JSON]
 
@@ -37,20 +37,20 @@ Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_
 [COMM-ERROR-REPORTS]
 [JSON]
 {
-    "title" : "(Solucionado) Errores detectados posterior a la Actualización In-Game #11",
-    "post_date" : "08/May/2023",
-    "post_time" : "02:07 (GMT -4)"
+    "title" : "Errores en el cómputo de descarga de recursos del juego.",
+    "post_date" : "12/May/2023",
+    "post_time" : "09:38 (UTC)"
 }
 [/JSON]
 
 [Body]
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-La última actualización In-Game posee un bug en la interfaz al finalizar una partida, oscureciendo parcialmente a la pantalla en el acto. Este error afecta a todas las distribuciones de Ren'Py RhythmBeats (Windows/Linux/Android).
+Algunos usuarios han detectado errores durante la descarga de recursos del juego, donde el progreso de descarga parece computarse con errores, por ejemplo, indicando descargas sobre el 100% o indicar una cantidad elevada de paquetes descargados respecto de la cantidad real de paquetes en la cola de descarga.
 
-• {color=CF0}Status del incidente:{/color} Problema solucionado en la última actualización.
+• {color=CF0}Status del incidente:{/color} Problema identificado: Bytechunks no vuelve a cero cuando ocurre un error de descarga.
 
-El seguimiento detallado de este error se llevó a cabo en el {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/issues/24}Issue #24{/a} del repositorio en GitHub.
+El seguimiento detallado de este error se está llevando a cabo en el {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/issues/25}Issue #25{/a} del repositorio en GitHub.
 
 --------------------------------------------------------------------------------------------------------------
 
