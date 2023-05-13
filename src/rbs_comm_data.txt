@@ -7,24 +7,27 @@ COMM file format v0.01.16a
 
 [JSON]
 {
-    "title" : "Actualización In-Game #11 - ¿Qué hay de nuevo?",
-    "post_date" : "08/May/2023",
-    "post_time" : "07:06 (UTC)"
+    "title" : "Ren'Py RhythmBeats! - Actualización Global v1.06.0b",
+    "post_date" : "13/May/2023",
+    "post_time" : "07:28 (UTC)"
 }
 [/JSON]
 
 [Body]
-{color=8C8C8C}{i}• Tamaño de esta actualización (Parche): 25.31 MB{/i}{/color}
+{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 25.31 MB{/i}{/color}
 
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-He emitido una nueva Actualización In-Game, en el que he introducido los siguientes cambios:
+He emitido una nueva Actualización Global, en el que he introducido los siguientes cambios:
 
-• {color=CF0}[Win/LX/Android]:{/color} Se corrigieron bugs de interfaz que aparecieron en esta misma actualización.
+• {color=CF0}[Android]:{/color} El port de Android no tendrá más soporte hasta nuevo aviso. Todas las versiones de Android existentes han quedado descontinuadas.
 
-• {color=CF0}[Win/LX/Android]:{/color} Se realizaron correcciones menores en los metadatos de canciones del juego.
+• {color=CF0}[Win/LX]:{/color} Se ha corregido un bug en el apartado de cómputo del sistema de descargas, donde algunos valores (progreso de descarga) parecían desbordarse posterior a una interrupción de descarga por errores de conexión.
 
-• {color=CF0}[Win/LX/Android]:{/color} ¡Incremento de rendimiento! En esta actualización debutará un sistema de paginación para renderizar las notas en la pantalla, lo que permite {u}incrementar la tasa de FPS de los gráficos{/u}. Por supuesto, este sistema se está implementando de forma gradual y puede contener errores, así que se agradece cualquier reporte de errores.
+• {color=CF0}[Win/LX]:{/color} Se modificó una de las pistas que se reproduce cuando el juego está descargando recursos:
+        • {i}[Pista 1]: Claires - "Summer Flavors".{/i}
+        
+• {color=CF0}[Win/LX]:{/color} Se ha agregado el modo {u}"MV"{/u} en el menú de pistas, lo que permitirá ver los MVs de las canciones sin la necesidad de jugar la pista.
 
 --------------------------------------------------------------------------------------------------------------
 
@@ -35,26 +38,5 @@ Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_
 
 
 [COMM-ERROR-REPORTS]
-[JSON]
-{
-    "title" : "Errores en el cómputo de descarga de recursos del juego.",
-    "post_date" : "12/May/2023",
-    "post_time" : "09:38 (UTC)"
-}
-[/JSON]
-
-[Body]
-¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
-
-Algunos usuarios han detectado errores durante la descarga de recursos del juego, donde el progreso de descarga parece computarse con errores, por ejemplo, indicando descargas sobre el 100% o indicar una cantidad elevada de paquetes descargados respecto de la cantidad real de paquetes en la cola de descarga.
-
-• {color=CF0}Status del incidente:{/color} Problema identificado: Bytechunks no vuelve a cero cuando ocurre un error de descarga.
-
-El seguimiento detallado de este error se está llevando a cabo en el {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/issues/25}Issue #25{/a} del repositorio en GitHub.
-
---------------------------------------------------------------------------------------------------------------
-
-Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_rhythmbeats}Canal de Telegram{/a}, y también puedes unirte al {a=https://discord.gg/qk3WggMMRM}Servidor de Ren'Py RhythmBeats! en Discord{/a}!
-
-[/Body]
+[NO-DATA]
 [/COMM-ERROR-REPORTS]
