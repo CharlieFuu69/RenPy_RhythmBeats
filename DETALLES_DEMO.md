@@ -63,17 +63,6 @@ A continuación se indican los requisitos mínimos para ejecutar el juego demost
 > * **RAM:** 2 GB o más.
 > * **OpenGL:** v2.0 o posterior.
 
-><p align="left">
->    <img align="left" width="24" height="24" src="icons/android.png"/>
->    <h4>Requisitos mínimos para Android (Alerta de fin de soporte):</h4>
-> </p>
-> 
-> * **Sistema operativo:** Android v5.x o posterior.
-> * **Espacio disponible en el disco:** 2 GB o más.
-> * **Procesador:** Gama Media (Snapdragon 640 o posterior).
-> * **RAM:** 2 GB o más.
-> * **OpenGL ES:** v2.0 o posterior.
-
 ---
 
 <h3 id="song-difficult-list"> 4. Niveles de dificultad de las canciones. </h3>
