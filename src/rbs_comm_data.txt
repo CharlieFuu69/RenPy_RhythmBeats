@@ -9,12 +9,12 @@ COMM file format v0.01.16a
 {
     "title" : "Ren'Py RhythmBeats! - Actualización Global v1.06.0b",
     "post_date" : "13/May/2023",
-    "post_time" : "07:28 (UTC)"
+    "post_time" : "09:16 (UTC)"
 }
 [/JSON]
 
 [Body]
-{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 25.31 MB{/i}{/color}
+{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 25.32 MB{/i}{/color}
 
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
@@ -28,6 +28,8 @@ He emitido una nueva Actualización Global, en el que he introducido los siguien
         • {i}[Pista 1]: Claires - "Summer Flavors".{/i}
         
 • {color=CF0}[Win/LX]:{/color} Se ha agregado el modo {u}"MV"{/u} en el menú de pistas, lo que permitirá ver los MVs de las canciones sin la necesidad de jugar la pista.
+
+Puedes acceder a la información de este lanzamiento {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.06.0b_global} en este link!{/a}.
 
 --------------------------------------------------------------------------------------------------------------
 
