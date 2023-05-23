@@ -2,7 +2,7 @@
   <img width="180" height="180" src="https://user-images.githubusercontent.com/77955772/235035814-790e9d30-7aa3-41f5-b5ad-4b112cf89716.png">
 </p>
 <h6 align = "center"> Documentación de "Ren'Py RhythmBeats!" </h1>
-<h1 align = "center"> Sección 3: Documentación para programadores/desarrolladores. </h5>
+<h1 align = "center"> Sección 3: Documentación para programadores. </h5>
 
 En esta sección encontrarás todo lo necesario para comenzar a escribir código en tu juego, utilizando el sistema de acción rítmica dispuesto en el módulo de **Ren'Py RhythmBeats!**
 
