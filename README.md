@@ -23,6 +23,13 @@
     <i>[Última actualización del código fuente: 27/04/2023 02:21 GMT -4]</i>
 </h5>
 
+> <p align="left">
+>    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
+>    <h4>Migración de la documentación para desarrolladores:</h4>
+> </p>
+>
+> La documentación se está migrando hacia la sección "Wiki" del repositorio. Es posible que no se muestren todas las imágenes aún, por lo que recomiendo visitar la sección antigua en **[este link!](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/README.md)**
+
 <p>
   <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
   <h3> ¡Bienvenido al repositorio! </h3>
