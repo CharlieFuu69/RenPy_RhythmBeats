@@ -4,6 +4,7 @@
 [game-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
 [module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
+[rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
 
 <!-- Badges del README --->
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
@@ -23,13 +24,6 @@
 <h5 align = "center">
     <i>[Última actualización del código fuente: 27/04/2023 02:21 GMT -4]</i>
 </h5>
-
-> <p align="left">
->    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
->    <h4>Migración de la documentación para programadores:</h4>
-> </p>
->
-> La documentación se está migrando hacia la sección **[Wiki][rbs-documentation]** del repositorio. Es posible que en la Wiki no se muestren todas las imágenes y que los hipervínculos no funcionen de la forma esperada, por lo que recomiendo visitar la **[sección actual de la documentación](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/README.md)**.
 
 <p>
   <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
@@ -64,14 +58,14 @@ Te contaré un poco acerca de qué trata todo esto.
   ¿Quieres implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
   
   * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.02.1b)][module-release].**
-  * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!](docs/README.md).**
+  * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!][rbs-documentation].**
   
 * **JUEGO DEMOSTRATIVO "REN'PY RHYTHMBEATS! GAME":**
 
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
   
   * **¡Descarga la última versión del juego (Windows/Linux) [en este link][game-release]!**
-  * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí](DETALLES_DEMO.md)!**
+  * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí][rbs-game-faq]!**
   
 ---
 
