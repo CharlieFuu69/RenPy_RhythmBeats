@@ -29,7 +29,7 @@
 >    <h4>Migración de la documentación para programadores:</h4>
 > </p>
 >
-> La documentación se está migrando hacia la sección **[Wiki]([rbs-documentation])** del repositorio. Es posible que en la Wiki no se muestren todas las imágenes y que los hipervínculos no funcionen de la forma esperada, por lo que recomiendo visitar la **[sección actual de la documentación](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/README.md)**.
+> La documentación se está migrando hacia la sección **[Wiki][rbs-documentation]** del repositorio. Es posible que en la Wiki no se muestren todas las imágenes y que los hipervínculos no funcionen de la forma esperada, por lo que recomiendo visitar la **[sección actual de la documentación](https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/docs/README.md)**.
 
 <p>
   <img align="left" width="35" height="35" src="https://user-images.githubusercontent.com/77955772/195962734-6a3e86be-c5c5-475f-8980-815819b07dfa.png"/>
