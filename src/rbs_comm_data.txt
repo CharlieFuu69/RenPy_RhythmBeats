@@ -14,7 +14,7 @@ COMM file format v0.01.16a
 [/JSON]
 
 [Body]
-{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 25.32 MB{/i}{/color}
+{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 66.20 MB{/i}{/color}
 
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
