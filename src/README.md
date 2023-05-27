@@ -16,4 +16,4 @@
 
 | Recurso          | Descripción del recurso      | Última actualización    | Versión relacionada   |
 |---|---|---|---|
-| `src/index.json` | Índice remoto JSON del juego | 25/04/2023 13:00 GMT -4 | `v1.05.0b` - `global` |
+| `src/index.json` | Índice remoto JSON del juego | 26/05/2023 - 09:00 UTC | `v1.06.0b` - `upd12` |
