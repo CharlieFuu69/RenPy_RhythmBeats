@@ -7,35 +7,29 @@ COMM file format v0.01.16a
 
 [JSON]
 {
-    "title" : "Actualización In-Game #12 - ¿Qué hay de nuevo?",
-    "post_date" : "26/May/2023",
-    "post_time" : "12:23 (UTC)"
+    "title" : "Actualización In-Game #13 - ¿Qué hay de nuevo?",
+    "post_date" : "31/May/2023",
+    "post_time" : "01:00 (UTC)"
 }
 [/JSON]
 
 [Body]
-{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 66.20 MB{/i}{/color}
+{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 32.16 MB{/i}{/color}
 
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-He emitido una nueva Actualización In-Game, en el que he agregado algunas canciones y también he hecho cambios menores.
+He emitido una nueva Actualización In-Game, en el que he añadido nuevas características y cambios menores al comportamiento del juego.
 Estos cambios son los siguientes:
 
-• {color=CF0}[Win/LX]:{/color} Se agregaron 3 nuevas canciones elegidas por encuesta en Twitter:
-        {color=E30052}» Love Live!{/color}
-                • {i}{color=0A0}[L3]{/color} Umi Sonoda, Maki Nishikino, Eli Ayase - "Soldier game".{/i}
-                • {i}{color=0A0}[L3]{/color} Liella! - "Vitamin SUMMER!".{/i}
-                • {i}{color=0A0}[L3]{/color} Aqours - "Mitaiken HORIZON".{/i}
+• {color=CF0}[UI/UX]:{/color} Se agregó una nueva funcionalidad que permite personalizar las teclas utilizadas para tocar las notas en una partida. Comprueba esta funcionalidad desde {color=CF0}Ajustes > Ajustes de Teclado{/color}.
 
-• {color=CF0}[Win/LX]:{/color} Se agregaron más sonidos a la interfaz del juego:
-        {color=CF0}[UI]:{/color} Inicio de partida.
-        {color=CF0}[SFX]:{/color} Señalización de Rank CBAS durante una partida.
+• {color=CF0}[UI/UX]:{/color} Se han agregado ventanas de tutorial para ayudar a familiarizarse con la interfaz de juego. De momento el contenido de estos tutoriales estará solo en Español, pero se traducirá en las próximas actualizaciones.
 
-• {color=CF0}[Win/LX]:{/color} Se hicieron cambios menores en la barra de XP de la interfaz de juego. El rango CBAS de puntaje ahora está delimitada por estrellas en la barra de XP.
+• {color=CF0}[UI/UX]:{/color} El sistema de puntuación en canciones ha recibido cambios. Ahora el Rank comienza sin un Rank especificado, por lo que se debe jugar para alcanzar la mínima calificación: {color=CF0}"Rank C"{/color}.
 
-• {color=CF0}[Win/LX]:{/color} ¡El modo de juego "Ghost Battle!" puede llegar en cualquier momento! Este modo de juego aún no se puede liberar por completo puesto que aún está en construcción, pero se ha avanzado bastante.
+• {color=CF0}[UX]:{/color} Se ha corregido el keymapping nativo de Ren'Py para evitar entorpecimientos en el funcionamiento normal del juego.
 
-Puedes acceder a la información de este lanzamiento {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.06.0b_upd12} en este link!{/a}.
+Puedes acceder a la información de este lanzamiento {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.06.0b_upd13} en este link!{/a}.
 
 --------------------------------------------------------------------------------------------------------------
 
