@@ -7,29 +7,40 @@ COMM file format v0.01.16a
 
 [JSON]
 {
-    "title" : "Actualización In-Game #13 - ¿Qué hay de nuevo?",
-    "post_date" : "31/May/2023",
-    "post_time" : "01:00 (UTC)"
+    "title" : "Boletín informativo de actividades del proyecto (Junio)",
+    "post_date" : "01/Jun/2023",
+    "post_time" : "14:48 (UTC)"
 }
 [/JSON]
 
 [Body]
-{color=8C8C8C}{i}• Tamaño de actualización de paquetes: 32.16 MB{/i}{/color}
-
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-He emitido una nueva Actualización In-Game, en el que he añadido nuevas características y cambios menores al comportamiento del juego.
-Estos cambios son los siguientes:
+Primero, quiero comenzar este boletín informativo con algunos detalles que se verán reflejados a partir de la próxima {color=CF0}Actualización In-Game{/color}.
 
-• {color=CF0}[UI/UX]:{/color} Se agregó una nueva funcionalidad que permite personalizar las teclas utilizadas para tocar las notas en una partida. Comprueba esta funcionalidad desde {color=CF0}Ajustes > Ajustes de Teclado{/color}.
+La etiqueta {image=ui_performance_alert} (Uso de CPU) que poseen algunas canciones será eliminada del juego. Esto se debe a que, en las actualizaciones emitidas entre el mes de Abril y Mayo el juego ha recibido mejoras significativas en lo que respecta a rendimiento gráfico, por lo que ya no es necesario mostrar esta etiqueta.
 
-• {color=CF0}[UI/UX]:{/color} Se han agregado ventanas de tutorial para ayudar a familiarizarse con la interfaz de juego. De momento el contenido de estos tutoriales estará solo en Español, pero se traducirá en las próximas actualizaciones.
 
-• {color=CF0}[UI/UX]:{/color} El sistema de puntuación en canciones ha recibido cambios. Ahora el Rank comienza sin un Rank especificado, por lo que se debe jugar para alcanzar la mínima calificación: {color=CF0}"Rank C"{/color}.
+{color=CF0}¿QUÉ HA PASADO ÚLTIMAMENTE CON EL PROYECTO?{/color}
 
-• {color=CF0}[UX]:{/color} Se ha corregido el keymapping nativo de Ren'Py para evitar entorpecimientos en el funcionamiento normal del juego.
+Hace poco (debido a que algunas personas me lo propusieron en Twitter), propuse la idea de convertir este juego en un Fangame de {color=CF0}"Love Live!"{/color}. La idea parece estar teniendo una buena recepción y por ello estoy realizando una encuesta para confirmar si se da luz verde a la propuesta.
 
-Puedes acceder a la información de este lanzamiento {a=https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.06.0b_upd13} en este link!{/a}.
+{image=ui_icon_song_info} Encuesta: {a=https://twitter.com/CharlieFuu69/status/1664224633610969088?s=20}Ir a la encuesta de Twitter aquí!{/a}.
+
+Las bases de la propuesta son las siguientes:
+
+• {color=CF0}[Nombre del juego]:{/color} Por motivos obvios, el nombre del juego pasaría de ser "Ren'Py RhythmBeats!" a ser "Love Live!: THE UNKNOWN PROJECT". Por supuesto, el nombre podrá estar sujeto a cambios para prevenir problemas con el staff de la franquicia.
+
+• {color=CF0}[Cartas de "Love Live! SIF ALL STARS"]:{/color} Planeaba usar las cartas del SIFAS (que pronto dejará de estar en servicio) en este juego, con la premisa de {u}"si no obtuviste lo que querías en el SIFAS, podrás tenerlo aquí"{/u}, y mejor aún, siendo un juego completamente F2P {color=8C8C8C}{i}(con opción voluntaria de enviar donaciones para incentivar al mantenimiento del juego){/i}{/color}.
+
+• {color=CF0}[Eliminación de algunas canciones]:{/color} Como el juego estará orientado a "Love Live!", es inminente el hecho de que tendré que eliminar las canciones que no sean de la franquicia.
+
+Actualmente, las secciones que desaparecerían del juego serían "Project SEKAI" y "Otras pistas".
+
+• {color=CF0}[Diseño de UI]:{/color} Por motivos obvios (x2), la UI del juego tal como lo conocen se vería severamente afectada. El tono oscuro tendría que desaparecer para dar lugar a una paleta de colores adecuada al contexto.
+
+
+Por el momento estas vienen siendo las bases de la propesta, que se pondría en marcha en tanto estén listos los resultados de la encuesta de Twitter.
 
 --------------------------------------------------------------------------------------------------------------
 
