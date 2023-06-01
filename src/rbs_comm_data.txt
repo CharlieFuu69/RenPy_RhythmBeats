@@ -29,7 +29,7 @@ Hace poco (debido a que algunas personas me lo propusieron en Twitter), propuse 
 
 Las bases de la propuesta son las siguientes:
 
-• {color=CF0}[Nombre del juego]:{/color} Por motivos obvios, el nombre del juego pasaría de ser "Ren'Py RhythmBeats!" a ser "Love Live!: THE UNKNOWN PROJECT". Por supuesto, el nombre podrá estar sujeto a cambios para prevenir problemas con el staff de la franquicia.
+• {color=CF0}[Nombre del juego]:{/color} Por motivos obvios, el nombre del juego pasaría de ser "Ren'Py RhythmBeats!" a ser "Love Live!: THE UNOFFICIAL PROJECT". Por supuesto, el nombre podrá estar sujeto a cambios para prevenir problemas con el staff de la franquicia.
 
 • {color=CF0}[Cartas de "Love Live! SIF ALL STARS"]:{/color} Planeaba usar las cartas del SIFAS (que pronto dejará de estar en servicio) en este juego, con la premisa de {u}"si no obtuviste lo que querías en el SIFAS, podrás tenerlo aquí"{/u}, y mejor aún, siendo un juego completamente F2P {color=8C8C8C}{i}(con opción voluntaria de enviar donaciones para incentivar al mantenimiento del juego){/i}{/color}.
 
