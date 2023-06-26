@@ -1,0 +1,27 @@
+Ren'Py Remote COMM System (RRCS)
+COMM file format v0.01.16a
+
+>-----------------------> COMM Stream Begin <------------------------<
+
+[COMM-NOTIFICATION]
+
+[JSON]
+{
+    "title" : "Test de sistema de comunicaciones de LoveLive UP",
+    "post_date" : "26/Jun/2023",
+    "post_time" : "06:39 (UTC)"
+}
+[/JSON]
+
+[Body]
+¡Gracias por jugar a {color=FF577B}"[config.name]"{/color}!
+
+Texto de prueba
+
+[/Body]
+[/COMM-NOTIFICATION]
+
+
+[COMM-ERROR-REPORTS]
+[NO-DATA]
+[/COMM-ERROR-REPORTS]
