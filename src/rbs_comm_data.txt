@@ -7,45 +7,40 @@ COMM file format v0.01.16a
 
 [JSON]
 {
-    "title" : "Boletín informativo de actividades del proyecto (Junio)",
-    "post_date" : "01/Jun/2023",
-    "post_time" : "14:48 (UTC)"
+    "title" : "Anuncio de finalización de servicio de \"Ren'Py RhythmBeats! Game\"",
+    "post_date" : "22/Ago/2023",
+    "post_time" : "03:11 (UTC)"
 }
 [/JSON]
 
 [Body]
+
+• {color=8C8C8C}{i}Finalización del servicio: 01/Ene/2024 - 00:00 UTC.{/i}{/color}
+
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-Primero, quiero comenzar este boletín informativo con algunos detalles que se verán reflejados a partir de la próxima {color=CF0}Actualización In-Game{/color}.
-
-La etiqueta {image=ui_performance_alert} (Uso de CPU) que poseen algunas canciones será eliminada del juego. Esto se debe a que, en las actualizaciones emitidas entre el mes de Abril y Mayo el juego ha recibido mejoras significativas en lo que respecta a rendimiento gráfico, por lo que ya no es necesario mostrar esta etiqueta.
+Debido al crecimiento de {color=CF0}LoveLive! UNOFFICIAL PROJECT{/color}, un nuevo proyecto (Fangame) que se está desarrollando entorno al núcleo de {i}"Ren'Py RhythmBeats!" y que será el sucesor del actual {i}"Ren'Py RhythmBeats! Game"{/i}, se ha determinado que es momento de anunciar el fin del servicio del primer juego demostrativo de este sistema de acción rítmica para juegos Ren'Py.
 
 
-{color=CF0}¿QUÉ HA PASADO ÚLTIMAMENTE CON EL PROYECTO?{/color}
+• {color=CF0}¿QUÉ IMPLICA LA FINALIZACIÓN DEL SERVICIO?{/color}
 
-Hace poco (debido a que algunas personas me lo propusieron en Twitter), propuse la idea de convertir este juego en un Fangame de {color=CF0}"Love Live!"{/color}. La idea parece estar teniendo una buena recepción y por ello estoy realizando una encuesta para confirmar si se da luz verde a la propuesta.
+Todas las características que requieran de conexiones a internet en {i}"Ren'Py RhythmBeats! Game"{/i} dejarán de operar ya que se descontinuará el soporte de actualizaciones para enfocar toda la infraestructura en {i}"LoveLive! UNOFFICIAL PROJECT"{/i}. El juego como tal, dejará de recibir actualizaciones remotas (recursos y global) y es posible que presente errores debido a esto.
 
-{image=ui_icon_song_info} Encuesta: {a=https://twitter.com/CharlieFuu69/status/1664224633610969088?s=20}Ir a la encuesta de Twitter aquí!{/a}.
-
-Las bases de la propuesta son las siguientes:
-
-• {color=CF0}[Nombre del juego]:{/color} Por motivos obvios, el nombre del juego pasaría de ser "Ren'Py RhythmBeats!" a ser "Love Live!: THE UNOFFICIAL PROJECT". Por supuesto, el nombre podrá estar sujeto a cambios para prevenir problemas con el staff de la franquicia.
-
-• {color=CF0}[Cartas de "Love Live! SIF ALL STARS"]:{/color} Planeaba usar las cartas del SIFAS (que pronto dejará de estar en servicio) en este juego, con la premisa de {u}"si no obtuviste lo que querías en el SIFAS, podrás tenerlo aquí"{/u}, y mejor aún, siendo un juego completamente F2P {color=8C8C8C}{i}(con opción voluntaria de enviar donaciones para incentivar al mantenimiento del juego){/i}{/color}.
-
-• {color=CF0}[Eliminación de algunas canciones]:{/color} Como el juego estará orientado a "Love Live!", es inminente el hecho de que tendré que eliminar las canciones que no sean de la franquicia.
-
-Actualmente, las secciones que desaparecerían del juego serían "Project SEKAI" y "Otras pistas".
-
-• {color=CF0}[Diseño de UI]:{/color} Por motivos obvios (x2), la UI del juego tal como lo conocen se vería severamente afectada. El tono oscuro tendría que desaparecer para dar lugar a una paleta de colores adecuada al contexto.
+Posterior a la liberación de {i}"LoveLive! UNOFFICIAL PROJECT"{/i}, los releases de GitHub e Itch {u}no mostrarán opciones para descargar versiones del juego{/u}.
 
 
-Por el momento estas vienen siendo las bases de la propesta, que se pondría en marcha en tanto estén listos los resultados de la encuesta de Twitter.
+• {color=CF0}¿QUÉ SUCEDERÁ CON LOS RECORDS REGISTRADOS?{/color}
 
---------------------------------------------------------------------------------------------------------------
+Dentro de los próximos meses se subirá una última actualización In-Game para este juego, que contendrá un sistema para exportar los récords de las canciones de la franquicia {color=CF0}"Love Live!"{/color} hacia el nuevo juego: {i}"LoveLive! UNOFFICIAL PROJECT"{/i}.
 
-Te invito seguir más de cerca a Ren'Py RhythmBeats en el {a=https://t.me/renpy_rhythmbeats}Canal de Telegram{/a}, y también puedes unirte al {a=https://discord.gg/qk3WggMMRM}Servidor de Ren'Py RhythmBeats! en Discord{/a}!
+Al momento de realizar la importación de progreso desde "Ren'Py RhythmBeats! Game" hacia "LoveLive! UNOFFICIAL PROJECT", {u}obtendrás el logro "Legacy"{/u}, destacando que fuiste uno de los usuarios que apoyó al proyecto de Ren'Py RhythmBeats desde sus inicios, seguido de una bonificación especial de gemas para poder reclutar School Idols en el Gacha.
 
+
+• {color=CF0}¿QUÉ ASUNTOS QUEDAN PENDIENTES?{/color}
+
+Algunas características que se tenían planeado agregar en "Ren'Py RhythmBeats! Game", serán añadidas en el nuevo juego, tales como el {color=CF0}Ghost Battle!{/color} y un sistema de cuentas basado en Nickname/Contraseña. Por parte de la finalización de servicio, este se llevará a cabo el {u}01/Ene/2024 a las 00:00 UTC{/u}.
+
+Si quieres hacer seguimiento del desarrollo de "LoveLive! UNOFFICIAL PROJECT", puedes unirte al {a=https://t.me/renpy_rhythmbeats}Canal de Telegram (t.me/renpy_rhythmbeats){/a} o seguirme en mi {a=https://twitter.com/CharlieFuu69}Cuenta de Twitter (@CharlieFuu69){/a}.
 [/Body]
 [/COMM-NOTIFICATION]
 
