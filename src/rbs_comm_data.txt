@@ -15,11 +15,11 @@ COMM file format v0.01.16a
 
 [Body]
 
-• {color=8C8C8C}{i}Finalización del servicio: 01/Ene/2024 - 00:00 UTC.{/i}{/color}
+{color=8C8C8C}• {i}Finalización del servicio: 01/Ene/2024 - 00:00 UTC.{/i}{/color}
 
 ¡Gracias por jugar a {color=CF0}"Ren'Py RhythmBeats! Game"{/color}!
 
-Debido al crecimiento de {color=CF0}LoveLive! UNOFFICIAL PROJECT{/color}, un nuevo proyecto (Fangame) que se está desarrollando entorno al núcleo de {i}"Ren'Py RhythmBeats!" y que será el sucesor del actual {i}"Ren'Py RhythmBeats! Game"{/i}, se ha determinado que es momento de anunciar el fin del servicio del primer juego demostrativo de este sistema de acción rítmica para juegos Ren'Py.
+Debido al crecimiento de {color=CF0}LoveLive! UNOFFICIAL PROJECT{/color}, un nuevo proyecto (Fangame) que se está desarrollando entorno al núcleo de {i}"Ren'Py RhythmBeats!"{/i} y que será el sucesor del actual {i}"Ren'Py RhythmBeats! Game"{/i}, se ha determinado que es momento de anunciar el fin del servicio del primer juego demostrativo de este sistema de acción rítmica para juegos Ren'Py.
 
 
 • {color=CF0}¿QUÉ IMPLICA LA FINALIZACIÓN DEL SERVICIO?{/color}
