@@ -61,11 +61,13 @@ Te contaré un poco acerca de qué trata todo esto.
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!][rbs-documentation].**
   
 * **JUEGO DEMOSTRATIVO "REN'PY RHYTHMBEATS! GAME":**
-
+  
   ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
   
   * **¡Descarga la última versión del juego (Windows/Linux) [en este link][game-release]!**
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí][rbs-game-faq]!**
+ 
+  > _**[ADVERTENCIA]:** "Ren'Py RhythmBeats! Game" finalizará su ciclo de servicio el 1 de Enero de 2024 a las 00:00 UTC. Se estará distribuyendo más información al respecto en los links de más abajo._
   
 ---
 
@@ -76,7 +78,7 @@ Te contaré un poco acerca de qué trata todo esto.
 
 También hay otros medios donde puedes reportar errores y enterarte de las últimas actualizaciones del juego:
 
-* **¡Suscríbete gratis al [Canal de difusión de Telegram](https://t.me/LoveLiveUP_DevChannel)!**
+* **¡Suscríbete gratis al [Canal de Telegram @LoveLiveUP_DevChannel](https://t.me/LoveLiveUP_DevChannel)!**
 
 ---
 ### Galería de imágenes de "Ren'Py RhythmBeats! Game":
