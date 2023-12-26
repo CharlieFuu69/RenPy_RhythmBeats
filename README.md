@@ -68,7 +68,7 @@ Te contaré un poco acerca de qué trata todo esto.
   * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí][rbs-game-faq]!**
 
  
-  > _**[ADVERTENCIA]:** "Ren'Py RhythmBeats! Game" finalizará su ciclo de servicio el 1 de Enero de 2024 a las 00:00 UTC. Se estará distribuyendo más información al respecto en los links de más abajo._
+  > _**[ADVERTENCIA]:** La finalización de servicio de "Ren'Py RhythmBeats! Game" será retrasado de manera indefinida por asuntos pendientes en el proyecto. El juego demostrativo continuará operando con normalidad hasta nuevo aviso._
   
 ---
 
