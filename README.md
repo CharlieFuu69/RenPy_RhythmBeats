@@ -2,7 +2,7 @@
 [license]: https://www.gnu.org/licenses/gpl-3.0
 [renpy]: https://renpy.org/
 [game-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
-[module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.02.1b_module
+[module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.06.0b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
 [rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
 
@@ -57,7 +57,7 @@ Te contaré un poco acerca de qué trata todo esto.
 
   ¿Quieres implementar este sistema rítmico en tu proyecto? ¡Revisa estas URLs!
   
-  * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.02.1b)][module-release].**
+  * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.06.0b)][module-release].**
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!][rbs-documentation].**
   
 * **JUEGO DEMOSTRATIVO "REN'PY RHYTHMBEATS! GAME":**
