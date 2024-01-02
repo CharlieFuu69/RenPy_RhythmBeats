@@ -2,7 +2,7 @@
 [license]: https://www.gnu.org/licenses/gpl-3.0
 [renpy]: https://renpy.org/
 [game-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
-[module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.07.0b_module
+[module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.07.1b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
 [rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
 
