@@ -9,7 +9,7 @@
 
 | Última actualización de status: |
 |---|
-| `2024-02-02 21:08 (GMT -4)`|
+| `2024-02-06 22:19 (GMT -4)`|
 
 > <p align="left">
 >    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
@@ -154,6 +154,16 @@
 >   >   > - [x] Crear animación de ascenso de clase.
 >
 > - [ ] Colección de Wallpapers.
+>   > - [x] Crear secuencia de instrucciones para detectar y definir automáticamente los identificadores de BGs.
+>   > - [x] Definir imagen completa (1440x720) y miniaturas (150x75).
+>   > - [x] Redistribuir la iteración de miniaturas en `Collection -> Wallpapers`.
+>   >   > - [x] Dividir la lista de miniaturas en chunks de 6 imágenes por fila.
+>   >   > - [x] Crear un Viewport deslizable para desplegar todas las miniaturas, aún con falta de espacio.
+>   > 
+>   > - [ ] Convertir las miniaturas en botones para abrir una previsualización del BG.
+>   > - [ ] Crear la previsualización de BGs, para el BG seleccionado.
+>   > - [ ] Crear opción que modifique el `player.main_bg`.
+>   > 
 > - [ ] Inventario del jugador.
 
 - [ ] **[PENDIENTE] PANEL DE FORMACIÓN DE LIVE SHOW.**
