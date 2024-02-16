@@ -5,12 +5,6 @@
 <h2 align="center"> LoveLive! UNOFFICIAL PROJECT </h2>
 <h5 align="center"> Roadmap (Progreso de desarrollo) </h5>
 
----
-
-| Última actualización de status: |
-|---|
-| `2024-02-06 22:19 (GMT -4)`|
-
 > <p align="left">
 >    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
 >    <h4>Importante:</h4>
@@ -20,9 +14,17 @@
 
 ---
 
+### Resumen:
+
+| Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
+|---|---|---|---|
+| `2024-02-16 19:39 (GMT -4)`| 112 | 135 | 16.66% (3/18) |
+
+---
+
 ### Checklist de características:
 
-- [x] **[EN REVISIÓN] REACONDICIONAMIENTO DEL NÚCLEO DE "REN'PY RHYTHMBEATS!"**
+- [ ] **[EN REVISIÓN] REACONDICIONAMIENTO DEL NÚCLEO DE "REN'PY RHYTHMBEATS!"**
 > - [x] Modificación a extensión de beatmaps `.beat -> .rbs`.
 >
 > - [x] Modificación de estructura de beatmaps `CSV -> JSON`.
@@ -153,16 +155,16 @@
 >   >   > - [x] Mostrar proyección de incremento de límite de nivel para la clase esperada.
 >   >   > - [x] Crear animación de ascenso de clase.
 >
-> - [ ] Colección de Wallpapers.
+> - [x] Colección de Wallpapers.
 >   > - [x] Crear secuencia de instrucciones para detectar y definir automáticamente los identificadores de BGs.
 >   > - [x] Definir imagen completa (1440x720) y miniaturas (150x75).
 >   > - [x] Redistribuir la iteración de miniaturas en `Collection -> Wallpapers`.
 >   >   > - [x] Dividir la lista de miniaturas en chunks de 6 imágenes por fila.
 >   >   > - [x] Crear un Viewport deslizable para desplegar todas las miniaturas, aún con falta de espacio.
 >   > 
->   > - [ ] Convertir las miniaturas en botones para abrir una previsualización del BG.
->   > - [ ] Crear la previsualización de BGs, para el BG seleccionado.
->   > - [ ] Crear opción que modifique el `player.main_bg`.
+>   > - [x] Convertir las miniaturas en botones para abrir una previsualización del BG.
+>   > - [x] Crear la previsualización de BGs, para el BG seleccionado.
+>   > - [x] Crear opción que modifique el `player.main_bg`.
 >   > 
 > - [ ] Inventario del jugador.
 
