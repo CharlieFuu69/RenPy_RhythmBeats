@@ -18,13 +18,13 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-26 22:58 (GMT -4)`| 118 | 15 | 23.53% (4/17) |
+| `2024-02-26 23:01 (GMT -4)`| 118 | 15 | 29.41% (5/17) |
 
 ---
 
 ### Checklist de características:
 
-- [ ] **[EN REVISIÓN] REACONDICIONAMIENTO DEL NÚCLEO DE "REN'PY RHYTHMBEATS!"**
+- [x] **[COMPLETADO] REACONDICIONAMIENTO DEL NÚCLEO DE "REN'PY RHYTHMBEATS!"**
 > - [x] Modificación a extensión de beatmaps `.beat -> .rbs`.
 >
 > - [x] Modificación de estructura de beatmaps `CSV -> JSON`.
