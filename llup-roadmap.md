@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-26 23:11 (GMT -4)`| 119 | 16 | 29.41% (5/17) |
+| `2024-02-26 23:11 (GMT -4)`| 119 | 16 | 35.29% (6/17) |
 
 ---
 
@@ -34,6 +34,8 @@
 
 - [x] **[COMPLETADO] SISTEMA DE CACHING DE DISPLAYABLES (IMÁGENES/MVs).**
 
+- [x] **[COMPLETADO] SISTEMA DE PROGRESO DE JUGADOR (NIVEL DE JUGADOR).**
+
 - [ ] **[EN CURSO] MENÚ DE INICIO.**
 > - [x] Agregar reloj de sistema (Fecha y Hora).
 >   > - [x] Crear `DynamicDisplayable()` para actualizar constantemente el reloj.
@@ -45,17 +47,6 @@
 >   > - [ ] Crear animación esencial para pestañeos.
 >   > - [ ] Crear displayables adaptativos para soportar multiples expresiones por sprite.
 >   > - [ ] Crear un selector de atuendo para la School Idol visible en el Menú de Inicio.
-
-- [x] **[EN REVISIÓN] SISTEMA DE PROGRESO DE JUGADOR.**
-> - [x] Crear código para computar el progreso de jugador (`PlayerProgress()`).
->   > - [x] Definir constante de curva exponencial de progreso (`1.6`).
->   > - [x] Definir XP base necesaria para subir a Lvl 2 (`1500`).
->   > - [x] Crear método que actualice los atributos de la clase hasta el cambio más reciente.
->   > - [x] Crear formateador de XP con el orden `(xp_current, xp_next_lvl)`.
->
-> - [x] Mostrador de progreso en pantallas del juego.
->   > - [x] Diseñar barra de progreso circular (inexistente en Ren'Py).
->   > - [x] Mostrar nivel, XP y cantidad de gemas en un widget (`TOP_RIGHT`).
 
 - [ ] **[EN CURSO] GESTOR DE ASSETS Y DESCARGAS DESDE EL CDN.**
 > - [x] Comprobar actualizaciones examinando los paquetes de assets.
