@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-26 22:09 (GMT -4)`| 111 | 15 | 18.75% (3/16) |
+| `2024-02-26 22:58 (GMT -4)`| 118 | 15 | 23.53% (4/17) |
 
 ---
 
@@ -192,6 +192,16 @@
 >   >   > - [x] Mostrar el Rank del Live Show (CBAS).
 >   >   > - [ ] Mostrar carta más dominante (MVP) del Live Show.
 >   >   > - [ ] Escoger y mostrar los ítems de recompensa del Live Show.
+
+- [x] **[COMPLETADO] SISTEMA DE CACHING DE DISPLAYABLES (IMÁGENES/MVs).**
+> - [x] Crear manipulador de predicción de displayables (`img_cache_handler()`).
+>   > - [x] Iterar una lista de imagetags para iniciar o detener la predicción (en caso de que se requiera).
+>   > - [x] Iterar una lista de imagetags a partir de un Dataset JSON.
+>
+> - [x] Precargar elementos de UI principales (`CACHED_UI_OBJECTS`).
+> - [x] Precargar miniaturas de la colección de BGs (`bg_collection_init()`).
+> - [x] Precargar íconos de la UI de Live Shows, desde Dataset JSON (`CACHED_DATASET_PATH`).
+> - [x] Precargar el MV de la canción seleccionada para jugar un Live Show. 
 
 - [ ] **[PENDIENTE] PANEL DE MISIONES CON RECOMPENSAS.**
 
