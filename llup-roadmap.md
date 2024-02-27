@@ -142,10 +142,6 @@
 >   > 
 > - [ ] Inventario del jugador.
 
-- [ ] **[PENDIENTE] PANEL DE FORMACIÓN DE LIVE SHOW.**
-
-- [ ] **[PENDIENTE] PANEL DE AFINIDAD CON SCHOOL IDOL FAVORITA.**
-
 - [ ] **[EN CURSO] APARTADO DE JUEGO: LIVE SHOWS.**
 > - [x] Secuencia de los Live Shows.
 >   > - [x] Mostrar portada, título, Full Combo y BPM de la canción a jugar.
@@ -166,6 +162,10 @@
 >   >   > - [x] Mostrar el Rank del Live Show (CBAS).
 >   >   > - [ ] Mostrar carta más dominante (MVP) del Live Show.
 >   >   > - [ ] Escoger y mostrar los ítems de recompensa del Live Show.
+
+- [ ] **[PENDIENTE] PANEL DE FORMACIÓN DE LIVE SHOW.**
+
+- [ ] **[PENDIENTE] PANEL DE AFINIDAD CON SCHOOL IDOL FAVORITA.**
 
 - [ ] **[PENDIENTE] PANEL DE MISIONES CON RECOMPENSAS.**
 
