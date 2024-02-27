@@ -25,13 +25,14 @@
 ### Checklist de características:
 
 - [x] **[COMPLETADO] REACONDICIONAMIENTO DEL NÚCLEO DE "REN'PY RHYTHMBEATS!"**
-> - [x] Modificación a extensión de beatmaps `.beat -> .rbs`.
->
-> - [x] Modificación de estructura de beatmaps `CSV -> JSON`.
->   > - [x] Modificaciones al método `RhythmPlayground.load_map()`
-> 
-> - [x] Soporte de notas Sync para los beatmaps.
->   > - [x] Modificaciones al método `RhythmPlayground.sprite_creator()`
+
+- [x] **[COMPLETADO] INTEGRACIÓN DEL SERVICIO DE DISCORD RICH PRESENCE.**
+
+- [x] **[COMPLETADO] ALMACENAMIENTO DE DATOS PRINCIPALES DEL JUGADOR.**
+
+- [x] **[COMPLETADO] SELECTOR DE CANCIONES (MODO "UN SOLO JUGADOR").**
+
+- [x] **[COMPLETADO] SISTEMA DE CACHING DE DISPLAYABLES (IMÁGENES/MVs).**
 
 - [ ] **[EN CURSO] MENÚ DE INICIO.**
 > - [x] Agregar reloj de sistema (Fecha y Hora).
@@ -55,11 +56,6 @@
 > - [x] Mostrador de progreso en pantallas del juego.
 >   > - [x] Diseñar barra de progreso circular (inexistente en Ren'Py).
 >   > - [x] Mostrar nivel, XP y cantidad de gemas en un widget (`TOP_RIGHT`).
-
-- [x] **[COMPLETADO] INTEGRACIÓN DEL SERVICIO DE DISCORD RICH PRESENCE.**
-> - [x] Aislar ejecución del servicio en un hilo paralelo al juego, para evitar romper el hilo principal.
-> - [x] Actualizar status de juego (en menús).
-> - [x] Actualizar status de juego (en un Live Show).
 
 - [ ] **[EN CURSO] GESTOR DE ASSETS Y DESCARGAS DESDE EL CDN.**
 > - [x] Comprobar actualizaciones examinando los paquetes de assets.
@@ -103,33 +99,12 @@
 >   > - [x] Adjuntar nombres de personajes y nombre de la carta (SIFAS) al mostrar la carta obtenida.
 >   > - [x] Mostrar miniaturas de todas las cartas obtenidas en el reclutamiento.
 
-- [x] **[COMPLETO] DATOS PRINCIPALES DEL JUGADOR.**
-> - [x] Crear estructura de datos para almacenar información básica del jugador (`persistent.player_data`).
->   > - [x] Guardar Nickname (`str()`).
->   > - [x] Guardar nivel de jugador (`int()`).
->   > - [x] Guardar XP de jugador (`int()`).
->   > - [x] Guardar cantidad de gemas (`int()`).
->   > - [x] Guardar School Idol favorita del jugador (`dict()`).
->   > - [x] Guardar ID del Wallpaper seleccionado para el Menú de Inicio (`str()`).
->   > - [x] Guardar récords de PP de canciones en modo de "Un solo jugador" (`dict()`).
->   > - [x] Guardar ID de tutoriales vistos (`list()`).
-
 - [ ] **[EN CURSO] COLECCIÓN DEL JUGADOR.**
 > - [ ] Crear estructura de datos de colección (`persistent.collection`).
 >   > - [x] Almacén de cartas (`list()`).
 >   > - [x] Almacén de Wallpapers (`list()`).
 >   > - [ ] Formación de Live Show (`dict()`). 
 >   > - [ ] Inventario (`dict()`).
-
-- [x] **[COMPLETO] SELECTOR DE CANCIONES (MODO "UN SOLO JUGADOR").**
-> - [x] Lista de canciones (`LEFT_SIDE`).
->   > - [x] Colocar lista de canciones en un archivo de metadatos JSON.
->   
-> - [x] Mostrar canción seleccionada (`RIGHT_SIDE`).
->   > - [x] Mostrar detalles de la canción (Metadatos, BPM, duración, cantidad de notas, etc.)
-> 
-> - [x] Mostrar filtro de canciones por Unidad (`TOP_RIGHT`).
-> - [x] Mostrar la carátula de la canción/album en el fondo de la pantalla. 
 
 - [ ] **[EN CURSO] PANEL DE COLECCIÓN DEL JUGADOR.**
 > - [x] Colección de cartas.
@@ -192,16 +167,6 @@
 >   >   > - [x] Mostrar el Rank del Live Show (CBAS).
 >   >   > - [ ] Mostrar carta más dominante (MVP) del Live Show.
 >   >   > - [ ] Escoger y mostrar los ítems de recompensa del Live Show.
-
-- [x] **[COMPLETADO] SISTEMA DE CACHING DE DISPLAYABLES (IMÁGENES/MVs).**
-> - [x] Crear manipulador de predicción de displayables (`img_cache_handler()`).
->   > - [x] Iterar una lista de imagetags para iniciar o detener la predicción (en caso de que se requiera).
->   > - [x] Iterar una lista de imagetags a partir de un Dataset JSON.
->
-> - [x] Precargar elementos de UI principales (`CACHED_UI_OBJECTS`).
-> - [x] Precargar miniaturas de la colección de BGs (`bg_collection_init()`).
-> - [x] Precargar íconos de la UI de Live Shows, desde Dataset JSON (`CACHED_DATASET_PATH`).
-> - [x] Precargar el MV de la canción seleccionada para jugar un Live Show. 
 
 - [ ] **[PENDIENTE] PANEL DE MISIONES CON RECOMPENSAS.**
 
