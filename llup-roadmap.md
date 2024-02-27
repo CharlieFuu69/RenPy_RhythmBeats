@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-26 23:01 (GMT -4)`| 118 | 15 | 29.41% (5/17) |
+| `2024-02-26 23:11 (GMT -4)`| 119 | 16 | 29.41% (5/17) |
 
 ---
 
@@ -103,7 +103,6 @@
 > - [ ] Crear estructura de datos de colección (`persistent.collection`).
 >   > - [x] Almacén de cartas (`list()`).
 >   > - [x] Almacén de Wallpapers (`list()`).
->   > - [ ] Formación de Live Show (`dict()`). 
 >   > - [ ] Inventario (`dict()`).
 
 - [ ] **[EN CURSO] PANEL DE COLECCIÓN DEL JUGADOR.**
