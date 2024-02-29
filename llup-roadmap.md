@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-27 23:00 (GMT -4)`| 122 | 18 | 37.50% (6/16) |
+| `2024-02-29 19:42 (GMT -3)`| 122 | 18 | 37.50% (6/16) |
 
 ---
 
