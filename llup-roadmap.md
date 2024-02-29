@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-26 23:11 (GMT -4)`| 119 | 16 | 37.50% (6/16) |
+| `2024-02-27 23:00 (GMT -4)`| 121 | 14 | 37.50% (6/16) |
 
 ---
 
@@ -37,10 +37,10 @@
 - [x] **[COMPLETADO] SISTEMA DE PROGRESO DE JUGADOR (NIVEL DE JUGADOR).**
 
 - [ ] **[EN CURSO] PANEL DE COLECCIÓN DEL JUGADOR.**
-> - [ ] Crear estructura de datos de colección (`persistent.collection`).
+> - [x] Crear estructura de datos de colección (`persistent.collection`).
 >   > - [x] Almacén de cartas (`list()`).
 >   > - [x] Almacén de Wallpapers (`list()`).
->   > - [ ] Inventario (`dict()`).
+>   > - [x] Inventario (`dict()`).
 >
 > - [x] Colección de cartas.
 >   > - [x] Crear administrador completo de cartas del jugador (`SchoolIdolManager()`).
