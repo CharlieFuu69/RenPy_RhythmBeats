@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-27 23:00 (GMT -4)`| 121 | 14 | 37.50% (6/16) |
+| `2024-02-27 23:00 (GMT -4)`| 122 | 18 | 37.50% (6/16) |
 
 ---
 
@@ -77,6 +77,11 @@
 >   > - [x] Crear opción que modifique el `player.main_bg`.
 >   > 
 > - [ ] Inventario del jugador.
+>   > - [x] Reservar pestaña "Inventario" en la sección de Colección.
+>   > - [ ] Crear categorías de ítems en inventario.
+>   > - [ ] Readaptar estructura de datos para los items de inventario.
+>   > - [ ] Colocar íconos y cantidad disponible de cada ítem.
+>   > - [ ] Convertir íconos en botones para entregar información de ayuda acerca del ítem seleccionado. 
 
 
 - [ ] **[EN ESPERA] MENÚ DE INICIO.**
