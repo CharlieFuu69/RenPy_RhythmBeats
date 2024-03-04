@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-02-29 19:42 (GMT -3)`| 122 | 18 | 37.50% (6/16) |
+| `2024-03-03 22:03 (GMT -3)`| 123 | 17 | 37.50% (6/16) |
 
 ---
 
@@ -78,9 +78,10 @@
 >   > 
 > - [ ] Inventario del jugador.
 >   > - [x] Reservar pestaña "Inventario" en la sección de Colección.
->   > - [ ] Crear categorías de ítems en inventario.
->   > - [ ] Readaptar estructura de datos para los items de inventario.
->   > - [ ] Colocar íconos y cantidad disponible de cada ítem.
+>   > - [x] Crear categorías de ítems en inventario.
+>   > - [x] Readaptar estructura de datos para los items de inventario.
+>   > - [x] Colocar íconos y cantidad disponible de cada ítem.
+>   > - [ ] Colocar items faltantes. 
 >   > - [ ] Convertir íconos en botones para entregar información de ayuda acerca del ítem seleccionado. 
 
 
