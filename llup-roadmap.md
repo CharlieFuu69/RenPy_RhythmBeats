@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-03-03 22:03 (GMT -3)`| 123 | 17 | 37.50% (6/16) |
+| `2024-03-11 15:32 (GMT -3)`| 124 | 18 | 37.50% (6/16) |
 
 ---
 
@@ -81,8 +81,9 @@
 >   > - [x] Crear categorías de ítems en inventario.
 >   > - [x] Readaptar estructura de datos para los items de inventario.
 >   > - [x] Colocar íconos y cantidad disponible de cada ítem.
->   > - [ ] Colocar items faltantes. 
->   > - [ ] Convertir íconos en botones para entregar información de ayuda acerca del ítem seleccionado. 
+>   > - [x] Colocar items faltantes. 
+>   > - [ ] Agregar botón de información para cada sección de ítems.
+>   > - [ ] Implementar el uso de ítems en diversas acciones de jugador.
 
 
 - [ ] **[EN ESPERA] MENÚ DE INICIO.**
