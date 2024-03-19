@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-03-11 15:32 (GMT -3)`| 124 | 18 | 37.50% (6/16) |
+| `2024-03-19 00:46 (GMT -3)`| 125 | 17 | 37.50% (6/16) |
 
 ---
 
@@ -83,7 +83,7 @@
 >   > - [x] Colocar íconos y cantidad disponible de cada ítem.
 >   > - [x] Colocar items faltantes. 
 >   > - [ ] Agregar botón de información para cada sección de ítems.
->   > - [ ] Implementar el uso de ítems en diversas acciones de jugador.
+>   > - [x] Implementar el uso de ítems en diversas acciones de jugador.
 
 
 - [ ] **[EN ESPERA] MENÚ DE INICIO.**
