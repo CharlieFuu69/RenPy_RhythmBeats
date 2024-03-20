@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-03-19 00:46 (GMT -3)`| 125 | 17 | 37.50% (6/16) |
+| `2024-03-19 23:54 (GMT -3)`| 127 | 15 | 43.75% (7/16) |
 
 ---
 
@@ -36,55 +36,28 @@
 
 - [x] **[COMPLETADO] SISTEMA DE PROGRESO DE JUGADOR (NIVEL DE JUGADOR).**
 
-- [ ] **[EN CURSO] PANEL DE COLECCIÓN DEL JUGADOR.**
-> - [x] Crear estructura de datos de colección (`persistent.collection`).
->   > - [x] Almacén de cartas (`list()`).
->   > - [x] Almacén de Wallpapers (`list()`).
->   > - [x] Inventario (`dict()`).
->
-> - [x] Colección de cartas.
->   > - [x] Crear administrador completo de cartas del jugador (`SchoolIdolManager()`).
->   > - [x] Recorrer el almacén de cartas y mostrar las cartas del jugador como miniaturas.
->   > - [x] Crear método para ordenar las cartas por tipo y por sentido de orden (`SchoolIdolManager.sortmode()`)
->   > - [x] Crear método para reciclar (eliminar) cartas del jugador (`SchoolIdolManager.add_to_recycle()`, `SchoolIdolManager.add_all_to_recycle()` y `SchoolIdolManager.recycle_all()`).
->   > - [x] Crear panel de visualización de carta seleccionada.
->   >   > - [x] Mostrar carta con tamaño reducido.
->   >   > - [x] Mostrar carta a pantalla completa (tocar la imagen de tamaño reducido).
->   >   > - [x] Mostrar progreso de la carta, y agregar botones para subir de nivel o promover de clase.
->   >   > - [x] Mostrar estadísticas básicas de la carta.
->   >
->   > - [x] Crear panel de potenciadores.
->   >   > - [x] Mostrar proyección de nivel como barra circular, adjuntando el nivel y la XP de la carta.
->   >   > - [x] Mostrar ítems consumibles para esta acción (Micrófonos básicos, avanzados y expertos). 
->   >   > - [x] Mostrar conteo de ítems utilizados.
->   >
->   > - [x] Crear panel de ascenso de clase.
->   >   > - [x] Mostrar los hexágonos de clases (5).
->   >   > - [x] Colorear de blanco a la clase actual.
->   >   > - [x] Animar con colores gradientes a los hexágonos de clases alcanzadas.
->   >   > - [x] Mostrar proyección de incremento de límite de nivel para la clase esperada.
->   >   > - [x] Crear animación de ascenso de clase.
->
-> - [x] Colección de Wallpapers.
->   > - [x] Crear secuencia de instrucciones para detectar y definir automáticamente los identificadores de BGs.
->   > - [x] Definir imagen completa (1440x720) y miniaturas (150x75).
->   > - [x] Redistribuir la iteración de miniaturas en `Collection -> Wallpapers`.
->   >   > - [x] Dividir la lista de miniaturas en chunks de 6 imágenes por fila.
->   >   > - [x] Crear un Viewport deslizable para desplegar todas las miniaturas, aún con falta de espacio.
->   > 
->   > - [x] Convertir las miniaturas en botones para abrir una previsualización del BG.
->   > - [x] Crear la previsualización de BGs, para el BG seleccionado.
->   > - [x] Crear opción que modifique el `player.main_bg`.
->   > 
-> - [ ] Inventario del jugador.
->   > - [x] Reservar pestaña "Inventario" en la sección de Colección.
->   > - [x] Crear categorías de ítems en inventario.
->   > - [x] Readaptar estructura de datos para los items de inventario.
->   > - [x] Colocar íconos y cantidad disponible de cada ítem.
->   > - [x] Colocar items faltantes. 
->   > - [ ] Agregar botón de información para cada sección de ítems.
->   > - [x] Implementar el uso de ítems en diversas acciones de jugador.
+- [x] **[COMPLETADO] PANEL DE COLECCIÓN DEL JUGADOR.**
 
+- [ ] **[EN CURSO] MENÚ DE RECLUTAMIENTO (Gacha).**
+> - [x] Diseño del menú de reclutamiento.
+>   > - [x] Mostrar un selector de banners disponibles.
+>   > - [x] Mostrar banner seleccionado (imagen).
+>   > - [x] Adjuntar botón prara abrir la vista de probabilidad generalizada y probabilidad por carta.
+>   > - [x] Adjuntar botones para elegir entre **Reclutar (x1)** o **Reclutar (x9)**.
+>   > - [x] Mostrar tiempo disponible del banner (`DD, HH:MM:SS`).    
+>    
+> - [ ] Crear clase que administre todas las actividades del Gacha (`RecruitmentHandler()`).
+>   > - [x] Organizar banners, cartas y detalles de cartas en un archivo JSON de control.
+>   > - [ ] Crear método de solicitudes HTTP para adquirir los datos de control JSON del Gacha.
+>   > - [x] Comprobar si hay bloques de datos sin actualizar, antes de abrir el menú de reclutamiento.
+>   > - [x] Calcular tiempo de disponibilidad del banner seleccionado (cuenta regresiva).
+>   > - [x] Crear un mapa de probabilidad (lista) con proporción de R/SR/UR.
+>   > - [x] Barajar el mapa de probabilidad para minimizar la lineabilidad del sistema pseudo aleatorio.
+>
+> - [x] Crear secuencia de reclutamiento.
+>   > - [x] Animaciones.
+>   > - [x] Adjuntar nombres de personajes y nombre de la carta (SIFAS) al mostrar la carta obtenida.
+>   > - [x] Mostrar miniaturas de todas las cartas obtenidas en el reclutamiento.
 
 - [ ] **[EN ESPERA] MENÚ DE INICIO.**
 > - [x] Agregar reloj de sistema (Fecha y Hora).
@@ -119,28 +92,6 @@
 >   > - [x] Predecir las imágenes (carga en la RAM) de sprites en la pantalla de descargas.
 >
 > - [ ] Crear un modo de descarga Light (solo canciones) y modo Full (canciones + MVs)
-
-
-- [ ] **[EN ESPERA] MENÚ DE RECLUTAMIENTO (Gacha).**
-> - [x] Diseño del menú de reclutamiento.
->   > - [x] Mostrar un selector de banners disponibles.
->   > - [x] Mostrar banner seleccionado (imagen).
->   > - [x] Adjuntar botón prara abrir la vista de probabilidad generalizada y probabilidad por carta.
->   > - [x] Adjuntar botones para elegir entre **Reclutar (x1)** o **Reclutar (x9)**.
->   > - [x] Mostrar tiempo disponible del banner (`DD, HH:MM:SS`).    
->    
-> - [ ] Crear clase que administre todas las actividades del Gacha (`RecruitmentHandler()`).
->   > - [x] Organizar banners, cartas y detalles de cartas en un archivo JSON de control.
->   > - [ ] Crear método de solicitudes HTTP para adquirir los datos de control JSON del Gacha.
->   > - [x] Comprobar si hay bloques de datos sin actualizar, antes de abrir el menú de reclutamiento.
->   > - [x] Calcular tiempo de disponibilidad del banner seleccionado (cuenta regresiva).
->   > - [x] Crear un mapa de probabilidad (lista) con proporción de R/SR/UR.
->   > - [x] Barajar el mapa de probabilidad para minimizar la lineabilidad del sistema pseudo aleatorio.
->
-> - [x] Crear secuencia de reclutamiento.
->   > - [x] Animaciones.
->   > - [x] Adjuntar nombres de personajes y nombre de la carta (SIFAS) al mostrar la carta obtenida.
->   > - [x] Mostrar miniaturas de todas las cartas obtenidas en el reclutamiento.
 
 
 - [ ] **[EN ESPERA] APARTADO DE JUEGO: LIVE SHOWS.**
