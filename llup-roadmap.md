@@ -18,7 +18,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
 |---|---|---|---|
-| `2024-03-20 15:27 (GMT -3)`    | 129                 | 9                  | 40.00% (8/20)  |
+| `2024-03-21 14:09 (GMT -3)`    | 129                 | 8                  | 40.00% (8/20)  |
 
 ---
 
@@ -50,7 +50,6 @@
 >   > - [ ] Crear un selector de School Idols.
 >   > - [ ] Crear animación esencial para pestañeos.
 >   > - [ ] Crear displayables adaptativos para soportar multiples expresiones por sprite.
->   > - [ ] Crear un selector de atuendo para la School Idol visible en el Menú de Inicio.
 
 
 - [ ] **[EN ESPERA] APARTADO DE JUEGO: LIVE SHOWS.**
