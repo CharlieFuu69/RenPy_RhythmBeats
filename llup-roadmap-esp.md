@@ -5,11 +5,7 @@
 <h2 align="center"> LoveLive! UNOFFICIAL PROJECT </h2>
 <h5 align="center"> Roadmap (Progreso de desarrollo) </h5>
 
-> <p align="left">
->    <img align="left" src="https://user-images.githubusercontent.com/77955772/143798585-2a612721-a193-4ec0-af5f-811c6bef6c4c.png"/>
->    <h4>Importante:</h4>
-> </p>
->
+> [!NOTE]
 > _Este Roadmap puede estar sujeto a cambios debido a retrasos, creación de nuevas características y otros elementos no señalados._
 
 ---
