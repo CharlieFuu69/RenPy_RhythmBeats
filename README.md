@@ -5,7 +5,7 @@
 [module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.07.1b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
 [rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
-[llup-roadmap]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap.md
+[llup-roadmap]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap-esp.md
 
 <!-- Badges del README --->
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
