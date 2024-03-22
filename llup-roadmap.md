@@ -16,9 +16,9 @@
 
 ### Resumen:
 
-| Última actualización de status | Tickets completados | Tickets pendientes | Progreso total |
+| Última actualización de status | Tickets completados | Tickets pendientes | Progreso total        |
 |---|---|---|---|
-| `2024-03-21 14:09 (GMT -3)`    | 129                 | 8                  | 40.00% (8/20)  |
+| `2024-03-21 14:09 (GMT -3)`    | 129                 | 8                  | 44.44% (8/18 tareas)  |
 
 ---
 
