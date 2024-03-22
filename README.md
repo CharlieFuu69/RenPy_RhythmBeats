@@ -5,7 +5,8 @@
 [module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.07.1b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
 [rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
-[llup-roadmap]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap-esp.md
+[llup-roadmap-esp]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap-esp.md
+[llup-roadmap-eng]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap-eng.md
 
 <!-- Badges del README --->
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
@@ -75,7 +76,9 @@ Te contaré un poco acerca de qué trata todo esto.
 >[!NOTE]
 > _Ya está disponible el Roadmap de desarrollo del Fangame **"LoveLive! UNOFFICIAL PROJECT"** en el repositorio. Este Fangame se basa en el núcleo de acción rítmica de Ren'Py RhythmBeats, y será el sucesor del actual juego demostrativo del repositorio._
 >
-> _Si quieres ver cómo va su desarrollo, puedes visitar el Roadmap **[presionando aquí][llup-roadmap]**._
+> _Si quieres ver cómo va su desarrollo, puedes visitar el Roadmap **[presionando aquí][llup-roadmap-esp]**._
+>
+> _Or if you don't understand anything in Spanish, I also have an **[English version of the Roadmap][llup-roadmap-eng]**._
   
 ---
 
