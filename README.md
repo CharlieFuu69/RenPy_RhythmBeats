@@ -84,12 +84,14 @@ Te contaré un poco acerca de qué trata todo esto.
 
 <p align="left">
   <img align="left" width="32" height="32" src="icons/telegram.png"/>
-  <h3> ¡Sigue el proyecto en redes sociales!: </h3>
+  <img align="left" width="32" height="32" src="icons/twitter.png"/>
+  <h3> ¡Redes sociales asociadas!: </h3>
 </p>
 
-También hay otros medios donde puedes reportar errores y enterarte de las últimas actualizaciones del juego:
+Se está desarrollando en paralelo un Fangame de **LoveLive!** que reemmplazará a **Ren'Py RhythmBeats!** en el futuro. Comprueba su estado de desarrollo en los siguientes medios:
 
-* **¡Únete al Canal de Telegram [@LoveLiveUP_DevChannel](https://t.me/LoveLiveUP_DevChannel)!**
+* **¡Únete al Canal de Telegram [@LoveLiveUP_Dev](https://t.me/LoveLiveUP_Dev)!**
+* **¡Sigue mi cuenta de Twitter [@CharlieFuu69](https://twitter.com/CharlieFuu69)!**
 
 ---
 ### Galería de imágenes de "Ren'Py RhythmBeats! Game":
