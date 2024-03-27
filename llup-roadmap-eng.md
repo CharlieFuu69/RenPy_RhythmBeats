@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress        |
 |---|---|---|---|
-| `2024-03-21 14:09 (GMT -3)`    | 129                 | 8                  | 44.44% (8/18 tasks)  |
+| `2024-03-21 14:09 (GMT -3)`    | 129                 | 7                  | 44.44% (8/18 tasks)  |
 
 ---
 
@@ -44,8 +44,7 @@
 >
 > - [ ] Sprite of the selected favorite School Idol.
 >   > - [ ] Create a School Idols selector.
->   > - [ ] Create essential animation for blinks.
->   > - [ ] Create adaptive displayables to support multiple expressions per sprite.
+>   > - [ ] Include sprite costumes.
 
 
 - [ ] **[WAITING] GAME SECTION: LIVE SHOWS.**
