@@ -14,7 +14,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total        |
 |---|---|---|---|
-| `2024-03-21 14:09 (GMT -3)`    | 129                 | 7                  | 44.44% (8/18 tareas)  |
+| `2024-04-13 02:03 (GMT -4)`    | 130                 | 6                  | 50.00% (9/18 tareas)  |
 
 ---
 
@@ -35,6 +35,8 @@
 - [x] **[COMPLETADO] PANEL DE COLECCIÓN DEL JUGADOR.**
 
 - [x] **[COMPLETADO] MENÚ DE RECLUTAMIENTO (Gacha).**
+
+- [x] **[COMPLETADO] GESTOR DE ASSETS Y DESCARGAS DESDE EL CDN.**
 
 - [ ] **[EN CURSO] MENÚ DE INICIO.**
 > - [x] Agregar reloj de sistema (Fecha y Hora).
@@ -67,28 +69,6 @@
 >   >   > - [x] Mostrar el Rank del Live Show (CBAS).
 >   >   > - [ ] Mostrar carta más dominante (MVP) del Live Show.
 >   >   > - [ ] Escoger y mostrar los ítems de recompensa del Live Show.
-
-
-- [ ] **[EN ESPERA] GESTOR DE ASSETS Y DESCARGAS DESDE EL CDN.**
-> - [x] Comprobar actualizaciones examinando los paquetes de assets.
->   > - [x] Remover sistema antiguo de almacenamiento de hashes.
->   > - [x] Escanear archivos locales para comparar diferencias de hashes del CDN con el cliente.
->   > - [x] Apilar archivos faltantes o que requieren actualizaciones.
->   > - [x] Eliminar archivos de descargas fallidas (temporales).  
->
-> - [x] Modificaciones a la visualización de descargas.
->   > - [x] Convertir automáticamente Bytes a kB, MB y GB.
->   > - [x] Crear un medidor de ancho de banda para las descargas (MB/s).
->   > - [x] Preformatear datos de descarga (MB descargados, totales, ancho de banda, bloques descargados y porcentaje).
->   >   > - [x] Formatear MB descargados.
->   >   > - [x] Formatear tamaño total de descarga (MB).
->   >   > - [x] Formatear medidor de ancho de banda.
->   >   > - [x] Formatear contador de bloques descargados.
->   >   > - [x] Formatear porcentaje de descarga total.
->   >
->   > - [x] Predecir las imágenes (carga en la RAM) de sprites en la pantalla de descargas.
->
-> - [ ] Crear un modo de descarga Light (solo canciones) y modo Full (canciones + MVs)
 
 - [ ] **[PENDIENTE] PANEL DE FORMACIÓN DE LIVE SHOW.**
 
