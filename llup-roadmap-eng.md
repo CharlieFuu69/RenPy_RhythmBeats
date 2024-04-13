@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress        |
 |---|---|---|---|
-| `2024-03-21 14:09 (GMT -3)`    | 129                 | 7                  | 44.44% (8/18 tasks)  |
+| `2024-04-13 02:03 (GMT -4)`    | 130                 | 6                  | 50.00% (9/18 tasks)   |
 
 ---
 
@@ -35,6 +35,8 @@
 - [x] **[COMPLETE] PLAYER COLLECTION PANEL.**
 
 - [x] **[COMPLETE] RECRUITMENT MENU (Gacha).**
+
+- [x] **[COMPLETE] ASSETS MANAGER AND DOWNLOADS FROM THE CDN.**
 
 - [ ] **[IN PROGRESS] START MENU.**
 > - [x] Add system clock (Date and Time).
@@ -67,28 +69,6 @@
 >   >   > - [x] Show the Rank of the Live Show (CBAS).
 >   >   > - [ ] Show most dominant card (MVP) of the Live Show.
 >   >   > - [ ] Choose and display Live Show reward items.
-
-
-- [ ] **[WAITING] ASSETS MANAGER AND DOWNLOADS FROM THE CDN.**
-> - [x] Check for updates by examining asset packages.
->   > - [x] Remove old hash storage system.
->   > - [x] Scan local files to compare CDN hash differences with the client.
->   > - [x] Stack files that are missing or require updates.
->   > - [x] Delete files from failed downloads (temporary).
->
-> - [x] Modifications to the download display.
->   > - [x] Automatically convert Bytes to kB, MB and GB.
->   > - [x] Create a bandwidth meter for downloads (MB/s).
->   > - [x] Preformat download data (MB downloaded, totals, bandwidth, blocks downloaded and percentage).
->   >   > - [x] Format downloaded MB.
->   >   > - [x] Format total download size (MB).
->   >   > - [x] Format bandwidth meter.
->   >   > - [x] Format downloaded block counter.
->   >   > - [x] Format total download percentage.
->   >
->   > - [x] Predict images (load into RAM) of sprites in the download screen.
->
-> - [ ] Create a Light download mode (only songs) and Full mode (songs + MVs)
 
 - [ ] **[PENDING] LIVE SHOW TRAINING PANEL.**
 
