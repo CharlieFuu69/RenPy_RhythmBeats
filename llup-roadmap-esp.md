@@ -14,7 +14,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total        |
 |---|---|---|---|
-| `2024-04-13 02:03 (GMT -4)`    | 130                 | 6                  | 50.00% (9/18 tareas)  |
+| `2024-04-14 04:13 (GMT -4)`    | 134                 | 5                  | 50.00% (9/18 tareas)  |
 
 ---
 
@@ -45,8 +45,15 @@
 >   > - [x] Añadir opción en los ajustes para escoger entre hora UTC (mundial) y GMT (hora local, zona horaria autodetectada).
 >
 > - [ ] Sprite de la School Idol favorita seleccionada.
->   > - [ ] Crear un selector de School Idols.
->   > - [ ] Incluir vestimenta de sprites.
+>   > - [x] Crear un selector de School Idols.
+>   >   > - [x] Crear una ventana de control maestro (`member_selector()`).
+>   >   > - [x] Crear ventana de iteración de School Idols (`sub_select_unit()`).
+>   >   > - [x] [Primera elección] Crear ventana de prevista de la School Idol seleccionada (`member_preview()`).
+>   >   > - [x] [Primera elección] Ventana para confirmar a la School Idol seleccionada (`sys_member_select()`).
+>   >   > - [ ] [Normal] Ajustar al selector de School Idols para mostrar estadísticas comunes.
+>   >   > - [ ] [Normal] Crear ventana para visualizar estadísticas para una School Idol (`member_stats()`).
+>   >   > - [ ] [Normal] Permitir cambio de School Idol favorita.
+>   > - [x] Incluir vestimenta de sprites.
 
 
 - [ ] **[EN ESPERA] APARTADO DE JUEGO: LIVE SHOWS.**
