@@ -45,7 +45,7 @@
 >   > - [x] Add option in settings to choose between UTC (world) time and GMT (local time, auto-detected time zone).
 >
 > - [ ] Sprite of the selected favorite School Idol.
->   > - [x] Crear un selector de School Idols.
+>   > - [x] Create a School Idol selector.
 >   >   > - [x] Create a master control window (`member_selector()`).
 >   >   > - [x] Create School Idols iteration window (`sub_select_unit()`).
 >   >   > - [x] [First choice] Create preview window of the selected School Idol (`member_preview()`).
