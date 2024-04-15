@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress        |
 |---|---|---|---|
-| `2024-04-13 02:03 (GMT -4)`    | 130                 | 6                  | 50.00% (9/18 tasks)   |
+| `2024-04-14 04:13 (GMT -4)`    | 134                 | 5                  | 50.00% (9/18 tasks)   |
 
 ---
 
@@ -45,7 +45,14 @@
 >   > - [x] Add option in settings to choose between UTC (world) time and GMT (local time, auto-detected time zone).
 >
 > - [ ] Sprite of the selected favorite School Idol.
->   > - [ ] Create a School Idols selector.
+>   > - [x] Crear un selector de School Idols.
+>   >   > - [x] Create a master control window (`member_selector()`).
+>   >   > - [x] Create School Idols iteration window (`sub_select_unit()`).
+>   >   > - [x] [First choice] Create preview window of the selected School Idol (`member_preview()`).
+>   >   > - [x] [First choice] Window to confirm the selected School Idol (`sys_member_select()`).
+>   >   > - [ ] [Normal] Adjust School Idols selector to show common statistics.
+>   >   > - [ ] [Normal] Create window to view statistics for a School Idol (`member_stats()`).
+>   >   > - [ ] [Normal] Allow changing favorite School Idol.
 >   > - [ ] Include sprite costumes.
 
 
