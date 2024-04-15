@@ -53,7 +53,7 @@
 >   >   > - [ ] [Normal] Adjust School Idols selector to show common statistics.
 >   >   > - [ ] [Normal] Create window to view statistics for a School Idol (`member_stats()`).
 >   >   > - [ ] [Normal] Allow changing favorite School Idol.
->   > - [ ] Include sprite costumes.
+>   > - [x] Include sprite costumes.
 
 
 - [ ] **[WAITING] GAME SECTION: LIVE SHOWS.**
