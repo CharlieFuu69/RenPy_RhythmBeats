@@ -12,9 +12,9 @@
 
 ### Resumen:
 
-| Última actualización de status | Tickets completados | Tickets pendientes | Progreso total        |
+| Última actualización de status | Tickets completados | Tickets pendientes | Progreso total         |
 |---|---|---|---|
-| `2024-04-14 04:13 (GMT -4)`    | 134                 | 5                  | 50.00% (9/18 tareas)  |
+| `2024-05-02 22:15 (GMT -4)`    | 138                 | 1                  | 55.56% (10/18 tareas)  |
 
 ---
 
@@ -38,23 +38,10 @@
 
 - [x] **[COMPLETADO] GESTOR DE ASSETS Y DESCARGAS DESDE EL CDN.**
 
-- [ ] **[EN CURSO] MENÚ DE INICIO.**
-> - [x] Agregar reloj de sistema (Fecha y Hora).
->   > - [x] Crear `DynamicDisplayable()` para actualizar constantemente el reloj.
->   > - [x] Mostrar hora UTC (mundial) por defecto.
->   > - [x] Añadir opción en los ajustes para escoger entre hora UTC (mundial) y GMT (hora local, zona horaria autodetectada).
->
-> - [ ] Sprite de la School Idol favorita seleccionada.
->   > - [x] Crear un selector de School Idols.
->   >   > - [x] Crear una ventana de control maestro (`member_selector()`).
->   >   > - [x] Crear ventana de iteración de School Idols (`sub_select_unit()`).
->   >   > - [x] [Primera elección] Crear ventana de prevista de la School Idol seleccionada (`member_preview()`).
->   >   > - [x] [Primera elección] Ventana para confirmar a la School Idol seleccionada (`sys_member_select()`).
->   >   > - [ ] [Normal] Ajustar al selector de School Idols para mostrar estadísticas comunes.
->   >   > - [ ] [Normal] Crear ventana para visualizar estadísticas para una School Idol (`member_stats()`).
->   >   > - [ ] [Normal] Permitir cambio de School Idol favorita.
->   > - [x] Incluir vestimenta de sprites.
+- [x] **[COMPLETADO] MENÚ DE INICIO.**
 
+- [ ] **[EN CURSO] PANEL DE AFINIDAD CON SCHOOL IDOL FAVORITA.**
+> _[Esperando lista de tareas a realizar...]_
 
 - [ ] **[EN ESPERA] APARTADO DE JUEGO: LIVE SHOWS.**
 > - [x] Secuencia de los Live Shows.
@@ -72,14 +59,11 @@
 >   >   > - [x] Cantidad de notas Miss.
 >   >   > - [x] Mostrar bandera de Full Combo/All Perfect.
 >   >   > - [x] Mostrar bandera de nuevo récord.
->   >   > - [x] Mostrar PP obtenidos en el Live Show.
+>   >   > - [x] Mostrar LP obtenido en el Live Show.
 >   >   > - [x] Mostrar el Rank del Live Show (CBAS).
->   >   > - [ ] Mostrar carta más dominante (MVP) del Live Show.
 >   >   > - [ ] Escoger y mostrar los ítems de recompensa del Live Show.
 
 - [ ] **[PENDIENTE] PANEL DE FORMACIÓN DE LIVE SHOW.**
-
-- [ ] **[PENDIENTE] PANEL DE AFINIDAD CON SCHOOL IDOL FAVORITA.**
 
 - [ ] **[PENDIENTE] PANEL DE MISIONES CON RECOMPENSAS.**
 
