@@ -12,9 +12,9 @@
 
 ### Summary:
 
-| Last status update             | Completed tickets   | Pending tickets    | Total progress        |
+| Last status update             | Completed tickets   | Pending tickets    | Total progress         |
 |---|---|---|---|
-| `2024-04-14 04:13 (GMT -4)`    | 134                 | 5                  | 50.00% (9/18 tasks)   |
+| `2024-05-02 22:15 (GMT -4)`    | 138                 | 1                  | 55.56% (10/18 tasks)   |
 
 ---
 
@@ -38,23 +38,10 @@
 
 - [x] **[COMPLETE] ASSETS MANAGER AND DOWNLOADS FROM THE CDN.**
 
-- [ ] **[IN PROGRESS] START MENU.**
-> - [x] Add system clock (Date and Time).
->   > - [x] Create `DynamicDisplayable()` to constantly update the clock.
->   > - [x] Show UTC (world) time by default.
->   > - [x] Add option in settings to choose between UTC (world) time and GMT (local time, auto-detected time zone).
->
-> - [ ] Sprite of the selected favorite School Idol.
->   > - [x] Create a School Idol selector.
->   >   > - [x] Create a master control window (`member_selector()`).
->   >   > - [x] Create School Idols iteration window (`sub_select_unit()`).
->   >   > - [x] [First choice] Create preview window of the selected School Idol (`member_preview()`).
->   >   > - [x] [First choice] Window to confirm the selected School Idol (`sys_member_select()`).
->   >   > - [ ] [Normal] Adjust School Idols selector to show common statistics.
->   >   > - [ ] [Normal] Create window to view statistics for a School Idol (`member_stats()`).
->   >   > - [ ] [Normal] Allow changing favorite School Idol.
->   > - [x] Include sprite costumes.
+- [x] **[COMPLETE] HOME MENU.**
 
+- [ ] **[IN PROGRESS] AFFINITY PANEL WITH FAVORITE SCHOOL IDOL.**
+> _[Waiting for tasklist...]_
 
 - [ ] **[WAITING] GAME SECTION: LIVE SHOWS.**
 > - [x] Sequence of the Live Shows.
@@ -74,12 +61,9 @@
 >   >   > - [x] Show new record flag.
 >   >   > - [x] Show PP obtained in the Live Show.
 >   >   > - [x] Show the Rank of the Live Show (CBAS).
->   >   > - [ ] Show most dominant card (MVP) of the Live Show.
 >   >   > - [ ] Choose and display Live Show reward items.
 
-- [ ] **[PENDING] LIVE SHOW TRAINING PANEL.**
-
-- [ ] **[PENDING] AFFINITY PANEL WITH FAVORITE SCHOOL IDOL.**
+- [ ] **[PENDING] LIVE SHOW FORMATION PANEL.**
 
 - [ ] **[PENDING] MISSION PANEL WITH REWARDS.**
 
