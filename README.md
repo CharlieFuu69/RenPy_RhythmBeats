@@ -20,7 +20,7 @@
 
 <h1 align = "center"> Ren'Py RhythmBeats! </h1>
 
-[![license-badge]][license] [![renpy-badge]][renpy] [![release-badge]][game-release] ![status-badge]
+[![license-badge]][license] [![renpy-badge]][renpy] ![status-badge]
 
 <h5 align = "center">
     <i>[Última actualización del código fuente: 27/04/2023 02:21 GMT -4]</i>
