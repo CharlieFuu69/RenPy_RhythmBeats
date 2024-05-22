@@ -1,7 +1,6 @@
 <!-- Links de utilidad pública --->
 [license]: https://www.gnu.org/licenses/gpl-3.0
 [renpy]: https://renpy.org/
-[game-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/latest
 [module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.07.1b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
 [rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
@@ -61,17 +60,6 @@ Te contaré un poco acerca de qué trata todo esto.
   
   * **Descarga la última versión de [Ren'Py RhythmBeats! (v1.07.0b)][module-release].**
   * **Entérate de cómo implementar el sistema en la [documentación de Ren'Py RhythmBeats!][rbs-documentation].**
-  
-* **JUEGO DEMOSTRATIVO "REN'PY RHYTHMBEATS! GAME":**
-  
-  ¿Quieres pasar el rato jugando la demostración de Ren'Py RhythmBeats? ¡Hay más de 20 canciones con 2DMV!
-  
-  * **¡Descarga la última versión del juego (Windows/Linux) [en este link][game-release]!**
-  * **¿No sabes cómo jugar la DEMO? Mira los detalles [presionando aquí][rbs-game-faq]!**
-
-
->[!WARNING]
-> _"Ren'Py RhythmBeats! Game" (el juego demostrativo) tendrá su finalización de servicio en un futuro próximo, ya que de manera lateral a Ren'Py RhythmBeats! se está desarrollando un Fangame que reemplazará al actual juego demostrativo._
 
 >[!NOTE]
 > _Ya está disponible el Roadmap de desarrollo del Fangame **"LoveLive! UNOFFICIAL PROJECT"** en el repositorio. Este Fangame se basa en el núcleo de acción rítmica de Ren'Py RhythmBeats, y será el sucesor del actual juego demostrativo del repositorio._
