@@ -14,7 +14,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total         |
 |---|---|---|---|
-| `2024-05-02 22:15 (GMT -4)`    | 138                 | 1                  | 55.56% (10/18 tareas)  |
+| `2024-06-02 22:33 (GMT -4)`    | 142                 | 7                  | 55.56% (10/18 tareas)  |
 
 ---
 
@@ -41,7 +41,19 @@
 - [x] **[COMPLETADO] MENÚ DE INICIO.**
 
 - [ ] **[EN CURSO] PANEL DE AFINIDAD CON SCHOOL IDOL FAVORITA.**
-> _[Esperando lista de tareas a realizar...]_
+> - [ ] Lógica del sistema de afinidad (`MemberAffinity()`).
+>   > - [x] Crear lista de Tiers de afinidad, con color identificador y rango de AP.
+>   > - [x] Diseñar íconos de corazones para cada Tier. 
+>   > - [x] Obtener las estadísticas almacenadas de afinidad (Idol favorita).
+>   > - [x] Crear método para obtener el nivel (Tier) de afinidad, y su título asociado.
+>   > - [ ] Crear función para comprobar promoción de Tier.
+>   > - [ ] Crear método para almacenar los cálculos de estadísticas.
+>   >
+> - [ ] Diseño del panel de afinidad.
+>   > - [ ] Crear animaciones de UI para Tiers altos.
+>   > - [ ] Crear barra de progreso del Tier actual.
+>   > - [ ] Agregar opción de entregar regalos (requiere nuevos items en inventario).
+>   > - [ ] Agregar opción para acariciar la cabeza a tu Idol favorita (+ AP).
 
 - [ ] **[EN ESPERA] APARTADO DE JUEGO: LIVE SHOWS.**
 > - [x] Secuencia de los Live Shows.
