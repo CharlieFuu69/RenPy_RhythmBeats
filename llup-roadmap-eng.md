@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress         |
 |---|---|---|---|
-| `2024-05-02 22:15 (GMT -4)`    | 138                 | 1                  | 55.56% (10/18 tasks)   |
+| `2024-06-02 22:33 (GMT -4)`    | 142                 | 7                  | 55.56% (10/18 tasks)   |
 
 ---
 
@@ -41,7 +41,19 @@
 - [x] **[COMPLETE] HOME MENU.**
 
 - [ ] **[IN PROGRESS] AFFINITY PANEL WITH FAVORITE SCHOOL IDOL.**
-> _[Waiting for tasklist...]_
+> - [ ] Affinity system logic (`MemberAffinity()`).
+>   > - [x] Create list of Affinity Tiers, with identifying color and AP range.
+>   > - [x] Design heart icons for each Tier.
+>   > - [x] Get stored affinity statistics (favorite idol).
+>   > - [x] Create method to obtain the level (Tier) of affinity, and its associated title.
+>   > - [ ] Create function to check Tier promotion.
+>   > - [ ] Create method to store the statistics calculations.
+>
+> - [ ] Affinity panel layout.
+>   > - [ ] Create UI animations for high Tiers.
+>   > - [ ] Create progress bar of the current Tier.
+>   > - [ ] Add option to deliver gifts (requires new items in inventory).
+>   > - [ ] Add option to pat the head of your favorite Idol (+ AP).
 
 - [ ] **[WAITING] GAME SECTION: LIVE SHOWS.**
 > - [x] Sequence of the Live Shows.
