@@ -14,7 +14,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total         |
 |---|---|---|---|
-| `2024-06-02 22:33 (GMT -4)`    | 142                 | 7                  | 55.56% (10/18 tareas)  |
+| `2024-06-09 20:07 (GMT -4)`    | 144                 | 5                  | 55.56% (10/18 tareas)  |
 
 ---
 
@@ -41,13 +41,13 @@
 - [x] **[COMPLETADO] MENÚ DE INICIO.**
 
 - [ ] **[EN CURSO] PANEL DE AFINIDAD CON SCHOOL IDOL FAVORITA.**
-> - [ ] Lógica del sistema de afinidad (`MemberAffinity()`).
+> - [x] Lógica del sistema de afinidad (`MemberAffinity()`).
 >   > - [x] Crear lista de Tiers de afinidad, con color identificador y rango de AP.
 >   > - [x] Diseñar íconos de corazones para cada Tier. 
 >   > - [x] Obtener las estadísticas almacenadas de afinidad (Idol favorita).
 >   > - [x] Crear método para obtener el nivel (Tier) de afinidad, y su título asociado.
->   > - [ ] Crear función para comprobar promoción de Tier.
->   > - [ ] Crear método para almacenar los cálculos de estadísticas.
+>   > - [x] Crear método para comprobar promoción de Tier.
+>   > - [x] Crear método para almacenar los cálculos de estadísticas en atributos.
 >   >
 > - [ ] Diseño del panel de afinidad.
 >   > - [ ] Crear animaciones de UI para Tiers altos.
