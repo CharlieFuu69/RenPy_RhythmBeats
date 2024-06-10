@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress         |
 |---|---|---|---|
-| `2024-06-02 22:33 (GMT -4)`    | 142                 | 7                  | 55.56% (10/18 tasks)   |
+| `2024-06-09 20:07 (GMT -4)`    | 144                 | 5                  | 55.56% (10/18 tasks)   |
 
 ---
 
@@ -41,13 +41,13 @@
 - [x] **[COMPLETE] HOME MENU.**
 
 - [ ] **[IN PROGRESS] AFFINITY PANEL WITH FAVORITE SCHOOL IDOL.**
-> - [ ] Affinity system logic (`MemberAffinity()`).
+> - [x] Affinity system logic (`MemberAffinity()`).
 >   > - [x] Create list of Affinity Tiers, with identifying color and AP range.
 >   > - [x] Design heart icons for each Tier.
 >   > - [x] Get stored affinity statistics (favorite idol).
 >   > - [x] Create method to obtain the level (Tier) of affinity, and its associated title.
->   > - [ ] Create function to check Tier promotion.
->   > - [ ] Create method to store the statistics calculations.
+>   > - [x] Create method to check Tier promotion.
+>   > - [x] Create method to store the statistics calculations on attributes.
 >
 > - [ ] Affinity panel layout.
 >   > - [ ] Create UI animations for high Tiers.
