@@ -14,7 +14,7 @@
 
 | Última actualización de status | Tickets completados | Tickets pendientes | Progreso total         |
 |---|---|---|---|
-| `2024-06-09 20:07 (GMT -4)`    | 144                 | 5                  | 55.56% (10/18 tareas)  |
+| `2024-07-05 01:59 (GMT -4)`    | 144                 | 8                  | 55.56% (10/18 tareas)  |
 
 ---
 
@@ -54,6 +54,11 @@
 >   > - [ ] Crear barra de progreso del Tier actual.
 >   > - [ ] Agregar opción de entregar regalos (requiere nuevos items en inventario).
 >   > - [ ] Agregar opción para acariciar la cabeza a tu Idol favorita (+ AP).
+>
+> - [ ] Lógica del inventario.
+>   > - [ ] Modificar lógica global de búsqueda de ítems en inventario.
+>   > - [ ] Integrar los ítems consumibles (Regalos).
+>   > - [ ] Llamar items por su Key respectiva.
 
 - [ ] **[EN ESPERA] APARTADO DE JUEGO: LIVE SHOWS.**
 > - [x] Secuencia de los Live Shows.
