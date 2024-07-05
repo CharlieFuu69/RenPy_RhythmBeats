@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress         |
 |---|---|---|---|
-| `2024-06-09 20:07 (GMT -4)`    | 144                 | 5                  | 55.56% (10/18 tasks)   |
+| `2024-07-05 01:59 (GMT -4)`    | 144                 | 8                  | 55.56% (10/18 tasks)   |
 
 ---
 
@@ -54,6 +54,11 @@
 >   > - [ ] Create progress bar of the current Tier.
 >   > - [ ] Add option to deliver gifts (requires new items in inventory).
 >   > - [ ] Add option to pat the head of your favorite Idol (+ AP).
+>
+> - [ ] Inventory logic.
+>   > - [ ] Modify global inventory item search logic.
+>   > - [ ] Integrate consumable items (Gifts).
+>   > - [ ] Call items by their respective Key.
 
 - [ ] **[WAITING] GAME SECTION: LIVE SHOWS.**
 > - [x] Sequence of the Live Shows.
