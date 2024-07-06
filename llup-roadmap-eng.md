@@ -14,7 +14,7 @@
 
 | Last status update             | Completed tickets   | Pending tickets    | Total progress         |
 |---|---|---|---|
-| `2024-07-05 01:59 (GMT -4)`    | 144                 | 8                  | 55.56% (10/18 tasks)   |
+| `2024-07-06 03:22 (GMT -4)`    | 149                 | 5                  | 55.56% (10/18 tasks)   |
 
 ---
 
@@ -55,10 +55,10 @@
 >   > - [ ] Add option to deliver gifts (requires new items in inventory).
 >   > - [ ] Add option to pat the head of your favorite Idol (+ AP).
 >
-> - [ ] Inventory logic.
->   > - [ ] Modify global inventory item search logic.
->   > - [ ] Integrate consumable items (Gifts).
->   > - [ ] Call items by their respective Key.
+> - [x] Inventory logic.
+>   > - [x] Modify global inventory item search logic.
+>   > - [x] Integrate consumable items (Gifts).
+>   > - [x] Call items by their respective Key.
 
 - [ ] **[WAITING] GAME SECTION: LIVE SHOWS.**
 > - [x] Sequence of the Live Shows.
