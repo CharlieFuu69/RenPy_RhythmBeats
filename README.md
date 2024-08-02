@@ -82,9 +82,7 @@ Se está desarrollando en paralelo un Fangame de **LoveLive!** que reemmplazará
 * **¡Sigue mi cuenta de Twitter [@CharlieFuu69](https://twitter.com/CharlieFuu69)!**
 
 ---
-### Galería de imágenes de "Ren'Py RhythmBeats! Game":
-
-Es posible que quieras ver el aspecto del juego demostrativo antes de jugarlo. Aquí te dejo unos Screenshots de muestra :3
+### Galería de imágenes de "Ren'Py RhythmBeats! Game" (descontinuado):
 
 <p align="center">
   <img width="40%" height="40%" src="src/screenshots/Screenshot_0001.png"/>
