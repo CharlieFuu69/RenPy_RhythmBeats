@@ -4,8 +4,8 @@
 [module-release]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/releases/tag/v1.07.1b_module
 [rbs-documentation]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki
 [rbs-game-faq]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/wiki/FAQ
-[llup-roadmap-esp]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap-esp.md
-[llup-roadmap-eng]: https://github.com/CharlieFuu69/RenPy_RhythmBeats/blob/main/llup-roadmap-eng.md
+[llup-roadmap-esp]: https://github.com/CharlieFuu69/lovelive-unofficial-project/blob/main/roadmap-es.md
+[llup-roadmap-eng]: https://github.com/CharlieFuu69/lovelive-unofficial-project/blob/main/roadmap-en.md
 
 <!-- Badges del README --->
 [renpy-badge]: https://img.shields.io/badge/Ren'Py-v7.4.11-red?style=for-the-badge&logo=python
